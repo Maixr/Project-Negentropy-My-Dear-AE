@@ -1003,7 +1003,7 @@
 				}
 			]
 			x: -1.0d
-			y: 6.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4100465FD4CB817F"]
@@ -1047,8 +1047,99 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			x: -1.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"648DC715C5F93537"
+				"76C7BF50A19E2E31"
+				"318A2458DB546A1D"
+				"77410466F89BFE27"
+				"3652BB80016FA811"
+				"53FB4578D967FACA"
+			]
+			dependency_requirement: "one_completed"
+			id: "401A4B54ED9B9FED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0333DEB86AAF14E5"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "26C94F708C4E1E09"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["401A4B54ED9B9FED"]
+			id: "490AA4118889CE79"
+			tasks: [{
+				id: "114A4F57E4599CC0"
+				item: { count: 1, id: "mekanism:alloy_infused" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["490AA4118889CE79"]
+			id: "1A3447A24DFE1DE6"
+			tasks: [{
+				id: "05845DA377ACDD3E"
+				item: { count: 1, id: "mekanism:advanced_control_circuit" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["55D51292CF99BDE6"]
+			id: "2ECB888DA592EC72"
+			tasks: [{
+				id: "5754C3D9F9726205"
+				item: { count: 1, id: "mekanism:alloy_atomic" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2ECB888DA592EC72"]
+			id: "7D52828723B9488E"
+			tasks: [{
+				id: "72012C1CF2489EBC"
+				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1A3447A24DFE1DE6"]
+			id: "7A13D1EBD1D03DFF"
+			tasks: [{
+				id: "353D3463D5006BF2"
+				item: { count: 1, id: "mekanism:alloy_reinforced" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7A13D1EBD1D03DFF"]
+			id: "55D51292CF99BDE6"
+			tasks: [{
+				id: "57FE3F4FA087492A"
+				item: { count: 1, id: "mekanism:elite_control_circuit" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
 		}
 	]
 }

@@ -1,0 +1,6 @@
+#Invert the scroll direction used for terminal cycling.
+invertMouseScrollCycling = false
+#Delay in milliseconds between scroll-based terminal cycles.
+# Default: 150
+# Range: 100 ~ 2000
+scrollCycleDelayMs = 150

@@ -1,0 +1,116 @@
+#JEI Guess —— 点击 JEI 搜索框时弹出候选
+[suggest]
+	#★ 总开关：false = 完全关掉「猜你想搜」候选面板（点搜索框不再弹任何候选）
+	#聊天里的物品名链接不受它影响，那个由 [suggest.behavior] chatItemLinks 控制
+	enabled = true
+
+	#各来源在候选列表里的配额（总数为各项之和）
+	[suggest.quota]
+		#最近搜索：显示最近用过的搜索词
+		# Default: 3
+		# Range: 0 ~ 30
+		recent = 3
+		#任务需求：最近查看 / 当前可做任务的物品
+		# Default: 3
+		# Range: 0 ~ 30
+		quest = 3
+		#高频搜索：历史上搜得最多的词
+		# Default: 1
+		# Range: 0 ~ 30
+		frequent = 1
+		#聊天提及：聊天里出现过的物品名（0 = 只在「聊天」整页里出现）
+		# Default: 0
+		# Range: 0 ~ 30
+		chat = 0
+		#推荐词：从下方 recommendWords 里随机抽取
+		# Default: 1
+		# Range: 0 ~ 30
+		random = 1
+		#收藏：中键收藏的词（始终排最前，且不占上面 8 条的配额）
+		#★ 填 0 = 不限量（推荐）；填 N = 最多保留 N 个收藏
+		# Default: 0
+		# Range: 0 ~ 30
+		favorite = 2
+		#上次：上次搜同一个词之后你点开的物品
+		# Default: 1
+		# Range: 0 ~ 30
+		pick = 1
+		#热词：服务器热词（需要服务端也安装本 mod）
+		# Default: 2
+		# Range: 0 ~ 30
+		hot = 2
+		#候选面板每页显示多少行（超过就分页）
+		# Default: 8
+		# Range: 3 ~ 20
+		rowsPerPage = 8
+
+	#候选来源的排列顺序（从上到下）。可用值：recent / quest / frequent / chat / random / pick / hot
+	#收藏不参与排序，永远排最前；配额在上面的 [suggest.quota] 里设置
+	[suggest.order]
+		#每行一个来源名
+		sequence = ["recent", "quest", "random", "frequent", "chat", "hot", "pick"]
+
+	#来源开关
+	[suggest.enable]
+		recent = true
+		quest = true
+		frequent = true
+		random = true
+		#从聊天消息里记录被提到的物品（自己与其他玩家的消息）
+		chat = true
+
+	#候选匹配方式：true = 只匹配前缀（更像浏览器），false = 包含匹配
+	[suggest.behavior]
+		prefixOnly = false
+		#聊天里的物品名/id/标签/模组名加下划线并可点击跳转 JEI
+		chatItemLinks = true
+		#是否也处理系统消息（成就播报、服务器公告）
+		chatLinksOnSystemMessages = true
+		#聊天里【已经带点击事件】的文字保持原样，不覆盖成查配方链接
+		#★ KubeJS 的 /kubejs hand 输出用点击事件做「点击复制物品 ID」，
+		#  之前被我们的查配方链接覆盖掉了，导致复制失效。默认让别人的点击事件优先。
+		chatLinksKeepExistingClicks = true
+		#聊天链接支持修饰键：默认打开合成表，Shift+点击 = 用途表，Ctrl+点击 = 复制物品 ID
+		#点击时读取当时的键盘状态，不需要额外按键绑定
+		chatLinkModifierKeys = true
+		#在 JEI 搜索框里显示灰色补全提示，按 Tab 接受
+		ghostText = true
+		#搜不到东西时提示「你是不是想搜…」（基于编辑距离的纠错）
+		correction = true
+		#输入 @ 或 # 时列出 mod / 标签，教玩家用 JEI 的前缀语法
+		syntaxHints = true
+		#鼠标悬停即选中该条（Enter 确认）
+		hoverSelects = true
+		#★ 按键防冲突：搜索框里有文字时，←/→ 交还给 JEI 移动光标；
+		#  只有搜索框为空时才用 ←/→ 翻页。PageUp/PageDown 任何时候都能翻页。
+		pagingNeedsEmptyInput = true
+		#翻页键（GLFW 键名，可自行改成不与别的 mod 冲突的组合）
+		pagingKeys = ["LEFT", "RIGHT", "PAGE_UP", "PAGE_DOWN"]
+		#本地保存的历史条数上限
+		# Default: 200
+		# Range: 20 ~ 2000
+		maxHistory = 200
+		#候选面板宽度（像素，实际会按内容自动加宽）
+		# Default: 160
+		# Range: 80 ~ 400
+		panelWidth = 160
+		#★ 亚空间搜索：列出 JEI 收录不到、但游戏里真实存在的物品
+		#包括被 JEI 隐藏的（命令方块、屏障、结构空位）和名字是原始翻译键的物品
+		#这些条目点击 = 复制物品 ID，不会注入 JEI
+		voidSearch = true
+
+	#服务端热词：客户端是否显示/上报全服热词（显示为【热词】）
+	#★ 服务端也需要安装本 mod，开关在服务端的 serverconfig/jeiguess-server.toml；
+	#  服务端没装时客户端全程保持沉默，不会有任何报错
+	[suggest.server]
+		hotWords = true
+
+	#推荐词池：上面的 random 配额会从这里随机抽取
+	#可以填物品名（如 '钻石'）、搜索词（如 '机械动力'）或 JEI 前缀（如 '@mekanism'）
+	[suggest.words]
+		#每行一个
+		#★ 强烈建议用 @modid 形式（如 @create）—— 直接写 mod 的中文名 JEI 是搜不到东西的
+		recommendWords = ["@create", "@mekanism", "@botania", "@ae2", "@avaritia", "@occultism", "@bloodmagic", "@ars_nouveau"]
+		#手动补充「中文名=modid」映射（正常情况下会自动从创造模式标签页收集）
+		#格式：机械动力=create   或   无尽贪婪=@avaritia
+		modAliases = []

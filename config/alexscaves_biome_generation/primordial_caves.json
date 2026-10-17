@@ -1,0 +1,14 @@
+{
+  "disabled_completely": true,
+  "distance_from_spawn": 450,
+  "alexscaves_rarity_offset": 1,
+  "continentalness": [
+    0,
+    1
+  ],
+  "depth": [
+    0.2,
+    1.5
+  ],
+  "dimensions": []
+}

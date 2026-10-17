@@ -1,0 +1,16 @@
+{
+  "recursiveae2patternprovider.configuration.title": "递归 AE2 样板供应器",
+  "recursiveae2patternprovider.configuration.section.recursiveae2patternprovider.common.toml": "递归 AE2 样板供应器配置",
+  "recursiveae2patternprovider.configuration.section.recursiveae2patternprovider.common.toml.title": "递归 AE2 样板供应器配置",
+  "recursiveae2patternprovider.configuration.enableRecursiveAE2PatternProvider": "启用递归",
+  "recursiveae2patternprovider.configuration.defaultAllowSubstitutes": "默认允许替代物",
+  "recursiveae2patternprovider.configuration.defaultAllowFluidSubstitutes": "默认允许流体替代物",
+  "recursiveae2patternprovider.configuration.recursionDepth": "递归深度",
+  "recursiveae2patternprovider.configuration.recipeItem": "配方物品",
+  "recursiveae2patternprovider.configuration.enableRecursiveAE2PatternProvider.tooltip": "启用递归生成 AE2 样板。启用后，模组会自动为缺失的合成原料生成依赖样板",
+  "recursiveae2patternprovider.configuration.defaultAllowSubstitutes.tooltip": "当父样板没有替代物信息时，自动生成的样板是否默认允许物品替代物。设为 true 时，允许在配方中使用等价物品（例如不同种类的木材）",
+  "recursiveae2patternprovider.configuration.defaultAllowFluidSubstitutes.tooltip": "当父样板没有替代物信息时，自动生成的样板是否默认允许流体替代物。设为 true 时，允许在配方中使用等价流体",
+  "recursiveae2patternprovider.configuration.recursionDepth.tooltip": "依赖样板生成的最大递归深度。-1 = 无限制，0 = 禁用递归，正数 = 最大深度",
+  "recursiveae2patternprovider.configuration.recipeItem.tooltip": "合成递归样板所需的物品。格式为「命名空间:物品名」（例如 minecraft:iron_ingot、minecraft:diamond、ae2:calculation_processor）",
+  "jei.category.recursiveae2patternprovider.recursive_pattern": "递归样板"
+}

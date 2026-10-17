@@ -1,0 +1,9 @@
+#Server-side settings for Stronger Mekasuit.
+[damage]
+	#Maximum FE that advanced MekaSuit damage absorption is allowed to consume for a single damage calculation.
+	#If an incoming hit would cost more energy than this, the hit is clamped down before absorption is processed.
+	#This is mainly a safety cap for abnormal or overflow-level damage values.
+	#Default: 20000000000 FE (20G FE).
+	# Default: 20000000000
+	# Range: 1 ~ 9223372036854775807
+	abnormalDamageClampEnergy = 20000000000

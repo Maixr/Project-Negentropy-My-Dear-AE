@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "alexscaves:magnetic_caves",
+    "alexscaves:primordial_caves",
+    "alexscaves:forlorn_hollows",
+    "alexscaves:candy_cavity"
+  ],
+  "features": [
+    "pasterdream:ore_amber_candy",
+    "pasterdream:ore_dyedreamdust",
+    "pasterdream:ore_dyedreamquartz"
+  ],
+  "step": "underground_ores"
+}

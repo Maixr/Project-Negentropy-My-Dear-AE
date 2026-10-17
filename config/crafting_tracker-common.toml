@@ -1,0 +1,49 @@
+[status]
+	#Seconds before a busy provider transitions from active to slow.
+	# Default: 5
+	# Range: 1 ~ 60
+	stallThresholdSeconds = 5
+	#Seconds before a slow provider transitions to blocked.
+	# Default: 15
+	# Range: 5 ~ 120
+	stuckThresholdSeconds = 15
+
+[scan]
+	#Ticks between full provider scans (20 = 1 second).
+	# Default: 20
+	# Range: 5 ~ 100
+	scanIntervalTicks = 20
+	#Radius in blocks to scan for pattern providers.
+	# Default: 64
+	# Range: 16 ~ 256
+	scanRadius = 64
+
+	[appearance.colors]
+		#Hex RGB color for active providers. Use #RRGGBB or 0xRRGGBB.
+		active = "#55FF55"
+		#Hex RGB color for slow providers. Use #RRGGBB or 0xRRGGBB.
+		stalled = "#FFFF55"
+		#Hex RGB color for blocked providers. Use #RRGGBB or 0xRRGGBB.
+		stuck = "#FF5555"
+
+	[appearance.opacity]
+		#Opacity for the floating status badge background (0=transparent, 255=solid).
+		# Default: 30
+		# Range: 0 ~ 255
+		badgeBackground = 30
+		#Opacity for the floating status badge accent strip (0=transparent, 255=solid).
+		# Default: 80
+		# Range: 0 ~ 255
+		badgeAccent = 80
+		#Opacity for the shape-aware highlight outline (0=transparent, 255=solid).
+		# Default: 255
+		# Range: 0 ~ 255
+		outline = 255
+
+[diagnostics]
+	#Log detailed provider tracking state for diagnosing flicker or missing status updates.
+	debugTracking = false
+	#Minimum ticks between repeated tracking debug logs for the same provider.
+	# Default: 20
+	# Range: 1 ~ 200
+	debugLogIntervalTicks = 20

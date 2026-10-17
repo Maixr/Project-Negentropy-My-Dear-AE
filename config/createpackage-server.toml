@@ -1,0 +1,46 @@
+#Log detailed distributor / crafting bridge activity for debugging.
+enableDebugLogging = false
+#How long a package distributor waits after starting a sequenced-assembly round before treating no output as an empty probability result and attempting a refill.
+# Default: 1200
+# Range: 20 ~ 36000
+emptyOutputRefillTimeoutTicks = 1200
+#How often package distributors resend chat warnings while a probabilistic refill is missing materials from AE storage.
+# Default: 30
+# Range: 1 ~ 1800
+missingRefillNoticeIntervalSeconds = 30
+#Number of active jobs provided by each Parallel Card in an Advanced Package Distributor.
+# Default: 4
+# Range: 1 ~ 64
+advancedDistributorParallelCardCapacity = 4
+#Hard timeout for one package-distributor craft job before it is marked timed out.
+# Default: 12000
+# Range: 600 ~ 72000
+distributorMaxJobTicks = 12000
+#Hard timeout for one kinetic pattern provider craft job before it is marked timed out.
+# Default: 6000
+# Range: 600 ~ 72000
+kineticMaxJobTicks = 6000
+#How often craft bridges retry a blocked probabilistic refill while waiting for materials or target space.
+# Default: 100
+# Range: 5 ~ 1200
+refillRetryTicks = 100
+#How often kinetic pattern providers retry a pending smart-batch dispatch.
+# Default: 5
+# Range: 1 ~ 600
+pendingDispatchRetryTicks = 5
+#Chat notice radius around a package distributor that is missing refill materials.
+# Default: 64
+# Range: 8 ~ 256
+missingRefillNoticeRadius = 64
+#Maximum Manhattan length of the straight corridor scanned by G-key auto-route.
+# Default: 512
+# Range: 8 ~ 2048
+autoRouteMaxLength = 512
+#Allow G-key auto-route to rebuild one-bend (L-shaped) same-Y corridors when a pure straight path is unavailable.
+autoRouteAllowLShaped = true
+#Number of 36-pattern pages available in an Extended Kinetic Pattern Provider. Pages containing saved patterns remain accessible after this value is reduced.
+# Default: 1
+# Range: 1 ~ 9
+extendedKineticProviderPageMultiplier = 1
+#When enabled, craft bridges treat a full empty-output timeout as a failed probability roll and attempt a refill round.
+enableProbabilisticEmptyRefill = true

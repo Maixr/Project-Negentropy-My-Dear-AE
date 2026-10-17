@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 7,
+  "preferences": {
+    "uploadEnabled": true,
+    "previewPanelPinned": false,
+    "patternSourceEnabled": true,
+    "previewPanel": {
+      "position": {
+        "xPercent": 0.7559523809523809,
+        "yPercent": 0.30165289256198347
+      }
+    }
+  },
+  "serverProfiles": {
+    "sha256:135721a1f78cbb5e9dd736309713cbfc37af963acef2c5ad3f40df7a206c7e10": {
+      "lastAccessEpochMillis": 1791550836205,
+      "clickStatistics": []
+    },
+    "sha256:29b9389ca32db6c6411630d091868c05b20911168c21e7f400c6db92f90e04be": {
+      "lastAccessEpochMillis": 1791097635401,
+      "clickStatistics": []
+    },
+    "sha256:35f0737182232565eba76eb4b1959f63e4fe659968eb61de024fc7ae98c6e16b": {
+      "lastAccessEpochMillis": 1791007187921,
+      "clickStatistics": []
+    },
+    "sha256:39e564a57479883d69cceb705b2dc7128f0a87dc15edf827078ff6ed282e38fb": {
+      "lastAccessEpochMillis": 1792140167468,
+      "clickStatistics": []
+    },
+    "sha256:4c89d61b6962d37feb91a739a34797fbc0b6519ecc8bd984b469442af3be87a3": {
+      "lastAccessEpochMillis": 1791007914610,
+      "clickStatistics": []
+    },
+    "sha256:4e0d874246e4516228921339715c1a6b2efd9d2fe59c6bffc1cb488dfca1c014": {
+      "lastAccessEpochMillis": 1790765393162,
+      "clickStatistics": []
+    },
+    "sha256:5a2eb8e36162f9a6ad97f0bf8ea7df2e27ff822423674b30fdf499b42a2fc9e4": {
+      "lastAccessEpochMillis": 1790765788298,
+      "clickStatistics": []
+    },
+    "sha256:6dbd4e85ea7c0e505cc430826a922ef31196c83c470e347ef584df188b1c1cb6": {
+      "lastAccessEpochMillis": 1791812230673,
+      "clickStatistics": [
+        {
+          "recipeTypeId": "minecraft:crafting",
+          "providerDigest": "sha256:79112add21bc59beb52f810e73aa336d67b02899bbfc8e61a38e4a234cfe8e69",
+          "count": 2,
+          "lastUsedEpochMillis": 1791467662559
+        }
+      ]
+    },
+    "sha256:74c93f095a0d5f378dfb594f6da604275d95028ab7b257df10715caf02c672bb": {
+      "lastAccessEpochMillis": 1790952537861,
+      "clickStatistics": []
+    },
+    "sha256:9b46ea89cd8478c7a6f0d333fdbc365fb21d4463520b7af0d504b78daf08e77e": {
+      "lastAccessEpochMillis": 1790761317347,
+      "clickStatistics": []
+    },
+    "sha256:a839f1d0fe9da62f4558b42177e69da778d63d6adaaddeda567597235f5653dd": {
+      "lastAccessEpochMillis": 1792164675370,
+      "clickStatistics": []
+    },
+    "sha256:b536f639c35a187d72e076277d3e2f062b183eb2a3879585a850db909b47401e": {
+      "lastAccessEpochMillis": 1792164887348,
+      "clickStatistics": []
+    },
+    "sha256:c3977179c3c7d094381023245675359fc98f738e3203390ea4ff8dd3ed759f7e": {
+      "lastAccessEpochMillis": 1790755810997,
+      "clickStatistics": []
+    },
+    "sha256:d2308d08bacfd3c9c4c9f247c593a856e41703225224bb98986ce4d1c48a7e1b": {
+      "lastAccessEpochMillis": 1791007339300,
+      "clickStatistics": []
+    },
+    "sha256:dc4892ba5a96b74b963ffa7234a201da6b232f2fe82aa1194869b654a2fa60d2": {
+      "lastAccessEpochMillis": 1792231240827,
+      "clickStatistics": [
+        {
+          "recipeTypeId": "minecraft:crafting",
+          "providerDigest": "sha256:b46dfa351b2b98510d7ff926e8210332b1903fda5a78c7dd4735ca8c080278fe",
+          "count": 1,
+          "lastUsedEpochMillis": 1791944427497
+        }
+      ]
+    }
+  }
+}

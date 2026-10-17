@@ -1,0 +1,7 @@
+[recipe_viewer]
+	#When looking up a virtual fluid item in JEI/EMI, include recipes and uses for the fluid's bucket item.
+	showBucketRecipesForVirtualFluids = true
+	#When looking up a virtual fluid item in JEI/EMI, include recipes and uses for the fluid ingredient itself.
+	showFluidRecipesForVirtualFluids = true
+	#When looking up an AE2 fluid key in JEI/EMI, include recipes and uses for the fluid's filled bucket item.
+	showBucketRecipesForAe2FluidKeys = true

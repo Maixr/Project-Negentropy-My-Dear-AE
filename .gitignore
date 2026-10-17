@@ -1,0 +1,48 @@
+# ── 模组本体（版权 + 体积，不入库）──
+mods/
+mods-disabled/
+mods-junk/
+
+# ── 个人存档 / 地图 / 日志 ──
+saves/
+backups/
+xaero/
+logs/
+crash-reports/
+screenshots/
+debug/
+local/
+PCL/
+patchouli_books/
+patchouli_data.json
+servers.dat
+servers.dat_old
+usercache.json
+usernamecache.json
+command_history.txt
+options.txt
+
+# ── 版本/启动器文件 ──
+*.jar
+*-natives/
+new project.json*
+
+# ── 大体积媒体（背景视频等，自行准备）──
+config/fancymenu/assets/*.mp4
+config/fancymenu/assets/*.mov
+
+# ── 备份 / 临时 ──
+*.bak
+*.bak_*
+*.bak-*
+*.disabled
+_deleted-*/
+assets.bak-*/
+.cache/
+.probe/
+.dynamic-resource-pack-cache/
+
+# ── 系统 ──
+.DS_Store
+Thumbs.db
+desktop.ini

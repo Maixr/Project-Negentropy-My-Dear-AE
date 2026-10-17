@@ -1,0 +1,194 @@
+[light_sources]
+	entities = true
+	self = true
+	block_entities = true
+	water_sensitive_check = true
+
+			[light_sources.settings.entities.minecraft]
+				villager = true
+				player = true
+				rabbit = true
+				squid = true
+				zombie = true
+				cat = true
+				skeleton = true
+				bat = true
+				glow_squid = true
+				creeper = true
+				enderman = true
+				pig = true
+				salmon = true
+				spider = true
+				polar_bear = true
+				zombie_villager = true
+				item = true
+				cow = true
+				chest_minecart = true
+				chicken = true
+				iron_golem = true
+				witch = true
+				wolf = true
+				drowned = true
+				stray = true
+				fox = true
+				arrow = true
+				painting = true
+				armor_stand = true
+				snowball = true
+				slime = true
+				cod = true
+				sheep = true
+				horse = true
+				bee = true
+				firework_rocket = true
+				dolphin = true
+				tropical_fish = true
+				pufferfish = true
+				camel = true
+				lightning_bolt = true
+				axolotl = true
+				allay = true
+				pillager = true
+				turtle = true
+				experience_orb = true
+				phantom = true
+				item_frame = true
+				donkey = true
+				goat = true
+				parrot = true
+				ocelot = true
+				elder_guardian = true
+				guardian = true
+				armadillo = true
+				cave_spider = true
+				husk = true
+				panda = true
+				llama = true
+				wandering_trader = true
+				trader_llama = true
+				wither_skeleton = true
+				blaze = true
+				zombified_piglin = true
+				magma_cube = true
+				glow_item_frame = true
+				mooshroom = true
+				evoker = true
+				vindicator = true
+				shulker = true
+				vex = true
+				minecart = true
+				piglin = true
+				zoglin = true
+				frog = true
+				ghast = true
+				strider = true
+				hoglin = true
+				piglin_brute = true
+				endermite = true
+				ender_pearl = true
+				ender_dragon = true
+				eye_of_ender = true
+				boat = true
+
+			[light_sources.settings.entities.touhou_little_maid]
+				fairy = true
+				maid = true
+				danmaku = true
+				power_point = true
+
+			[light_sources.settings.entities.dreammod]
+				miner_nightmare = true
+
+			[light_sources.settings.entities.mekanismadditions]
+				baby_creeper = true
+				baby_skeleton = true
+				baby_enderman = true
+				baby_stray = true
+
+			[light_sources.settings.entities.maidbeacon]
+				extra_rendering_entity = true
+
+			[light_sources.settings.entities.poopsky]
+				poolime = true
+				toilet_plug = true
+
+			[light_sources.settings.entities.corpse]
+				corpse = true
+
+			[light_sources.settings.entities.pasterdream]
+				spore_entity = true
+				pink_slime = true
+				pink_chicken = true
+				black_beetle = true
+				terrorbeak = true
+				meltdream_crystal = true
+				jellyfish = true
+
+			[light_sources.settings.entities.rtsbuilding]
+				rts_camera = true
+
+			[light_sources.settings.entities.maixr]
+				arc_light_boss = true
+
+			[light_sources.settings.entities.majobroom]
+				broom = true
+
+			[light_sources.settings.entities.laowu]
+				butter_cat = true
+
+			[light_sources.settings.entities.avaritia]
+				infinity_arrow = true
+				heaven_arrow = true
+				burning_arrow = true
+				heaven_sub_arrow = true
+
+			[light_sources.settings.entities.anvilcraft]
+				cauldron_outlet = true
+
+			[light_sources.settings.entities.data_energistics]
+				dispersing_data = true
+
+			[light_sources.settings.entities.betternether]
+				firefly = true
+				hydrogen_jellyfish = true
+				flying_pig = true
+
+			[light_sources.settings.entities.justdirethings]
+				time_wand_entity = true
+
+			[light_sources.settings.entities.alexscaves]
+				notor = true
+				sea_pig = true
+				gossamer_worm = true
+				lanternfish = true
+				hullbreaker = true
+				tripodfish = true
+				submarine = true
+				vallumraptor = true
+				subterranodon = true
+				grottoceratops = true
+				relicheirus = true
+				tremorsaurus = true
+				trilocaris = true
+				gloomoth = true
+				underzealot = true
+				corrodent = true
+				vesper = true
+				magnetic_weapon = true
+				teletor = true
+				boundroid = true
+				boundroid_winch = true
+				ferrouslime = true
+				magnetron = true
+				caramel_cube = true
+				melted_caramel = true
+				caniac = true
+				gumbeeper = true
+				gummy_bear = true
+				sweetish_fish = true
+				candicorn = true
+				gum_worm_segment = true
+				gum_worm = true
+				gingerbread_man = true
+				licowitch = true
+				watcher = true

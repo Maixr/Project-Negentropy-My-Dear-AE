@@ -1,0 +1,11 @@
+{
+  "screen.travelersbackpack.detach_sleeping_bag": "§7按住 <Shift>：取下睡袋",
+  "item.travelersbackpack.lantern_upgrade": "灯笼升级",
+  "item.travelersbackpack.lantern_upgrade_tooltip": "为背包提供光源",
+  "item.travelersbackpack.lantern_upgrade_active": "§2动态照明已激活",
+  "item.travelersbackpack.lantern_upgrade_missing": "§4动态照明未激活 - 需要 LambDynamicLights 模组",
+  "screen.travelersbackpack.lantern_upgrade": "灯笼",
+  "item.travelersbackpack.sleeping_bag_attach": "§8对已放置的背包 Shift + 右键以装上或更换睡袋",
+  "travelersbackpack.configuration.enableSleepingBag": "启用睡袋",
+  "travelersbackpack.configuration.enableLanternUpgrade": "启用灯笼升级"
+}

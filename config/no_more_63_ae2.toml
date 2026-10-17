@@ -1,0 +1,4 @@
+#No More 63 AE2 config
+#Controls how many unique item types an AE2 item storage cell can hold.
+#AE2 default is 63.
+maxItemTypesPerCell = 63

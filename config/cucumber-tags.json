@@ -1,0 +1,20 @@
+{
+  "__comment": "Instructions: https://blakesmods.com/docs/cucumber/tags-config",
+  "c:ingots/constantan": "null",
+  "c:gems/sapphire": "anvilcraft:sapphire",
+  "c:ingots/electrum": "mekanismsun:electrum_ingot",
+  "c:silicon": "ae2:silicon",
+  "c:gems/apatite": "null",
+  "c:ingots/silver": "mekmm:ingot_silver",
+  "c:dusts/saltpeter": "null",
+  "c:ingots/platinum": "null",
+  "c:ingots/graphite": "null",
+  "c:ingots/aluminum": "neoecoae:aluminum_ingot",
+  "c:ingots/iridium": "null",
+  "c:ingots/invar": "null",
+  "c:gems/ruby": "anvilcraft:ruby",
+  "c:dusts/niter": "null",
+  "c:rubbers": "null",
+  "c:gems/peridot": "null",
+  "c:ingots/nickel": "null"
+}

@@ -1,0 +1,7 @@
+{
+  "creative_mode_inventory_screen": true,
+  "mezz.jei.gui.recipes.RecipesGui": true,
+  "title_screen": true,
+  "drippy_loading_overlay": true,
+  "com.rtsbuilding.rtsbuilding.client.screen.standalone.BuilderScreen": true
+}

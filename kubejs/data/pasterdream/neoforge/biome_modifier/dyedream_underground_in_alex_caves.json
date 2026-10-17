@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "alexscaves:magnetic_caves",
+    "alexscaves:primordial_caves",
+    "alexscaves:forlorn_hollows",
+    "alexscaves:candy_cavity"
+  ],
+  "features": [
+    "pasterdream:cave_glow_mushroom",
+    "pasterdream:bud_dyedream"
+  ],
+  "step": "underground_decoration"
+}

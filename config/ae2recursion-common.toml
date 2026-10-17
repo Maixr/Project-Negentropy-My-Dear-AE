@@ -1,0 +1,49 @@
+[recursive_proxy_crafter]
+	#Idle power usage of the Recursive Proxy Crafter, in AE/t.
+	#Default 102400 AE/t (idle×100). Lower in config for small ME grids.
+	#递归代理合成器被动耗能（AE/t）。
+	#默认 102400 AE/t（待机耗能×100）。小电网请自行下调。
+	# Default: 102400.0
+	# Range: 0.0 ~ 1000000.0
+	idlePowerAe = 102400.0
+	#Number of recursive-pattern slots on the crafter (1–16).
+	#Applied when the BlockEntity is constructed. After changing this value,
+	#reload the chunk or replace the block. Shrinking may drop extra patterns.
+	#样板槽位数量（1–16）。
+	#方块实体构造时读取；改配置后需重进区块或重新放置方块。
+	#减小槽位时，超出部分的样板可能无法加载。
+	# Default: 9
+	# Range: 1 ~ 16
+	patternSlots = 9
+	#Extra cost per black-box craft, added on top of net pattern inputs.
+	#AE2 planning and extraction both include these amounts.
+	#Format: "namespace:item_id=amount"  (items only, list)
+	#Example: ["minecraft:redstone=4", "minecraft:gold_ingot=1"]
+	#Requires game restart after editing (no hot-reload).
+	#递归合成额外代价：每次黑盒合成在净消耗之上额外抽取。
+	#AE2 计算与抽取都会计入这些数量。
+	#格式: "namespace:物品ID=数量"（仅物品，列表）
+	#示例: ["minecraft:redstone=4", "minecraft:gold_ingot=1"]
+	#修改后需重启游戏生效（无热重载）。
+	extraCosts = []
+	#AE consumed per accepted black-box craft (default×1000).
+	#If insufficient, the craft still completes (materials first); energy is best-effort.
+	#每次黑盒合成消耗的 AE。
+	#能量不足时仍会交付产物（优先保材料），能量按尽力扣除。
+	# Default: 256000.0
+	# Range: 0.0 ~ 1000000.0
+	craftPowerAe = 256000.0
+	#FE consumed per craft when FE payment is allowed (default×1000).
+	#每次允许 FE 支付时，一次合成扣除的 FE（默认×1000）。
+	# Default: 512000
+	# Range: 0 ~ 10000000
+	craftPowerFe = 512000
+	#Allow paying craft cost with FE from the ME network (requires Applied Flux, modId=appflux).
+	#Payment order when true and Applied Flux is installed:
+	#  1) ME-network FE (FluxKey)  2) machine FE buffer  3) AE fallback
+	#Without Applied Flux this flag has no ME-FE effect; AE path still works.
+	#是否允许使用 ME 网络中的 FE（需 Applied Flux，modId=appflux）。
+	#开启且已安装 Applied Flux 时扣费顺序：
+	#  1) ME 网络 FE（FluxKey）  2) 机器 FE 仓  3) 回退 AE
+	#未安装 Applied Flux 时该开关不影响 ME-FE，AE 路径照常。
+	allowMeNetworkFe = false

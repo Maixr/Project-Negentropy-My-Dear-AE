@@ -1,0 +1,40 @@
+{
+	register_to_namespace: false
+	register_alias_as_well_as_namespace: false
+	integration: {
+		team_bases_spawn_override: false
+	}
+	teleportation: {
+		admins_exempt_dimension_blacklists: true
+		back: {
+			max: 16
+			only_on_death: false
+			enabled: true
+		}
+		spawn: {
+			enabled: true
+			playerspawn: {
+				enabled: true
+				cooldown: 0
+				commands_allow_dimension_travel: false
+			}
+		}
+		warp: {
+			enabled: true
+		}
+		home: {
+			enabled: true
+			max: 1
+			cooldown: 0
+			commands_allow_dimension_travel: false
+		}
+		tpa: {
+			enabled: true
+			cooldown: 0
+		}
+		rtp: {
+			enabled: true
+			cooldown: 0
+		}
+	}
+}

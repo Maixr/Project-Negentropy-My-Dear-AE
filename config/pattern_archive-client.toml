@@ -1,0 +1,26 @@
+#视觉特效设置（仅限客户端生效）
+[VisualSettings]
+	#在接收样板的提供器上播放闪电视觉效果。
+	#默认: true
+	enableDistributionEffects = true
+
+#音频与听觉效果设置（仅限客户端生效）
+[AudioSettings]
+	#屏蔽闪电效果触发的原版雷声。
+	#默认: false
+	disableThunderSound = false
+	#样板分发传输时的闪电雷鸣音量（0.0 至 1.0）。
+	#默认: 0.1 即 10% 音量
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	thunderVolume = 0.1
+	#静音 GUI 中的倒计时滴答音效。
+	#默认: false
+	disableCountdownSound = false
+	#分发开始后，播放自定义本地音效前的等待秒数。
+	# Default: 0.1
+	# Range: 0.0 ~ 5.0
+	customSoundDelay = 0.1
+	#包含 .wav 文件的绝对文件夹路径列表。
+	#留空则禁用。
+	customSoundPaths = []

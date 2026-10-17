@@ -1,0 +1,39 @@
+#取消主任务时是否同时取消所有并行任务。false = 只取消主任务，并行任务继续运行。
+#Whether cancelling the main job also cancels all parallel jobs. false = only main job.
+quantumDivisionCancelAll = false
+#每个量子处理单元对协处理器数量的放大倍数。默认 2 表示每次翻倍。
+#Multiplication factor per quantum processing unit for coprocessors. Default 2 = doubling.
+# Default: 2
+# Range: > 1
+quantumAcceleratorDoubleFactor = 2
+#最多有几个量子处理单元参与协处理器翻倍。设为 0 表示不翻倍。
+#Maximum number of doublings applied by quantum processing units. 0 disables.
+# Default: 16
+# Range: 0 ~ 64
+quantumAcceleratorMaxDoublings = 16
+#每个量子合成单元对合成存储容量的放大倍数。默认 2 表示每次翻倍。
+#Multiplication factor per quantum storage amplifier for storage capacity. Default 2 = doubling.
+# Default: 2
+# Range: > 1
+quantumStorageDoubleFactor = 2
+#最多有几个量子合成单元参与存储翻倍。设为 0 表示不翻倍。
+#Maximum number of doublings applied by quantum storage amplifiers. 0 disables.
+# Default: 16
+# Range: 0 ~ 64
+quantumStorageMaxDoublings = 16
+#量子分割单元任务槽倍数,每个量子分割单元将任务槽翻倍的基数。放 N 个可执行 倍数^N 个任务。设为2时：1个=2任务、2个=4、3个=8
+#Quantum Division Unit task slot multiplier.
+#Total jobs = multiplier ^ (number of division units).
+#2 -> 1 unit=2 jobs, 2 units=4, 3 units=8.
+#3 -> 1 unit=3 jobs, 2 units=9.
+# Default: 2
+# Range: 2 ~ 8
+divisionMultiplier = 2
+#量子分割单元倍数上限,设置值代表最多生效多少个量子分割单元
+#Maximum exponent for the division slot formula.
+#Effective exponent = min(division unit count, this value).
+#multiplier=2 & maxExponent=10 -> up to 1024 slots.
+#Raise carefully: very large values may impact terminal performance.
+# Default: 10
+# Range: 1 ~ 20
+divisionMaxExponent = 10

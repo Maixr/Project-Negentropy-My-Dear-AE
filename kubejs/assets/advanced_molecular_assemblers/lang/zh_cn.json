@@ -1,0 +1,12 @@
+{
+  "block.advanced_molecular_assemblers.molecular_assembler_2x": "2x 分子装配室",
+  "block.advanced_molecular_assemblers.molecular_assembler_4x": "4x 分子装配室",
+  "block.advanced_molecular_assemblers.molecular_assembler_8x": "8x 分子装配室",
+  "block.advanced_molecular_assemblers.molecular_assembler_16x": "16x 分子装配室",
+  "block.advanced_molecular_assemblers.molecular_assembler_32x": "32x 分子装配室",
+  "gui.advanced_molecular_assemblers.title": "高级分子装配室",
+  "gui.advanced_molecular_assemblers.lane": "通道 %s / %s",
+  "gui.advanced_molecular_assemblers.active": "运行中：%s / %s",
+  "gui.advanced_molecular_assemblers.previous_lane": "上一通道",
+  "gui.advanced_molecular_assemblers.next_lane": "下一通道"
+}

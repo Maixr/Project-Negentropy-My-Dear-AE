@@ -1,0 +1,50 @@
+#导入规则设置
+[ImportSettings]
+	#控制导入器界面中显示的数据来源。
+	#Allowed Values: CLIENT_LOCAL, SERVER_LOCAL, BOTH
+	importSourceMode = "BOTH"
+	#每次导入的冷却时间（秒）。
+	# Default: 5
+	# Range: 0 ~ 300
+	importCooldownSeconds = 5
+	#单个样板调配中枢最大容量。
+	# Default: 65535
+	# Range: 100 ~ 500000
+	maxPatternsPerReceptacle = 65535
+
+#导出规则设置
+[ExportSettings]
+	#允许上传至服务器
+	allowServerUpload = true
+	#导出操作冷却。
+	# Default: 10
+	# Range: 0 ~ 300
+	exportCooldownSeconds = 10
+
+#存储路径配置
+[StorageSettings]
+	serverSavePath = "server_pattern_archives"
+	publicArchivePath = "public_pattern_archives"
+	# Default: 5
+	# Range: 1 ~ 100
+	maxPlayerArchives = 5
+	# Default: 1.0
+	# Range: 0.1 ~ 2.0
+	maxArchiveSizeMB = 1.0
+	# Default: 5000
+	# Range: 10 ~ 20000
+	maxPatternsPerArchive = 5000
+
+#目标机器识别
+[TargetMachineSettings]
+	machineWhitelist = []
+	machineBlacklist = []
+
+#寻址仪相关设置
+[AddresserSettings]
+	# Default: 500
+	# Range: 1 ~ 10000
+	maxAddresserMachines = 500
+	# Default: 64
+	# Range: 1 ~ 1000
+	maxAddresserScanPerClick = 64

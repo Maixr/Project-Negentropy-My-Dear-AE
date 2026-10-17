@@ -1,0 +1,4 @@
+[generic_stack_ingredients]
+	#Registers AE2 GenericStack as a separate JEI ingredient type.
+	#Disable this to make the mod only load without changing JEI behavior.
+	enable = true

@@ -1,0 +1,86 @@
+{
+	id: "04054187831CBE4C"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			id: "27FCE6685FCDABFB"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 257.0f
+		}
+		{
+			count: 2
+			id: "17D41DA7E0CB8574"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 256.0f
+		}
+		{
+			count: 3
+			id: "3FE8D56283355D10"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 64.0f
+		}
+		{
+			count: 4
+			id: "6325071F0C848012"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 32.0f
+		}
+		{
+			count: 5
+			id: "7636BAA4DFD0E854"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 16.0f
+		}
+		{
+			count: 6
+			id: "1101286DDCD5AA4D"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 7
+			id: "7D156BACD78CEC3E"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 8
+			id: "5F19B7D1A7965417"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 10
+			id: "7378606CDA0DA6DC"
+			item: {
+				count: 1
+				id: "ae2:blank_pattern"
+			}
+		}
+	]
+}

@@ -1,0 +1,102 @@
+#Core Feature Toggles
+[features]
+	#Enable AE2 crafting continuation / ignore-missing feature bundle.
+	#Allows crafting to continue when some patterns are temporarily unavailable.
+	#Takes effect after restart.
+	craftingContinuationEnabled = true
+	#Enable formal machine large-request planning aggregation fast path.
+	#Optimizes planning for bulk crafting requests.
+	#Takes effect after restart.
+	formalMachinePlanningAggregationEnabled = true
+	#Enable AE2 processing pattern replacement feature bundle.
+	#Allows dynamic pattern substitution based on available materials.
+	#Takes effect after restart.
+	processingPatternReplacementEnabled = true
+
+#AEA Feature Migration
+[aeaMigration]
+	#Enable AEA dyeable pattern migration.
+	#Extends AE2 pattern color handling while preserving existing replacement,
+	#continuation, formal-machine, and parallel CPU planning semantics.
+	#Takes effect after restart.
+	dyeablePatternsEnabled = false
+	#Minimum amount of each dyeable recursive catalyst to keep after a crafting plan.
+	#When a plan would consume the last catalyst, dyeable recursive planning
+	#crafts enough extra copies to keep this reserve available.
+	# Default: 1
+	# Range: > 0
+	dyeableRecursiveRetainedCatalystAmount = 1
+	#Enable AEA enhanced crafting status migration.
+	#Adds Blocked and Pattern Times status data without replacing existing
+	#continuation, formal-machine, or parallel CPU UI state.
+	#Takes effect after restart.
+	enhancedCraftingStatusEnabled = true
+	#Enable AEA Building Gadgets 2 template-to-processing-pattern integration.
+	#Has no effect unless Building Gadgets 2 is installed.
+	#Generates standard AE2 processing patterns without replacement metadata.
+	#Takes effect after restart.
+	buildingGadgets2IntegrationEnabled = true
+	#Enable AEA FTB Ultimine memory-card compatibility.
+	#Has no effect unless FTB Ultimine is installed.
+	#Does not change AE2 single-target memory-card behavior.
+	#Takes effect after restart.
+	ftbUltimineMemoryCardEnabled = true
+
+#Parallel Crafting CPU Tool
+[parallelCraftingCpuTool]
+	#Enable the official extreme-parallel AE2 CPU tool block.
+	#Takes effect after restart.
+	parallelCraftingCpuEnabled = true
+	#Advertised co-processors per virtual CPU.
+	#Clamped below Integer.MAX_VALUE to avoid overflow.
+	# Default: 2147483646
+	# Range: 0 ~ 2147483646
+	parallelCraftingCpuCoProcessorsPerVirtualCpu = 2147483646
+	#Maximum internal crafting lanes per tool block.
+	# Default: 65536
+	# Range: > 1
+	parallelCraftingCpuMaxInternalLanesPerBlock = 65536
+	#Maximum internal crafting lanes per AE grid.
+	# Default: 1048576
+	# Range: > 1
+	parallelCraftingCpuMaxInternalLanesPerGrid = 1048576
+	#Maximum parallel CPU job submissions accepted per grid tick.
+	# Default: 4096
+	# Range: > 1
+	parallelCraftingCpuMaxSubmissionsPerTickPerGrid = 4096
+	#Maximum pattern pushes budgeted per grid tick.
+	# Default: 1048576
+	# Range: 1 ~ 2305843009213693951
+	parallelCraftingCpuMaxPatternPushesPerTickPerGrid = 1048576
+	#Maximum provider checks budgeted per grid tick.
+	# Default: 8388608
+	# Range: 1 ~ 2305843009213693951
+	parallelCraftingCpuMaxProviderChecksPerTickPerGrid = 8388608
+	#Maximum wall-clock CPU scheduling budget per grid tick.
+	#Clamped to 45 ms.
+	# Default: 20000000
+	# Range: 1 ~ 45000000
+	parallelCraftingCpuTickBudgetNanosPerGrid = 20000000
+	#Advertised crafting storage bytes for the tool.
+	# Default: 2305843009213693951
+	# Range: 1024 ~ 2305843009213693951
+	parallelCraftingCpuStorageBytes = 2305843009213693951
+	#Shard count used by the extreme-lane scheduler.
+	# Default: 4096
+	# Range: > 1
+	parallelCraftingCpuLaneShardCount = 4096
+
+#AE Direct Processing Machine
+[aeDirectProcessingMachine]
+	#Local direct processing machine recipe mappings.
+	#Format: machine_id=recipe_type_id=default_ticks
+	#Example: mymod:crusher=mymod:crushing=40
+	#Only affects the AE direct processing machine discovery layer.
+	recipeMappings = []
+	#Execution budget profile for the AE direct processing machine.
+	#Allowed values: normal, high, benchmark.
+	#Benchmark is intended for controlled performance tests.
+	budgetProfile = "normal"
+	#Enable generic recipe type discovery for the AE direct processing machine.
+	#When disabled, only explicit adapters and config/datapack mappings are used.
+	genericDiscoveryEnabled = true

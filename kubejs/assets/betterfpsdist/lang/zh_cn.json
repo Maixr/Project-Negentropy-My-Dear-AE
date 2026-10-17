@@ -1,0 +1,7 @@
+{
+  "options.verticalstretch": "垂直拉伸",
+  "options.horizontalstretch": "水平拉伸",
+  "options.verticalstretch.tooltip": "控制你在上下方向能看到多远的区块区段。100% 为完整的圆形，设置越高，角落处跳过的区块区段越多，从而提升性能",
+  "options.horizontalstretch.tooltip": "控制你在左右角落方向能看到多远的区块区段。0% 为完整的圆形（原版），设置越高，角落处跳过的区块区段越多，从而提升性能",
+  "options.button.sodium": "Sodium 视频设置"
+}

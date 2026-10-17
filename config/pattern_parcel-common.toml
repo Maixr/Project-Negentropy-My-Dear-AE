@@ -1,0 +1,48 @@
+#Maximum number of entries a parcel may hold.
+#Also determines the size of the Parcel Workbench grid, which is laid out
+#value must be a perfect square.
+# Default: 9
+# Range: 1 ~ 16
+maxEntries = 9
+#Maximum craft quantity for a single parcel entry.
+#Max: 32767 
+# Default: 999
+# Range: 1 ~ 32767
+maxEntryQuantity = 999
+#Idle AE/t drawn by the Parcel Terminal while connected to a network.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+terminalIdlePower = 1.0
+#Start crafting automatically when a parcel is inserted into a Parcel Terminal,
+#instead of waiting for the Start button. This behavior is able to be done via a redstone signal. 
+autoStartOnInsert = false
+#Ticks between retry attempts while waiting for a free crafting CPU.
+#higher is better for servers. 20 ticks = 1 second.
+# Default: 20
+# Range: 1 ~ 1200
+cpuRetryTicks = 20
+#If you are running into failed short resource, and have the inventory stocked, take out the parcel, increase this number, and relaunch game. 
+# Default: 16
+# Range: 0 ~ 100
+shortageRetries = 16
+#each attempt is a full recursive crafting calculation.
+# Default: 100
+# Range: 1 ~ 6000
+shortageRetryTicks = 100
+#Ticks to wait before a Parcel Terminal held under a redstone signal re-runs
+#its parcel.
+# Default: 100
+# Range: 1 ~ 12000
+repeatDelayTicks = 100
+#Crafting CPUs to leave alone for everyone else.
+#A parcel will not start a new entry unless MORE than this many usable CPUs are free
+# Default: 0
+# Range: 0 ~ 64
+reserveCpus = 0
+# false (default): fewest co-processors first, smallest storage that fits. 
+# Keeps parcels off your fastest CPUs so they stay free for jobs you start by hand.
+#
+# true: most co-processors first. Parcels finish sooner and hog the good hardware.
+prioritizeSpeed = false
+#Registers the /patternparcel debug commands
+enableDebugCommands = false

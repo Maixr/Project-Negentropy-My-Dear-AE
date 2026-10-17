@@ -1,0 +1,466 @@
+#Structure miner settings by tier
+[structureMiner]
+
+	[structureMiner.tier1]
+		#Base number of loot draws per loot table
+		# Default: 1
+		# Range: 1 ~ 1024
+		baseParallel = 1
+		#Luck applied when calculating structure loot expectations
+		# Default: 0.0
+		# Range: -1024.0 ~ 1024.0
+		baseLuck = 0.0
+		#Number of structure marker slots
+		# Default: 1
+		# Range: 1 ~ 54
+		slotCount = 1
+		#Internal energy capacity in FE
+		# Default: 100000
+		# Range: > 1
+		energyCapacity = 100000
+		#Energy consumed per processing tick in FE
+		# Default: 1024
+		# Range: > 1
+		energyConsumption = 1024
+		#Machine efficiency used to convert structure value to ticks
+		# Default: 1.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		efficiency = 1.0
+		#Reference expected item quantity for output scaling
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		quantityReference = 16.0
+
+	[structureMiner.tier2]
+		#Base number of loot draws per loot table
+		# Default: 3
+		# Range: 1 ~ 1024
+		baseParallel = 3
+		#Luck applied when calculating structure loot expectations
+		# Default: 1.0
+		# Range: -1024.0 ~ 1024.0
+		baseLuck = 1.0
+		#Number of structure marker slots
+		# Default: 2
+		# Range: 1 ~ 54
+		slotCount = 2
+		#Internal energy capacity in FE
+		# Default: 400000
+		# Range: > 1
+		energyCapacity = 400000
+		#Energy consumed per processing tick in FE
+		# Default: 4096
+		# Range: > 1
+		energyConsumption = 4096
+		#Machine efficiency used to convert structure value to ticks
+		# Default: 2.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		efficiency = 2.0
+		#Reference expected item quantity for output scaling
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		quantityReference = 16.0
+
+	[structureMiner.tier3]
+		#Base number of loot draws per loot table
+		# Default: 5
+		# Range: 1 ~ 1024
+		baseParallel = 5
+		#Luck applied when calculating structure loot expectations
+		# Default: 2.0
+		# Range: -1024.0 ~ 1024.0
+		baseLuck = 2.0
+		#Number of structure marker slots
+		# Default: 3
+		# Range: 1 ~ 54
+		slotCount = 3
+		#Internal energy capacity in FE
+		# Default: 1600000
+		# Range: > 1
+		energyCapacity = 1600000
+		#Energy consumed per processing tick in FE
+		# Default: 16384
+		# Range: > 1
+		energyConsumption = 16384
+		#Machine efficiency used to convert structure value to ticks
+		# Default: 3.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		efficiency = 3.0
+		#Reference expected item quantity for output scaling
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		quantityReference = 16.0
+
+	[structureMiner.tier4]
+		#Base number of loot draws per loot table
+		# Default: 7
+		# Range: 1 ~ 1024
+		baseParallel = 7
+		#Luck applied when calculating structure loot expectations
+		# Default: 4.0
+		# Range: -1024.0 ~ 1024.0
+		baseLuck = 4.0
+		#Number of structure marker slots
+		# Default: 4
+		# Range: 1 ~ 54
+		slotCount = 4
+		#Internal energy capacity in FE
+		# Default: 6400000
+		# Range: > 1
+		energyCapacity = 6400000
+		#Energy consumed per processing tick in FE
+		# Default: 65536
+		# Range: > 1
+		energyConsumption = 65536
+		#Machine efficiency used to convert structure value to ticks
+		# Default: 4.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		efficiency = 4.0
+		#Reference expected item quantity for output scaling
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		quantityReference = 16.0
+
+	[structureMiner.tier5]
+		#Base number of loot draws per loot table
+		# Default: 9
+		# Range: 1 ~ 1024
+		baseParallel = 9
+		#Luck applied when calculating structure loot expectations
+		# Default: 8.0
+		# Range: -1024.0 ~ 1024.0
+		baseLuck = 8.0
+		#Number of structure marker slots
+		# Default: 6
+		# Range: 1 ~ 54
+		slotCount = 6
+		#Internal energy capacity in FE
+		# Default: 25600000
+		# Range: > 1
+		energyCapacity = 25600000
+		#Energy consumed per processing tick in FE
+		# Default: 262144
+		# Range: > 1
+		energyConsumption = 262144
+		#Machine efficiency used to convert structure value to ticks
+		# Default: 5.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		efficiency = 5.0
+		#Reference expected item quantity for output scaling
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		quantityReference = 16.0
+
+	[structureMiner.tier6]
+		#Base number of loot draws per loot table
+		# Default: 11
+		# Range: 1 ~ 1024
+		baseParallel = 11
+		#Luck applied when calculating structure loot expectations
+		# Default: 16.0
+		# Range: -1024.0 ~ 1024.0
+		baseLuck = 16.0
+		#Number of structure marker slots
+		# Default: 9
+		# Range: 1 ~ 54
+		slotCount = 9
+		#Internal energy capacity in FE
+		# Default: 102400000
+		# Range: > 1
+		energyCapacity = 102400000
+		#Energy consumed per processing tick in FE
+		# Default: 1048576
+		# Range: > 1
+		energyConsumption = 1048576
+		#Machine efficiency used to convert structure value to ticks
+		# Default: 6.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		efficiency = 6.0
+		#Reference expected item quantity for output scaling
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1.7976931348623157E308
+		quantityReference = 16.0
+
+#Structure miner upgrade values by tier
+[structureMinerUpgrades]
+
+	[structureMinerUpgrades.tier1]
+		# Default: 20.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 20.0
+		# Default: 20.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 20.0
+		# Default: 5.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 5.0
+		# Default: 20.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 20.0
+		# Default: 50.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 50.0
+
+	[structureMinerUpgrades.tier2]
+		# Default: 40.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 40.0
+		# Default: 40.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 40.0
+		# Default: 10.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 10.0
+		# Default: 40.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 40.0
+		# Default: 100.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 100.0
+
+	[structureMinerUpgrades.tier3]
+		# Default: 60.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 60.0
+		# Default: 60.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 60.0
+		# Default: 15.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 15.0
+		# Default: 60.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 60.0
+		# Default: 150.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 150.0
+
+	[structureMinerUpgrades.tier4]
+		# Default: 80.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 80.0
+		# Default: 80.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 80.0
+		# Default: 20.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 20.0
+		# Default: 80.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 80.0
+		# Default: 200.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 200.0
+
+	[structureMinerUpgrades.tier5]
+		# Default: 100.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 100.0
+		# Default: 100.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 100.0
+		# Default: 25.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 25.0
+		# Default: 100.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 100.0
+		# Default: 250.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 250.0
+
+	[structureMinerUpgrades.tier6]
+		# Default: 120.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 120.0
+		# Default: 120.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 120.0
+		# Default: 30.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 30.0
+		# Default: 120.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 120.0
+		# Default: 300.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 300.0
+
+#Structure miner aggregate upgrade values by tier
+[structureMinerAggregateUpgrades]
+
+	[structureMinerAggregateUpgrades.tier1]
+		# Default: 15.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 15.0
+		# Default: 15.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 15.0
+		# Default: 2.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 2.0
+		# Default: 15.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 15.0
+		# Default: 25.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 25.0
+
+	[structureMinerAggregateUpgrades.tier2]
+		# Default: 30.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 30.0
+		# Default: 30.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 30.0
+		# Default: 3.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 3.0
+		# Default: 30.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 30.0
+		# Default: 50.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 50.0
+
+	[structureMinerAggregateUpgrades.tier3]
+		# Default: 45.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 45.0
+		# Default: 45.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 45.0
+		# Default: 4.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 4.0
+		# Default: 45.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 45.0
+		# Default: 75.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 75.0
+
+	[structureMinerAggregateUpgrades.tier4]
+		# Default: 60.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 60.0
+		# Default: 60.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 60.0
+		# Default: 5.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 5.0
+		# Default: 60.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 60.0
+		# Default: 100.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 100.0
+
+	[structureMinerAggregateUpgrades.tier5]
+		# Default: 75.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 75.0
+		# Default: 75.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 75.0
+		# Default: 6.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 6.0
+		# Default: 75.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 75.0
+		# Default: 125.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 125.0
+
+	[structureMinerAggregateUpgrades.tier6]
+		# Default: 90.0
+		# Range: 0.0 ~ 10000.0
+		efficiencyIncreasePercent = 90.0
+		# Default: 90.0
+		# Range: 0.0 ~ 10000.0
+		energyCapacityIncreasePercent = 90.0
+		# Default: 7.0
+		# Range: 0.0 ~ 99.0
+		energyConsumptionReductionPercent = 7.0
+		# Default: 90.0
+		# Range: 0.0 ~ 10000.0
+		parallelIncreasePercent = 90.0
+		# Default: 150.0
+		# Range: 0.0 ~ 10000.0
+		luckIncreasePercent = 150.0
+
+#Structure marker value calculation
+[structureValue]
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	commonRarityMultiplier = 1.0
+	# Default: 5.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	uncommonRarityMultiplier = 5.0
+	# Default: 10.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	rareRarityMultiplier = 10.0
+	# Default: 50.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	epicRarityMultiplier = 50.0
+	#Per-item expectation method
+	#EXACT_THEN_SAMPLING prefers exact analysis and falls back to Monte Carlo
+	#SAMPLING always uses Monte Carlo
+	#Allowed Values: EXACT_THEN_SAMPLING, SAMPLING
+	itemExpectationMethod = "EXACT_THEN_SAMPLING"
+	#Monte Carlo samples per loot table
+	# Default: 1000
+	# Range: 1 ~ 1000000
+	samplingCount = 1000
+	#Supplemental Monte Carlo draws used to observe items injected
+	#by Forge global loot modifiers into an otherwise exactly
+	#analyzed table. Only runs when a modifier targets the table
+	#or a runtime probe detects an injection.
+	# Default: 64
+	# Range: 1 ~ 1000000
+	glmSupplementSamples = 64
+	#Detached structure-generation samples used by catalogue analysis
+	# Default: 8
+	# Range: 1 ~ 64
+	virtualStructureSamples = 8
+	#Maximum catalogue-analysis work units processed each server tick
+	# Default: 1
+	# Range: 1 ~ 64
+	virtualStructureStepsPerTick = 1
+	#Wall-clock slice detached structure sampling may use per server tick before it yields and is resumed on the next tick; this is the knob that bounds tick latency
+	#The slice is checked between structure chunks, so one tick can overshoot by the cost of a single chunk; virtualStructureSampleBudgetMillis caps that overshoot. Raising this trades tick latency for faster analysis.
+	# Default: 20
+	# Range: 1 ~ 1000
+	virtualStructureSampleSliceMillis = 20
+	#Total work budget for one detached structure sample (time spent inside the sample, not wall-clock)
+	#A sample that needs more is reported as UNSUPPORTED with a VIRTUAL_SAMPLE_BUDGET diagnostic instead of running away; raise this to analyse very large modded structures, lower it to tighten the worst-case single-chunk overshoot.
+	# Default: 5000
+	# Range: 10 ~ 600000
+	virtualStructureSampleBudgetMillis = 5000
+	#Dimension value entries in dimension_id=value format
+	#Dimensions not listed here use 1.0
+	dimensionValues = ["minecraft:overworld=1.0", "minecraft:the_nether=10.0", "minecraft:the_end=20.0", "allthemodium:the_other=100.0", "bloodmagic:dungeon=100.0"]
+	#Per-item rarity multiplier overrides in regex=value format
+	#Regexes are matched against the complete item ID
+	#Items not matched here use their rarity multiplier above
+	itemMultipliers = ["iron=2.0", "gold=5.0", "diamond=10.0", "netherite=20.0", "allthemodium_=50.0", "vibranium_=100.0", "unobtainium_=500.0", "upgrade_smithing_template=50.0"]
+	#Allowed dimension ID regexes
+	#Entries are regular expressions matched against complete IDs
+	dimensionWhitelist = []
+	#Denied dimension ID regexes
+	#Entries are regular expressions matched against complete IDs
+	dimensionBlacklist = []
+	#Allowed structure ID regexes
+	#Entries are regular expressions matched against complete IDs
+	structureWhitelist = []
+	#Denied structure ID regexes
+	#Entries are regular expressions matched against complete IDs
+	structureBlacklist = []
+	#Allowed item ID regexes
+	#Entries are regular expressions matched against complete IDs
+	itemWhitelist = []
+	#Denied item ID regexes
+	#Entries are regular expressions matched against complete IDs
+	itemBlacklist = []

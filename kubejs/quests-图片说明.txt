@@ -1,0 +1,54 @@
+# FTB Quests 自定义图片 使用说明
+
+## 为什么之前全是空白
+
+FTB Library 的图片选择器有个 bug：它把图片当作【方块图集贴图】来取，
+而没被注册进方块图集的图取不到 sprite，就画成空白。
+
+所以——图片必须注册进 `minecraft:blocks` 图集才能显示。
+
+## 目录结构（已建好）
+
+```
+kubejs/assets/
+  minecraft/atlases/blocks.json      <- 图集注册（别删）
+  <命名空间>/textures/quests/*.png   <- 你的图片放这里
+```
+
+## 怎么加一张图
+
+1. 把 PNG 放到 `kubejs/assets/<命名空间>/textures/quests/` 下
+   例：`kubejs/assets/maixr/textures/quests/mymap.png`
+
+2. 在任务书里引用（路径 = 命名空间:quests/文件名，不带 .png）：
+
+```
+image: "maixr:quests/mymap"
+```
+
+完整写法：
+
+```
+images: [{
+    height: 4.0d
+    id: "自己编一个16位十六进制"
+    image: "maixr:quests/mymap"
+    rotation: 0.0d
+    width: 4.0d
+    x: 0.0d
+    y: 0.0d
+}]
+```
+
+x/y 是章节里的格子坐标（可小数），width/height 是尺寸（格子数）。
+
+## 注意
+
+- 图片【必须】放在 `textures/quests/` 下，放别处不生效
+- 改完图集定义要重启游戏（不是 /reload）
+- 用 mods 自带的贴图也可以，但同样得在图集里；
+  想用别的模组的图，把它的目录加进 atlases/blocks.json 的 sources 即可
+
+## 现成例子
+
+`maixr:quests/test_icon` ← 验证用，可以删

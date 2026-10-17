@@ -1,0 +1,7 @@
+{
+  "itemGroup.tinyae2cells": "微型 AE2 元件",
+  "item.tinyae2cells.256_byte_storage_component": "256 字节 ME存储组件",
+  "item.tinyae2cells.512_byte_storage_component": "512 字节 ME存储组件",
+  "item.tinyae2cells.256_byte_item_storage_cell": "256 字节 ME物品存储元件",
+  "item.tinyae2cells.512_byte_item_storage_cell": "512 字节 ME物品存储元件"
+}

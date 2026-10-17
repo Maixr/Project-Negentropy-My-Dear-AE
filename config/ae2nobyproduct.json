@@ -1,0 +1,7 @@
+{
+  "enableFeature": true,
+  "allowPlayerToggle": true,
+  "defaultStrip": false,
+  "consumeOnUse": false,
+  "showMessages": true
+}

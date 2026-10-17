@@ -1,0 +1,109 @@
+	[TierSettings.BrassTier]
+		#Parallel processing multiple for brass tier crushing wheel, the actual batch is the capped multiple x the item max stack size[default:4] (-1 follows the brass tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 4
+		# Range: -1 ~ 64
+		brass_crushing_wheel_processing_multiple = -1
+		#Speed multiple for brass tier crushing wheel, the crushing duration is divided by it[default:4] (-1 follows the brass tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 4
+		# Range: > -1
+		brass_crushing_wheel_speed_multiple = -1
+		#Parallel processing batch size for brass tier mechanical saw, the sideways block-breaking speed is multiplied by (1 + it / 10)[default:4] (-1 follows the brass tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 4
+		# Range: -1 ~ 64
+		brass_mechanical_saw_processing_multiple = 4
+		#Speed multiple for brass tier mechanical saw, the cutting duration is divided by it[default:4] (-1 follows the brass tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 4
+		# Range: > -1
+		brass_mechanical_saw_speed_multiple = 4
+		#Speed multiple for brass tier encased fan, the processing duration is divided by it[default:4] (-1 follows the brass tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 4
+		# Range: > -1
+		brass_encased_fan_speed_multiple = 4
+
+	[TierSettings.NetheriteTier]
+		#Parallel processing multiple for netherite tier crushing wheel, the actual batch is the capped multiple x the item max stack size[default:8] (-1 follows the netherite tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 8
+		# Range: -1 ~ 64
+		netherite_crushing_wheel_processing_multiple = -1
+		#Speed multiple for netherite tier crushing wheel, the crushing duration is divided by it[default:8] (-1 follows the netherite tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 8
+		# Range: > -1
+		netherite_crushing_wheel_speed_multiple = -1
+		#Parallel processing batch size for netherite tier mechanical saw, the sideways block-breaking speed is multiplied by (1 + it / 10)[default:8] (-1 follows the netherite tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 8
+		# Range: -1 ~ 64
+		netherite_mechanical_saw_processing_multiple = 8
+		#Speed multiple for netherite tier mechanical saw, the cutting duration is divided by it[default:8] (-1 follows the netherite tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 8
+		# Range: > -1
+		netherite_mechanical_saw_speed_multiple = 8
+		#Speed multiple for netherite tier encased fan, the processing duration is divided by it[default:8] (-1 follows the netherite tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 8
+		# Range: > -1
+		netherite_encased_fan_speed_multiple = 8
+
+	[TierSettings.EndTier]
+		#Parallel processing multiple for end tier crushing wheel, the actual batch is the capped multiple x the item max stack size[default:16] (-1 follows the end tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 16
+		# Range: -1 ~ 64
+		end_crushing_wheel_processing_multiple = -1
+		#Speed multiple for end tier crushing wheel, the crushing duration is divided by it[default:16] (-1 follows the end tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 16
+		# Range: > -1
+		end_crushing_wheel_speed_multiple = -1
+		#Parallel processing batch size for end tier mechanical saw, the sideways block-breaking speed is multiplied by (1 + it / 10)[default:16] (-1 follows the end tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 16
+		# Range: -1 ~ 64
+		end_mechanical_saw_processing_multiple = 16
+		#Speed multiple for end tier mechanical saw, the cutting duration is divided by it[default:16] (-1 follows the end tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 16
+		# Range: > -1
+		end_mechanical_saw_speed_multiple = 16
+		#Speed multiple for end tier encased fan, the processing duration is divided by it[default:16] (-1 follows the end tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 16
+		# Range: > -1
+		end_encased_fan_speed_multiple = 16
+
+	[TierSettings.BeyondTier]
+		#Parallel processing multiple for beyond tier crushing wheel, the actual batch is the capped multiple x the item max stack size[default:32] (-1 follows the beyond tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 32
+		# Range: -1 ~ 64
+		beyond_crushing_wheel_processing_multiple = -1
+		#Speed multiple for beyond tier crushing wheel, the crushing duration is divided by it[default:32] (-1 follows the beyond tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 32
+		# Range: > -1
+		beyond_crushing_wheel_speed_multiple = -1
+		#Parallel processing batch size for beyond tier mechanical saw, the sideways block-breaking speed is multiplied by (1 + it / 10)[default:32] (-1 follows the beyond tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 32
+		# Range: -1 ~ 64
+		beyond_mechanical_saw_processing_multiple = 32
+		#Speed multiple for beyond tier mechanical saw, the cutting duration is divided by it[default:32] (-1 follows the beyond tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 32
+		# Range: > -1
+		beyond_mechanical_saw_speed_multiple = 32
+		#Speed multiple for beyond tier encased fan, the processing duration is divided by it[default:32] (-1 follows the beyond tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 32
+		# Range: > -1
+		beyond_encased_fan_speed_multiple = 32
+
+	[TierSettings.CreativeTier]
+		#Parallel processing multiple for creative tier crushing wheel, the actual batch is the capped multiple x the item max stack size[default:64] (-1 follows the creative tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 64
+		# Range: -1 ~ 64
+		creative_crushing_wheel_processing_multiple = -1
+		#Speed multiple for creative tier crushing wheel, the crushing duration is divided by it[default:64] (-1 follows the creative tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 64
+		# Range: > -1
+		creative_crushing_wheel_speed_multiple = -1
+		#Parallel processing batch size for creative tier mechanical saw, the sideways block-breaking speed is multiplied by (1 + it / 10)[default:64] (-1 follows the creative tier processing multiple of CreateMoreMachines, values above 1 are capped at 64)
+		# Default: 64
+		# Range: -1 ~ 64
+		creative_mechanical_saw_processing_multiple = 64
+		#Speed multiple for creative tier mechanical saw, the cutting duration is divided by it[default:64] (-1 follows the creative tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 64
+		# Range: > -1
+		creative_mechanical_saw_speed_multiple = 64
+		#Speed multiple for creative tier encased fan, the processing duration is divided by it[default:64] (-1 follows the creative tier processing multiple of CreateMoreMachines, values below 2 keep the vanilla speed)
+		# Default: 64
+		# Range: > -1
+		creative_encased_fan_speed_multiple = 64

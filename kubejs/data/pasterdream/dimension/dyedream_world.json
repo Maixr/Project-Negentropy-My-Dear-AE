@@ -1,0 +1,363 @@
+{
+  "type": "pasterdream:dyedream_world",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "pasterdream:dyedream_deep_ocean",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              -1.05,
+              -0.45
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_cold_ocean",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              -0.45,
+              -0.3
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_shore",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              -0.3,
+              -0.12
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_frozen_tundra",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              -0.35
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              -0.12,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_dense_forest",
+          "parameters": {
+            "temperature": [
+              -0.35,
+              1.5
+            ],
+            "humidity": [
+              0.3,
+              1.5
+            ],
+            "continentalness": [
+              -0.12,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_mushroom_plains",
+          "parameters": {
+            "temperature": [
+              -0.35,
+              1.5
+            ],
+            "humidity": [
+              -0.1,
+              0.3
+            ],
+            "continentalness": [
+              -0.12,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              0.2,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_forest",
+          "parameters": {
+            "temperature": [
+              -0.35,
+              1.5
+            ],
+            "humidity": [
+              -0.1,
+              0.3
+            ],
+            "continentalness": [
+              -0.12,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              0.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_plains",
+          "parameters": {
+            "temperature": [
+              -0.35,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              -0.1
+            ],
+            "continentalness": [
+              -0.12,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              0,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "pasterdream:dyedream_forest",
+          "parameters": {
+            "temperature": [
+              -0.35,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              -0.1
+            ],
+            "continentalness": [
+              -0.12,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0,
+            "weirdness": [
+              -1.5,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "alexscaves:magnetic_caves",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              0.7,
+              1.2
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0.3,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "alexscaves:primordial_caves",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              0.35,
+              0.7
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0.3,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "alexscaves:forlorn_hollows",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              -0.05,
+              0.35
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0.3,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "alexscaves:candy_cavity",
+          "parameters": {
+            "temperature": [
+              -1.5,
+              1.5
+            ],
+            "humidity": [
+              -1.5,
+              1.5
+            ],
+            "continentalness": [
+              -1.05,
+              -0.05
+            ],
+            "erosion": [
+              -1.2,
+              1.2
+            ],
+            "depth": 0.3,
+            "weirdness": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    },
+    "settings": "pasterdream:dyedream_world"
+  }
+}

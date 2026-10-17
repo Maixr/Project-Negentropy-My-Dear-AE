@@ -1,0 +1,30 @@
+{
+  "AE2 QoL Client": {
+    "pattern_placeholder": true,
+    "placeholder_item": "minecraft:paper",
+    "auto_blank_pattern_restock": true,
+    "recipe_pull": false,
+    "debug_mode": false,
+    "open_config_ui": {
+      "keys": "C,Q"
+    },
+    "fast_search": {
+      "keys": "F"
+    },
+    "fast_auto_craft": {
+      "keys": "BUTTON_3"
+    },
+    "clear_search": {
+      "keys": "C"
+    },
+    "skip_pattern_merging": {
+      "keys": "LEFT_CONTROL"
+    },
+    "fast_pull_one": {
+      "keys": "HOME"
+    },
+    "fast_pull_stack": {
+      "keys": "END"
+    }
+  }
+}

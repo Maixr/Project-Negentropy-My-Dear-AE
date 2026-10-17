@@ -1,0 +1,9 @@
+betterend:round_cave
+betterend:tunnel_cave
+minecraft:canyon
+minecraft:cave
+minecraft:cave_extra_underground
+minecraft:nether_cave
+pasterdream:dyedream_canyon
+pasterdream:dyedream_cave
+pasterdream:dyedream_cave_extra_underground

@@ -1,0 +1,14 @@
+#AE2 All-In-One blacklist configuration.
+#Entry format: exact id (e.g. minecraft:stone) or tag prefixed with # (e.g. #forge:ores).
+#A game restart is required for changes to take effect.
+[items]
+	#Items excluded from the All-Item storage cell.
+	blacklist = []
+
+[fluids]
+	#Fluids excluded from the All-Fluid storage cell.
+	blacklist = []
+
+[chemicals]
+	#Chemicals excluded from the All-Chemical storage cell (requires Mekanism).
+	blacklist = []

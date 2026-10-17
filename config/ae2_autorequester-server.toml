@@ -1,0 +1,18 @@
+#Tick interval for checking conditions (20 = 1 second)
+# Default: 20
+# Range: 1 ~ 1200
+checkInterval = 20
+#Maximum batch size allowed per crafting request (-1 = unlimited)
+# Default: -1
+# Range: > -1
+maxBatchSize = -1
+#Maximum number of rules per autorequester block (-1 = unlimited)
+# Default: -1
+# Range: > -1
+maxRules = -1
+#Maximum number of conditions per rule (-1 = unlimited)
+# Default: -1
+# Range: > -1
+maxConditions = -1
+#Whether the autorequester requires a channel to operate
+requiresChannel = true

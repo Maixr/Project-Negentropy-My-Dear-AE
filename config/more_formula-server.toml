@@ -1,0 +1,134 @@
+#Speed multipliers for tiered CMM modules in Mekanical-Create.
+[mekanicalcreate]
+
+	[mekanicalcreate.press]
+		#Processing multiplier for CMM brass press modules.
+		# Default: 1
+		# Range: 1 ~ 64
+		brass = 1
+		#Processing multiplier for CMM netherite press modules.
+		# Default: 2
+		# Range: 1 ~ 64
+		netherite = 2
+		#Processing multiplier for CMM end press modules.
+		# Default: 3
+		# Range: 1 ~ 64
+		end = 3
+		#Processing multiplier for CMM beyond press modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		beyond = 4
+		#Processing multiplier for CMM creative press modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		creative = 4
+
+	[mekanicalcreate.deployer]
+		#Processing multiplier for CMM brass deployer modules.
+		# Default: 1
+		# Range: 1 ~ 64
+		brass = 1
+		#Processing multiplier for CMM netherite deployer modules.
+		# Default: 2
+		# Range: 1 ~ 64
+		netherite = 2
+		#Processing multiplier for CMM end deployer modules.
+		# Default: 3
+		# Range: 1 ~ 64
+		end = 3
+		#Processing multiplier for CMM beyond deployer modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		beyond = 4
+		#Processing multiplier for CMM creative deployer modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		creative = 4
+
+	[mekanicalcreate.mixer]
+		#Processing multiplier for CMM brass mixer modules.
+		# Default: 1
+		# Range: 1 ~ 64
+		brass = 1
+		#Processing multiplier for CMM netherite mixer modules.
+		# Default: 2
+		# Range: 1 ~ 64
+		netherite = 2
+		#Processing multiplier for CMM end mixer modules.
+		# Default: 3
+		# Range: 1 ~ 64
+		end = 3
+		#Processing multiplier for CMM beyond mixer modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		beyond = 4
+		#Processing multiplier for CMM creative mixer modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		creative = 4
+
+	[mekanicalcreate.spout]
+		#Processing multiplier for CMM brass spout modules.
+		# Default: 1
+		# Range: 1 ~ 64
+		brass = 1
+		#Processing multiplier for CMM netherite spout modules.
+		# Default: 2
+		# Range: 1 ~ 64
+		netherite = 2
+		#Processing multiplier for CMM end spout modules.
+		# Default: 3
+		# Range: 1 ~ 64
+		end = 3
+		#Processing multiplier for CMM beyond spout modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		beyond = 4
+		#Processing multiplier for CMM creative spout modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		creative = 4
+
+	[mekanicalcreate.crushing_wheel]
+		#Processing multiplier for CMM brass crushing_wheel modules.
+		# Default: 1
+		# Range: 1 ~ 64
+		brass = 1
+		#Processing multiplier for CMM netherite crushing_wheel modules.
+		# Default: 2
+		# Range: 1 ~ 64
+		netherite = 2
+		#Processing multiplier for CMM end crushing_wheel modules.
+		# Default: 3
+		# Range: 1 ~ 64
+		end = 3
+		#Processing multiplier for CMM beyond crushing_wheel modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		beyond = 4
+		#Processing multiplier for CMM creative crushing_wheel modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		creative = 4
+
+	[mekanicalcreate.saw]
+		#Processing multiplier for CMM brass saw modules.
+		# Default: 1
+		# Range: 1 ~ 64
+		brass = 1
+		#Processing multiplier for CMM netherite saw modules.
+		# Default: 2
+		# Range: 1 ~ 64
+		netherite = 2
+		#Processing multiplier for CMM end saw modules.
+		# Default: 3
+		# Range: 1 ~ 64
+		end = 3
+		#Processing multiplier for CMM beyond saw modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		beyond = 4
+		#Processing multiplier for CMM creative saw modules.
+		# Default: 4
+		# Range: 1 ~ 64
+		creative = 4

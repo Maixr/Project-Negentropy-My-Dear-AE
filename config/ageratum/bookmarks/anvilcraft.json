@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "title": "介绍",
+      "location": "anvilcraft:ageratum/zh_cn/index.md"
+    },
+    {
+      "title": "§2诅咒金",
+      "location": "anvilcraft:ageratum/zh_cn/002_material/122_cruse_gold.md"
+    }
+  ]
+}

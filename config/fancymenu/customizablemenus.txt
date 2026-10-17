@@ -1,0 +1,20 @@
+type = customizablemenus
+
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
+}
+
+com.rtsbuilding.rtsbuilding.client.screen.standalone.BuilderScreen {
+}
+
+mezz.jei.gui.recipes.RecipesGui {
+}
+
+net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
+}
+

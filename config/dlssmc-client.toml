@@ -1,0 +1,79 @@
+#DLSS 帧生成档位（2x/3x/4x/5x/6x）。需要硬件加速 GPU 调度已开启。3x 以上要先开 dlssgUnlockMultiFrame 并重启游戏，否则会被自动夹回 2x。注意倍数是「以真实帧为代价换呈现帧」：N 倍下真实帧率上限 = 显示器刷新率 / N。100Hz 屏上 2x 的真实帧上限已是 50，6x 只有约 16.7——画面变顺但操作变钝，除非真实帧率本来就很低，否则建议留在 2x。
+#Allowed Values: OFF, X2, X3, X4, X5, X6
+frameGeneration = "OFF"
+#FSR 帧生成档位。与 DLSS / XeSS 互斥，开了这个就会把另外两个关掉。AMD 的分析式 FSR3 每张真实帧只生成 1 帧，3x/4x 是 SDK 硬限制，没有就是没有。
+#Allowed Values: OFF, X2
+fsrFrameGeneration = "OFF"
+#FSR 帧生成的生成工作跑异步计算队列（allowAsyncWorkloads，AMD 官方示例默认开）。可与其他 GPU 工作重叠、降低帧生成开销；个别驱动上可能反而更抖，关掉可对比。
+fsrFgAsyncWorkloads = true
+#诊断用：只呈现 FSR 生成出来的插帧（onlyPresentGenerated），真实帧不上屏。用来确认插帧是否真的产出画面，会明显影响观感，不用于正常游玩。
+fsrFgOnlyPresentGenerated = true
+#XeSS 场景变化检测阈值（0.0~1.0，SDK 默认 0.7）。越高越容易判定场景突变并暂停插帧（切场景/开背包不糊），越低越坚持插帧（更流畅，但突变瞬间可能糊一下）。
+# Default: 0.7
+# Range: 0.0 ~ 1.0
+xessSceneChangeThreshold = 0.7
+#XeSS-SR 传统档位倍率（xessForceLegacyScaleFactors）。启用：平衡档=1.7x、质量=1.5x 等传统比例；关闭：SDK 按本机 GPU 自选，有时更激进（如这版 SDK 平衡档建议 50% 分辨率）。改值后下次 SR 重建时生效。
+xessLegacyScaleFactors = false
+#XeLL 原生限帧（FPS，0=不限）。仅在 FSR / XeSS 后端运行有效——DLSS-G 走 Reflex。Reflex 限帧只控制 DLSS-G；这条路要限制真实帧必须调 XeLL。
+# Default: 0
+# Range: 0 ~ 1000
+xellFpsLimit = 0
+#XeSS 帧生成档位。非 Intel 显卡上限是 2x，选高了会按本机能力自动降档。与 DLSS / FSR 互斥。
+#Allowed Values: OFF, X2, X3, X4, X5, X6
+xessFrameGeneration = "OFF"
+#XeSS 超分档位。只在帧生成后端是 XeSS 时生效；实际渲染分辨率由 XeSS 自己算，改档位会重建超分上下文（一次卡顿，之后正常）。
+#Allowed Values: OFF, AA, ULTRA_QUALITY_PLUS, ULTRA_QUALITY, QUALITY, BALANCED, PERFORMANCE, ULTRA_PERFORMANCE
+xessSuperResolution = "OFF"
+#FSR 超分档位。只在帧生成后端是 FSR 时生效；实际渲染分辨率由 FSR 自己算，改档位不用重建上下文。
+#Allowed Values: OFF, NATIVE_AA, QUALITY, BALANCED, PERFORMANCE, ULTRA_PERFORMANCE
+fsrSuperResolution = "OFF"
+#FSR 的 RCAS 锐化。只有 FSR 有这个接口，XeSS-SR 的导出表里没有锐化。
+fsrSrSharpen = true
+#FSR 锐化强度 0.0~1.0。越高越锐，也越容易把噪点和锯齿一起放大。
+# Default: 0.7
+# Range: 0.0 ~ 1.0
+fsrSrSharpness = 0.7
+#超低延迟增强（Reflex Boost），仅在帧生成运行时生效，可能增加功耗；关闭后保留基础 Reflex。
+reflexBoost = false
+#【DLSS 超分档位】把世界渲染降分辨率再由 DLSS 放大，与帧生成同开后真实帧率更高。仅 DLSS 后端；FSR / XeSS 后端的超分在各自页面设置。
+#Allowed Values: OFF, ULTRA_QUALITY, QUALITY, BALANCED, PERFORMANCE, ULTRA_PERFORMANCE, DLAA
+mode = "OFF"
+#锐度 0.0~1.0。transformer 预设（K）下锐度由模型内部处理，这里仅作为额外提示。
+# Default: 0.0
+# Range: 0.0 ~ 1.0
+sharpness = 0.0
+#DLSS 超分模型预设（自动/J/K/L/M）。只对超分档位非关闭时生效，帧生成不使用模型预设。
+#Allowed Values: AUTO, J, K, L, M
+srModelPreset = "M"
+#DLSS-G 队列并行（queueParallelismMode=eBlockNoClientQueues，目前只有 Vulkan 支持）。开启后帧生成不再阻塞我们的呈现队列，可降低延迟；代价是改/销毁输入纹理前必须等它的完成 fence。
+fgQueueParallelism = true
+#关闭帧生成时保留 DLSS-G 资源（eRetainResourcesWhenOff），避免下次开启时重建卡顿；会多占一些显存。
+fgRetainResourcesWhenOff = false
+#允许帧生成自行检测全屏菜单/暂停界面（eEnableFullscreenMenuDetection），关闭时它可能继续为静止画面生成插帧。
+fgFullscreenMenuDetection = true
+#实验性 SDK UI 重合成开关。当前未提供独立 UI 透明度纹理，不满足 SDK 的完整输入要求，建议关闭。不能用颜色差代替真实透明度；Iris 不透明手部的相机运动修正独立生效。
+fgUiRecomposition = false
+#诊断用：只显示帧生成出来的那一帧（eShowOnlyInterpolatedFrame），真实帧不上屏。用来确认插帧是否真的在产出新画面，会显著影响观感和延迟，不用于正常游玩。
+fgShowOnlyInterpolatedFrame = false
+#解锁多帧生成（3x/4x）。官方把多帧生成限在 RTX 50 上，真正卡住它的是一处GPU 架构门禁：nvngx_dlssg.dll 里低于该架构的显卡一律只报上限 1（即 2x），3x/4x 请求会被 NGX 直接顶回。开启后会在 slInit 之前把这条门禁改成空操作（只改进程内的内存映像，不动磁盘文件），本机上限随之报成 5，多帧才真正生效。RTX 40 实测可用。改档后需重启游戏（门禁在初始化时打）。注意：2x 在 ~100Hz 显示器上已打满刷新率，更高倍数只在真实帧率较高或低刷新率场景才有意义，每多生成一帧就多一份 GPU 开销。
+dlssgUnlockMultiFrame = false
+#在屏幕左上角显示 FG 状态、最近 SDK 帧计数和调试设置；FSR 计数不是实测呈现。
+debugOverlay = false
+#Reflex 真实帧限帧，仅在帧生成运行时生效；0 不额外限帧，Minecraft 原有限帧仍生效。
+# Default: 0
+# Range: 0 ~ 1000
+reflexFpsLimit = 0
+#诊断用：将运动向量置零，保留深度；会影响运动补偿和插帧质量。
+zeroMotionVectors = false
+#诊断用：每帧重置 FG 历史；会影响插帧，不用于正常游玩。
+resetHistoryEveryFrame = false
+#FG 状态日志间隔（真实帧数）；0 仅记录状态变化，1 逐帧记录会影响性能。错误日志不受此项关闭。
+# Default: 120
+# Range: 0 ~ 36000
+statusLogInterval = 120
+#Streamline 运行时 DLL 所在目录（含 sl.interposer.dll、nvngx_dlss.dll、nvngx_dlssg.dll）。
+#留空则使用随 mod 打包的 Streamline 2.14.1 运行时，正常游玩不需要填。
+#只有想换用别的 SDK 版本时才指定：填了但这个目录里没有 sl.interposer.dll 时仍会回落到自带的那份。
+streamlinePath = ""
+#Streamline 日志目录，留空则不写日志。
+logPath = ""

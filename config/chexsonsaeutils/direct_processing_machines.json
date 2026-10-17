@@ -1,0 +1,26 @@
+[
+  {
+    "_comment": "示例 1：把 enabled 改成 true 后，可为原版熔炉启用映射。",
+    "machine_item": "minecraft:furnace",
+    "machine_block": "minecraft:furnace",
+    "recipe_types": [
+      "minecraft:smelting"
+    ],
+    "default_ticks": 20,
+    "enabled": false,
+    "io_mode": "generic",
+    "key_types": "item"
+  },
+  {
+    "_comment": "示例 2：把 machine 与 recipe_types 改成目标模组的机器和配方类型。",
+    "machine_item": "examplemod:crusher",
+    "machine_block": "examplemod:crusher",
+    "recipe_types": [
+      "examplemod:crushing"
+    ],
+    "default_ticks": 20,
+    "enabled": false,
+    "io_mode": "generic",
+    "key_types": "any"
+  }
+]

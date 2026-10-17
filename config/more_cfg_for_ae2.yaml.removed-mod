@@ -1,0 +1,12 @@
+# Maximum target amount allowed for each ME Requester request.
+meRequesterRequestAmountLimit: 2147483647
+
+# Maximum batch amount allowed for each ME Requester request.
+meRequesterRequestBatchLimit: 2147483647
+
+# Maximum amount per config/storage slot in normal AE2 ME Interfaces.
+meInterfaceSlotLimit: 2000000
+
+# Page count for normal AE2 ME Interfaces. Each page contains 9 config slots and 9 storage slots.
+meInterfacePages: 10
+

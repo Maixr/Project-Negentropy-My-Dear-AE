@@ -1,0 +1,31 @@
+[Energy]
+	#AE energy cost per spawn operation
+	# Default: 100000
+	# Range: > 0
+	spawnEnergyCost = 100000
+	#Maximum AE energy storage of the ME Spawner (1000k AE)
+	# Default: 2000000.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	maxEnergyStorage = 2000000.0
+	#Charge rate of the ME Spawner (AE/t)
+	# Default: 200000.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	chargeRate = 200000.0
+
+[Spawning]
+	#Cooldown in ticks between spawn operations (20 ticks = 1 second)
+	# Default: 100
+	# Range: > 1
+	spawnCooldownTicks = 100
+	#Maximum number of mobs that can exist within spawn range before pausing
+	# Default: 10
+	# Range: 1 ~ 100
+	maxSpawnCount = 10
+	#Range (in blocks) to check for existing mobs and spawn new ones
+	# Default: 4
+	# Range: 1 ~ 16
+	spawnRange = 4
+
+[Machine]
+	#If true, the ME Spawner requires a redstone signal to operate
+	requireRedstone = false

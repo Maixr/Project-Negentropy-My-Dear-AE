@@ -1,0 +1,88 @@
+{
+  "id": "ponderer:maixr_skin_doll",
+  "items": [
+    "maixr:maixr_skin_doll"
+  ],
+  "title": {
+    "zh_cn": "新场景 - maixr_skin_doll",
+    "en_us": "New Scene - maixr_skin_doll"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "场景 1",
+        "en_us": "Scene 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "set_block",
+          "block": "maixr:maixr_skin_doll",
+          "blockProperties": {
+            "facing": "south"
+          },
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "blockPos2": [
+            2,
+            1,
+            2
+          ],
+          "nbt": "{NeoForgeData:{},Spinning:0b}",
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "entranceAnimation": "none",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "我喜欢你"
+          },
+          "color": "red",
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "编辑这个思索场景!",
+            "en_us": "Edit this ponder scene!"
+          },
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        }
+      ]
+    }
+  ]
+}

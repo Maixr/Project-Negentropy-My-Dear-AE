@@ -1,0 +1,41 @@
+[runtime]
+	#Master switch for the Thread Tearer runtime layer.
+	enabled = true
+	#Number of compute threads for pure-compute tasks. 0 = auto (available cores - 1).
+	# Default: 0
+	# Range: 0 ~ 64
+	computeThreads = 0
+
+[profiler]
+	#Enable per-mod / per-event tick attribution profiling.
+	enabled = true
+	#Profiler aggregation interval in ticks.
+	# Default: 100
+	# Range: 20 ~ 1200
+	intervalTicks = 100
+
+[replay]
+	#Enable the replay event stream (per-tick metrics session log).
+	enabled = true
+	#Maximum number of replay entries kept in the in-memory ring buffer.
+	# Default: 100000
+	# Range: 100 ~ 1000000
+	maxEntries = 100000
+
+[monitor]
+	#Enable the game-change monitor (chunk load/unload, entity join/leave counters).
+	enabled = true
+	#How often the monitor writes a summary log line, in ticks. 0 disables periodic logging (counters still flow into replay exports).
+	# Default: 100
+	# Range: 0 ~ 72000
+	logIntervalTicks = 100
+
+[optimizations]
+	#Legacy Forge CapabilityProvider cache. Unused on NeoForge 1.21.1 (capabilities are no longer stored on CapabilityProvider).
+	capabilityCache = false
+	#Write profile/replay/bench JSON exports asynchronously on the interaction thread instead of blocking the server thread (M3).
+	asyncExport = true
+
+[experiments]
+	#Relocate vanilla game-logic methods onto the interaction thread. Other mods' Mixins on those methods run there too. Default ON. Block-entity ticks run on the compute pool.
+	offloadPlayerUseItem = true

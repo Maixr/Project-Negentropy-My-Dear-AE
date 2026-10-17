@@ -1,0 +1,3 @@
+[proxy]
+	#Enable the AE2 VM crafting calculation proxy. Requires a game restart.
+	enabled = true

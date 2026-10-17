@@ -1,0 +1,7 @@
+{
+  "gui.wireless_terminal_color.rename_terminal": "重命名终端",
+  "gui.wireless_terminal_color.rename_confirm": "重命名",
+  "gui.wireless_terminal_color.dejeb": "取消 jeb_ 终端效果",
+  "gui.wireless_terminal_color.rejeb": "恢复 jeb_ 终端效果",
+  "gui.wireless_terminal_color.jeb_ready": "jeb_ 已就绪！"
+}

@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "minecraft"
+	group: ""
+	id: "12D7F0C042448649"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["12C455F5424C83B0"]
+			id: "1517D9937C04A27D"
+			rewards: [{
+				id: "7B12D039ACA9FC52"
+				item: {
+					components: {
+						"minecraft:enchantments": {
+							levels: {
+								"minecraft:efficiency": 5
+								"minecraft:fortune": 3
+								"minecraft:unbreaking": 3
+							}
+						}
+					}
+					count: 1
+					id: "minecraft:diamond_pickaxe"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "56A3107D296B3FFE"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1517D9937C04A27D"]
+			id: "5E5ABFF56EAE3B54"
+			rewards: [{
+				count: 2
+				id: "5AB941118D8BC279"
+				item: {
+					count: 1
+					id: "mekanismtools:diamond_paxel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CCDC32D6F31B516"
+				item: { count: 1, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5E5ABFF56EAE3B54"]
+			id: "6478282A2949311B"
+			rewards: [{
+				id: "10C12A558E8517B0"
+				item: {
+					components: {
+						"sophisticatedcore:number_of_inventory_slots": 108
+						"sophisticatedcore:number_of_upgrade_slots": 5
+					}
+					count: 1
+					id: "sophisticatedbackpacks:diamond_backpack"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6049CC8426F994CF"
+				item: { count: 1, id: "minecraft:obsidian" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "12C455F5424C83B0"
+			rewards: [
+				{
+					count: 3
+					id: "05DEB75DB36992A3"
+					item: {
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: {
+									"minecraft:fortune": 3
+								}
+							}
+						}
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+				{
+					id: "698D47A963B7E528"
+					item: {
+						components: {
+							"minecraft:enchantments": {
+								levels: {
+									"minecraft:fortune": 3
+								}
+							}
+						}
+						count: 1
+						id: "anvilcraft:amethyst_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "3ECDC6FBDAE24259"
+				item: { count: 1, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6478282A2949311B"]
+			id: "340A0CBA8EF073A5"
+			rewards: [{
+				count: 12
+				id: "1C4DDEBB5D6745E1"
+				item: {
+					count: 1
+					id: "minecraft:ender_eye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4238EF7D21B6A3B7"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["340A0CBA8EF073A5"]
+			id: "080A67E784CB7F9B"
+			rewards: [
+				{
+					id: "6CE3818AE65DEABD"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+				{
+					id: "4A077FCCB2B1F3B8"
+					item: {
+						count: 1
+						id: "quarryplus:adv_quarry"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6EA3B3754A98D4F2"
+				item: { count: 1, id: "minecraft:dragon_egg" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6478282A2949311B"]
+			id: "7EAB579EF59381E6"
+			rewards: [
+				{
+					count: 2
+					id: "68F519CC4FD4E1A8"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1BBD2CFF77E6FD0F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "07F80285EAB54213"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6478282A2949311B"]
+			id: "5BB4DE577DDA0991"
+			rewards: [{
+				count: 128
+				id: "0F3CFB76B7BC4CE8"
+				item: {
+					count: 1
+					id: "minecraft:ender_pearl"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "2B1F515F7CC9083F"
+				type: "kill"
+				value: 5L
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+	]
+}

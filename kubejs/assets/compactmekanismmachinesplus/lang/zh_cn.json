@@ -1,0 +1,8 @@
+{
+  "other.compactmekanismmachinesplus.mod_name": "紧凑通用机械机器 Plus",
+  "block.compactmekanismmachinesplus.compact_fusion_reactor": "紧凑型聚变反应堆",
+  "block.compactmekanismmachinesplus.compact_sps": "紧凑型超临界相移器",
+  "block.compactmekanismmachinesplus.compact_thermoelectric_boiler": "紧凑型温差锅炉",
+  "reactor.compactmekanismmachinesplus.stats.active": "运行中",
+  "boiler.compactmekanismmachinesplus.stats.dispersers_y": "导压器高度：%1$s"
+}

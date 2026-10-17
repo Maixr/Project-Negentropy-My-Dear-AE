@@ -1,0 +1,682 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0024b224c32f3aaa"
+	group: "4B28AF7297340C54"
+	id: "0024B224C32F3AAA"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7DD89BF73FAC67F5"
+				"08E211E4AF7CB9B3"
+			]
+			id: "0EE250ECF5277D4B"
+			rewards: [{
+				description: "是的"
+				id: "2D7AF17810BEC09B"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "52274FC495675872"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0EE250ECF5277D4B"]
+			id: "57D629CFD64AB5DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "32C231D7947CE2A6"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "14F5B7464E28155A"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57D629CFD64AB5DD"]
+			id: "117C4590424100E4"
+			rewards: [{
+				count: 4
+				id: "4D9B40510475B09A"
+				item: {
+					count: 1
+					id: "mekanism:ingot_steel"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "27EDF3AE7DF66862"
+					item: { count: 1, id: "mekanism:dust_steel" }
+					type: "item"
+				}
+				{
+					id: "73890F6749B7C8BF"
+					item: { count: 1, id: "mekanism:ingot_steel" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["117C4590424100E4"]
+			id: "50375021AE748E1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "733201182E733149"
+				table_id: 289709801311354444L
+				type: "random"
+			}]
+			tasks: [{
+				id: "53DDD9430A90371D"
+				item: { count: 1, id: "mekanism:steel_casing" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "08E211E4AF7CB9B3"
+			rewards: [{
+				id: "517874CA6698A87C"
+				item: {
+					count: 1
+					id: "disklocator:disk_locator"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.6d
+			tasks: [{
+				id: "72BF5F2ABDFC5C45"
+				item: { count: 1, id: "ae2:controller" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["08E211E4AF7CB9B3"]
+			id: "37B995F707F82F19"
+			rewards: [
+				{
+					count: 2
+					id: "3E57A48C8F744C62"
+					item: {
+						count: 1
+						id: "anvilcraft:royal_steel_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					id: "1C1FE6ECDF2550CC"
+					item: {
+						count: 1
+						id: "anvilcraft:royal_dragon_rod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "307C500233DF5CE3"
+				item: { count: 1, id: "anvilcraft:royal_steel_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["37B995F707F82F19"]
+			id: "4EFF10DF010D4E6A"
+			rewards: [
+				{
+					id: "321A2C1F60F0585E"
+					item: {
+						count: 1
+						id: "anvilcraft:royal_steel_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					id: "2B3CB65AA970F86F"
+					item: {
+						count: 1
+						id: "anvilcraft:jewelcrafting_table"
+					}
+					type: "item"
+				}
+				{
+					id: "4AD1572DA9883AB8"
+					item: {
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: {
+									"minecraft:vanishing_curse": 1
+								}
+							}
+						}
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "37B7D9EBCFDB66F8"
+					item: { count: 1, id: "anvilcraft:royal_smithing_table" }
+					type: "item"
+				}
+				{
+					id: "1211BA273F962A9D"
+					item: { count: 1, id: "anvilcraft:royal_anvil" }
+					type: "item"
+				}
+				{
+					id: "44F18F97B3ABBDD1"
+					item: { count: 1, id: "anvilcraft:royal_grindstone" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4EFF10DF010D4E6A"]
+			id: "3F6A231B512C7751"
+			rewards: [{
+				count: 10
+				id: "19B9F8EC5CC38E6F"
+				item: {
+					count: 1
+					id: "anvilcraft:cursed_gold_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E2EF660FABC9918"
+				item: { count: 1, id: "anvilcraft:cursed_gold_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"50375021AE748E1D"
+				"5D632F4CD9D56EC2"
+				"2EB61EB089A3A816"
+			]
+			id: "219D18928340F27C"
+			rewards: [
+				{
+					id: "350D0F5DA77393E3"
+					item: {
+						count: 1
+						id: "mattercondensertiers:ultimate_matter_condenser"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13C0CEDC5A515A54"
+					table_id: 289709801311354444L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "0097EFD4DA0C467E"
+				item: { count: 1, id: "ae2:condenser" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["742A5D1A10FED10F"]
+			id: "5D632F4CD9D56EC2"
+			rewards: [
+				{
+					id: "6B66F0FE4BCB2B76"
+					item: {
+						count: 1
+						id: "ae2:matter_ball"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12AE504C230E4229"
+					table_id: 289709801311354444L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "7A3E1E67F80867D5"
+				item: { count: 1, id: "ae2:matter_ball" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4EFF10DF010D4E6A"
+				"79B737A3722E9E75"
+			]
+			id: "2AD3B9E5BE2D857D"
+			rewards: [{
+				count: 6
+				id: "1584D852AFCA5588"
+				item: {
+					count: 1
+					id: "minecraft:echo_shard"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "45A1BAE6FAAB0FF3"
+				item: { count: 1, id: "avaritia:sculk_crafting_table" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.5d
+		}
+		{
+			id: "79B737A3722E9E75"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E05E99E6379EAA0"
+				table_id: 289709801311354444L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3BDC908FAF15F67C"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["08E211E4AF7CB9B3"]
+			id: "44A20D70E02FAB12"
+			rewards: [{
+				count: 4
+				id: "7B136AC3D78DF7CD"
+				item: {
+					count: 1
+					id: "extendedae:entro_seed"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2DCD5D7427D97EE3"
+					item: { count: 1, id: "extendedae:entro_seed" }
+					type: "item"
+				}
+				{
+					id: "28500A48EA1AEEA7"
+					item: { count: 1, id: "extendedae:entro_ingot" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["44A20D70E02FAB12"]
+			id: "55F49CA8B85C3458"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42EC5EB558500E53"
+				table_id: 289709801311354444L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "610D37771A94E514"
+					item: { count: 1, id: "extendedae:machine_frame" }
+					type: "item"
+				}
+				{
+					id: "3479C5CF42FF68CD"
+					item: { count: 1, id: "extendedae:crystal_assembler" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55F49CA8B85C3458"]
+			id: "742A5D1A10FED10F"
+			rewards: [{
+				id: "78A2237BC8DDED2C"
+				item: {
+					count: 1
+					id: "entropy_tech:pure_yunkuang_2x"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "067774E4008BB930"
+					item: { count: 1, id: "ae2cs:quartz_grindstone" }
+					type: "item"
+				}
+				{
+					id: "5E8CE1EBE5281244"
+					item: { count: 1, id: "ae2cs:crystal_aggregator" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50375021AE748E1D"]
+			id: "648DC715C5F93537"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "003FE836BD526B23"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "736668ED856AFC9C"
+				item: { count: 1, id: "mekanism:energized_smelter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["50375021AE748E1D"]
+			id: "3652BB80016FA811"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21A77CBB2622C8B0"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3CE2BCB7FB535654"
+				item: { count: 1, id: "mekanism:enrichment_chamber" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["50375021AE748E1D"]
+			id: "318A2458DB546A1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A35D2BECAA2251C"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2985739A0416F20C"
+				item: { count: 1, id: "mekanism:osmium_compressor" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["50375021AE748E1D"]
+			id: "53FB4578D967FACA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "587DBE15D996E6E3"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1DFE21BBFD0B41DB"
+				item: { count: 1, id: "mekanism:combiner" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["50375021AE748E1D"]
+			id: "77410466F89BFE27"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "110F0C4084D36AFC"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "24521A4ED42354C5"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["50375021AE748E1D"]
+			id: "76C7BF50A19E2E31"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C5735B25ED530B8"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7118C4F8E4EEED86"
+				item: { count: 1, id: "mekanicalcreate:simulation_chamber" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2AD3B9E5BE2D857D"]
+			id: "60F1F6CE7F786E4D"
+			tasks: [{
+				id: "721554A58CF0065E"
+				item: { count: 1, id: "anvilcraft:impact_pile" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3F6A231B512C7751"]
+			id: "34F94BF5429ADF09"
+			rewards: [
+				{
+					id: "79C76F46558ECBD0"
+					item: {
+						count: 1
+						id: "anvilcraft:corrupted_beacon"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58CD8EB23DD198BF"
+					table_id: 289709801311354444L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "55E6E5AC01E1FB9C"
+				item: { count: 1, id: "anvilcraft:corrupted_beacon" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["60F1F6CE7F786E4D"]
+			icon: {
+				id: "anvilcraft:mineral_fountain"
+			}
+			id: "2A701039F38A2F83"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77472281EF684259"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6035F90A14688E87"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "anvilcraft:mineral_fountain"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2A701039F38A2F83"]
+			id: "28A68CAD4057C05B"
+			rewards: [{
+				count: 6
+				id: "16B7A97D152C068B"
+				item: {
+					count: 1
+					id: "anvilcraft:void_matter"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4770570100989699"
+					item: { count: 1, id: "anvilcraft:void_matter" }
+					type: "item"
+				}
+				{
+					id: "33E7F0DD7C68CD32"
+					item: { count: 1, id: "anvilcraft:earth_core_shard" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["28A68CAD4057C05B"]
+			id: "127CE4F4DF7E56D4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "16FD403EFA31EA79"
+					table_id: 289709801311354444L
+					type: "random"
+				}
+				{
+					count: 640
+					id: "04D0C44EEC4864B3"
+					item: {
+						count: 1
+						id: "anvilcraft:heavy_iron_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "66ADD63DE4C9BDC7"
+				item: { count: 1, id: "anvilcraft:space_overcompressor" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["127CE4F4DF7E56D4"]
+			id: "2EB61EB089A3A816"
+			rewards: [{
+				count: 3
+				id: "3A317E770C1C4AAC"
+				item: {
+					count: 1
+					id: "anvilcraft:neutronium_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "64BD03851DA41C71"
+				item: { count: 1, id: "anvilcraft:neutronium_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["219D18928340F27C"]
+			icon_scale: 1.4d
+			id: "518FC99D9C00400F"
+			rewards: [
+				{
+					id: "6B50310DFEE0F399"
+					table_id: 289709801311354444L
+					type: "random"
+				}
+				{
+					count: 3
+					id: "00F6F72019A83361"
+					item: {
+						count: 1
+						id: "ae2:singularity"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "0C0E184C2424A426"
+				item: { count: 1, id: "ae2:singularity" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["518FC99D9C00400F"]
+			id: "5901F6415B97A6AA"
+			tasks: [{
+				id: "7DDFD566F6FDD61A"
+				item: { count: 1, id: "advanced_ae:reaction_chamber" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			id: "54E8CA62D2EF6000"
+			tasks: [{
+				count: 2L
+				id: "01524EFFB74C333C"
+				item: { count: 1, id: "ae2:quantum_entangled_singularity" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
+	]
+}

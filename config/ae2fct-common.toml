@@ -1,0 +1,7 @@
+[upgrade]
+	#Enables QoL behavior without requiring the Terminal Fluid Interact Card. When false, fluid terminal interaction requires the upgrade card in the terminal upgrade slot.
+	QoL = false
+
+[recipe_transfer]
+	#Recipe ids that require real bucket items instead of virtual fluids, including recipe transfer, manual crafting, and crafting pattern encoding. All other recipes allow virtual fluids. The server's list controls terminal recipe previews.
+	virtualFluidRecipeBlacklist = ["immersiveengineering:crafting/redstone_acid"]

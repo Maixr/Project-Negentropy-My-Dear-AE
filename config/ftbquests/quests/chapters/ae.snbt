@@ -1,0 +1,412 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae"
+	group: "4B28AF7297340C54"
+	id: "7E5EB3F8E72F12D6"
+	images: [{
+		click_action: "none:这里是？"
+		height: 4.0d
+		id: "566EC759F0561A7E"
+		image: "ae2:block/controller_inside_a"
+		rotation: 0.0d
+		width: 4.0d
+		x: -9.0d
+		y: 1.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4F0425C3AAA13E30"]
+			id: "58E91D4EB703C83D"
+			rewards: [{
+				count: 2
+				id: "0AB8F2B99515BA91"
+				item: {
+					count: 1
+					id: "minecraft:oak_log"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E122B50DEC85D0B"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["58E91D4EB703C83D"]
+			id: "38C4EBFAA4F1B2B4"
+			rewards: [{
+				count: 16
+				id: "2B276FE51ECBB158"
+				item: {
+					count: 1
+					id: "minecraft:smooth_stone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "0803215E7CDF91D1"
+				item: { count: 1, id: "minecraft:dirt" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			id: "4F0425C3AAA13E30"
+			rewards: [{
+				count: 5
+				id: "3778407A1B796CAF"
+				item: {
+					count: 1
+					id: "minecraft:oak_wood"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "495A40731FEC05E3"
+				type: "dimension"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["38C4EBFAA4F1B2B4"]
+			id: "7DF06CB3F750F97B"
+			tasks: [{
+				id: "721CAA8F9513CAE2"
+				item: { count: 1, id: "entropy_tech:entropy_calc_tablet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7DF06CB3F750F97B"
+				"38C4EBFAA4F1B2B4"
+				"51825D4C8F3620CF"
+			]
+			id: "7BBC1530FA5CD352"
+			rewards: [{
+				count: 16
+				id: "00CECDAC71978EA4"
+				item: {
+					count: 1
+					id: "minecraft:flint"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "667B3535FA0CC002"
+				item: { count: 1, id: "entropy_tech:entropy_processor" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			id: "51825D4C8F3620CF"
+			tasks: [{
+				id: "193A2011616DA090"
+				item: { count: 1, id: "create:sand_paper" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7BBC1530FA5CD352"
+				"2C541AE00E0A3A7D"
+			]
+			id: "265976E264030F76"
+			tasks: [{
+				id: "37927329AC70D13B"
+				item: { count: 1, id: "entropy_tech:primitive_controller" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BBC1530FA5CD352"]
+			id: "462687579603DF29"
+			rewards: [{
+				count: 2
+				id: "4971846E4A614E64"
+				item: {
+					count: 1
+					id: "tinyae2cells:256_byte_item_storage_cell"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "38C06B2112083931"
+				item: { count: 1, id: "entropy_tech:primitive_drive" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7BBC1530FA5CD352"
+				"6AF659B5BA10B651"
+			]
+			id: "2BD9857EBB7ECD94"
+			rewards: [{
+				id: "31A7AD247787F451"
+				item: {
+					count: 1
+					id: "entropy_tech:primitive_terminal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C3BEEF55AF3AB89"
+				item: { count: 1, id: "entropy_tech:primitive_terminal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"462687579603DF29"
+				"2BD9857EBB7ECD94"
+				"265976E264030F76"
+			]
+			id: "57A9C87B59BD5673"
+			rewards: [
+				{
+					id: "756C1C2239DE4F17"
+					item: {
+						count: 1
+						id: "majobroom:majo_hat"
+					}
+					type: "item"
+				}
+				{
+					id: "62463FE6224A0696"
+					item: {
+						count: 1
+						id: "majobroom:majo_cloth"
+					}
+					type: "item"
+				}
+				{
+					id: "09F0ACB7FB229E27"
+					item: {
+						count: 1
+						id: "majobroom:majo_stocking"
+					}
+					type: "item"
+				}
+				{
+					id: "0A103BB65B270498"
+					item: {
+						count: 1
+						id: "majobroom:majo_boots"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "042ED7E813B0CA8E"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			id: "2C541AE00E0A3A7D"
+			rewards: [{
+				count: 3
+				id: "65C254027AE4E04B"
+				item: {
+					count: 1
+					id: "ae2:smooth_sky_stone_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "547061A643AA7DD8"
+				item: { count: 1, id: "ae2:sky_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57A9C87B59BD5673"]
+			id: "0DC8718D97B56A7A"
+			rewards: [{
+				id: "7A17D32B7DA4FE48"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							cell4item: ["ae2lt:pigmee_fumo"]
+							cell4name: "猪圈元件"
+						}
+					}
+					count: 1
+					id: "cell4:infinity_item_cell"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "78641122E8E85595"
+				item: { count: 1, id: "ae2lt:pigmee_core" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0DC8718D97B56A7A"]
+			id: "3B9B6A628C8EDF26"
+			tasks: [{
+				id: "32834D69DCF3828D"
+				item: { count: 1, id: "ae2lt:pigmee_storage_component" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3B9B6A628C8EDF26"
+				"6642AD356A6E7F81"
+			]
+			id: "6553E1DF40043B59"
+			tasks: [{
+				id: "2AE5644B0B4E7A82"
+				item: { count: 1, id: "ae2lt:pigmee_storage_cell" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6553E1DF40043B59"]
+			id: "3DF054858C75C816"
+			rewards: [{
+				id: "4A71944CA62F20B8"
+				item: {
+					count: 1
+					id: "ae2:certus_quartz_crystal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EAFCE8951B034F6"
+				item: { count: 1, id: "ae2lt:pigmee_synthesis_station" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0DC8718D97B56A7A"]
+			id: "6642AD356A6E7F81"
+			tasks: [{
+				count: 5L
+				id: "09E2A4C9C10D834E"
+				item: { count: 1, id: "ae2lt:pigmee_fumo" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["20A2EC05E80FF089"]
+			dependency_requirement: "all_started"
+			id: "6AF659B5BA10B651"
+			tasks: [{
+				id: "2322D667C1C69FDD"
+				item: { count: 1, id: "entropy_tech:primitive_generator" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			id: "20A2EC05E80FF089"
+			rewards: [{
+				count: 8
+				id: "101482A9C69245DF"
+				item: {
+					count: 1
+					id: "dreammod:dream_gem"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "dreammod:geode_encounter"
+				criterion: ""
+				id: "6B05E593895855A5"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DF054858C75C816"]
+			id: "127F7E7C221B31B7"
+			rewards: [
+				{
+					id: "5C467464CBEB772E"
+					item: {
+						count: 1
+						id: "entropy_tech:rough_controller"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C65D0A4FC9C88C6"
+					table_id: 289709801311354444L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "77BB800FFF953134"
+				item: { count: 1, id: "entropy_tech:rough_controller" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["58E91D4EB703C83D"]
+			id: "19FC5B30E4C116B5"
+			tasks: [{
+				id: "728D15A89B648274"
+				item: { count: 1, id: "anvilcraft:transparent_crafting_table" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58E91D4EB703C83D"]
+			id: "3DBD47E7C818F4D1"
+			tasks: [{
+				id: "745273173E0E1BBF"
+				item: { components: { "ftbquests:missing_item": "extendedcrafting:handheld_table" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+}

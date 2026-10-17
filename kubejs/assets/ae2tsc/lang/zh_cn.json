@@ -1,0 +1,8 @@
+{
+  "key.categories.ae2tsc": "AE2 终端滚轮切换",
+  "key.ae2tsc.scroll_modifier": "修饰键",
+  "ae2tsc.configuration.invertMouseScrollCycling": "反转方向",
+  "ae2tsc.configuration.scrollCycleDelayMs": "切换延迟",
+  "ae2tsc.configuration.invertMouseScrollCycling.tooltip": "反转滚轮的切换方向。",
+  "ae2tsc.configuration.scrollCycleDelayMs.tooltip": "两次切换之间的冷却时间（毫秒）。"
+}

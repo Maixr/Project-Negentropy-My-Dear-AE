@@ -1,0 +1,8 @@
+# 统一用 LF 存库，检出时不转换（modpack 配置文件对换行敏感）
+* text=auto eol=lf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.ogg binary
+*.mp4 binary

@@ -55,10 +55,16 @@ version = "<version_number>"
 
 ## 提交前自查
 
+> ⚠️ **先把游戏关掉**。游戏运行时会实时改写 `config/`（FTB Quests、JEI 历史、各模组缓存），
+> 开着游戏跑 `regen-index` 会得到一份「下一秒就过期」的索引，CI 必然报哈希不符。
+
 ```bash
 node scripts/regen-index.mjs     # 改了 kubejs/ 或 config/ 就必须跑
 node scripts/verify-pack.mjs     # 等价 CI
 ```
+
+`regen-index.mjs` 的文件清单来自 `git ls-files`，**不是遍历磁盘** —— 这样索引里
+永远不会出现被 `.gitignore` 掉的文件（否则本地能过、CI 检出后必失败）。
 
 CI 还会额外检查：
 

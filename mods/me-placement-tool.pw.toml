@@ -1,0 +1,13 @@
+name = "meplacementtool"
+filename = "[ME放置工具] meplacementtool-2.1.5-neoforge1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "5fd5dd42d13bf19bd25f1051247350dae4d326046def0bf222e2fea951d37ef938f248fb313d445267c26bb28c58eb423673ba2d4cacacb7f05aab07ce63c3e7"
+url = "https://cdn.modrinth.com/data/uDNrWncj/versions/Ysi9cG8E/meplacementtool-2.1.5-neoforge1.21.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "uDNrWncj"
+version = "2.1.5-neoforge1.21.1"

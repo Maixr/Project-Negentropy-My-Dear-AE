@@ -1,0 +1,13 @@
+name = "ae2ltpp"
+filename = "ae2ltpp-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "b22deca52a5f9ecf34d6a90587010e7f1bc5ac74377a5dd7d39efd1c79d8c18d041e8a32a16cd26c284d9df8da4a13519b03fb8534e14fae536606c92403c357"
+url = "https://cdn.modrinth.com/data/QrbJwOfn/versions/mQDIRbam/ae2ltpp-1.2.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "QrbJwOfn"
+version = "1.2.0"

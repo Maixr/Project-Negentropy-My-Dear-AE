@@ -1,0 +1,13 @@
+name = "pattern_parcel"
+filename = "pattern_parcel-1.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "f3528e06223d2fe0c15a60bd84bb12cf9ea1038a5651a3df78f22fc3e88119d39534e52db5346eb08f97306bac614c57721d4918f1f7d4436098729a2da3d586"
+url = "https://cdn.modrinth.com/data/3Ko6vaOI/versions/D8zI3TRZ/pattern_parcel-1.1.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "3Ko6vaOI"
+version = "1.1.0"

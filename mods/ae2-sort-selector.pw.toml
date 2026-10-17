@@ -1,0 +1,13 @@
+name = "ae2sortselector"
+filename = "ae2sortselector-1.21.1-neo-v1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "434318771966911216e74dee0f806fc41ffdef51de3ee4ba693fd135510d202b738e71b86025e5bd9320938271bc5977fb091e177e1b3e68a439ec44fc6bfcab"
+url = "https://cdn.modrinth.com/data/nDoOGZ1b/versions/T2s0oYS7/ae2sortselector-1.21.1-neo-v1.0.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "nDoOGZ1b"
+version = "1.0.0"

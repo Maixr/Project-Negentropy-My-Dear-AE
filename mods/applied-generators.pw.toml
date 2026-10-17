@@ -1,0 +1,13 @@
+name = "appgen"
+filename = "applied-generators-0.2.5+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "40fa53b6141a824ea5075181c379e23cdf434abca0f9c4d286fad1d76ca1997d490c263c6e7111e4ee5bf46eec374593884f826fcc0ab0e56fd1e0cbef2a6fee"
+url = "https://cdn.modrinth.com/data/y1qmWFWM/versions/TZFgM6T8/applied-generators-0.2.5%2B1.21.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "y1qmWFWM"
+version = "0.2.5+1.21.1"

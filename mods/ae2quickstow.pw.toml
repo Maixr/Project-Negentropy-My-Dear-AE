@@ -1,0 +1,13 @@
+name = "ae2quickstow"
+filename = "ae2quickstow-0.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "1b17c2ceda5d7b84f00f85750cf33299320050038e51f21eabb79d7e3443c5e629000d59a5fe0ea29476a81dec4eb0621f5ab5d8433205d1243f2f0c3dbbbd7c"
+url = "https://cdn.modrinth.com/data/V96xAnJU/versions/M8H4iwyM/ae2quickstow-0.1.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "V96xAnJU"
+version = "0.1.0"

@@ -1,0 +1,13 @@
+name = "maidbeacon"
+filename = "[车万女仆：移动信标] maidbeacon-1.0.1-bugfix.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "021a06cac3ced1da18fef47dd5d448a3aced4b933a301b5737eac64ac8f9f986f235524c89dca62a27db6510a23a19889a6aa2f7c5bb5e21bb10a96dbaa78c97"
+url = "https://cdn.modrinth.com/data/kWT5Rygj/versions/2T4GYNBd/maidbeacon-1.0.1-bugfix.jar"
+
+[update]
+[update.modrinth]
+mod-id = "kWT5Rygj"
+version = "1.0.1-bugfix"

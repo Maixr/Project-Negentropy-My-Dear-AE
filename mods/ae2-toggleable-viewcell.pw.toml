@@ -1,0 +1,13 @@
+name = "ae2_toggleable_view_cell"
+filename = "AE2ToggleableViewCell-21.1-2.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "adeec9b75aaaeec2792a6b2cb6aa166c213174ffcc4e286b1fe766fcfe8fa2f23c3f2827d9aadfcd196fcf90fcde62d4f371834bea07421ea5715ba79cbdba39"
+url = "https://cdn.modrinth.com/data/7GNdjsfs/versions/UjfwnqKa/AE2ToggleableViewCell-21.1-2.0.3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "7GNdjsfs"
+version = "21.1-2.0.3"

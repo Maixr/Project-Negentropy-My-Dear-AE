@@ -1,0 +1,13 @@
+name = "maid_useful_task"
+filename = "[女仆实用任务] 1.21.1-maid_useful_task-1.4.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "e0e4f95dc857f0598e64dc4ac55c1be8558521b225606423c5486f3db6501d81682fa9f8a774e208f89010ef9207b5829b6b31c3803bbf7ce4cd070d0e270cbe"
+url = "https://cdn.modrinth.com/data/J8yr3TFW/versions/Dzmtc4cF/1.21.1-maid_useful_task-1.4.2.jar"
+
+[update]
+[update.modrinth]
+mod-id = "J8yr3TFW"
+version = "1.4.2"

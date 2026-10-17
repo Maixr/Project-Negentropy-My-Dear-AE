@@ -1,0 +1,13 @@
+name = "wcwt"
+filename = "[ME综合工作终端] wcwt-1.3.3-hotfix.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "f3d37d9681352748b02d130e82f1ce844590e241185d6c6614c8fd7879799dba4e16c64bbacfb1424a4f11e60ee05267d67ae35535c9a6dde554c40fcc20e002"
+url = "https://cdn.modrinth.com/data/4inoel9g/versions/DOUprYAg/wcwt-1.3.3-hotfix.jar"
+
+[update]
+[update.modrinth]
+mod-id = "4inoel9g"
+version = "1.3.3-hotfix"

@@ -1,0 +1,13 @@
+name = "ae2randomsorting"
+filename = "ae2randomsorting-1.21.1-neo-v1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "220e4149be0af19bce8a97e0eb1a2f4622c9ffa4533199461361ae63e9572548ff82f181de597193b8a140b9d483adf1348b159a7f81ff9e1025eb10b0fb1c49"
+url = "https://cdn.modrinth.com/data/9YMSXPKy/versions/JwmxvOnq/ae2randomsorting-1.21.1-neo-v1.1.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "9YMSXPKy"
+version = "1.1.0"

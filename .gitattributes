@@ -1,5 +1,5 @@
-# 统一 LF 存库
 * text=auto eol=lf
+*.jar binary
 *.png binary
 *.jpg binary
 *.ogg binary

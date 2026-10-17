@@ -1,0 +1,13 @@
+name = "rtsbuilding"
+filename = "[RTS视角建造] rtsbuilding-neoforge-1.21.1-1.1.8-beta.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "edf826a4d7cdf5ab393f10e1d77a854136915878cc29994aaafbe28f169d39377a693abd5e3b347e3540d1be79fd7e08d9404e165a59f52c6028e1cd304a5a90"
+url = "https://cdn.modrinth.com/data/5PkY7RJI/versions/dVipmL0p/rtsbuilding-neoforge-1.21.1-1.1.8-beta.jar"
+
+[update]
+[update.modrinth]
+mod-id = "5PkY7RJI"
+version = "1.1.8-beta"

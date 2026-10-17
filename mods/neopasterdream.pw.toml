@@ -1,0 +1,13 @@
+name = "pasterdream"
+filename = "[新帕斯特之梦] pasterdream-0.10.0-pre.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "c024f2fbd30556461186d68c16d23a7c47e5980c369ee868173ac78321f2a12d3f9b599391ee433ff13193a6e9ad41193cdc68e720764a0a0c8afb2ce05fe14c"
+url = "https://cdn.modrinth.com/data/zB2TrIqI/versions/bL303ouk/pasterdream-0.10.0-pre.3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "zB2TrIqI"
+version = "0.10.0-pre.3"

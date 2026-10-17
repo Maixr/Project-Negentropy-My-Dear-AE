@@ -1,0 +1,13 @@
+name = "wireless_terminal_color"
+filename = "wtc-1.21.1-0.1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "09f0ee1a0be9428a57e96ea312b6792d059e9b87b0703dc1d71e7399aa45b763ca523908787c74468224bf793300deb20daf933678d14d6fb121f94f42cbe5f0"
+url = "https://cdn.modrinth.com/data/AsqNh2g2/versions/uJvwazSh/wtc-1.21.1-0.1.3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "AsqNh2g2"
+version = "0.1.3"

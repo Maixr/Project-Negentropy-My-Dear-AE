@@ -1,0 +1,13 @@
+name = "statpatterns"
+filename = "statpatterns-1.21.1-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "3d56d60c9357281a9cf44c6630a59f8b354a0ba320b5ad0c5ae3a6b7791ede5b7b62f176051b6ee07ce129859e625ab21b3794298137495aadfb8ed4d38bfbc6"
+url = "https://cdn.modrinth.com/data/zejA6Go6/versions/JiffY9pI/statpatterns-1.21.1-1.0.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "zejA6Go6"
+version = "1.0.1"

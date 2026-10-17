@@ -1,0 +1,13 @@
+name = "mespawner"
+filename = "MESpawner-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "782303568d8af6c4ce53151f6ab42a31161286c39b963c790b50f9020b3853f5972e1aada30f9e120c3b507bde039ce61f7e6b8ce1530aaac6d1f92ceaf39d68"
+url = "https://cdn.modrinth.com/data/zpkKPhbq/versions/2vP7TEw4/MESpawner-1.3.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "zpkKPhbq"
+version = "1.3.0"

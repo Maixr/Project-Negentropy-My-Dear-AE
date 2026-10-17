@@ -1,33 +1,49 @@
 # ============================================================
-#  默认忽略一切，只显式放行源码部分
-#  —— 这样存档/模组/日志/密钥永远不会误入仓库
+#  默认忽略一切，只放行「整合包源码」
+#  访客 clone 后按 README 用 packwiz-installer 装包
 # ============================================================
 
 /*
 
-# ─────────── 放行 ───────────
-!/.gitignore
-!/.gitattributes
-!/README.md
-!/modlist.md
-!/LICENSE
+# ─────────── Packwiz 元数据 ───────────
+!/pack.toml
+!/index.toml
+!/.packwizignore
+!/mods/
+
+# ─────────── 整合包内容 ───────────
 !/kubejs/
 !/config/
 !/defaultconfigs/
 !/modpack-docs/
 
-# ─────────── 源码内的排除 ───────────
-# 密钥/密码：绝不入库（含公开模式口令）
-/config/ae2webintegration/ae2webintegration.toml
+# ─────────── 文档 ───────────
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/DEVELOPMENT.md
+!/CHANGELOG.md
+!/LICENSE
+!/modlist.md
+!/docs/
 
-# 大型媒体（背景视频 153MB，超 GitHub 单文件上限）
-/config/fancymenu/assets/*.mp4
-/config/fancymenu/assets/*.mov
-/config/fancymenu/assets/*.webm
+# ─────────── mods/ 细则 ───────────
+# 只跟踪 packwiz 元数据（.pw.toml）
+/mods/*.jar
+# 例外：本仓库自有的模组（作者 Maixr）
+!/mods/MaixrCore-*.jar
+!/mods/entropy_tech-*.jar
+!/mods/JEIGuess-*.jar
+!/mods/skilled_craftsmaid-*.jar
+!/mods/MaixrsPhotoChat-*.jar
+
+# ─────────── config 内的排除 ───────────
+# 密钥/密码：绝不入库
+/config/ae2webintegration/ae2webintegration.toml
+# 大型媒体（超 GitHub 单文件限制）
 *.mp4
 *.mov
-
-# 备份 / 临时 / 已删除
+# 备份/临时/已删除
 *.bak
 *.bak_*
 *.bak-*
@@ -35,18 +51,8 @@
 **/_deleted-*/
 **/_backup-*/
 **/assets.bak-*/
-**/*.removed-mod
-**/*.orig
-
-# ─────────── 单机会话 / 各存档独立数据 ───────────
-# 村民交易配置（按存档分目录）
+*.removed-mod
+# 单机会话数据
 /config/inventoryprofilesnext/*/
-# JEI 的按存档记录（书签、查询历史）
 /config/jei/world/
-# AE2 最近搜索历史
-/config/ae2_recent_search*.json
-/config/ae2_recent_search*-client.toml
-/config/jeigues_history.json
-
-# ─────────── 兜底：超大文件 ───────────
-# （若还有漏网的，靠推送前脚本校验拦住）
+/config/ae2_recent_search*

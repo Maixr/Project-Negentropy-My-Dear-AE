@@ -1,0 +1,13 @@
+name = "ae2sreenshot"
+filename = "ae2sreenshot-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "871c7600737152724f785de7cd13f160f2f3fd8f096ad3170b0744b4496a0ddf5ccba96c8eb318ee80abc6e76827d2433e602a6905135d0d9d401ce1a7d72088"
+url = "https://cdn.modrinth.com/data/lwbEV1yk/versions/jb1ytmGs/ae2sreenshot-1.21.1-1.0.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "lwbEV1yk"
+version = "1.21.1-1.0.0"

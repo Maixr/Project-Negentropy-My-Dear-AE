@@ -1,0 +1,13 @@
+name = "appliedhistory"
+filename = "appliedhistory-1.21.1-neo-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "13ad018142b713eb6944f5845d663a1e7b22d1d957ce62e30d4829b09b0fc36c2f55827ebcf25cfccbe05fe20de3d57d72452d713f296d8be1dbab581f56209e"
+url = "https://cdn.modrinth.com/data/t6Xfqju3/versions/OpNkioqD/appliedhistory-1.21.1-neo-1.0.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "t6Xfqju3"
+version = "1.0.1"

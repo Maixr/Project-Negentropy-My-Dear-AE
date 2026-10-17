@@ -1,0 +1,13 @@
+name = "majobroom"
+filename = "majobroom-dl909-1.21.1-2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "9b4a73cdecd089be53488a458b7c3656f828fd0f7386a6811a8af19a5d8d4a19364a927a04592e64ffda5aad62f12901a8a9cb647b1c9ec9b2ff58c6c211ae89"
+url = "https://cdn.modrinth.com/data/vTe1vqmm/versions/Sd7V2vfu/majobroom-dl909-1.21.1-2.3.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "vTe1vqmm"
+version = "2.3.0"

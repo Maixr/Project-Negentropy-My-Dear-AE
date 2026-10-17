@@ -1,0 +1,13 @@
+name = "jdttimeaccelerators"
+filename = "jdttimeaccelerators-neoforge-1.21.1-2.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "9a2bf9438cc585ea6c11b72d93c27d009eda901fdffbf3032b151443a249fb3d5af85892e56d6fd3717c3e02b285782e283fcf74421ef4c4e2344726e23a5dc8"
+url = "https://cdn.modrinth.com/data/SaLsAr3W/versions/keC7uw8B/jdttimeaccelerators-neoforge-1.21.1-2.2.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "SaLsAr3W"
+version = "2.2.0"

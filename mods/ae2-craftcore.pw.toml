@@ -1,0 +1,13 @@
+name = "ae2craftcore"
+filename = "ae2craftcore-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "f0505b641adfcee1ff57a647f4d6cc3627fab67c0aa075bf41246497256cf9752c3d451c12cf31df6037e8402bb30860830e411532650646e0e58dd898666c1c"
+url = "https://cdn.modrinth.com/data/koO20Z1s/versions/zSujiHPd/ae2craftcore-1.2.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "koO20Z1s"
+version = "1.2.1"

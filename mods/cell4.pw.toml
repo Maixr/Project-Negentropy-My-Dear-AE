@@ -1,0 +1,13 @@
+name = "cell4"
+filename = "[元元元元件件件件] Cell4-1.21.1-NeoForge-1.0.4fix3.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "f18bb6e47aeb8e142b62b9241693f784f42002ac89e2c679712332dd36ba1b6f7c8c9a68b71ed1338bf7f065a7a096be335c6bc9dc13316e7cc63e81686eb8ee"
+url = "https://cdn.modrinth.com/data/7LKxk6vG/versions/Oc6ScGhy/Cell4-1.21.1-NeoForge-1.0.4fix3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "7LKxk6vG"
+version = "Cell4-1.21.1-NeoForge-1.0.4Fix3"

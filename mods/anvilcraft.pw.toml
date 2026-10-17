@@ -1,0 +1,13 @@
+name = "anvilcraft"
+filename = "[铁砧工艺] anvilcraft-neoforge-1.21.1-1.6.0+pre-release.11.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "a5f965de9381fd4a0d4505efc6b584a6fc8cccecad0c2a8ebf3954324b593aeeeab2762a0556dfa25dd8b43a3bec69326b02abc51bb4befd99f181ee25d35b90"
+url = "https://cdn.modrinth.com/data/vuISAWPc/versions/eQojKCGV/anvilcraft-neoforge-1.21.1-1.6.0%2Bpre-release.11.jar"
+
+[update]
+[update.modrinth]
+mod-id = "vuISAWPc"
+version = "1.21.1-1.6.0+pre-release.11"

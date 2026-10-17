@@ -1,0 +1,13 @@
+name = "aeqc"
+filename = "AE2-QoL-Client-mc1.21.1-2.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "2cbdd2ccf7dfeaeffcc989b194258b04d4b4d4fcd186a6cb1caefc8137c281f59e691729fd4cb82037416e9fc3d10886393f454f270e2219fe5de19d03c79358"
+url = "https://cdn.modrinth.com/data/8INZ9rYU/versions/htF0Jr9I/AE2-QoL-Client-mc1.21.1-2.0.2.jar"
+
+[update]
+[update.modrinth]
+mod-id = "8INZ9rYU"
+version = "2.0.2"

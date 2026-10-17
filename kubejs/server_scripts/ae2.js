@@ -392,7 +392,7 @@ event.shaped(Item.of('ae2:condenser'),
         input_b: { count: 1, item: 'ae2:cell_component_64k' },
         input_c: { count: 3, item: 'entropy_tech:pure_yunkuang_2x' },
         result:  { count: 1, id: 'ae2:matter_ball' }
-    }).id('maixr:ae2cs/matter_bell_1')
+    }).id('maixr:ae2cs/matter_bell')
 
 event.remove({output:'ae2:terminal'});
 event.shapeless(Item.of('ae2:terminal'),

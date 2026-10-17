@@ -1,0 +1,13 @@
+name = "dimstorage"
+filename = "[维度存储] DimStorage-1.21-9.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "e277d54edb262bb405fe3965875fb817573d7bb9dfebfa28cb5194a29563c7144f56f7909719607603370434e14e5eb19774f9a01f158619da88d9911bad412a"
+url = "https://cdn.modrinth.com/data/8lnmIJH7/versions/3MnSlNg4/DimStorage-1.21-9.0.2.jar"
+
+[update]
+[update.modrinth]
+mod-id = "8lnmIJH7"
+version = "9.0.2"

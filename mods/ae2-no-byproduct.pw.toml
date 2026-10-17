@@ -1,0 +1,13 @@
+name = "ae2nobyproduct"
+filename = "ae2nobyproduct-neoforge-0.4.1+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "b604f1088cf0612551c5d5addee5790e52eaee2f83d3a124bd55c1de89990b45b19de60c91a1487014265b8dd50c3c750f68f7f4ec3f898428dd9ffed64a507d"
+url = "https://cdn.modrinth.com/data/QTH2oeRB/versions/nY4hlz0I/ae2nobyproduct-neoforge-0.4.1%2Bmc1.21.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "QTH2oeRB"
+version = "0.4.1+neoforge-1.21.1"

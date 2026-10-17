@@ -1,0 +1,57 @@
+# packwiz 打包时忽略的路径（index.toml 已手工生成，此文件供 packwiz CLI 使用）
+/.*/
+!/.gitignore
+!/.gitattributes
+!/pack.toml
+!/index.toml
+!/.packwizignore
+
+/saves/
+/backups/
+/logs/
+/crash-reports/
+/screenshots/
+/xaero/
+/Xaero*/
+/local/
+/PCL/
+/debug/
+/.mixin.out/
+/.cache/
+/.probe/
+/.agent-teams/
+/dynamic-resource-pack-cache/
+/tlm_custom_pack/
+/patchouli_books/
+mods-disabled/
+mods-junk/
+*-natives/
+natives-*/
+
+# 根目录杂项
+/*.jar
+/*.json
+/*.txt
+/*.zip
+/*.md
+!README.md
+!DEVELOPMENT.md
+!CHANGELOG.md
+!modlist.md
+!LICENSE
+
+# mods 里只留元数据和自有 jar
+/mods/*.jar
+!/mods/MaixrCore-*.jar
+!/mods/entropy_tech-*.jar
+!/mods/JEIGuess-*.jar
+!/mods/skilled_craftsmaid-*.jar
+!/mods/MaixrsPhotoChat-*.jar
+
+# 仓库管理类不进包
+/.github/
+/docs/
+/modpack-docs/
+
+# 密钥
+/config/ae2webintegration/ae2webintegration.toml

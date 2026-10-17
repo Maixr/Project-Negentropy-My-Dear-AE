@@ -1,0 +1,13 @@
+name = "ae2cs"
+filename = "ae2cs-1.21.1-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "885b9f3dac827976292a12dcd93ba2f86b5b494d8efc69ee2b872a4e2ff086cdff97ea853a3c328b602f8e7d3971eacce1e40cce3080c14c48718c412c9fac1f"
+url = "https://cdn.modrinth.com/data/uJ9afomy/versions/4W20Zp4P/ae2cs-1.21.1-1.2.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "uJ9afomy"
+version = "1.21.1-1.2.0"

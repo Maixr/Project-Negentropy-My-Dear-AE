@@ -1,0 +1,13 @@
+name = "createpackage"
+filename = "createpackage-0.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "9985fb7adb36a8020c5ec4985d5c42f7168cb59f6e8515399bc830e33ff726f411aa4d0324f8e80e3fd6b22d1c838d6dad6cb3d499dace25bb48776b30b6ecd8"
+url = "https://cdn.modrinth.com/data/5vJMWJv6/versions/JLED4jGu/createpackage-0.0.3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "5vJMWJv6"
+version = "0.0.3"

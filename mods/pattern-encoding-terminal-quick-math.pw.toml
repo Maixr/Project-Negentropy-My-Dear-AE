@@ -1,0 +1,13 @@
+name = "pattern_encoding_terminal_quick_math"
+filename = "pattern_encoding_terminal_quick_math-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "84a72cdd3961736251f6567d3035c815d375898c490aadfe5bf4011c1308758e2623ed30bffb643d0ad67e54da240255598098809d14c356de6743299635ff81"
+url = "https://cdn.modrinth.com/data/eGwDV8AJ/versions/TdI54fPE/pattern_encoding_terminal_quick_math-1.0.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "eGwDV8AJ"
+version = "1.0.1"

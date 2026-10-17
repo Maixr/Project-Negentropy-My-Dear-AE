@@ -1,0 +1,13 @@
+name = "enderio_conduit_opt"
+filename = "[末影导管优化器] enderio_conduit_opt-1.1.6-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "e9be01583bc16b95fa0571d6825d435232f2c5384e7365fce711e7aeaf1626b834fe9d40aaba2a6c3d91f12c144aa0963126a437641e5f845038975e3a841f18"
+url = "https://cdn.modrinth.com/data/SgW9mQeM/versions/ywdy6tkv/enderio_conduit_opt-1.1.6-1.21.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "SgW9mQeM"
+version = "1.1.6-1.21.1"

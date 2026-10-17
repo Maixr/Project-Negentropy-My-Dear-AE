@@ -1,0 +1,13 @@
+name = "ae2utility"
+filename = "ae2utility-1.8.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "a42b5a8089b1c6b1ad4ce6801eef1948984c818b9ef9fa17c931aa4b5eb1a42cfd67a4e50fff51299d45d43ad31645e69fa37e9f1de9e5c7dabbdd3a2244bb1a"
+url = "https://cdn.modrinth.com/data/kJXRtOkZ/versions/cipTSARa/ae2utility-1.8.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "kJXRtOkZ"
+version = "1.8.0"

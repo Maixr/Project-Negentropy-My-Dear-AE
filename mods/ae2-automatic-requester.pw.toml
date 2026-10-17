@@ -1,0 +1,13 @@
+name = "${mod_id}"
+filename = "ae2_autorequester-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "de1cf88c49b8ba46d0177a68ca691f7c3bc5ca50f958df56d2d2972837b4a2ad0ee84c46732d390e1cde5c2931b0fd79a690046cfb5ed7858dd679d842d256f2"
+url = "https://cdn.modrinth.com/data/IndWCkVH/versions/YlzYiOnV/ae2_autorequester-1.2.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "IndWCkVH"
+version = "1.2.1"

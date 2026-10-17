@@ -1,0 +1,13 @@
+name = "ae2tsc"
+filename = "ae2tsc-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "7c5717e59f8354b9d5d38a2662fcc12d800e0199fe18aa94a067c60550c5d5b5a47e4db30bb671ba04bd6ad1e0538566309dd8d8d0b51aeeb5951725c9337344"
+url = "https://cdn.modrinth.com/data/61xjUpXI/versions/yiyl7t38/ae2tsc-1.0.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "61xjUpXI"
+version = "1.0.1"

@@ -1,0 +1,13 @@
+name = "neoecoae"
+filename = "neoecoae-21.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "1dc456f640878e88782b86d2deb21d074449e2b5a10c7c2ed1402aa3fa20913ef05b86d0d388b59e19b6b67d60f3e1dc323db3e562b3d95e8c56d79a0bf11323"
+url = "https://cdn.modrinth.com/data/udZtKfzP/versions/p9oqETs4/neoecoae-21.2.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "udZtKfzP"
+version = "21.2.1"

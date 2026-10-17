@@ -1,4 +1,7 @@
-* text=auto eol=lf
+# packwiz 的 index.toml 存的是文件内容的 sha256，
+# 因此仓库里必须逐字节保存磁盘内容 —— 禁止任何换行转换。
+* -text
+
 *.jar binary
 *.png binary
 *.jpg binary

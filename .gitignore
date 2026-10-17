@@ -26,6 +26,8 @@
 !/LICENSE
 !/modlist.md
 !/docs/
+!/scripts/
+!/.github/
 
 # ─────────── mods/ 细则 ───────────
 # 只跟踪 packwiz 元数据（.pw.toml）

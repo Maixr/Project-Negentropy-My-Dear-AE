@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  pack:
+    name: 打包发布
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 校验
+        run: node scripts/verify-pack.mjs
+
+      - name: 生成 packwiz-installer 引导包
+        run: |
+          mkdir -p out
+          # 客户端引导脚本
+          cat > out/install.ps1 <<'EOF'
+          # 一键安装：把 packwiz-installer-bootstrap 放到 .minecraft 后运行
+          $ErrorActionPreference = 'Stop'
+          $bootstrap = Join-Path $PSScriptRoot 'packwiz-installer-bootstrap.jar'
+          if (-not (Test-Path $bootstrap)) {
+              Invoke-WebRequest -Uri 'https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar' -OutFile $bootstrap
+          }
+          & java -jar $bootstrap https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/pack.toml
+          EOF
+          cat > out/install.sh <<'EOF'
+          #!/usr/bin/env bash
+          set -euo pipefail
+          DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+          JAR="$DIR/packwiz-installer-bootstrap.jar"
+          if [ ! -f "$JAR" ]; then
+              curl -L -o "$JAR" https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+          fi
+          java -jar "$JAR" "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/pack.toml"
+          EOF
+          chmod +x out/install.sh
+          cp pack.toml index.toml out/
+          cp -r mods out/
+          cd out && zip -r "../Project-Negentropy-${{ github.ref_name }}.zip" .
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: Project-Negentropy-*.zip
+          generate_release_notes: true

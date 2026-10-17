@@ -1,48 +1,52 @@
-# ── 模组本体（版权 + 体积，不入库）──
-mods/
-mods-disabled/
-mods-junk/
+# ============================================================
+#  默认忽略一切，只显式放行源码部分
+#  —— 这样存档/模组/日志/密钥永远不会误入仓库
+# ============================================================
 
-# ── 个人存档 / 地图 / 日志 ──
-saves/
-backups/
-xaero/
-logs/
-crash-reports/
-screenshots/
-debug/
-local/
-PCL/
-patchouli_books/
-patchouli_data.json
-servers.dat
-servers.dat_old
-usercache.json
-usernamecache.json
-command_history.txt
-options.txt
+/*
 
-# ── 版本/启动器文件 ──
-*.jar
-*-natives/
-new project.json*
+# ─────────── 放行 ───────────
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/modlist.md
+!/LICENSE
+!/kubejs/
+!/config/
+!/defaultconfigs/
+!/modpack-docs/
 
-# ── 大体积媒体（背景视频等，自行准备）──
-config/fancymenu/assets/*.mp4
-config/fancymenu/assets/*.mov
+# ─────────── 源码内的排除 ───────────
+# 密钥/密码：绝不入库（含公开模式口令）
+/config/ae2webintegration/ae2webintegration.toml
 
-# ── 备份 / 临时 ──
+# 大型媒体（背景视频 153MB，超 GitHub 单文件上限）
+/config/fancymenu/assets/*.mp4
+/config/fancymenu/assets/*.mov
+/config/fancymenu/assets/*.webm
+*.mp4
+*.mov
+
+# 备份 / 临时 / 已删除
 *.bak
 *.bak_*
 *.bak-*
 *.disabled
-_deleted-*/
-assets.bak-*/
-.cache/
-.probe/
-.dynamic-resource-pack-cache/
+**/_deleted-*/
+**/_backup-*/
+**/assets.bak-*/
+**/*.removed-mod
+**/*.orig
 
-# ── 系统 ──
-.DS_Store
-Thumbs.db
-desktop.ini
+# ─────────── 单机会话 / 各存档独立数据 ───────────
+# 村民交易配置（按存档分目录）
+/config/inventoryprofilesnext/*/
+# JEI 的按存档记录（书签、查询历史）
+/config/jei/world/
+# AE2 最近搜索历史
+/config/ae2_recent_search*.json
+/config/ae2_recent_search*-client.toml
+/config/jeigues_history.json
+
+# ─────────── 兜底：超大文件 ───────────
+# （若还有漏网的，靠推送前脚本校验拦住）

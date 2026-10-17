@@ -459,6 +459,32 @@ event.shaped(Item.of('mespawner:me_spawner'),
                 I: 'anvilcraft:cursed_gold_block'
             }
     ).id('maixr:me_spawner');
+event.remove({output:'advanced_ae:quantum_storage_128'});
+event.shaped(Item.of('advanced_ae:quantum_storage_128'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:shattered_singularity',
+                B: 'ae2omnicells:quantum_omni_cell_component_4k',
+                C: 'advanced_ae:shattered_singularity',
+                D: 'appliedcreate:stress_storage_component_4m',
+                E: 'advanced_ae:quantum_unit',
+                F: 'appflux:core_4m',
+                G: 'advanced_ae:shattered_singularity',
+                H: 'megacells:cell_component_4m',
+                I: 'advanced_ae:shattered_singularity'
+            }
+    ).id('maixr:quantum_storage_128');
+event.remove({output:'nexus_ae:quantum_processing_unit'});
+event.shapeless(Item.of('nexus_ae:quantum_processing_unit'),
+            ['ae2:singularity',
+            'ae2:crafting_accelerator',
+            'advanced_ae:quantum_unit',
+            'ae2:quantum_ring']
+    ).id('maixr:quantum_processing_unit');
 })
 
 // ------------------------------------------------------------

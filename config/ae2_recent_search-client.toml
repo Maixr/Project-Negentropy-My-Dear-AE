@@ -1,4 +1,0 @@
-#Maximum number of recent search entries shown in the terminal.
-# Default: 10
-# Range: > 1
-maxVisibleEntries = 10

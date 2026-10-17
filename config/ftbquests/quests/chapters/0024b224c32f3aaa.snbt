@@ -668,7 +668,14 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["5901F6415B97A6AA"]
 			id: "54E8CA62D2EF6000"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "300C0759E585961F"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
 			tasks: [{
 				count: 2L
 				id: "01524EFFB74C333C"
@@ -677,6 +684,371 @@
 			}]
 			x: 13.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["5901F6415B97A6AA"]
+			id: "307FADDA413B8CF6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "381578DC497D2FE3"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7C82627AAAA1D22D"
+				item: { count: 1, id: "advanced_ae:shattered_singularity" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5901F6415B97A6AA"]
+			id: "0CF45BCCEF80FFEC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07A1C9A97F93FF4D"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "58FA08B1BFBDCA45"
+				item: { count: 1, id: "extendedae_plus:oblivion_singularity" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["518FC99D9C00400F"]
+			id: "7D5AA0CEE7B4D2AF"
+			tasks: [{
+				id: "703ACCB4C49CC13C"
+				item: { count: 1, id: "advanced_ae:quantum_unit" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5901F6415B97A6AA"]
+			id: "5726971DFED5A4AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "066DA1C1397A224B"
+				table_id: 289709801311354444L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2F6AE0E29AF29162"
+				item: { count: 1, id: "mespawner:me_spawner" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D5AA0CEE7B4D2AF"]
+			id: "22C8818F5CEE7A17"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18124035A83D03A1"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "139E305636A46019"
+				item: { count: 1, id: "nexus_ae:quantum_processing_unit" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["54E8CA62D2EF6000"]
+			id: "2317D5BD3CC22249"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "02D3FAC6DF96042A"
+					table_id: 289709801311354444L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "47769D598186EC51"
+					item: {
+						count: 1
+						id: "ae2wtlib:quantum_bridge_card"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "12B7BCDDB3848D9D"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "3971EC64BBC6EBD0"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "6F487931E95217B5"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "72B35C6EFDE4BB42"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "10444048E689AAAC"
+					item: { count: 1, id: "ae2:quantum_link" }
+					type: "item"
+				}
+				{
+					id: "2A87BD621B950EB4"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "60F47989DB0B6FC8"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "0215320A5D7DC9F3"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "7EC0673AE81D5123"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["55F49CA8B85C3458"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "4100465FD4CB817F"
+			rewards: [{
+				id: "3C4D15DD157A2182"
+				item: {
+					components: {
+						"ae2:encoded_processing_pattern": {
+							sparseInputs: [
+								{
+									"#": 68L
+									"#t": "ae2:i"
+									id: "extendedae:assembler_matrix_frame"
+								}
+								{
+									"#": 150L
+									"#t": "ae2:i"
+									id: "extendedae:assembler_matrix_wall"
+								}
+								{
+									"#": 5L
+									"#t": "ae2:i"
+									id: "extendedae:assembler_matrix_speed"
+								}
+								{
+									"#": 60L
+									"#t": "ae2:i"
+									id: "extendedae:assembler_matrix_crafter"
+								}
+								{
+									"#": 60L
+									"#t": "ae2:i"
+									id: "extendedae:assembler_matrix_pattern"
+								}
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+							]
+							sparseOutputs: [
+								{
+									"#": 1L
+									"#t": "ae2:i"
+									id: "ftbquests:book"
+								}
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+							]
+						}
+						"data_energistics:processing_pattern_matching": { }
+						"data_energistics:processing_pattern_recipe_type": "minecraft:crafting"
+						"minecraft:custom_name": "\"不是最好，但是最大7x7的合成矩阵\""
+					}
+					count: 1
+					id: "ae2:processing_pattern"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "55EA238A0C3AA381"
+					item: { count: 1, id: "extendedae:assembler_matrix_frame" }
+					type: "item"
+				}
+				{
+					id: "0BEFC3CBA4B18BC8"
+					item: { count: 1, id: "extendedae:assembler_matrix_wall" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4100465FD4CB817F"]
+			id: "4C7A63371CEBC4CE"
+			rewards: [
+				{
+					count: 5
+					id: "33C71DE7A3C1D78D"
+					item: {
+						count: 1
+						id: "extendedae:assembler_matrix_pattern"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "061D4E94E6635884"
+					table_id: 289709801311354444L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "708F092CFFE44594"
+					item: { count: 1, id: "extendedae:assembler_matrix_pattern" }
+					type: "item"
+				}
+				{
+					id: "0FC7115B56A458D3"
+					item: { count: 1, id: "extendedae:assembler_matrix_crafter" }
+					type: "item"
+				}
+				{
+					id: "1D4E9164FAB40DE7"
+					item: { count: 1, id: "extendedae:assembler_matrix_speed" }
+					type: "item"
+				}
+				{
+					id: "6CE68059A6895508"
+					item: { count: 1, id: "extendedae_plus:assembler_matrix_upload_core" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 6.0d
 		}
 	]
 }

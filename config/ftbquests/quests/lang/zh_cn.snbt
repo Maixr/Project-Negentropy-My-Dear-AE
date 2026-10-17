@@ -62,6 +62,7 @@
 	quest.16ACBA49F496E075.title: "IAE （疯狂AE）"
 	quest.1725D5F51598D01A.title: "无线终端"
 	quest.19E52599B5FEC8EB.title: "集合三界之力（"
+	quest.19FC5B30E4C116B5.quest_desc: ["我现在感觉一天天活得特别&e通透&r"]
 	quest.19FC5B30E4C116B5.quest_subtitle: "只是更好看吗？"
 	quest.1B78DDA8A594B15C.quest_subtitle: "副手拿着物品，长按右键“叮”九下完成锤击"
 	quest.1B848702533EF8C2.title: "我不要下雨！"
@@ -84,8 +85,10 @@
 	quest.228C8E7CE98B208A.quest_desc: ["比较屎（ ）"]
 	quest.228C8E7CE98B208A.quest_subtitle: "这太有味道了"
 	quest.228C8E7CE98B208A.title: "“厕所”"
+	quest.22C8818F5CEE7A17.quest_subtitle: "你的意思是像量子计算机一样分割？"
 	quest.22ECC25E09B6A0F6.title: "工具！"
 	quest.22FB07465762BB27.title: "机械动力 老吴学"
+	quest.2317D5BD3CC22249.quest_subtitle: "布局太神了"
 	quest.265976E264030F76.quest_desc: [
 		"它每个面只有两个频道"
 		"只能存储150AE电量（悲）"
@@ -111,6 +114,8 @@
 	quest.2EAD39A38E6439B2.title: "进阶mekasuit"
 	quest.2EB61EB089A3A816.quest_subtitle: "大约需要1250个重质铁块或者667个下界合金块！"
 	quest.301EF8CC62718135.title: "机动封包"
+	quest.3255A61036AED525.quest_subtitle: "&#FAA0FF猪咪发现了水晶的咪咪&r"
+	quest.3255A61036AED525.title: "&#FAA0FF猪咪催化剂"
 	quest.340A0CBA8EF073A5.quest_subtitle: "但是你并不能前往末地，因为有末地创世"
 	quest.359D424F1A8744D5.title: "工具"
 	quest.35DE72C474D0E093.quest_subtitle: "或许你真的能成为水车仙人？"
@@ -130,6 +135,8 @@
 	quest.3F6A231B512C7751.quest_subtitle: "使用皇家砂轮去魔时放金锭"
 	quest.40B42ED874C742B6.quest_subtitle: "可以用剪刀剪"
 	quest.40DC0711243BFEA5.title: "QQ交流群：1101824363"
+	quest.4100465FD4CB817F.quest_subtitle: "又送多方块假合成样板"
+	quest.4100465FD4CB817F.title: "装配矩阵！"
 	quest.4405D926586AEFC9.quest_subtitle: "天外来物 产矿"
 	quest.4405D926586AEFC9.title: "资源获取"
 	quest.445811BC4715C539.quest_desc: [
@@ -145,6 +152,7 @@
 	quest.487FA32A202ED508.title: "main( ) "
 	quest.49F760AAE8B11658.quest_subtitle: "旁边要有双猫哈气，此装置还要连向流体储罐"
 	quest.4A4F22E7A83360A2.title: "可以驱赶怪物和免疫摔落"
+	quest.4C7A63371CEBC4CE.title: "装配核心"
 	quest.4CB06258404697BD.title: "AE2水晶科技"
 	quest.4D5D98E41FE8B967.quest_subtitle: "让铁砧电通量接受FE"
 	quest.4EFF10DF010D4E6A.quest_subtitle: "天哪！不会消耗锻造模板！"
@@ -162,6 +170,7 @@
 	quest.5562A27D9FB97AEE.title: "西装暴徒MEK"
 	quest.55F49CA8B85C3458.quest_desc: [""]
 	quest.55F49CA8B85C3458.quest_subtitle: "你知道水晶装配器&e4倍&r产出陨矿吗？"
+	quest.5726971DFED5A4AB.quest_subtitle: "但是我觉得这很神圣啊"
 	quest.57A9C87B59BD5673.quest_desc: ["魔女装备可以给你的扫把飞行加速！"]
 	quest.57A9C87B59BD5673.quest_subtitle: "这下看懂了😭"
 	quest.57A9C87B59BD5673.title: "点亮AE文明的火种"

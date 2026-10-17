@@ -841,7 +841,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["17C33142109A5765"]
@@ -852,7 +852,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["170C6553BC5F9A16"]
@@ -863,7 +863,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["60F51F4642D1ACA6"]
@@ -880,7 +880,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4B5D4E76B4F398BB"]
@@ -1273,7 +1273,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["60F51F4642D1ACA6"]
@@ -1290,7 +1290,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["60F51F4642D1ACA6"]
@@ -1307,7 +1307,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["60F51F4642D1ACA6"]
@@ -1324,7 +1324,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["60F51F4642D1ACA6"]
@@ -1341,7 +1341,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["60F51F4642D1ACA6"]
@@ -1358,7 +1358,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -1481,6 +1481,34 @@
 			]
 			x: -20.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["60F51F4642D1ACA6"]
+			id: "3255A61036AED525"
+			rewards: [
+				{
+					count: 8
+					id: "3214E7D4BC3B0487"
+					item: {
+						count: 1
+						id: "ae2lt:pigmee_crystal_catalyzer"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "169CB681C2F5E8DE"
+					table_id: 289709801311354444L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "1EDB532B4EADB98D"
+				item: { count: 1, id: "ae2lt:pigmee_crystal_catalyzer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
 		}
 	]
 }

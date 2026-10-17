@@ -16,34 +16,27 @@ jobs:
         with:
           node-version: 20
 
-      - name: 校验 pack / index / 模组元数据
+      - name: pack / index / 模组元数据
         run: node scripts/verify-pack.mjs
 
-      - name: 校验 KubeJS 脚本语法
+      - name: KubeJS 脚本语法
         run: |
           fail=0
-          while IFS= read -r f; do
-            if ! node --check "$f"; then
-              echo "::error file=$f::KubeJS 脚本语法错误"
+          while IFS= read -r -d '' f; do
+            if ! node --check "$f" 2>/tmp/e; then
+              echo "::error file=$f::KubeJS 脚本语法错误: $(tr '\n' ' ' < /tmp/e)"
               fail=1
             fi
-          done < <(find kubejs -name '*.js' -not -path '*/_deleted*')
+          done < <(find kubejs -name '*.js' -not -path '*/_deleted*' -print0)
           exit $fail
 
-      - name: 校验 JSON 可解析
-        run: |
-          fail=0
-          while IFS= read -r f; do
-            if ! node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" 2>/dev/null; then
-              echo "::error file=$f::JSON 解析失败"
-              fail=1
-            fi
-          done < <(find kubejs config defaultconfigs -name '*.json' -not -path '*/_deleted*' 2>/dev/null)
-          exit $fail
+      - name: JSON 可解析（容忍 JSONC 注释）
+        run: node scripts/check-json.mjs
 
-      - name: 检查是否有不应入库的文件
+      - name: 没有超限归档
         run: |
-          if find . -path ./.git -prune -o -type f \( -name '*.jar' -o -name '*.zip' \) -size +100M -print | grep .; then
-            echo "::error::发现超过 100MB 的归档文件"
+          found=$(find . -path ./.git -prune -o -type f \( -name '*.jar' -o -name '*.zip' \) -size +100M -print)
+          if [ -n "$found" ]; then
+            echo "::error::发现超过 100MB 的归档文件: $found"
             exit 1
           fi

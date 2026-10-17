@@ -1614,7 +1614,7 @@ hash = "ae0fcaf14458699def9fe4e079c0ce77f5687a64271cc10aeb4fa3e5efd75876"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0024b224c32f3aaa.snbt"
-hash = "42972ea0cacff5a26d8a9c3073c8387350f00c9ad0f95b1ada2a52c24641b7b1"
+hash = "2374f5bfb5f5d388f4d25943081072a94d71f4519e82e3253fde4c62e197a970"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/449a2f1a45012ca7.snbt"
@@ -1650,7 +1650,7 @@ hash = "05e2ebd3e27853c7ae7c6b75a974b53a2e6c395a01eceb1b9a5c2233860fc0c7"
 
 [[files]]
 file = "config/ftbquests/quests/lang/zh_cn.snbt"
-hash = "39d2c54ffd56cf8e4a31274d7e56673af5b8f97f86ea4571a53036df197a16a8"
+hash = "f79c01cd7bacf5a4f1071578bb8624f227d0e4d6ebed18ff3c5a23404b8387f6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/04054187831cbe4c.snbt"

@@ -93,5 +93,12 @@ console.log('pack.toml   : ' + (fs.existsSync(packPath) ? 'OK' : '缺失'));
 console.log('index.toml  : ' + fileCount + ' 文件 / ' + (totalBytes / 1048576).toFixed(2) + ' MB');
 console.log('mods 元数据 : ' + pwCount + ' 个 .pw.toml');
 if (warns.length) { console.log('\n警告:'); warns.forEach(w => console.log('  ! ' + w)); }
-if (errs.length) { console.log('\n错误 (' + errs.length + '):'); errs.slice(0, 40).forEach(e => console.log('  x ' + e)); process.exit(1); }
+if (errs.length) {
+  console.log('\n错误 (' + errs.length + '):');
+  errs.slice(0, 40).forEach(e => {
+    console.log('  x ' + e);
+    console.log('::error::' + e.replace(/[\r\n]/g, ' '));
+  });
+  process.exit(1);
+}
 console.log('\n✓ 校验通过');

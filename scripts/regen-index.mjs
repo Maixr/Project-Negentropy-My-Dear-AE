@@ -17,6 +17,7 @@ const EXCLUDE = [
   /^\.github\//, /^\.gitignore$/, /^\.gitattributes$/, /^\.packwizignore$/,
   /^README\.md$/, /^DEVELOPMENT\.md$/, /^CHANGELOG\.md$/, /^LICENSE$/, /^modlist\.md$/,
   /^modpack-docs\//, /^docs\//, /^scripts\//, /^pack\.toml$/, /^index\.toml$/,
+  /^sync\.bat$/,
 ];
 
 // 拿到 git 实际跟踪的文件（-z 避免中文/空格路径被转义）

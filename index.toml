@@ -1321,6 +1321,10 @@ file = "config/entityculling.json"
 hash = "4a6d510b7e0157027b1cf2022184567fd5387aa09d08db108cb0369ba371ddbe"
 
 [[files]]
+file = "config/entropy_tech-living-quotes.json"
+hash = "b8671064905e59fdb42e606502e004ee98a778dc10e841ed876d88e7bfe38510"
+
+[[files]]
 file = "config/etf_warnings.json"
 hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
 
@@ -3463,6 +3467,10 @@ hash = "d39c39406a9973d537c8f4296518f2d00c7278d1fd8eb9244ed21e580b8117d8"
 file = "mods/entitytexturefeatures.pw.toml"
 metafile = true
 hash = "1591ca321939cef00950aa53ae45b4265c1b1bdef5f88e20aabc5ccd51cee774"
+
+[[files]]
+file = "mods/entropy_tech-0.3.33-neoforge+mc1.21.1.jar"
+hash = "406ed2f4387c6e98ac10a2075b3664f23ce9d3e2cbbd2aab372e2c5ecdbfe7e9"
 
 [[files]]
 file = "mods/experiencelib.pw.toml"

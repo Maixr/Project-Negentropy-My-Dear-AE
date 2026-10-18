@@ -22,6 +22,24 @@ function Ok($t)   { Write-Host ("  [OK] " + $t) -ForegroundColor Green }
 function Warn($t) { Write-Host ("  [!!] " + $t) -ForegroundColor Yellow }
 function Die($t)  { Write-Host ("  [XX] " + $t) -ForegroundColor Red; exit 1 }
 
+# 跑外部程序。
+# 直接用 & 跑 git/node 时，它们往 stderr 写的正常输出（git push 进度、
+# node 警告）会被 PowerShell 包成 NativeCommandError，配合
+# $ErrorActionPreference=Stop 会直接中断脚本 —— 出现过「推送成功了但
+# 脚本报错退出」的假故障。这里临时降级为 Continue，并显式取退出码。
+function RunNative($exe, [string[]]$argv) {
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $out = & $exe @argv 2>&1
+        $code = $LASTEXITCODE
+    } finally {
+        $ErrorActionPreference = $prev
+    }
+    $text = @($out | ForEach-Object { "$_" })
+    return [pscustomobject]@{ Output = $text; Code = $code }
+}
+
 # --- 0. 前置检查 ---
 Step '检查环境'
 
@@ -43,26 +61,28 @@ Ok '仓库结构正常'
 
 # --- 1. 重建索引 ---
 Step '重建 index.toml'
-$regen = & node scripts/regen-index.mjs 2>&1
-$regen | ForEach-Object { Write-Host ('  ' + $_) }
-if ($LASTEXITCODE -ne 0) { Die '索引重建失败' }
+$r1 = RunNative 'node' @('scripts/regen-index.mjs')
+$r1.Output | ForEach-Object { Write-Host ('  ' + $_) }
+if ($r1.Code -ne 0) { Die '索引重建失败' }
 
 # --- 2. 校验 ---
 Step '校验整合包'
-$verify = & node scripts/verify-pack.mjs 2>&1
-$verify | ForEach-Object { Write-Host ('  ' + $_) }
-if ($LASTEXITCODE -ne 0) { Die '校验未通过，已中止（没有提交任何东西）' }
+$r2 = RunNative 'node' @('scripts/verify-pack.mjs')
+$r2.Output | ForEach-Object { Write-Host ('  ' + $_) }
+if ($r2.Code -ne 0) { Die '校验未通过，已中止（没有提交任何东西）' }
 
 # --- 3. 汇总 ---
 Step '汇总改动'
-& git add -A
-$staged = & git diff --cached --numstat
-if (-not $staged) {
+$null = RunNative "git" @("add", "-A")
+$diff = RunNative "git" @("diff", "--cached", "--numstat")
+if (-not $diff.Output -or $diff.Output.Count -eq 0) {
     Ok '没有需要提交的改动 —— 远程仓库已是最新'
     exit 0
 }
+$names = RunNative "git" @("diff", "--cached", "--name-only")
 $perTop = @{}
-foreach ($line in (& git diff --cached --name-only)) {
+foreach ($line in $names.Output) {
+    if (-not $line) { continue }
     $top = ($line -split '/')[0]
     if (-not $perTop.ContainsKey($top)) { $perTop[$top] = 0 }
     $perTop[$top] = $perTop[$top] + 1
@@ -80,17 +100,17 @@ if (-not $Message) {
     if ($perTop.ContainsKey('mods'))   { $parts += 'mods' }
     $Message = 'chore: 同步 ' + ($parts -join ' / ') + ' 改动'
 }
-& git commit -q -m $Message
-if ($LASTEXITCODE -ne 0) { Die '提交失败' }
-$sha = (& git rev-parse --short HEAD)
+$c = RunNative "git" @("commit", "-q", "-m", $Message)
+if ($c.Code -ne 0) { $c.Output | ForEach-Object { Write-Host ('  ' + $_) }; Die '提交失败' }
+$sha = (RunNative "git" @("rev-parse", "--short", "HEAD")).Output[0]
 Ok ($sha + '  ' + $Message)
 
 # --- 5. 推送 ---
 Step '推送到 GitHub'
 $env:GIT_TERMINAL_PROMPT = '0'
-$push = & git push origin main 2>&1
-$push | ForEach-Object { Write-Host ('  ' + $_) }
-if ($LASTEXITCODE -ne 0) { Die '推送失败（检查网络/凭据）' }
+$p1 = RunNative "git" @("push", "origin", "main")
+$p1.Output | ForEach-Object { Write-Host ('  ' + $_) }
+if ($p1.Code -ne 0) { Die '推送失败（网络 / SSH 密钥 / 远端冲突）' }
 
 $repoUrl = 'https://github.com/Maixr/Project-Negentropy-My-Dear-AE'
 Write-Host ''

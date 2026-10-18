@@ -65,6 +65,24 @@ event.shaped(Item.of('mekanism:steel_casing'),
                 I: 'mekanism:ingot_steel'
             }
     ).id('maixr:steel_casing');
+    event.remove({output:'appmek:chemical_cell_housing'});
+event.shaped(Item.of('appmek:chemical_cell_housing'),
+            [
+                'ABC',
+                'D F',
+                'GHI'
+            ],
+            {
+                A: 'mekanism:structural_glass',
+                B: 'mekanism:advanced_control_circuit',
+                C: 'mekanism:structural_glass',
+                D: 'mekanism:basic_control_circuit',
+                F: 'mekanism:basic_control_circuit',
+                G: 'mekanism:ingot_refined_glowstone',
+                H: 'mekanism:ingot_refined_glowstone',
+                I: 'mekanism:ingot_refined_glowstone'
+            }
+    ).id('maixr:chemical_cell_housing');
 })
 
 // ------------------------------------------------------------

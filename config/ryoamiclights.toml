@@ -95,6 +95,7 @@
 				maid = true
 				danmaku = true
 				power_point = true
+				throw_power_point = true
 
 			[light_sources.settings.entities.dreammod]
 				miner_nightmare = true

@@ -99,6 +99,10 @@ event.shaped(Item.of('dreammod:bottled_dream'),
                 I: 'ae2lt:pigmee_fumo'
             }
     ).id('maixr:bottled_dream_2');
+event.shapeless(Item.of('minecraft:paper',3),
+            ['minecraft:book',
+            'minecraft:flint']
+    ).id('maixr:paper');
 })
 
 // ------------------------------------------------------------

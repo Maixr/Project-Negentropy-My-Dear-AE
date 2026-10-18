@@ -731,7 +731,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["5901F6415B97A6AA"]
+			dependencies: ["518FC99D9C00400F"]
 			id: "5726971DFED5A4AB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -744,8 +744,8 @@
 				item: { count: 1, id: "mespawner:me_spawner" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: 3.0d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7D5AA0CEE7B4D2AF"]
@@ -832,7 +832,7 @@
 				}
 			]
 			x: 15.5d
-			y: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["55F49CA8B85C3458"]
@@ -1002,7 +1002,7 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: -2.0d
 			y: 3.5d
 		}
 		{
@@ -1047,7 +1047,7 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: -2.0d
 			y: 6.0d
 		}
 		{
@@ -1134,7 +1134,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2ECB888DA592EC72"]
@@ -1150,8 +1150,8 @@
 				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 8.0d
+			x: 13.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1A3447A24DFE1DE6"]
@@ -1235,8 +1235,8 @@
 				item: { count: 1, id: "mekanism:ultimate_tier_installer" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 10.0d
+			x: 13.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["401A4B54ED9B9FED"]
@@ -1252,8 +1252,393 @@
 				item: { count: 1, id: "mekanism:basic_tier_installer" }
 				type: "item"
 			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"401A4B54ED9B9FED"
+				"1A3447A24DFE1DE6"
+			]
+			id: "515DD41BE01C8F26"
+			rewards: [{
+				id: "3CB75B3839E8FA25"
+				item: {
+					count: 1
+					id: "appmek:chemical_cell_housing"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "29C091C3DF487147"
+				item: { count: 1, id: "appmek:chemical_cell_housing" }
+				type: "item"
+			}]
 			x: 5.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7D52828723B9488E"
+				"0CF45BCCEF80FFEC"
+			]
+			id: "4B4BACE5454D999A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B3DA837276B24FE"
+				table_id: 289709801311354444L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "1477FAEF12A0A57F"
+				item: { count: 1, id: "extendedae:void_cell" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["307FADDA413B8CF6"]
+			id: "17D2F083508411B9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EF995A53CAD7C2A"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1B06AC00D1651370"
+				item: { count: 1, id: "advanced_ae:quantum_alloy" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["17D2F083508411B9"]
+			id: "383576C508AF6B92"
+			tasks: [{
+				count: 4L
+				id: "0358EA6181FCAB9E"
+				item: { count: 1, id: "advanced_ae:quantum_alloy_plate" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17D2F083508411B9"]
+			id: "302831C2D6F4942F"
+			tasks: [{
+				count: 4L
+				id: "36367C1FA42DDD03"
+				item: { count: 1, id: "ae2cs:quantum_crystal_seed" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["302831C2D6F4942F"]
+			id: "321E9815F88EB430"
+			rewards: [
+				{
+					count: 8
+					id: "382975F3A796231D"
+					item: {
+						count: 1
+						id: "mysticalagriculture:infusion_pedestal"
+					}
+					type: "item"
+				}
+				{
+					id: "1E68B7E7CE58F4E0"
+					item: {
+						count: 1
+						id: "mysticalagriculture:infusion_altar"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "565D59D192239EC2"
+				item: { count: 1, id: "mysticalagriculture:prosperity_seed_base" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D52828723B9488E"]
+			id: "43E54EC7A7A1DC53"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F00EEECECFAA3B6"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "112FF18423301C7E"
+					item: { count: 1, id: "mekanism:yellow_cake_uranium" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44646D7F22537730"
+					item: { count: 1, id: "mekanism_extras:alloy_radiance" }
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["43E54EC7A7A1DC53"]
+			id: "25D02D75456067C6"
+			rewards: [{
+				id: "32EE6CB5AA79E448"
+				item: {
+					components: {
+						"ae2:encoded_processing_pattern": {
+							sparseInputs: [
+								{
+									"#": 184L
+									"#t": "ae2:i"
+									id: "mekanismgenerators:fission_reactor_casing"
+								}
+								{
+									"#": 4L
+									"#t": "ae2:i"
+									id: "mekanismgenerators:fission_reactor_port"
+								}
+								{
+									"#": 1470L
+									"#t": "ae2:i"
+									id: "mekanismgenerators:fission_fuel_assembly"
+								}
+								{
+									"#": 98L
+									"#t": "ae2:i"
+									id: "mekanismgenerators:control_rod_assembly"
+								}
+								{
+									"#": 1284L
+									"#t": "ae2:i"
+									id: "mekanismgenerators:reactor_glass"
+								}
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+							]
+							sparseOutputs: [
+								{
+									"#": 1L
+									"#t": "ae2:i"
+									components: {
+										"minecraft:custom_name": "{\"translate\":\"block.mekanismgenerators.fission_reactor_casing\"}"
+									}
+									id: "minecraft:paper"
+								}
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+								{ }
+							]
+						}
+						"data_energistics:processing_pattern_matching": { }
+						"data_energistics:processing_pattern_recipe_type": "jei_mekanism_multiblocks:multiblock.mekanismgenerators.fission_reactor"
+						"minecraft:custom_name": "\"16*16*18反应堆\""
+					}
+					count: 1
+					id: "ae2:processing_pattern"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "6DEFA2879780C571"
+					item: { count: 1, id: "mekanismgenerators:control_rod_assembly" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "22D5A4BFE600A5D1"
+					item: { count: 1, id: "mekanismgenerators:fission_fuel_assembly" }
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["25D02D75456067C6"]
+			id: "3B122A5C32B92D2C"
+			rewards: [{
+				count: 5
+				id: "47024AB8B7F94C53"
+				item: {
+					count: 1
+					id: "mekanism_extras:alloy_thermonuclear"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0278DC2E7FCDABB5"
+					item: { count: 1, id: "mekanism_extras:enriched_thermonuclear" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4B4E40134BC1FD3B"
+					item: { count: 1, id: "mekanism_extras:alloy_thermonuclear" }
+					type: "item"
+				}
+				{
+					id: "73FD03BF36D575FD"
+					item: { count: 1, id: "mekanism_extras:supreme_control_circuit" }
+					type: "item"
+				}
+			]
+			x: 19.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["43E54EC7A7A1DC53"]
+			id: "06C156DDFEB71EDB"
+			tasks: [{
+				id: "22C2074753162224"
+				item: { count: 1, id: "mekanism_extras:absolute_tier_installer" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3B122A5C32B92D2C"]
+			id: "2FAD3D43B7DAC79D"
+			tasks: [{
+				id: "61FA0C843AED081E"
+				item: { count: 1, id: "mekanism_extras:supreme_tier_installer" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3B122A5C32B92D2C"
+				"383576C508AF6B92"
+			]
+			icon_scale: 1.4d
+			id: "78F3F2D9EE4A5F25"
+			size: 1.7d
+			tasks: [{
+				count: 8L
+				id: "5C2C79B86FE7B6E6"
+				item: { count: 1, id: "ae2:blank_pattern" }
+				type: "item"
+			}]
+			x: 19.55d
+			y: 0.85d
 		}
 	]
 }

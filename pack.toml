@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "8596eba675845111e40e6cf1b1ee71724b65ed900e6a7e67ff39f0e8ca0d61bc"
+hash = "6c6eac4fa3b54c56ae5049a47fac72691a106defcc3af7dedb5e34f4d1ae9631"
 
 [versions]
 neoforge = "21.1.251"

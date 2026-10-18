@@ -485,6 +485,172 @@ event.shapeless(Item.of('nexus_ae:quantum_processing_unit'),
             'advanced_ae:quantum_unit',
             'ae2:quantum_ring']
     ).id('maixr:quantum_processing_unit');
+event.remove({output:'extendedae:void_cell'});
+event.shaped(Item.of('extendedae:void_cell'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2:quartz_vibrant_glass',
+                B: 'mattercondensertiers:ultimate_matter_condenser',
+                C: 'ae2:quartz_vibrant_glass',
+                D: 'extendedae_plus:oblivion_singularity',
+                E: 'megacells:cell_component_16m',
+                F: 'extendedae_plus:oblivion_singularity',
+                G: 'mekanism:ultimate_control_circuit',
+                H: 'ae2:void_card',
+                I: 'mekanism:ultimate_control_circuit'
+            }
+    ).id('maixr:void_cell');
+event.remove({output:'mattercondensertiers:ultimate_matter_condenser'});
+event.shaped(Item.of('mattercondensertiers:ultimate_matter_condenser'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2:matter_ball',
+                B: 'ae2:matter_ball',
+                C: 'ae2:matter_ball',
+                D: 'mattercondensertiers:elite_matter_condenser',
+                E: 'entropy_tech:pure_yunkuang_4x',
+                F: 'mattercondensertiers:elite_matter_condenser',
+                G: 'ae2:matter_ball',
+                H: 'ae2:matter_ball',
+                I: 'ae2:matter_ball'
+            }
+    ).id('maixr:ultimate_matter_condenser');
+event.remove({output:'mattercondensertiers:elite_matter_condenser'});
+event.shaped(Item.of('mattercondensertiers:elite_matter_condenser'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2:matter_ball',
+                B: 'ae2:matter_ball',
+                C: 'ae2:matter_ball',
+                D: 'mattercondensertiers:advanced_matter_condenser',
+                E: 'entropy_tech:pure_yunkuang_3x',
+                F: 'mattercondensertiers:advanced_matter_condenser',
+                G: 'ae2:matter_ball',
+                H: 'ae2:matter_ball',
+                I: 'ae2:matter_ball'
+            }
+    ).id('maixr:elite_matter_condenser');
+    event.remove({output:'mespawner:spawner_cell_1k'});
+event.shaped(Item.of('mespawner:spawner_cell_1k'),
+            [
+                ' B ',
+                'DEF',
+                'GHI'
+            ],
+            {
+                B: 'minecraft:nether_star',
+                D: 'advanced_ae:quantum_infused_dust',
+                E: 'entropy_tech:living_yunkuang',
+                F: 'advanced_ae:quantum_infused_dust',
+                G: 'anvilcraft:cursed_gold_ingot',
+                H: 'anvilcraft:cursed_gold_ingot',
+                I: 'anvilcraft:cursed_gold_ingot'
+            }
+    ).id('maixr:spawner_cell_1k');
+    event.remove({output:'mespawner:spawner_cell_4k'});
+event.shaped(Item.of('mespawner:spawner_cell_4k'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:quantum_infused_dust',
+                B: 'mespawner:spawner_cell_1k',
+                C: 'advanced_ae:quantum_infused_dust',
+                D: 'mespawner:spawner_cell_1k',
+                E: 'entropy_tech:living_yunkuang',
+                F: 'mespawner:spawner_cell_1k',
+                G: 'anvilcraft:cursed_gold_ingot',
+                H: 'anvilcraft:cursed_gold_ingot',
+                I: 'anvilcraft:cursed_gold_ingot'
+            }
+    ).id('maixr:spawner_cell_4k');
+    event.remove({output:'mespawner:spawner_cell_16k'});
+event.shaped(Item.of('mespawner:spawner_cell_16k'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:quantum_infused_dust',
+                B: 'mespawner:spawner_cell_4k',
+                C: 'advanced_ae:quantum_infused_dust',
+                D: 'mespawner:spawner_cell_4k',
+                E: 'entropy_tech:living_yunkuang',
+                F: 'mespawner:spawner_cell_4k',
+                G: 'anvilcraft:cursed_gold_ingot',
+                H: 'anvilcraft:cursed_gold_ingot',
+                I: 'anvilcraft:cursed_gold_ingot'
+            }
+    ).id('maixr:spawner_cell_16k');
+event.remove({output:'mespawner:spawner_cell_64k'});
+event.shaped(Item.of('mespawner:spawner_cell_64k'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:quantum_infused_dust',
+                B: 'mespawner:spawner_cell_16k',
+                C: 'advanced_ae:quantum_infused_dust',
+                D: 'mespawner:spawner_cell_16k',
+                E: 'entropy_tech:living_yunkuang',
+                F: 'mespawner:spawner_cell_16k',
+                G: 'minecraft:totem_of_undying',
+                H: 'minecraft:conduit',
+                I: 'minecraft:totem_of_undying'
+            }
+    ).id('maixr:spawner_cell_64k');
+event.remove({output:'mespawner:spawner_cell_256k'});
+event.shaped(Item.of('mespawner:spawner_cell_256k'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:quantum_infused_dust',
+                B: 'mespawner:spawner_cell_64k',
+                C: 'advanced_ae:quantum_infused_dust',
+                D: 'mespawner:spawner_cell_64k',
+                E: 'entropy_tech:living_yunkuang',
+                F: 'mespawner:spawner_cell_64k',
+                G: 'anvilcraft:totem_of_rage',
+                H: 'minecraft:dragon_egg',
+                I: 'anvilcraft:totem_of_recovery'
+            }
+    ).id('maixr:spawner_cell_256k');
+event.shaped(Item.of('ae2:blank_pattern',8),
+            [
+                ' B ',
+                'DEF',
+                'GHI'
+            ],
+            {
+                B: 'entropy_tech:primordial_yunkuang',
+                D: 'mekanism_extras:supreme_control_circuit',
+                E: 'nep:matrix_circuitry',
+                F: 'mekanism_extras:supreme_control_circuit',
+                G: 'advanced_ae:quantum_alloy_plate',
+                H: 'advanced_ae:quantum_alloy_plate',
+                I: 'advanced_ae:quantum_alloy_plate'
+            }
+    ).id('maixr:blank_pattern');
 })
 
 // ------------------------------------------------------------

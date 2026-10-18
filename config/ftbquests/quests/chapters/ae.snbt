@@ -95,15 +95,25 @@
 				"51825D4C8F3620CF"
 			]
 			id: "7BBC1530FA5CD352"
-			rewards: [{
-				count: 16
-				id: "00CECDAC71978EA4"
-				item: {
-					count: 1
-					id: "minecraft:flint"
+			rewards: [
+				{
+					count: 16
+					id: "00CECDAC71978EA4"
+					item: {
+						count: 1
+						id: "minecraft:flint"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "19EBA371D725F5B8"
+					item: {
+						count: 1
+						id: "ae2_ftbquest_detector:me_quests_detector"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "667B3535FA0CC002"
 				item: { count: 1, id: "entropy_tech:entropy_processor" }
@@ -137,53 +147,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7BBC1530FA5CD352"]
-			id: "462687579603DF29"
-			rewards: [{
-				count: 2
-				id: "4971846E4A614E64"
-				item: {
-					count: 1
-					id: "tinyae2cells:256_byte_item_storage_cell"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "38C06B2112083931"
-				item: { count: 1, id: "entropy_tech:primitive_drive" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.5d
-		}
-		{
 			dependencies: [
-				"7BBC1530FA5CD352"
-				"6AF659B5BA10B651"
-			]
-			id: "2BD9857EBB7ECD94"
-			rewards: [{
-				id: "31A7AD247787F451"
-				item: {
-					count: 1
-					id: "entropy_tech:primitive_terminal"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6C3BEEF55AF3AB89"
-				item: { count: 1, id: "entropy_tech:primitive_terminal" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"462687579603DF29"
-				"2BD9857EBB7ECD94"
 				"265976E264030F76"
+				"462687579603DF29"
+				"60B73F0D2AC762A0"
 			]
+			dependency_requirement: "one_completed"
 			id: "57A9C87B59BD5673"
 			rewards: [
 				{
@@ -328,38 +297,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["20A2EC05E80FF089"]
-			dependency_requirement: "all_started"
-			id: "6AF659B5BA10B651"
-			tasks: [{
-				id: "2322D667C1C69FDD"
-				item: { count: 1, id: "entropy_tech:primitive_generator" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.0d
-		}
-		{
-			id: "20A2EC05E80FF089"
-			rewards: [{
-				count: 8
-				id: "101482A9C69245DF"
-				item: {
-					count: 1
-					id: "dreammod:dream_gem"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				advancement: "dreammod:geode_encounter"
-				criterion: ""
-				id: "6B05E593895855A5"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["3DF054858C75C816"]
 			id: "127F7E7C221B31B7"
 			rewards: [
@@ -396,6 +333,80 @@
 			}]
 			x: -2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7BBC1530FA5CD352"]
+			id: "462687579603DF29"
+			rewards: [{
+				count: 2
+				id: "4971846E4A614E64"
+				item: {
+					count: 1
+					id: "tinyae2cells:256_byte_item_storage_cell"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "38C06B2112083931"
+				item: { count: 1, id: "entropy_tech:primitive_drive" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7BBC1530FA5CD352"
+				"6AF659B5BA10B651"
+			]
+			id: "60B73F0D2AC762A0"
+			rewards: [{
+				id: "6E3504056D1A27F5"
+				item: {
+					count: 1
+					id: "entropy_tech:primitive_terminal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "34538FC4FB4C6225"
+				item: { count: 1, id: "entropy_tech:primitive_terminal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			id: "20A2EC05E80FF089"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "101482A9C69245DF"
+				item: {
+					count: 1
+					id: "dreammod:dream_gem"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "61374C3681494955"
+				item: { count: 1, id: "dreammod:dream_crystal_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["20A2EC05E80FF089"]
+			dependency_requirement: "one_started"
+			id: "6AF659B5BA10B651"
+			tasks: [{
+				id: "2322D667C1C69FDD"
+				item: { count: 1, id: "entropy_tech:primitive_generator" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
 		}
 	]
 }

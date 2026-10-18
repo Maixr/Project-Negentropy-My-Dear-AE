@@ -94,11 +94,13 @@ $perTop.GetEnumerator() | Sort-Object Value -Descending | ForEach-Object {
 # --- 4. 提交 ---
 Step '提交'
 if (-not $Message) {
+    # 按顶层目录自动生成，kubejs/config/mods 排前面（最有意义）
+    $order = @('kubejs', 'config', 'mods')
     $parts = @()
-    if ($perTop.ContainsKey('kubejs')) { $parts += 'kubejs' }
-    if ($perTop.ContainsKey('config')) { $parts += 'config' }
-    if ($perTop.ContainsKey('mods'))   { $parts += 'mods' }
-    $Message = 'chore: 同步 ' + ($parts -join ' / ') + ' 改动'
+    foreach ($k in $order) { if ($perTop.ContainsKey($k)) { $parts += $k } }
+    foreach ($k in $perTop.Keys) { if ($order -notcontains $k) { $parts += $k } }
+    if ($parts.Count -eq 0) { $Message = 'chore: 同步改动' }
+    else { $Message = 'chore: 同步 ' + ($parts -join ' / ') + ' 改动' }
 }
 $c = RunNative "git" @("commit", "-q", "-m", $Message)
 if ($c.Code -ne 0) { $c.Output | ForEach-Object { Write-Host ('  ' + $_) }; Die '提交失败' }

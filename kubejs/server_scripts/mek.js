@@ -83,6 +83,25 @@ event.shaped(Item.of('appmek:chemical_cell_housing'),
                 I: 'mekanism:ingot_refined_glowstone'
             }
     ).id('maixr:chemical_cell_housing');
+    event.remove({output:'mwgr:lava_generator'});
+event.shaped(Item.of('mwgr:lava_generator'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'appgen:ember_crystal_charged',
+                B: 'minecraft:glass_pane',
+                C: 'appgen:ember_crystal_charged',
+                D: 'minecraft:lava_bucket',
+                E: 'minecraft:netherite_ingot',
+                F: 'minecraft:lava_bucket',
+                G: 'minecraft:magma_block',
+                H: 'minecraft:magma_block',
+                I: 'minecraft:magma_block'
+            }
+    ).id('maixr:lava_generator');
 })
 
 // ------------------------------------------------------------

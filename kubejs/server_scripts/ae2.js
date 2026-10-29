@@ -34,6 +34,20 @@ ServerEvents.recipes(event => {
         'tinyae2cells:256_byte_storage_component',
         'maixr:256_byte_storage_component_inscriber'
     )
+    AE2Recipes.inscriber(event, 'press',
+        'alexscaves:block_of_scarlet_neodymium',
+        'alexscaves:block_of_azure_neodymium',
+        'ae2:matter_ball',
+        'alexscaves:telecore',
+        'maixr:alexscaves:telecore'
+    )
+    AE2Recipes.inscriber(event,'press',
+        'enderio:pulsating_crystal',
+        'pasterdream:windrunner_crystal_block',
+        'ae2cs:purified_quantum_crystal',
+        'pasterdream:pulse_windrunner_crystal',
+        'maixr:pulse_windrunner_crystal'
+    )
 
     // 猪咪核心
     event.shaped(Item.of('ae2lt:pigmee_core'),
@@ -89,22 +103,19 @@ ServerEvents.recipes(event => {
                 F: 'tinyae2cells:512_byte_storage_component'
             }
     ).id('maixr:cell_component_1k');
-    event.shaped(Item.of('entropy_tech:rough_crafting_terminal'),
+   event.remove({output:'entropy_tech:rough_crafting_terminal'});
+event.shaped(Item.of('entropy_tech:rough_crafting_terminal'),
             [
-                'ABC',
+                ' B ',
                 'DEF',
-                'GHI'
+                ' H '
             ],
             {
-                A: 'avaritia:compressed_crafting_table',
                 B: 'create:crafter_slot_cover',
-                C: 'avaritia:compressed_crafting_table',
-                D: 'ae2:formation_core',
-                E: 'entropy_tech:flawed_pattern_terminal',
-                F: 'ae2:annihilation_core',
-                G: 'avaritia:compressed_crafting_table',
-                H: 'ae2lt:pigmee_synthesis_station',
-                I: 'avaritia:compressed_crafting_table'
+                D: 'entropy_tech:primitive_terminal',
+                E: 'ae2lt:pigmee_synthesis_station',
+                F: 'avaritia:compressed_crafting_table',
+                H: 'appliedcreate:advanced_stress_processor'
             }
     ).id('maixr:rough_crafting_terminal');
     event.remove({output:'ae2:pattern_provider'});
@@ -116,13 +127,13 @@ event.shaped(Item.of('ae2:pattern_provider'),
             ],
             {
                 A: 'ae2:formation_core',
-                B: 'neoecoae:aluminum_alloy_ingot',
+                B: 'create:brass_ingot',
                 C: 'ae2:annihilation_core',
                 D: 'avaritia:compressed_crafting_table',
                 E: 'ae2cs:simple_pattern_provider',
                 F: 'avaritia:compressed_crafting_table',
                 G: 'ae2:annihilation_core',
-                H: 'neoecoae:aluminum_alloy_ingot',
+                H: 'create:brass_ingot',
                 I: 'ae2:formation_core'
             }
     ).id('maixr:pattern_provider');
@@ -137,8 +148,8 @@ event.shaped(Item.of('ae2:interface'),
                 A: 'ae2:annihilation_core',
                 B: 'minecraft:glass',
                 C: 'ae2:formation_core',
-                D: 'mekanismsun:silver_ingot',
-                F: 'mekanismsun:silver_ingot',
+                D: '#c:ingots/silver',
+                F: '#c:ingots/silver',
                 G: 'ae2:formation_core',
                 H: 'minecraft:glass',
                 I: 'ae2:annihilation_core'
@@ -651,6 +662,121 @@ event.shaped(Item.of('ae2:blank_pattern',8),
                 I: 'advanced_ae:quantum_alloy_plate'
             }
     ).id('maixr:blank_pattern');
+    event.remove({output:'mespawner:looting_card'});
+event.shaped(Item.of('mespawner:looting_card'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'entropy_tech:compressed_yunkuang_4x',
+                B: 'minecraft:crying_obsidian',
+                C: 'entropy_tech:compressed_yunkuang_4x',
+                D: 'neoecoprototype:simplify_green_crystal_matrix',
+                E: 'insaneae:overclock_card',
+                F: 'neoecoprototype:simplify_green_crystal_matrix',
+                G: 'entropy_tech:pure_yunkuang_4x',
+                H: 'minecraft:crying_obsidian',
+                I: 'entropy_tech:pure_yunkuang_4x'
+            }
+    ).id('maixr:looting_card');
+    event.remove({output:'mespawner:compressed_looting_card'});
+event.shaped(Item.of('mespawner:compressed_looting_card'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'avaritia:blaze_sword',
+                B: 'mespawner:looting_card',
+                C: 'avaritia:blaze_sword',
+                D: 'mespawner:looting_card',
+                E: 'anvilcraft:cursed_golden_apple',
+                F: 'mespawner:looting_card',
+                G: 'mekanism:block_refined_obsidian',
+                H: 'mespawner:looting_card',
+                I: 'mekanism:block_refined_obsidian'
+            }
+    ).id('maixr:compressed_looting_card');
+    event.remove({output:'mespawner:ultimate_looting_card'});
+event.shaped(Item.of('mespawner:ultimate_looting_card'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'avaritia:infinity_sword',
+                B: 'mespawner:looting_card',
+                C: 'avaritia:infinity_sword',
+                D: 'mespawner:looting_card',
+                E: 'entropy_tech:chrono_yunkuang',
+                F: 'mespawner:looting_card',
+                G: 'ufo:obsidian_matrix',
+                H: 'mespawner:looting_card',
+                I: 'ufo:obsidian_matrix'
+            }
+    ).id('maixr:ultimate_looting_card');
+    event.remove({output:'advanced_ae:quantum_core'});
+event.shaped(Item.of('advanced_ae:quantum_core'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:quantum_alloy_plate',
+                B: 'advanced_ae:shattered_singularity',
+                C: 'advanced_ae:quantum_alloy_plate',
+                D: 'advanced_ae:quantum_accelerator',
+                E: 'advanced_ae:quantum_crafter',
+                F: 'advanced_ae:quantum_storage_256',
+                G: 'advanced_ae:quantum_alloy_plate',
+                H: 'advanced_ae:shattered_singularity',
+                I: 'advanced_ae:quantum_alloy_plate'
+            }
+    ).id('maixr:quantum_core');
+    event.remove({output:'minecraft:porkchop'});
+event.shaped(Item.of('minecraft:porkchop'),
+            [
+                ' BC',
+                'DEF',
+                'GH '
+            ],
+            {
+                B: 'ae2lt:pigmee_fumo',
+                C: 'ae2lt:pigmee_fumo',
+                D: 'ae2lt:pigmee_fumo',
+                E: 'ae2lt:pigmee_fumo',
+                F: 'ae2lt:pigmee_fumo',
+                G: 'ae2lt:pigmee_fumo',
+                H: 'ae2lt:pigmee_fumo'
+            }
+    ).id('maixr:porkchop');
+    event.remove({output:'ae2lt:pigmee_synthesis_station'});
+event.shaped(Item.of('ae2lt:pigmee_synthesis_station'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2lt:pigmee_fumo',
+                B: 'minecraft:diamond',
+                C: 'ae2lt:pigmee_fumo',
+                D: 'minecraft:chest',
+                E: 'minecraft:crafting_table',
+                F: 'minecraft:chest',
+                G: 'minecraft:redstone',
+                H: 'minecraft:redstone',
+                I: 'minecraft:redstone'
+            }
+    ).id('maixr:pigmee_synthesis_station');
+    event.remove({output:'insaneae:quantum_cpu'});
+
+
 })
 
 // ------------------------------------------------------------

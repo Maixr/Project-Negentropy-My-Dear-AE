@@ -52,6 +52,7 @@ natives-*/
 /.github/
 /docs/
 /modpack-docs/
+/patches/
 
 # 密钥
 /config/ae2webintegration/ae2webintegration.toml

@@ -4,7 +4,16 @@
 	filename: "0024b224c32f3aaa"
 	group: "4B28AF7297340C54"
 	id: "0024B224C32F3AAA"
-	images: [ ]
+	images: [{
+		click_action: "none:"
+		height: 90.0d
+		id: "1E9E62AC806F3372"
+		image: "maixr:textures/gui/antientropy_bg.png"
+		rotation: 0.0d
+		width: 160.0d
+		x: 23.0d
+		y: -3.5d
+	}]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -402,7 +411,7 @@
 				item: { count: 1, id: "mekanism:energized_smelter" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 3.5d
 		}
 		{
@@ -419,7 +428,7 @@
 				item: { count: 1, id: "mekanism:enrichment_chamber" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -436,7 +445,7 @@
 				item: { count: 1, id: "mekanism:osmium_compressor" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -453,7 +462,7 @@
 				item: { count: 1, id: "mekanism:combiner" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 3.5d
 		}
 		{
@@ -470,24 +479,7 @@
 				item: { count: 1, id: "mekanism:crusher" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["50375021AE748E1D"]
-			id: "76C7BF50A19E2E31"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5C5735B25ED530B8"
-				table_id: 289709801311354444L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "7118C4F8E4EEED86"
-				item: { count: 1, id: "mekanicalcreate:simulation_chamber" }
-				type: "item"
-			}]
-			x: 4.5d
+			x: 5.0d
 			y: 3.5d
 		}
 		{
@@ -727,8 +719,8 @@
 				item: { count: 1, id: "advanced_ae:quantum_unit" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.5d
+			x: 10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["518FC99D9C00400F"]
@@ -761,8 +753,8 @@
 				item: { count: 1, id: "nexus_ae:quantum_processing_unit" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -8.5d
+			x: 10.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["54E8CA62D2EF6000"]
@@ -1053,7 +1045,6 @@
 		{
 			dependencies: [
 				"648DC715C5F93537"
-				"76C7BF50A19E2E31"
 				"318A2458DB546A1D"
 				"77410466F89BFE27"
 				"3652BB80016FA811"
@@ -1324,7 +1315,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["17D2F083508411B9"]
@@ -1638,7 +1629,228 @@
 				type: "item"
 			}]
 			x: 19.55d
-			y: 0.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5726971DFED5A4AB"]
+			id: "05B73B756CA01ECB"
+			tasks: [{
+				id: "6A3F731A8F8FB438"
+				item: { count: 1, id: "mespawner:spawner_cell_1k" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["05B73B756CA01ECB"]
+			id: "6BF5A7BB296BECD7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E7E07DF0918B899"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2A509649338AA85D"
+				item: { count: 1, id: "mespawner:spawner_cell_4k" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["05B73B756CA01ECB"]
+			id: "6A2121E262C9539E"
+			tasks: [{
+				id: "6091C0A7A4D587C9"
+				item: { count: 1, id: "mespawner:monster_disk_1k" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6BF5A7BB296BECD7"]
+			id: "4A45941B8A520033"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "73D5EB5D428E131C"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "35D2C5EF78AFE94B"
+				item: { count: 1, id: "mespawner:monster_disk_4k" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5726971DFED5A4AB"]
+			id: "25837ED61202B78E"
+			tasks: [{
+				id: "0182C80688BC878D"
+				item: { count: 1, id: "mespawner:looting_card" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["321E9815F88EB430"]
+			id: "6FF10B5C011FF139"
+			rewards: [{
+				count: 64
+				id: "50C66767B6398586"
+				item: {
+					count: 1
+					id: "mysticalagriculture:inferium_essence"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2767138F9A08E2BE"
+				item: { count: 1, id: "mysticalagriculture:soulium_seed_base" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7D5AA0CEE7B4D2AF"]
+			id: "3F5BABAF3A225D3C"
+			tasks: [{
+				id: "388CF4BD4049538D"
+				item: { count: 1, id: "advanced_ae:quantum_storage_128" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1F54D872ECE8AEE2"]
+			id: "4AD2AF8D240F4442"
+			rewards: [{
+				id: "54A77213778CE428"
+				item: {
+					count: 1
+					id: "ae2_overclocked:parallel_card_8x"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "55D3A1579CF00093"
+				item: { count: 1, id: "ae2_overclocked:parallel_card" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17D2F083508411B9"]
+			id: "1F54D872ECE8AEE2"
+			rewards: [{
+				id: "7816D6269E7B09A0"
+				item: {
+					count: 1
+					id: "minecraft:netherite_sword"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "44B9DE5B6B427A9F"
+					item: { count: 1, id: "advanced_ae:printed_quantum_processor" }
+					type: "item"
+				}
+				{
+					id: "5FD6594C81D002EA"
+					item: { count: 1, id: "advanced_ae:quantum_processor" }
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["383576C508AF6B92"]
+			id: "0441A29C09772B1F"
+			tasks: [{
+				id: "5C237E489DDEDCE8"
+				item: { count: 1, id: "advanced_ae:quantum_core" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F5BABAF3A225D3C"]
+			id: "0A21A93E57A23F19"
+			tasks: [{
+				id: "746E3C1BAED7694F"
+				item: { count: 1, id: "advanced_ae:quantum_storage_256" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -8.5d
+		}
+		{
+			id: "0B988F94639C5A59"
+			rewards: [{
+				description: ""
+				id: "7FB8EBD0E441D900"
+				type: "toast"
+			}]
+			tasks: [{
+				advancement: "mekanism:radiation_poisoning"
+				criterion: ""
+				id: "6C6EA223BBE79AEF"
+				type: "advancement"
+			}]
+			x: 17.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0441A29C09772B1F"]
+			id: "358865F2F1D41564"
+			rewards: [{
+				count: 8
+				id: "1F5F12DE09B73216"
+				item: {
+					count: 1
+					id: "advanced_ae:quantum_storage_256"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "69E5D0DF411730E7"
+				item: { count: 1, id: "advanced_ae:quantum_multi_threader" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0441A29C09772B1F"]
+			id: "6F24B545AE7F6D30"
+			rewards: [{
+				count: 8
+				id: "15977072436938D1"
+				item: {
+					count: 1
+					id: "advanced_ae:quantum_accelerator"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E3962EA835FE685"
+				item: { count: 1, id: "advanced_ae:data_entangler" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: -1.5d
 		}
 	]
 }

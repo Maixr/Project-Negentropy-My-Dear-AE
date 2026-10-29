@@ -153,14 +153,14 @@
 	"skylink max stars" = 8
 
 ["Meltdream Chest"]
-	#融梦水晶箱自定义战利品总开关（开启后按下方三个品质的物品池生成掉落；关闭使用内置默认池） 默认：false
+	#融梦水晶箱自定义战利品总开关（开启后按下方三个品质物品池生成掉落，逐条容错，全无效则用内置兜底池；关闭时使用原版战利品表） 默认：false
 	"meltdream chest custom loot enabled" = false
-	#融梦水晶箱普通品质物品池（每行一个条目，格式：物品ID 数量 权重，如 "pasterdream:fried_egg 2 30") 默认：内置普通物品池
-	"meltdream chest common loot" = ["pasterdream:fried_egg 2 30", "pasterdream:candy_cane 2 25", "pasterdream:bubble_gum 3 25", "pasterdream:chocolate 2 25", "pasterdream:berry_buncake 2 22", "pasterdream:cream_buncake 2 22", "pasterdream:dyedream_popsicle 2 22", "pasterdream:gingerbread_man 2 20", "pasterdream:potato_buncake 2 20", "pasterdream:pumpkin_buncake 2 20", "pasterdream:jellyfish_jello 2 18", "pasterdream:ricecake 1 16", "pasterdream:swiss_roll 1 16", "pasterdream:bread_slice 3 15", "pasterdream:fig 2 14", "pasterdream:strawberry_heart 1 12", "pasterdream:wafer_biscuit 2 10"]
-	#融梦水晶箱稀有品质物品池（格式同上） 默认：内置稀有物品池
-	"meltdream chest rare loot" = ["pasterdream:dyedream_ingot 2 25", "pasterdream:titanium_ingot 2 22", "pasterdream:blackmetal_ingot 2 20", "pasterdream:white_crystal 2 18", "pasterdream:dreamwish 1 18", "pasterdream:soul_essence 2 16", "pasterdream:charged_amethyst 2 15", "pasterdream:wind_iron_ingot 2 15", "pasterdream:moltengold_ingot 2 15", "pasterdream:dream_aurorian_steel 1 12", "pasterdream:dyedream_sword 1 12", "pasterdream:titanium_sword 1 12", "pasterdream:pinkegg 2 10", "pasterdream:nightmare_fuel 2 10", "pasterdream:memento_item_03 1 6", "pasterdream:memento_item_08 1 6"]
-	#融梦水晶箱传说品质物品池（格式同上） 默认：内置传说物品池
-	"meltdream chest legendary loot" = ["pasterdream:meltdream_crystal_0 1 20", "pasterdream:shadow_erosion_sword 1 18", "pasterdream:allkinds_ring 1 15", "pasterdream:boboji_plume 1 15", "pasterdream:dyedream_upgrade 1 12", "pasterdream:titanium_upgrade 1 12", "pasterdream:sculk_upgrade 1 10", "pasterdream:dyedream_teleport_crystal 2 10", "pasterdream:sweetdream_disc 1 8", "pasterdream:dyedream_world_disc 1 8", "pasterdream:memento_item_03 1 8", "pasterdream:memento_item_08 1 8"]
+	#融梦水晶箱普通品质物品池（每行一个条目，格式：物品ID 数量 权重，如 "pasterdream:dyedream_ingot 1 10"） 默认：空（留空或全无效时用内置兜底池）
+	"meltdream chest common loot" = []
+	#融梦水晶箱稀有品质物品池（格式同上） 默认：空
+	"meltdream chest rare loot" = []
+	#融梦水晶箱传说品质物品池（格式同上） 默认：空
+	"meltdream chest legendary loot" = []
 
 [Ban]
 	#关闭并禁止所有翅膀的功能  默认：false
@@ -189,3 +189,13 @@
 	"enable main debug log" = false
 	#启用 Smoketest / 移植验证的调试日志 默认：false
 	"enable smoketest debug log" = false
+
+["Aaroncos Arena"]
+	#亚伦柯斯竞技场遗迹感染总开关（开启后：主世界竞技场遗迹生成时会在其周围刷写竞技场群系并启动持续感染，感染限制在竞技场群系范围内，击败竞技场BOSS后感染退化、群系还原；关闭后：不刷群系、不启动感染，已有存档的感染会在服务器启动时被强制停止并自动清理。竞技场遗迹结构本身不受此开关影响，仍会在主世界正常生成一次） 默认：false
+	"arena ruin infection enabled" = false
+
+["Save Compat"]
+	#加载旧版本存档时提示备份与更新（关闭后不检测、不提示、不备份） 默认：true
+	"save compat enabled" = true
+	#检测到旧版本存档时自动备份到游戏目录 backups/（备份在服务器启动阶段执行） 默认：true
+	"save compat auto backup" = true

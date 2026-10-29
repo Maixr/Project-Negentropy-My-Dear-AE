@@ -1,5 +1,55 @@
 {
-  "entries": {},
+  "entries": {
+    "钻石": {
+      "word": "钻石",
+      "count": 2,
+      "lastUsed": 1793253046040,
+      "fromChat": false,
+      "emptyHits": 0
+    },
+    "铁镐": {
+      "word": "铁镐",
+      "count": 1,
+      "lastUsed": 1793253057044,
+      "fromChat": false,
+      "emptyHits": 0
+    },
+    "@ae2lt": {
+      "word": "@ae2lt",
+      "count": 1,
+      "lastUsed": 1793253070592,
+      "fromChat": false,
+      "emptyHits": 0
+    },
+    "@mekanismsun": {
+      "word": "@mekanismsun",
+      "count": 1,
+      "lastUsed": 1793253085584,
+      "fromChat": false,
+      "emptyHits": 0
+    },
+    "#ingots": {
+      "word": "#ingots",
+      "count": 1,
+      "lastUsed": 1793253093509,
+      "fromChat": false,
+      "emptyHits": 0
+    },
+    "马铃薯": {
+      "word": "马铃薯",
+      "count": 1,
+      "lastUsed": 1793253102139,
+      "fromChat": false,
+      "emptyHits": 0
+    },
+    "黑曜石": {
+      "word": "黑曜石",
+      "count": 1,
+      "lastUsed": 1793253113239,
+      "fromChat": false,
+      "emptyHits": 0
+    }
+  },
   "chatMentions": [],
   "favorites": [],
   "banned": [],

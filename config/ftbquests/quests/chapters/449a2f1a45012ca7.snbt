@@ -4,7 +4,17 @@
 	filename: "449a2f1a45012ca7"
 	group: "4B28AF7297340C54"
 	id: "449A2F1A45012CA7"
-	images: [ ]
+	images: [{
+		click_action: "none:"
+		height: 51.0d
+		id: "7CD46C58CAFD7A26"
+		image: "maixr:textures/gui/antientropy_bg.png"
+		order: -1
+		rotation: 0.0d
+		width: 90.0d
+		x: -2.5d
+		y: 6.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -771,17 +781,6 @@
 		}
 		{
 			dependencies: ["2E5775B678F9F0E7"]
-			id: "5892E54626D08F2F"
-			tasks: [{
-				id: "0D2859D65F3FAFE2"
-				item: { count: 1, id: "createmoremachines:netherite_basin" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2E5775B678F9F0E7"]
 			id: "33EFFEF673C7A490"
 			tasks: [{
 				id: "46B1E689740ECB44"
@@ -800,7 +799,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2E5775B678F9F0E7"]
@@ -811,23 +810,10 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["2E5775B678F9F0E7"]
-			id: "7E6F774CFFC2E543"
-			tasks: [{
-				id: "68D7CCBF0E5A2DB9"
-				item: { count: 1, id: "createmoremachines:netherite_spout" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
-				"7E6F774CFFC2E543"
-				"5892E54626D08F2F"
 				"25F7AC34E95194D9"
 				"47C882EBCE91EBEE"
 				"33EFFEF673C7A490"
@@ -2217,27 +2203,6 @@
 			y: 15.5d
 		}
 		{
-			id: "290AEA52440ED5F1"
-			tasks: [{
-				id: "1FE1A8915E86E762"
-				item: { count: 1, id: "anvilcraft:stamping_platform" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 19.0d
-		}
-		{
-			dependencies: ["290AEA52440ED5F1"]
-			id: "1623E3059556F6A2"
-			tasks: [{
-				id: "2CEEDA9066FD3A34"
-				item: { count: 1, id: "anvilcraft:crushing_table" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: 17.0d
-		}
-		{
 			dependencies: [
 				"622E9A6477560D5D"
 				"611F3E8D13D0E8C6"
@@ -2316,28 +2281,6 @@
 			}]
 			x: 14.5d
 			y: 15.5d
-		}
-		{
-			dependencies: ["290AEA52440ED5F1"]
-			id: "6C3C4547DCE7848A"
-			tasks: [{
-				id: "0088D61A6A0A9A6E"
-				item: { count: 1, id: "anvilcraft:sifting_table" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: 17.0d
-		}
-		{
-			dependencies: ["290AEA52440ED5F1"]
-			id: "54C6E9CB4FF2E397"
-			tasks: [{
-				id: "0AB12A23D9E92AD0"
-				item: { count: 1, id: "anvilcraft:unpacking_table" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -2454,14 +2397,6 @@
 			id: "50AF93455170178F"
 			rewards: [
 				{
-					id: "00FFAE731DEA38A7"
-					item: {
-						count: 1
-						id: "createmoremoremachines:netherite_crushing_wheel"
-					}
-					type: "item"
-				}
-				{
 					count: 256
 					id: "320DEC8BC8C649D1"
 					item: {
@@ -2470,10 +2405,18 @@
 					}
 					type: "item"
 				}
+				{
+					id: "699FD7EC4E58BD05"
+					item: {
+						count: 1
+						id: "createmoremachines:netherite_crushing_wheel"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
-				id: "26D1463254E6E11A"
-				item: { count: 1, id: "createmoremoremachines:netherite_crushing_wheel" }
+				id: "267823BDBFBEA5C1"
+				item: { count: 1, id: "createmoremachines:netherite_crushing_wheel" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -2497,6 +2440,18 @@
 			}]
 			x: 1.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["2E5775B678F9F0E7"]
+			id: "5DD29055A50589DE"
+			shape: "gear"
+			tasks: [{
+				id: "659EA129F14A0EBC"
+				item: { count: 1, id: "mekanicalcreate:advanced_mekanical_factory" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
 		}
 	]
 }

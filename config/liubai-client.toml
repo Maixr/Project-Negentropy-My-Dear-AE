@@ -40,6 +40,8 @@
 	# Default: 1.25
 	# Range: 0.0 ~ 16.0
 	minimumProjectedRadius = 1.25
+	#Allow Liubai to skip rendering while the local player is in spectator mode.
+	spectatorMode = false
 
 [lod]
 	screenSpace = true

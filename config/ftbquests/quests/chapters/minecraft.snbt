@@ -4,7 +4,44 @@
 	filename: "minecraft"
 	group: ""
 	id: "12D7F0C042448649"
-	images: [ ]
+	images: [
+		{
+			height: 1.0d
+			id: "613D4DF48A7F0DDF"
+			image: "pasterdream:block/firefly_nest_grass"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			id: "58373A8EF644A0AF"
+			image: "minecraft:block/seagrass"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			id: "71D9147AD6A2C880"
+			image: "pasterdream:block/dyedream_seagrass"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			id: "11D04A249624D59D"
+			image: "minecraft:block/soul_campfire_fire"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: -2.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -39,15 +76,35 @@
 		{
 			dependencies: ["1517D9937C04A27D"]
 			id: "5E5ABFF56EAE3B54"
-			rewards: [{
-				count: 2
-				id: "5AB941118D8BC279"
-				item: {
-					count: 1
-					id: "mekanismtools:diamond_paxel"
+			rewards: [
+				{
+					count: 2
+					id: "5AB941118D8BC279"
+					item: {
+						count: 1
+						id: "mekanismtools:diamond_paxel"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 64
+					id: "34922B8B4B64F9BC"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1E235033FD0F4D11"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0CCDC32D6F31B516"
 				item: { count: 1, id: "minecraft:diamond" }
@@ -83,7 +140,6 @@
 			id: "12C455F5424C83B0"
 			rewards: [
 				{
-					count: 3
 					id: "05DEB75DB36992A3"
 					item: {
 						components: {
@@ -110,6 +166,21 @@
 						}
 						count: 1
 						id: "anvilcraft:amethyst_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					id: "5FEAE3C801BACE2B"
+					item: {
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: {
+									"minecraft:silk_touch": 1
+								}
+							}
+						}
+						count: 1
+						id: "minecraft:enchanted_book"
 					}
 					type: "item"
 				}
@@ -222,6 +293,70 @@
 				value: 5L
 			}]
 			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7EAB579EF59381E6"]
+			id: "22827C0F5F884D00"
+			rewards: [{
+				id: "6FE17B86667B1CDF"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							entries: {
+								"minecraft:wither": 4
+							}
+						}
+					}
+					count: 1
+					id: "mespawner:monster_disk_1k"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70A851C7366F29E0"
+				item: { count: 1, id: "minecraft:nether_star" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BB4DE577DDA0991"]
+			id: "30238E45F30C0611"
+			rewards: [
+				{
+					id: "46AC0AB6AF4C93B8"
+					item: {
+						count: 1
+						id: "pasterdream:sculk_heart"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "72B22C157BBABF11"
+					item: {
+						count: 1
+						id: "minecraft:sculk_catalyst"
+					}
+					type: "item"
+				}
+				{
+					id: "0F7D4F2F9E06001E"
+					item: {
+						count: 1
+						id: "justdirethings:time_crystal_budding_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3BB76517DCFB92B6"
+				item: { count: 1, id: "minecraft:sculk_catalyst" }
+				type: "item"
+			}]
+			x: 6.5d
 			y: 2.5d
 		}
 	]

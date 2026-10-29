@@ -4,16 +4,49 @@
 	filename: "ae"
 	group: "4B28AF7297340C54"
 	id: "7E5EB3F8E72F12D6"
-	images: [{
-		click_action: "none:这里是？"
-		height: 4.0d
-		id: "566EC759F0561A7E"
-		image: "ae2:block/controller_inside_a"
-		rotation: 0.0d
-		width: 4.0d
-		x: -9.0d
-		y: 1.5d
-	}]
+	images: [
+		{
+			click_action: "none:"
+			height: 2.0d
+			id: "1426841846D89EC2"
+			image: "ae2lt:block/pigmee_mentalmath_unit_front"
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			click_action: "none:"
+			height: 51.0d
+			id: "3E73872367EB4F39"
+			image: "maixr:textures/gui/antientropy_bg.png"
+			order: -1
+			rotation: 0.0d
+			width: 90.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			click_action: "none:"
+			height: 8.0d
+			id: "2625663B977C9D92"
+			image: "ae2lt:block/pigmee_molecular_assembler_lights"
+			rotation: 0.0d
+			width: 8.0d
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			click_action: "none:"
+			height: 8.0d
+			id: "303A5E81ACB18675"
+			image: "entropy_tech:block/rough_controller/controller_lights"
+			rotation: 0.0d
+			width: 8.0d
+			x: -6.5d
+			y: 1.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -268,14 +301,25 @@
 		{
 			dependencies: ["6553E1DF40043B59"]
 			id: "3DF054858C75C816"
-			rewards: [{
-				id: "4A71944CA62F20B8"
-				item: {
-					count: 1
-					id: "ae2:certus_quartz_crystal"
+			rewards: [
+				{
+					id: "4A71944CA62F20B8"
+					item: {
+						count: 1
+						id: "ae2:certus_quartz_crystal"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 4
+					id: "26FF43D1F70F1620"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:stack_upgrade_tier_4"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0EAFCE8951B034F6"
 				item: { count: 1, id: "ae2lt:pigmee_synthesis_station" }
@@ -313,6 +357,14 @@
 					id: "7C65D0A4FC9C88C6"
 					table_id: 289709801311354444L
 					type: "random"
+				}
+				{
+					id: "1F17022F91B0B337"
+					item: {
+						count: 1
+						id: "ae2lt:rainbow_pigmee_fumo"
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -407,6 +459,51 @@
 			}]
 			x: 2.5d
 			y: 4.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "pasterdream:block/air"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "56D61665933044D3"
+			rewards: [
+				{
+					count: 2
+					id: "5FDC2EC4BA845ADA"
+					item: {
+						count: 1
+						id: "ae2lt:pigmee_storage_cell"
+					}
+					type: "item"
+				}
+				{
+					id: "077172EAA774BDC1"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								cell4name: "猪猪乐园元件"
+								cell4tag: [
+									"ae2lt:pigmee_building_materials"
+									"ae2lt:pigmee_building_slabs"
+								]
+							}
+						}
+						count: 1
+						id: "cell4:infinity_tag_cell"
+					}
+					type: "item"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "0B72605010EFAF22"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -1.0d
 		}
 	]
 }

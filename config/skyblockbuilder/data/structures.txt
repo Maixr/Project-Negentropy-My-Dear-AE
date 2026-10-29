@@ -46,6 +46,7 @@ data_energistics:ae2_meteorite
 data_energistics:meteorite
 data_energistics:meteorite_cluster
 dreammod:dream_tower
+end_villager_outpost:end_villager_outpost
 minecraft:ancient_city
 minecraft:bastion_remnant
 minecraft:buried_treasure
@@ -81,6 +82,8 @@ minecraft:village_savanna
 minecraft:village_snowy
 minecraft:village_taiga
 neoecoprototype:cryotheum_meteorite
+nova_structures:end_castle
+nova_structures:end_ship
 pasterdream:aaroncos_arena_portal
 pasterdream:aaroncos_arena_portals
 pasterdream:big_bubbles_0

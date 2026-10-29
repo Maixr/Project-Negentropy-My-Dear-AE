@@ -89,6 +89,14 @@
 				ender_dragon = true
 				eye_of_ender = true
 				boat = true
+				snow_golem = true
+				skeleton_horse = true
+				warden = true
+				bogged = true
+				silverfish = true
+				wind_charge = true
+				wither = true
+				wither_skull = true
 
 			[light_sources.settings.entities.touhou_little_maid]
 				fairy = true
@@ -105,6 +113,7 @@
 				baby_skeleton = true
 				baby_enderman = true
 				baby_stray = true
+				baby_wither_skeleton = true
 
 			[light_sources.settings.entities.maidbeacon]
 				extra_rendering_entity = true
@@ -124,6 +133,14 @@
 				terrorbeak = true
 				meltdream_crystal = true
 				jellyfish = true
+				moltengold_wand_projectile = true
+				firefly = true
+				small_stone_spirit = true
+				ash_bone_wing = true
+				bone_wing = true
+				highvoltage = true
+				thundercloud = true
+				shadow_golem = true
 
 			[light_sources.settings.entities.rtsbuilding]
 				rts_camera = true
@@ -142,6 +159,8 @@
 				heaven_arrow = true
 				burning_arrow = true
 				heaven_sub_arrow = true
+				trace_arrow = true
+				infinity_thrown_trident = true
 
 			[light_sources.settings.entities.anvilcraft]
 				cauldron_outlet = true
@@ -153,6 +172,8 @@
 				firefly = true
 				hydrogen_jellyfish = true
 				flying_pig = true
+				skull = true
+				naga = true
 
 			[light_sources.settings.entities.justdirethings]
 				time_wand_entity = true
@@ -193,3 +214,9 @@
 				gingerbread_man = true
 				licowitch = true
 				watcher = true
+				cinder_brick = true
+				luxtructosaurus = true
+				tephra = true
+				crushed_block = true
+				atlatitan = true
+				gumball = true

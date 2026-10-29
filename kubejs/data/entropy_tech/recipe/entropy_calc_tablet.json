@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "entropy_tech",
+  "key": {
+    "A": {
+      "item": "minecraft:flint"
+    },
+    "B": {
+      "item": "minecraft:copper_block"
+    },
+    "C": {
+      "item": "minecraft:flint"
+    },
+    "D": {
+      "item": "minecraft:oak_fence"
+    },
+    "E": {
+      "item": "minecraft:coarse_dirt"
+    },
+    "F": {
+      "item": "minecraft:oak_fence"
+    },
+    "G": {
+      "item": "minecraft:smooth_stone"
+    },
+    "H": {
+      "item": "minecraft:iron_bars"
+    },
+    "I": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "result": {
+    "count": 4,
+    "id": "entropy_tech:entropy_calc_tablet"
+  }
+}

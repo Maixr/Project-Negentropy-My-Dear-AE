@@ -1,0 +1,17 @@
+{
+  "block.igleelib.blazum_block": "烈焰姆块",
+  "block.igleelib.derium_block": "德里姆块",
+  "block.igleelib.lavium_block": "熔岩姆块",
+  "block.igleelib.modium_block": "莫迪姆块",
+  "item.igleelib.blaze_shard": "烈焰碎片",
+  "item.igleelib.blazum_ingot": "烈焰姆锭",
+  "item.igleelib.derium_ingot": "德里姆锭",
+  "item.igleelib.iglium_upgrade_smithing_template": "伊格利姆升级",
+  "item.igleelib.lavium_ingot": "熔岩姆锭",
+  "item.igleelib.modium_ingot": "莫迪姆锭",
+  "item.igleelib.smithing_template.iglium_upgrade.additions_slot_description": "添加钻石或哭泣的黑曜石或烈焰棒或烈焰碎片",
+  "item.igleelib.smithing_template.iglium_upgrade.applies_to": "下界合金锭",
+  "item.igleelib.smithing_template.iglium_upgrade.base_slot_description": "添加下界合金锭",
+  "item.igleelib.smithing_template.iglium_upgrade.ingredients": "钻石，哭泣的黑曜石，烈焰棒，烈焰碎片",
+  "itemGroup.igleelib.base": "伊格利的图书馆"
+}

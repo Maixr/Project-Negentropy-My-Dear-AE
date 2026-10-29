@@ -27,21 +27,6 @@
   "dimension_tech": {
     "structure_miner_status": true
   },
-  "extendedcrafting": {
-    "ender_crafter": true,
-    "elite_auto_table": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
-  },
   "extendedae_plus": {
     "wt_locked": true,
     "labeled_wireless_component": true,
@@ -73,6 +58,12 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "jdte": {
+    "advanced_energy_transmitter_status": true,
+    "greenhouse_status": true,
+    "installed_upgrades": true,
+    "mineral_extractor_status": true
   },
   "data_energistics": {
     "data_sanctum.part": false,
@@ -121,11 +112,19 @@
   "ae2_ftbquest_detector": {
     "detector": true
   },
+  "mwgr": {
+    "auto_eject": true
+  },
   "pattern_archive": {
     "node_status": true
   },
   "balm": {
     "jade": true
+  },
+  "justdynathings": {
+    "paradox_mixer": true,
+    "stabilizer": true,
+    "echoing_budding": true
   },
   "anvilcraft": {
     "ruby_prism": true,
@@ -259,6 +258,9 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
+  "more_formula": {
+    "tier_lines": true
+  },
   "enderio": {
     "soul_bound": true
   },
@@ -304,6 +306,9 @@
   "functionalstorage": {
     "armory": true,
     "drawer": true
+  },
+  "mekanism_card": {
+    "installed_upgrades": true
   },
   "enderio_evolution": {
     "capacitor_bank_render": true

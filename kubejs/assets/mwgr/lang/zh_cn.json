@@ -1,0 +1,11 @@
+{
+  "advancements.mwgr.get_lava_gen.description": "获得一个熔岩生成器",
+  "advancements.mwgr.get_lava_gen.title": "PC 友好的黑曜石农场法",
+  "advancements.mwgr.get_water_gen.description": "获得一个水生成器",
+  "advancements.mwgr.get_water_gen.title": "无需涡轮机",
+  "block.mwgr.heavywater_generator": "重水生成器",
+  "block.mwgr.lava_generator": "熔岩生成器",
+  "block.mwgr.water_generator": "水生成器",
+  "message.mwgr.auto_eject.off": "§c自动弹出：关",
+  "message.mwgr.auto_eject.on": "§3自动弹出：开"
+}

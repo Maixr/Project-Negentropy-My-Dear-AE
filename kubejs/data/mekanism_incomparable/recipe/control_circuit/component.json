@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "tag": "c:ingots/osmium"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "tag": "c:ingots/tin"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "id": "mekanism_incomparable:control_circuit_component"
+  }
+}

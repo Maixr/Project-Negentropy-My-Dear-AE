@@ -1,0 +1,15 @@
+{
+  "tooltip.ae2nobyproduct.on": "移除副产物：开",
+  "tooltip.ae2nobyproduct.off": "移除副产物：关",
+  "item.ae2nobyproduct.byproduct_remover": "副产物移除器",
+  "message.ae2nobyproduct.removed": "已从 %s 个样板中移除副产物",
+  "message.ae2nobyproduct.none": "没有可移除的副产物",
+  "message.ae2nobyproduct.disabled": "配置中已禁用副产物移除",
+  "command.ae2nobyproduct.not_a_player": "该命令必须由玩家执行。",
+  "command.ae2nobyproduct.no_network": "请看着 AE2 网络中的某个方块，然后执行该命令。",
+  "command.ae2nobyproduct.inspect.clean": "该网络中的 %s 个样板供应器里未发现副产物。",
+  "command.ae2nobyproduct.inspect.report": "在 %s / %s 个样板供应器中发现 %s 个样板含副产物；执行 /ae2nobyproduct strip-all 可移除它们。",
+  "command.ae2nobyproduct.strip_all.nothing": "该网络中没有可移除的副产物。",
+  "command.ae2nobyproduct.strip_all.preview": "将清理 %s 个供应器中的 %s 个样板。30 秒内再次执行该命令以应用。",
+  "command.ae2nobyproduct.strip_all.done": "已从 %s 个供应器中的 %s 个样板里移除副产物。"
+}

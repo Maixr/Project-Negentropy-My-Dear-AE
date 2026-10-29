@@ -4,7 +4,29 @@
 	filename: "readme"
 	group: ""
 	id: "6F9CAA090AC1C15D"
-	images: [ ]
+	images: [
+		{
+			click_action: "none:"
+			height: 45.0d
+			id: "72836DBFB8EE0DDB"
+			image: "maixr:textures/gui/antientropy_bg.png"
+			rotation: 0.0d
+			width: 80.0d
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			click_action: "none:"
+			height: 4.0d
+			id: "5AB4CA44A6C0334A"
+			image: "ae2omnicells:item/quantum_effect"
+			order: 2
+			rotation: 0.0d
+			width: 4.0d
+			x: 4.0d
+			y: -12.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -14,15 +36,43 @@
 			}
 			id: "487FA32A202ED508"
 			preset: "goal"
-			rewards: [{
-				count: 16
-				id: "3F020D8D02DA42D5"
-				item: {
-					count: 1
-					id: "minecraft:cooked_beef"
+			rewards: [
+				{
+					count: 16
+					id: "3F020D8D02DA42D5"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 4
+					id: "51097FD4A4753B4D"
+					item: {
+						count: 1
+						id: "minecraft:dirt"
+					}
+					type: "item"
+				}
+				{
+					id: "37FB4C47B280A4DE"
+					item: {
+						count: 1
+						id: "minecraft:oak_sapling"
+					}
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "60234E952B6C3E70"
+					item: {
+						count: 1
+						id: "minecraft:water_bucket"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5217E138D44DDA78"
 				type: "checkmark"
@@ -274,7 +324,7 @@
 			id: "12094E481AB8F921"
 			tasks: [{
 				id: "0FCEE5612D9D9C00"
-				item: { components: { "ae2:energy_capacity": 1.12E7d, "ae2:stored_energy": 1.12E7d, "wcwt:universal_terminals": [ { item: { count: 1, id: "ae2:wireless_terminal" }, slot: 0 }, { item: { count: 1, id: "ae2:wireless_crafting_terminal" }, slot: 1 }, { item: { count: 1, id: "ae2wtlib:wireless_pattern_encoding_terminal" }, slot: 2 }, { item: { count: 1, id: "ae2wtlib:wireless_pattern_access_terminal" }, slot: 3 }, { item: { count: 1, id: "advanced_ae:wireless_quantum_crafter_terminal" }, slot: 4 }, { item: { count: 1, id: "merequester:wireless_requester_terminal" }, slot: 5 } ] }, count: 1, id: "wcwt:wireless_comprehensive_work_terminal" }
+				item: { components: { "ae2:energy_capacity": 1.12E7d, "ae2:stored_energy": 1.12E7d }, count: 1, id: "wcwt:wireless_comprehensive_work_terminal" }
 				type: "item"
 			}]
 			x: 22.5d
@@ -464,8 +514,8 @@
 				item: { count: 1, id: "nep:fusion_matrix" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: -10.0d
+			x: 28.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3AA90BEDA942FF63"]
@@ -703,8 +753,8 @@
 				id: "2D074567BB860D9C"
 				type: "checkmark"
 			}]
-			x: 17.5d
-			y: -6.0d
+			x: 16.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3AA90BEDA942FF63"]
@@ -840,17 +890,6 @@
 		}
 		{
 			dependencies: ["5562A27D9FB97AEE"]
-			id: "78C351B4559EEDDD"
-			tasks: [{
-				id: "6D0F419638285838"
-				item: { count: 1, id: "mekanism_empowered_unleashed:upgrade_empowered_speed" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["5562A27D9FB97AEE"]
 			id: "0388F9009C542444"
 			tasks: [{
 				id: "281AC3060A70A2E0"
@@ -890,7 +929,7 @@
 				item: { count: 1, id: "mekanism_extras:infinite_control_circuit" }
 				type: "item"
 			}]
-			x: 19.5d
+			x: 17.5d
 			y: -5.5d
 		}
 		{
@@ -902,7 +941,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5562A27D9FB97AEE"]
@@ -981,7 +1020,7 @@
 			dependencies: ["6E0E6B8C620BCCE1"]
 			hide_dependent_lines: true
 			icon: {
-				id: "maixr:revived_grass"
+				id: "minecraft:grass_block"
 			}
 			id: "59B1F1795600A1A6"
 			rewards: [{
@@ -1006,8 +1045,8 @@
 				id: "42FA4EA64DFDB3D5"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -5.5d
+			x: 0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["59B1F1795600A1A6"]
@@ -1018,7 +1057,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["59B1F1795600A1A6"]
@@ -1028,17 +1067,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["59B1F1795600A1A6"]
-			id: "228C8E7CE98B208A"
-			tasks: [{
-				id: "631C218F3C13713A"
-				type: "checkmark"
-			}]
-			x: 1.0d
-			y: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6E0E6B8C620BCCE1"]
@@ -1091,14 +1120,32 @@
 				id: "mekanismtools:refined_obsidian_paxel"
 			}
 			id: "22ECC25E09B6A0F6"
-			rewards: [{
-				id: "1C2A809255DCD56F"
-				item: {
-					count: 1
-					id: "mekanismtools:refined_obsidian_paxel"
+			rewards: [
+				{
+					id: "1C2A809255DCD56F"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_obsidian_paxel"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3D1244D498F216EC"
+					item: {
+						count: 1
+						id: "constructionstick:netherite_stick"
+					}
+					type: "item"
+				}
+				{
+					id: "687DA1A8CDF4E843"
+					item: {
+						count: 1
+						id: "ae2:network_tool"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "14F71F0851C8601F"
 				type: "checkmark"
@@ -1365,15 +1412,6 @@
 				}
 				{
 					exclude_from_claim_all: true
-					id: "67736922423B680E"
-					item: {
-						count: 1
-						id: "maixr:rift_reverser_doll"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
 					id: "53B1DD64D6898D88"
 					item: {
 						count: 1
@@ -1509,6 +1547,82 @@
 			}]
 			x: 6.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["6CD078B0FD53305E"]
+			icon: {
+				id: "maixr:memory_tomorrow_doll"
+			}
+			id: "6110B8300728A882"
+			rewards: [{
+				id: "322D4413B17EB562"
+				item: {
+					count: 1
+					id: "maixr:memory_tomorrow_doll"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "418A0BE8BE837848"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["5562A27D9FB97AEE"]
+			id: "6E0C753513EFA06F"
+			tasks: [{
+				id: "3CF9DA3BD6B06C57"
+				item: { count: 1, id: "mekanism_incomparable:generation_7_control_circuit" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5562A27D9FB97AEE"]
+			id: "2E3C7E69CB36B1F0"
+			tasks: [{
+				id: "6D375381F9C4C7A7"
+				item: { count: 1, id: "mekanism_utilities:comet_control_circuit" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5562A27D9FB97AEE"]
+			id: "6ED28D2ADE630E00"
+			tasks: [{
+				id: "6A65A8FD9BD95C1C"
+				item: { count: 1, id: "evolvedmekanism:multiversal_control_circuit" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5562A27D9FB97AEE"]
+			id: "70AD69C1550C1BB9"
+			tasks: [{
+				id: "116D5A698FEF9D02"
+				item: { count: 1, id: "emextras:infinite_multiversal_control_circuit" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3AA90BEDA942FF63"]
+			id: "481582A64AEED814"
+			tasks: [{
+				id: "0AF3871A3080F641"
+				item: { count: 1, id: "neoecoprototype:simplify_computation_system" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: -10.0d
 		}
 	]
 }

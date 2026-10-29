@@ -59,6 +59,26 @@ if (-not (Test-Path '.git')) { Die '当前目录不是 git 仓库' }
 if (-not (Test-Path 'scripts/regen-index.mjs')) { Die '找不到 scripts/regen-index.mjs' }
 Ok '仓库结构正常'
 
+# --- 0.5 本地模组补丁（packwiz 更新会覆盖 jar，这里自动补回）---
+Step '检查本地模组补丁'
+if (Test-Path 'patches/apply-patches.py') {
+    $rc = RunNative 'python' @('patches/apply-patches.py', '--check')
+    if ($rc.Code -eq 0) {
+        Ok '补丁已全部就位'
+    } else {
+        Warn '有补丁未应用（多半是 packwiz 刚更新过这几个模组），正在自动补上…'
+        $ra = RunNative 'python' @('patches/apply-patches.py')
+        $ra.Output | ForEach-Object { Write-Host ('  ' + $_) }
+        if ($ra.Code -ne 0) {
+            Warn '补丁未能全部应用 —— 请手动运行: python patches/apply-patches.py'
+        } else {
+            Ok '补丁已重新应用'
+        }
+    }
+} else {
+    Warn '找不到 patches/apply-patches.py，跳过'
+}
+
 # --- 1. 重建索引 ---
 Step '重建 index.toml'
 $r1 = RunNative 'node' @('scripts/regen-index.mjs')

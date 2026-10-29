@@ -10,3 +10,19 @@ defaultAllowSubstitutes = false
 defaultAllowFluidSubstitutes = false
 #Item required to craft recursive patterns. Use format: 'namespace:item_name'. Default is 'minecraft:iron_ingot'
 recipeItem = "minecraft:iron_ingot"
+#Show the recursive pattern toggle button in the Pattern Encoding Terminal GUI. Default is true
+enableEncodingGuiToggle = true
+#Start newly opened pattern encoding terminals in recursive mode. The terminal toggle can override this for the current session. Uses the server setting in multiplayer; existing patterns are not converted.
+defaultRecursiveMode = false
+#Maximum recipes per dependency in static selection mode (retainRecipeAlternatives = false)
+# Default: 1
+# Range: 1 ~ 64
+maxAlternativesPerItem = 1
+#Publish valid recipe alternatives for AE2 to check against stock during each crafting calculation. Includes stored block/nugget conversions without expanding compression chains. Publishes at most 64 alternatives per item; when false, uses maxAlternativesPerItem and static selection.
+retainRecipeAlternatives = true
+#Publish validated ingredient variants for generated patterns (e.g. accepted log/plank choices). Each variant uses exact item inputs during execution so substitutions cannot consume stock reserved for another dependency. Does not change manually encoded root patterns. When false, generated patterns inherit the parent substitution setting.
+generatedIngredientAlternatives = true
+#Ignore recipes that consume their own output (e.g. 'clear settings' / NBT-wipe recipes) when generating dependency patterns
+skipSelfReferentialRecipes = true
+#Recipe ids that are never used for auto-generated patterns. Use an exact id ('modid:recipe_name') or a prefix ending with '*' ('modid:*', 'modid:reset/*')
+recipeBlacklist = []

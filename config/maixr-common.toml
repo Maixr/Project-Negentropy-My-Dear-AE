@@ -1,0 +1,10 @@
+#玩偶的变身语音（我将点燃星海）是否启用；其它玩偶音效不受影响
+dollSoundEnabled = false
+#破碎世界全图统一碎裂水平的带进度（越大越碎；改动只影响未生成区块）
+# Default: 2.0
+# Range: 0.0 ~ 3.0
+uniformBand = 2.0
+#碎片连桥（旧版落脚点逻辑）：默认关闭，会明显拖慢世界加载
+bridgesEnabled = false
+#区块加载时清理悬空晶洞与悬空岩浆：关闭可加快世界加载
+geodeCleanupEnabled = false

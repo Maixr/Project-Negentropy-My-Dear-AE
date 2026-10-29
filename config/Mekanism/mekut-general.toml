@@ -1,0 +1,4 @@
+#Factor of Standard Machines' processing Speed
+# Default: 200.0
+# Range: 200.0 ~ 48000.0
+standardMachinePerformance = 200.0

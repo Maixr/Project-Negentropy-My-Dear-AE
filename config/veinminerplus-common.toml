@@ -1,0 +1,42 @@
+#Maximum blocks in normal connected mode. Range: 32-2147483647.
+# Default: 1024
+# Range: > 32
+maxNormalBlocks = 1024
+#Maximum normal and area chain blocks broken per server tick. Range: 1-2147483647.
+# Default: 32
+# Range: > 1
+maxNormalBlocksPerTick = 32
+#Maximum blocks in blast modes. Range: 32-2147483647.
+# Default: 32767
+# Range: > 32
+maxBlastBlocks = 32767
+#Maximum blast blocks broken per server tick. Range: 1-2147483647.
+# Default: 64
+# Range: > 1
+maxBlastBlocksPerTick = 64
+#Maximum blast search distance from each found block. Range: 3-2147483647.
+# Default: 48
+# Range: > 3
+blastSearchDistance = 48
+#Maximum sparse blast chunks scanned per server tick. Range: 1-1024.
+# Default: 8
+# Range: 1 ~ 1024
+blastChunkScansPerTick = 8
+#Use Manhattan distance instead of spherical distance for blast searches.
+blastManhattan = true
+#Default chain mode ID used for players without a session override. Range: 0-8.
+# Default: 0
+# Range: 0 ~ 8
+defaultMode = 0
+#Warn when server TPS falls below this value during blast mining. Range: 5-20.
+# Default: 15
+# Range: 5 ~ 20
+blastLowTpsThreshold = 15
+#Automatically reduce the active blast radius when server TPS is too low.
+blastAutoReduceRadius = true
+#Whether chain mining consumes hunger. Disabled by default.
+consumeHunger = false
+#Enable temporary server-side diagnostics for chain mining.
+debugLogging = false
+#Additional targets for the all-ores blast mode (BLAST_ORES). Supports block IDs, * wildcards, and #block tags. Default: *ore.
+blockWhitelist = ["*ore"]

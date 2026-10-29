@@ -30,6 +30,12 @@
 !/scripts/
 !/.github/
 
+# ─────────── 本地模组补丁 ───────────
+# 补丁脚本跟着仓库走；原始 jar 只留在本地用于精确回滚
+!/patches/
+/patches/originals/
+
+
 # ─────────── mods/ 细则 ───────────
 # 只跟踪 packwiz 元数据（.pw.toml）
 /mods/*.jar

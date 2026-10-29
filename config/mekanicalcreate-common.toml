@@ -1,0 +1,6 @@
+#Register one JEI display for every energy-capable item instead of a
+#single aggregate info page. Faithful to 0.2.x but costs tens of
+#seconds of JEI load time on large packs.
+enableFullJeiRecipes = false
+#Machines need a connected Create shaft with enough stress to run.
+enableStressRequirement = true

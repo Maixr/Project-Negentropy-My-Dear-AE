@@ -103,6 +103,180 @@ event.shapeless(Item.of('minecraft:paper',3),
             ['minecraft:book',
             'minecraft:flint']
     ).id('maixr:paper');
+event.shaped(Item.of('alexscaves:candy_cane',4),
+            [
+                'AB ',
+                ' E ',
+                ' H '
+            ],
+            {
+                A: '#alexscaves:rock_candies',
+                B: '#alexscaves:rock_candies',
+                E: 'alexscaves:peppermint_powder',
+                H: '#alexscaves:rock_candies'
+            }
+    ).id('maixr:candy_cane');
+event.smelting('alexscaves:caramel','alexscaves:peppermint_powder').id('maixr:caremel')
+event.remove({output:'alexscaves:sweet_tooth'});
+event.shaped(Item.of('alexscaves:sweet_tooth'),
+            [
+                ' B ',
+                'DEF',
+                ' H '
+            ],
+            {
+                B: 'minecraft:bone',
+                D: 'alexscaves:candy_cane',
+                E: 'alexscaves:caramel',
+                F: 'alexscaves:candy_cane',
+                H: 'minecraft:bone'
+            }
+    ).id('maixr:sweet_tooth');
+    event.remove({output:'alexscaves:gumball_pile'});
+event.shaped(Item.of('alexscaves:gumball_pile',5),
+            [
+                'AAA',
+                'AEA',
+                'GHI'
+            ],
+            {
+                A: '#alexscaves:rock_candy',
+                E: 'alexscaves:purple_soda_bottle',
+                G: 'minecraft:sugar',
+                H: 'minecraft:sugar',
+                I: 'minecraft:sugar'
+            }
+    ).id('maixr:gumball_pile');
+    event.remove({output:'alexscaves:gingerbread_crumbs'});
+event.shaped(Item.of('alexscaves:gingerbread_crumbs',3),
+            [
+                '   ',
+                ' E ',
+                '   '
+            ],
+            {
+                E: 'alexscaves:gingerbread_bricks'
+            }
+    ).id('maixr:gingerbread_crumbs');
+    event.remove({output:'alexscaves:radiant_essence'});
+event.shaped(Item.of('alexscaves:radiant_essence'),
+            [
+                ' B ',
+                'DEF',
+                'GHI'
+            ],
+            {
+                B: 'alexscaves:sweet_tooth',
+                D: 'alexscaves:gumball_pile',
+                E: 'dreammod:bottled_dream',
+                F: 'alexscaves:gumball_pile',
+                G: 'minecraft:honey_bottle',
+                H: 'meplacementtool:key_of_spectrum',
+                I: 'minecraft:honey_bottle'
+            }
+    ).id('maixr:radiant_essence');
+    event.remove({output:'alexscaves:occult_gem'});
+event.shaped(Item.of('alexscaves:occult_gem'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'alexscaves:moth_dust',
+                B: 'mysticalagriculture:supremium_gemstone',
+                C: 'alexscaves:guano',
+                D: 'anvilcraft:ruby',
+                E: 'anvilcraft:exp_gem',
+                F: 'anvilcraft:ruby',
+                G: 'alexscaves:guano',
+                H: 'betternether:nether_ruby',
+                I: 'alexscaves:moth_dust'
+            }
+    ).id('maixr:occult_gem');
+    event.remove({output:'alexscaves:pure_darkness'});
+event.shaped(Item.of('alexscaves:pure_darkness',4),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'anvilcraft:void_matter',
+                B: 'anvilcraft:transcendium_ingot',
+                C: 'anvilcraft:void_matter',
+                D: 'advanced_ae:shattered_singularity',
+                E: 'alexscaves:occult_gem',
+                F: 'advanced_ae:shattered_singularity',
+                G: 'pasterdream:charged_amethyst',
+                H: 'pasterdream:charged_amethyst',
+                I: 'pasterdream:charged_amethyst'
+            }
+    ).id('maixr:pure_darkness');
+    event.remove({output:'pasterdream:dyedream_crack'});
+event.shaped(Item.of('pasterdream:dyedream_crack'),
+            [
+                'ABC',
+                ' E ',
+                'GHI'
+            ],
+            {
+                A: 'pasterdream:dyedream_block',
+                B: 'alexscaves:radiant_essence',
+                C: 'pasterdream:wind_iron_block',
+                E: 'entropy_tech:dyedream_yunkuang',
+                G: 'alexscaves:volcanic_core',
+                H: 'alexscaves:tesla_bulb',
+                I: 'alexscaves:pure_darkness'
+            }
+    ).id('maixr:dyedream_crack');
+    event.remove({output:'alexscaves:volcanic_core'});
+event.shaped(Item.of('alexscaves:volcanic_core'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'alexscaves:tectonic_shard',
+                B: 'alexscaves:tectonic_shard',
+                C: 'alexscaves:tectonic_shard',
+                D: 'alexscaves:tectonic_shard',
+                E: 'create:blaze_burner',
+                F: 'alexscaves:tectonic_shard',
+                G: 'alexscaves:tectonic_shard',
+                H: 'create:blaze_cake',
+                I: 'alexscaves:tectonic_shard'
+            }
+    ).id('maixr:volcanic_core');
+    event.remove({output:'pasterdream:wind_iron_ingot'});
+event.shaped(Item.of('pasterdream:wind_iron_ingot'),
+            [
+                ' BC',
+                'DEF',
+                'G  '
+            ],
+            {
+                B: 'minecraft:iron_ingot',
+                C: 'pasterdream:wind_plant_extract',
+                D: 'pasterdream:congeal_wind',
+                E: 'pasterdream:congeal_wind',
+                F: 'pasterdream:pulse_windrunner_crystal',
+                G: 'pasterdream:pulse_windrunner_crystal'
+            }
+    ).id('maixr:wind_iron_ingot');
+    event.remove({output:'pasterdream:windrunner_crystal_block'});
+event.shapeless(Item.of('pasterdream:windrunner_crystal_block'),
+            ['pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal',
+            'pasterdream:windrunner_crystal']
+    ).id('maixr:windrunner_crystal_block');
 })
 
 // ------------------------------------------------------------

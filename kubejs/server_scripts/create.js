@@ -66,6 +66,63 @@ ServerEvents.recipes(event => {
             H: 'minecraft:polished_andesite'
         }
     ).id('maixr:andesite_alloy_from_polished')
+event.remove({output:'mekanicalcreate:simulation_chamber'});
+event.shaped(Item.of('mekanicalcreate:simulation_chamber'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'create:andesite_casing',
+                B: 'create:electron_tube',
+                C: 'create:andesite_casing',
+                D: 'create:andesite_casing',
+                E: 'create:clutch',
+                F: 'create:andesite_casing',
+                G: 'create:andesite_alloy',
+                H: 'create:andesite_alloy',
+                I: 'create:andesite_alloy'
+            }
+    ).id('maixr:simulation_chamber');
+    event.remove({output:'mekanicalcreate:basic_mekanical_factory'});
+event.shaped(Item.of('mekanicalcreate:basic_mekanical_factory'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'minecraft:redstone',
+                B: 'appliedcreate:stress_processor',
+                C: 'minecraft:redstone',
+                D: 'create:brass_ingot',
+                E: 'mekanicalcreate:simulation_chamber',
+                F: 'create:brass_ingot',
+                G: 'minecraft:redstone',
+                H: 'appliedcreate:stress_processor',
+                I: 'minecraft:redstone'
+            }
+    ).id('maixr:basic_mekanical_factory');
+    event.remove({output:'mekanicalcreate:advanced_mekanical_factory'});
+event.shaped(Item.of('mekanicalcreate:advanced_mekanical_factory'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'createmoremachines:netherite_alloy',
+                B: 'appliedcreate:advanced_stress_processor',
+                C: 'createmoremachines:netherite_alloy',
+                D: 'mekanism:ingot_osmium',
+                E: 'mekanicalcreate:basic_mekanical_factory',
+                F: 'mekanism:ingot_osmium',
+                G: 'createmoremachines:netherite_alloy',
+                H: 'appliedcreate:advanced_stress_processor',
+                I: 'createmoremachines:netherite_alloy'
+            }
+    ).id('maixr:advanced_mekanical_factory');
     event.remove({output:'create:water_wheel'});
     event.shaped(Item.of('create:water_wheel'),
             [
@@ -158,20 +215,13 @@ ServerEvents.recipes(event => {
 
     MoreFormula.setTier('createmoremachines:pressing/netherite_sheet', 1)
 
-    const T = 'entropy_tech:flawed_pattern_terminal';
-    event.recipes.create.sequenced_assembly(
-        'entropy_tech:flawed_pattern_terminal',
-        'entropy_tech:primitive_terminal',
-        [
-            event.recipes.create.pressing(T, T),
-            event.recipes.create.deploying(T, [T, 'create:brass_casing']),
-            event.recipes.create.deploying(T, [T, 'ae2:blank_pattern'])
-        ]
-    )
-        .transitionalItem(T)
-        .loops(2)
-        .tier(1)
-        .id('maixr:waht_can_i_say')
+event.remove({output:'entropy_tech:flawed_pattern_terminal'});
+event.shapeless(Item.of('entropy_tech:flawed_pattern_terminal'),
+            ['entropy_tech:primitive_terminal',
+            'create:precision_mechanism',
+            'entropy_tech:entropy_processor',
+            'appliedcreate:stress_processor']
+    ).id('maixr:flawed_pattern_terminal');
 
         const T1 = 'entropy_tech:flawed_controller';
     event.recipes.create.sequenced_assembly(
@@ -234,6 +284,133 @@ event.recipes.create.cutting(
   
 ).tier(2)
 .id('maixr:echosharp_2')
+event.remove({output:'mekanicalcreate:fluid_mekanical_factory'});
+event.shaped(Item.of('mekanicalcreate:fluid_mekanical_factory'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism:ingot_osmium',
+                B: 'create:spout',
+                C: 'mekanism:ingot_osmium',
+                D: 'create:fluid_tank',
+                E: 'mekanicalcreate:basic_mekanical_factory',
+                F: 'create:fluid_tank',
+                G: 'mekanism:ingot_osmium',
+                H: 'create:item_drain',
+                I: 'mekanism:ingot_osmium'
+            }
+    ).id('maixr:fluid_mekanical_factory');
+    event.remove({output:'mekanicalcreate:mekanical_factory_casing'});
+event.shaped(Item.of('mekanicalcreate:mekanical_factory_casing',4),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism:ingot_osmium',
+                B: 'create:andesite_alloy',
+                C: 'mekanism:ingot_osmium',
+                D: 'create:andesite_alloy',
+                E: '#c:storage_blocks/tin',
+                F: 'create:andesite_alloy',
+                G: 'mekanism:ingot_osmium',
+                H: 'create:andesite_alloy',
+                I: 'mekanism:ingot_osmium'
+            }
+    ).id('maixr:mekanical_factory_casing');
+    event.remove({output:'mekanicalcreate:mekanical_factory_port'});
+event.shaped(Item.of('mekanicalcreate:mekanical_factory_port'),
+            [
+                ' B ',
+                'DEF',
+                ' H '
+            ],
+            {
+                B: 'create:andesite_tunnel',
+                D: 'create:fluid_pipe',
+                E: 'mekanicalcreate:mekanical_factory_casing',
+                F: 'create:fluid_pipe',
+                H: 'create:portable_storage_interface'
+            }
+    ).id('maixr:mekanical_factory_port');
+    event.remove({output:'mekanicalcreate:mekanical_factory_energy_core'});
+event.shaped(Item.of('mekanicalcreate:mekanical_factory_energy_core',2),
+            [
+                'ABC',
+                'D F',
+                'GHI'
+            ],
+            {
+                A: 'create:brass_ingot',
+                B: 'appgen:ember_crystal_charged',
+                C: 'create:brass_ingot',
+                D: 'appflux:charged_redstone',
+                F: 'appflux:charged_redstone',
+                G: 'create:brass_ingot',
+                H: 'appgen:ember_crystal_charged',
+                I: 'create:brass_ingot'
+            }
+    ).id('maixr:mekanical_factory_energy_core');
+    event.remove({output:'mekanicalcreate:mekanical_factory_fluid_core'});
+event.shaped(Item.of('mekanicalcreate:mekanical_factory_fluid_core',2),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'create:brass_ingot',
+                B: 'ae2:charged_certus_quartz_crystal',
+                C: 'create:brass_ingot',
+                D: 'ae2:charged_certus_quartz_crystal',
+                E: 'create_sa:large_filling_tank',
+                F: 'ae2:charged_certus_quartz_crystal',
+                G: 'create:brass_ingot',
+                H: 'ae2:charged_certus_quartz_crystal',
+                I: 'create:brass_ingot'
+            }
+    ).id('maixr:mekanical_factory_fluid_core');
+    event.remove({output:'mekanicalcreate:mekanical_factory_speed_core'});
+event.shaped(Item.of('mekanicalcreate:mekanical_factory_speed_core',4),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'create:brass_ingot',
+                B: 'ae2omnicells:charged_ender_ingot',
+                C: 'create:brass_ingot',
+                D: 'ae2omnicells:charged_ender_ingot',
+                E: 'create:precision_mechanism',
+                F: 'ae2omnicells:charged_ender_ingot',
+                G: 'create:brass_ingot',
+                H: 'createmoremachines:netherite_alloy',
+                I: 'create:brass_ingot'
+            }
+    ).id('maixr:mekanical_factory_speed_core');
+    event.remove({output:'mekanicalcreate:mekanical_factory_catalyst_core'});
+event.shaped(Item.of('mekanicalcreate:mekanical_factory_catalyst_core',2),
+            [
+                'ABC',
+                'D F',
+                'GHI'
+            ],
+            {
+                A: 'create:brass_ingot',
+                B: 'create:propeller',
+                C: 'create:brass_ingot',
+                D: 'create:whisk',
+                F: 'create:brass_hand',
+                G: 'create:brass_ingot',
+                H: 'create:electron_tube',
+                I: 'create:brass_ingot'
+            }
+    ).id('maixr:mekanical_factory_catalyst_core');
 // ── 【已删除】粉碎轮 → 物质球（辊压 tier 2）──────────────────
 //   按需求移除。想恢复就把下面 3 行的 // 去掉。
 // event.recipes.create.pressing('ae2:matter_ball', 'create:crushing_wheel')

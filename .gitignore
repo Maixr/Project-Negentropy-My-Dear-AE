@@ -59,6 +59,7 @@
 *.disabled
 **/_deleted-*/
 **/_backup-*/
+**/_backup_assets*/
 **/assets.bak-*/
 *.removed-mod
 # 单机会话数据

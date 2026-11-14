@@ -97,6 +97,42 @@ file = "config/EnderStorage.cfg"
 hash = "ee18dee1a8206cc3853e156102d70038554a4d0e30937e1e8145ef49086d0670"
 
 [[files]]
+file = "config/EvolvedMekanism/general.toml"
+hash = "9384fa3c46c967f5ac05acaf93905c3541640567807d7288df650cb6f31e663c"
+
+[[files]]
+file = "config/EvolvedMekanism/generators.toml"
+hash = "fa340d424f571254ed64eea544dfd4561207ecba0da4d5ddc2e2e4dfbda6bf18"
+
+[[files]]
+file = "config/EvolvedMekanism/tiers.toml"
+hash = "8cc776d90dfba965eea7d829b5c4bf1352039c1b660492d9602491bfad083971"
+
+[[files]]
+file = "config/EvolvedMekanism/tools-materials-startup.toml"
+hash = "e0877c0803c5eb854712b4e64077f17500eb0f07aa382a6a4dc6b68823dc5c76"
+
+[[files]]
+file = "config/EvolvedMekanism/tools.toml"
+hash = "32772efa171559e23cdffdea19cdda291120ec683e2e0ea7f1d503a0e270c8a3"
+
+[[files]]
+file = "config/EvolvedMekanism/world.toml"
+hash = "3f2c5b7555f45b547cbda839f45eb603c711aa39ea1f26097ee12abd417b45a1"
+
+[[files]]
+file = "config/EvolvedMekanismExtras/EvolvedMekanismExtras-Capacity.toml"
+hash = "a768ac73c15e7838e01a5f57b1bc9a50489fe8003af533b6f785ce759b61cc0e"
+
+[[files]]
+file = "config/EvolvedMekanismExtras/EvolvedMekanismExtras-Storage.toml"
+hash = "92ed379cf05a369420e25a80602c0dfdf3768ae1a915af835147e4b52618041d"
+
+[[files]]
+file = "config/EvolvedMekanismExtras/EvolvedMekanismExtras-Usage.toml"
+hash = "8c2f925bdb861275c7fbaabecbfd0a39eafcbd221a0462b652bdbfd2392774bf"
+
+[[files]]
 file = "config/Mekanism-Extras/general.toml"
 hash = "f44e81fbc432790d3e14c68735fe423eb24ac0288b1f28fd6bdbe3dc65f799d3"
 
@@ -115,6 +151,18 @@ hash = "cac45508eda14622a6065cebf3bef9d8fc0a6fb6e875e1d340336565357d13c6"
 [[files]]
 file = "config/Mekanism-Extras/tiers.toml"
 hash = "4dc97ca09785d884cba8011609c22fed651a3f1d2f3fa014d18839a41290e4c1"
+
+[[files]]
+file = "config/Mekanism-Incomparable/recipe.toml"
+hash = "530be4720f8412fec10f5aec4594500ab5fe4ce8061fcbe0eec870323313b7d6"
+
+[[files]]
+file = "config/Mekanism/MekanismElements-Storage.toml"
+hash = "458cb376cde8ce75107d34a04654812013b0ea98d393d2e784b762b87c086fd6"
+
+[[files]]
+file = "config/Mekanism/MekanismElements-Usage.toml"
+hash = "261b29ddde8d17b7e89a955a0606fab1c876cbfdb49cb7eae15a5b899d86be45"
 
 [[files]]
 file = "config/Mekanism/additions-client.toml"
@@ -161,6 +209,10 @@ file = "config/Mekanism/machine-usage.toml"
 hash = "ecf9f2597282ab1c1287122de664f85eb54b6dcc611c17e70732871f8a9ba35c"
 
 [[files]]
+file = "config/Mekanism/mekut-general.toml"
+hash = "a1c1ae20cff5ff265bbb7e02070470297b0cddd779c029260e9ab7460a2cc029"
+
+[[files]]
 file = "config/Mekanism/startup.toml"
 hash = "4b1cf299c46ac8b9fb77ba9e8fe79d5594652ab4224f21b4ffc355ba1ade9b08"
 
@@ -190,6 +242,14 @@ hash = "563dc7dd48f21febb54e404bb5cad07fe544f659121982e67981493f7b5c9e56"
 
 [[files]]
 file = "config/MekanismEmpowered Unleashed/tiers.toml"
+hash = "59dbdbe952ef21396297a7b5034cde2217a785ccc9f896d8441267cd52b736f9"
+
+[[files]]
+file = "config/MekanismEmpowered/general.toml"
+hash = "71614b517a842be410dc5550db64de540fd7b78f66bd2a097f4c43788783b111"
+
+[[files]]
+file = "config/MekanismEmpowered/tiers.toml"
 hash = "59dbdbe952ef21396297a7b5034cde2217a785ccc9f896d8441267cd52b736f9"
 
 [[files]]
@@ -367,6 +427,10 @@ hash = "f9a8b118d1ee971150343c9087f735f5a019676ecf459e1869caf1245f80f731"
 [[files]]
 file = "config/ae2jeirender-client.toml"
 hash = "688368400115c65fc9291d000ebd3950a8fb6e37083a3ddb27be96c33a3691f3"
+
+[[files]]
+file = "config/ae2jeirender/generic_stack_search_index.json"
+hash = "2db0b03ca19cad1b244e269b4ae4e6ecf37e48365b1c1b227a42c34a4d9f87dc"
 
 [[files]]
 file = "config/ae2labeledpatterns-client.toml"
@@ -1117,6 +1181,22 @@ file = "config/cristellib/dreammod/structure_toggle_config.json5"
 hash = "0b4152c174210c64ec68abf7d43146aff25b59aa4186e437c276ac860cf5e658"
 
 [[files]]
+file = "config/cristellib/end_villager_outpost/structure_placement_config.json5"
+hash = "8b864a6f5661a557a7844f427038dc2c2da1d5c6ddd2e1d51f19e57e816a24ce"
+
+[[files]]
+file = "config/cristellib/end_villager_outpost/structure_toggle_config.json5"
+hash = "aedaf5fbf31b667c803b682f68b2360006cc1ca568d042586ca0ea5da4c55940"
+
+[[files]]
+file = "config/cristellib/mr_dungeons_andtavernsendcastlestandalone/structure_placement_config.json5"
+hash = "bef79ef936a45f3555d6424a5bb206af39343c9287b8d4a0007b05fa5286cf98"
+
+[[files]]
+file = "config/cristellib/mr_dungeons_andtavernsendcastlestandalone/structure_toggle_config.json5"
+hash = "70840d1c7fd49037dd3ed0b1f76af4bf8f2aba0c6eef0b4c0b0dbd7946631020"
+
+[[files]]
 file = "config/cristellib/neoecoprototype/structure_placement_config.json5"
 hash = "5c288be77872a99a61c8f947a5a9ecca60e9e57c896d5dcd7640d0660102b420"
 
@@ -1533,6 +1613,10 @@ file = "config/fastbench.cfg"
 hash = "b9f2753df740086016ae47d0f9b69521b1233546fd564bf2797ed93fd5c60efb"
 
 [[files]]
+file = "config/fastleafdecay-server.toml"
+hash = "94e480adf5c3226e70f40c31eb8f89c601b5006c25edf37ed69b3bc390774c7f"
+
+[[files]]
 file = "config/fastsuite.cfg"
 hash = "44198ad591572d87a9f71b0b636229d91508a8c971f9dca907bed3c6d6754193"
 
@@ -1589,6 +1673,14 @@ file = "config/framedblocks-server.toml"
 hash = "d7758765c46e7dcceb15b7534aa42afc0e104c90a8fabcf961395d668ee16035"
 
 [[files]]
+file = "config/ftbchunks-client.snbt"
+hash = "cdb1ef7520e07f60324fafd1f5feb5d2d3557b94a4a082cc890f350ad05ada68"
+
+[[files]]
+file = "config/ftbchunks-world.snbt"
+hash = "045ced909c197435a8dc25e09ef89d651d612ff49348ae5d15f32d1f1e852ee8"
+
+[[files]]
 file = "config/ftbessentials-server.snbt"
 hash = "da28ea10fc9c7f2d06103f72316e2f87f8b3e28b0e61c48ad5f2da941d03a609"
 
@@ -1615,6 +1707,14 @@ hash = "ae0fcaf14458699def9fe4e079c0ce77f5687a64271cc10aeb4fa3e5efd75876"
 [[files]]
 file = "config/ftbquests/quests/chapters/0024b224c32f3aaa.snbt"
 hash = "7dc06d09882dcbd72503245f154e890b7e292b1e5c9269db80acbf458e4ba60d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/3271a6fd85993c9f.snbt"
+hash = "af013711946cff671760d51a9283e1ad15f2f621acafd7fd4e0442e0ae913181"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/3c368d9cf1768b00.snbt"
+hash = "35a174391473069e054358ef420a682e944c98754f1ac2bf0389edbe410bfd97"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/449a2f1a45012ca7.snbt"
@@ -1741,6 +1841,18 @@ file = "config/jade/sort-order.json"
 hash = "668ae2d17cd013306fe91d97d708044d7cc4babe5d1beb1f12ed3d34aaf21be4"
 
 [[files]]
+file = "config/jdte/jdte.toml"
+hash = "ff0a3e7dcffd9c53ae5914c6338e1df32575517d44e68ec7ec89b84e65390b74"
+
+[[files]]
+file = "config/jdte/time-accelerator-local.toml"
+hash = "229f37b0f800c2ae4adb962908e5e4d7d3760ecf809643e4603e653ff50fbd24"
+
+[[files]]
+file = "config/jdte/time-accelerator-server.toml"
+hash = "bc82ba616d249935617a2c1f388970439d72dcd6d5491ed04c281720efb7d0f9"
+
+[[files]]
 file = "config/jdttimeaccelerators-server.toml"
 hash = "215bd50bbe8a8051dc3b3dae89deeea0507bd495bcc63af224ae0eb5a03eb08a"
 
@@ -1762,6 +1874,14 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/client/default/jei-client.ini"
+hash = "aa4ef758061013cfdac67aafb156d267f31b05ab9f6beeb048075ac8d41c379f"
+
+[[files]]
+file = "config/jei/client/default/jei-client.ini.bak.1"
+hash = "cdadcf027b25930a10d7aa888883e78d0e3b1b46fb75b7982022130d9bb75d54"
+
+[[files]]
+file = "config/jei/client/default/jei-client.ini.bak.2"
 hash = "aa4ef758061013cfdac67aafb156d267f31b05ab9f6beeb048075ac8d41c379f"
 
 [[files]]
@@ -1789,8 +1909,20 @@ file = "config/jei/client/jei-client.ini"
 hash = "e0715e1b9408fe9ae2689f48d1faadc586588eddd58957101e66bfc1ca1dd6d3"
 
 [[files]]
+file = "config/jei/client/jei-client.ini.bak.1"
+hash = "1df94cf9a97c6889e9fac544a276b91d7b990d96ea981ef76a015a7fd330ccf5"
+
+[[files]]
+file = "config/jei/client/jei-client.ini.bak.2"
+hash = "e0715e1b9408fe9ae2689f48d1faadc586588eddd58957101e66bfc1ca1dd6d3"
+
+[[files]]
 file = "config/jei/client/recipe-category-sort-order.ini"
 hash = "c22c35c8827383f80221b08e1c83a9f29d7e6672b78bbd7480b140470c41e112"
+
+[[files]]
+file = "config/jei/server/world/default/jei-server.ini"
+hash = "cc5c17b71b019fc6b869d28f762644464b81f4d9cb58753423d4d51ca6fedd52"
 
 [[files]]
 file = "config/jei_mekanism_multiblocks-client.toml"
@@ -1823,6 +1955,18 @@ hash = "ba828ddc6c57d971b9fa2591e9676229663be1ce6726173cce45bc442e96e7f6"
 [[files]]
 file = "config/justdirethings-server.toml"
 hash = "06ba06c1c76bc35e27535123d5bd21eb68bdfec5bda7b14b679de3e92b4ecbc2"
+
+[[files]]
+file = "config/justdynathings-common.toml"
+hash = "a36683bf301ec21a7ea06d1ea95940917ffc71042a54da89b8d7235d5093fed4"
+
+[[files]]
+file = "config/justdynathings-server.toml"
+hash = "cbc1fadb58a0b55ade49a9cb7fe3ceda21b3b012bd6811f68602843a492d81ec"
+
+[[files]]
+file = "config/justdynathings-startup.toml"
+hash = "028855e2363cfd65f310904663b66a53054e51b1748b2f59953cd97a0cfae563"
 
 [[files]]
 file = "config/kiwi-client.yaml"
@@ -1893,6 +2037,10 @@ file = "config/maidbeacon-server.toml"
 hash = "9a1b5f7aea9614b06b4b949d0c504555aba5cf7eb76fe5bab7fe8dd738149b1a"
 
 [[files]]
+file = "config/maixr-common.toml"
+hash = "78ed96ebb3f90f8fa9286014b4c15b9698ce0f06136c1babca0d1ba2cb3d1334"
+
+[[files]]
 file = "config/maixr/eden_pool.json"
 hash = "8a876f3544d8ec583546afc7e6922ce489b7368bda769e55bdd9946d2252786b"
 
@@ -1917,6 +2065,10 @@ file = "config/megaenderdrives-server.toml"
 hash = "bef3024a474621f858abc6fe352c7d65becb8f4eb27419ef0b837511d0da2f5b"
 
 [[files]]
+file = "config/mekanicalcreate-common.toml"
+hash = "b1d2e83750c2c8f10b9972744a805e55a5c45912d09979841453fa866bd89acf"
+
+[[files]]
 file = "config/mekanismcovers.json"
 hash = "d6dd0e83dc8903b9fad926cc47f0a02b8c446d7bac54a86c95900ed5d16c0cd6"
 
@@ -1935,6 +2087,18 @@ hash = "f7e7458d63209155c2563ca15ebfece7bad1b7cd42346ff931777cebed2255dc"
 [[files]]
 file = "config/mesplicedterminal-server.toml"
 hash = "42d13dca5754ed942c9e345987f47d5fa66d6dbf23aacf27abcfa3157fac4890"
+
+[[files]]
+file = "config/mesplicedterminal/layout.json"
+hash = "040bcca381206196fdca248c549d3ff4eeac3d5be0180517436434b3b0c0f4fb"
+
+[[files]]
+file = "config/mesplicedterminal/preferences.json"
+hash = "df301ca76885bc4aaa11e3a980aad70a21352b3e85d6e7857e729afd5a878c93"
+
+[[files]]
+file = "config/mesplicedterminal/presets.json"
+hash = "b58fe3224cb31beccdfd4424e57e14bd02db67c7ac4c83a995e2b580f5f82448"
 
 [[files]]
 file = "config/mezz_config/client/default/settings.ini"
@@ -1983,6 +2147,14 @@ hash = "db63bd41fae1b92828f13b34b93215549ca167ccf44a4c09d050fe559fa203a5"
 [[files]]
 file = "config/muhc-common.toml"
 hash = "0181f09bd00353c577c34787f012fdedf434bf46386e76405997e4b69c5a3589"
+
+[[files]]
+file = "config/mwgr-client.toml"
+hash = "c225e3122a24401626b95a5464342ce6a9aba602c567600301bda18c1d7e60ce"
+
+[[files]]
+file = "config/mwgr-server.toml"
+hash = "fcee6a2162b5f52862ae4790a74009e686eb6ec68aca24b8e1f817d2f2788228"
 
 [[files]]
 file = "config/myotus-client.toml"
@@ -2209,6 +2381,10 @@ file = "config/saturn-optimizations.toml"
 hash = "4e71aa46661b461100c7f71fc134213a167ab2b2c9fc5d8f20d46feeb48077b6"
 
 [[files]]
+file = "config/serilum/collective.json"
+hash = "eb0799ead8fb2c9201e2035dd105d1a115547001db012b75a2bd23f1ea925245"
+
+[[files]]
 file = "config/servercore/config.yml"
 hash = "c85d49b04910c5b2547198c99183348f466e30ba1f23ba7009361d21130260d5"
 
@@ -2295,6 +2471,10 @@ hash = "7bb03c6856544d7fa7d6aea6b1c68b8b4b18005b422bac07753e7d8be66d42cb"
 [[files]]
 file = "config/skyblockbuilder/templates.json5"
 hash = "564fd2eeffed9a70264bcce07bacd415cc4390f27318e6e5bf805bc22ebe34ed"
+
+[[files]]
+file = "config/skyblockbuilder/templates/broken_skyblock.nbt"
+hash = "9fb803c07f054603183369a782434a13ea95d382a94770b0877d9973a9043bdd"
 
 [[files]]
 file = "config/skyblockbuilder/templates/islands/default.nbt"
@@ -2389,6 +2569,10 @@ file = "config/spark/tmp/about.txt"
 hash = "d7514c0ddb6ae8611a281527bf04ca6cbcea1fa21758534fdcd08ed0f51c19c0"
 
 [[files]]
+file = "config/squatgrow-common.yaml"
+hash = "f3c0651656201c0571d3d30b4213e77c8dac4540af969981f085636ad5855db6"
+
+[[files]]
 file = "config/stellarcreateoptimization-client.toml"
 hash = "09ed88d24f54000d8a1cb06a3020c9d3369c8ce214770f6acdf79cad70e20aa7"
 
@@ -2439,6 +2623,14 @@ hash = "a7ff87dbfa4587eda3e1aa9f8e05102bdf0e6f7961fde07a360e86c6cd69da1f"
 [[files]]
 file = "config/toms_storage-server.toml"
 hash = "a880e3220dd5051ed2901cfcba028d59bccfef4af8775232037ed8a2c2e81cf7"
+
+[[files]]
+file = "config/tongdarailway-common.toml"
+hash = "9a0a91ef5876a2d9f2ef8b3f63873366ba69376b4f97b43c946b5676e48e9113"
+
+[[files]]
+file = "config/torchmaster.toml"
+hash = "4765c6a67959c7a4c0e5366eb28b13f4188577d8e54bde7d07b0adc9f92bb3ad"
 
 [[files]]
 file = "config/touhou_little_maid-common.toml"
@@ -2513,6 +2705,10 @@ file = "config/vanillin-client.toml"
 hash = "8385a16ee721d40987bcf193cb6cdc65b41ec9f9a62ac5c2c387256814256602"
 
 [[files]]
+file = "config/veinminerplus-common.toml"
+hash = "7338435f65b46b9edf8ae4724e3916044868b22c2564e903bf51eb876aee5da7"
+
+[[files]]
 file = "config/visualworkbench-client.toml"
 hash = "d4618e607b629668b7f10e8641667c2104799627546173a142f45317f773b7d3"
 
@@ -2555,6 +2751,10 @@ hash = "e8abf1f12973ca66e4f8e04ba3cbda36bede6f2462a1875a984026bc884ada99"
 [[files]]
 file = "config/wcwt-server.toml"
 hash = "dfacff201c73cd4a8c7026ec8c3f0be16bcc0261bb14cce9335529ecec63988c"
+
+[[files]]
+file = "config/world-comment.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -2741,6 +2941,10 @@ file = "kubejs/assets/dndecor/lang/zh_cn.json"
 hash = "3e68ac6897182f171123498a38654b2b9af8e5316474573fc78602bfe913fe02"
 
 [[files]]
+file = "kubejs/assets/emextras/lang/zh_cn.json"
+hash = "162c2dd1954c56e05ef243945d895858d25d58b4c374b63081da75e594da7f91"
+
+[[files]]
 file = "kubejs/assets/fastbench/lang/zh_cn.json"
 hash = "552e9d9c6d24d8414c508fcdcbc55cb67938441ca573206387ef33078c0333b9"
 
@@ -2751,6 +2955,10 @@ hash = "dcb5729019865dd7525adeaaee66b7203830b85485c8a1b1559a3be4301bc995"
 [[files]]
 file = "kubejs/assets/ftbxmodcompat/lang/zh_cn.json"
 hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+
+[[files]]
+file = "kubejs/assets/igleelib/lang/zh_cn.json"
+hash = "30cad57fe95ac54c6f7b91d4534360e6a6d0c89ee37383119be84d74b97dc67d"
 
 [[files]]
 file = "kubejs/assets/insaneae/lang/zh_cn.json"
@@ -2773,6 +2981,18 @@ file = "kubejs/assets/libx/lang/zh_cn.json"
 hash = "dd158c82c84ac7f260ccf45a8803911c504c90287cb2e4d040a8bf08800cc14e"
 
 [[files]]
+file = "kubejs/assets/maixr/textures/gui/antientropy_bg.png"
+hash = "fb2ce4bc468e1b2b3e6a711e8e6e3fe3a6809ff15f8bb76b44a85a0f3de84fc2"
+
+[[files]]
+file = "kubejs/assets/maixr/textures/gui/antientropy_bg_smooth.png"
+hash = "969c88e2d2e863cf8f685d25a37f65c54f240a20dadf04d7bbf4029b563788f9"
+
+[[files]]
+file = "kubejs/assets/maixr/textures/gui/quest_mekanicalcreate_factory.png"
+hash = "16b0ae3ecb673046a8b524353c1fbaddd65a2f900def195c665378458f943a5b"
+
+[[files]]
 file = "kubejs/assets/maixr/textures/quests/test_icon.png"
 hash = "4e963fb1d97c27a4a495afc0e9d8003b8670f7480cf5bd9f5273ef0b85cbec7b"
 
@@ -2785,12 +3005,28 @@ file = "kubejs/assets/mattercondensertiers/lang/zh_cn.json"
 hash = "ab0f1596315c0a3aea2c8b9f07a44a5ecb81a88d823b0d47edf376d0fab0a8e1"
 
 [[files]]
+file = "kubejs/assets/mek_addon_lib/lang/zh_cn.json"
+hash = "e84cabf1b9537d0c9f296c3aa488bec46772926bf469f0208ac7ece42c5909ad"
+
+[[files]]
+file = "kubejs/assets/mekanism_incomparable/lang/zh_cn.json"
+hash = "153ad5c3d7e5cdbe49436272d3d7d2d5ee4fd4caa793c50a888fbba2c9fa7bc5"
+
+[[files]]
+file = "kubejs/assets/mekanism_utilities/lang/zh_cn.json"
+hash = "2032eec9ea3600ed01594bfc3e3b901632dc80eb105926140f4e30fbb204c778"
+
+[[files]]
 file = "kubejs/assets/mezz_config/lang/zh_cn.json"
 hash = "891d7c9a2e5589a89811e7b360401582f6efbdf47120c6c53964e41869e0a0c7"
 
 [[files]]
 file = "kubejs/assets/minecraft/atlases/blocks.json"
 hash = "57b10b512a93075a559be072bc140ada1dfbcd321e8b06a6c67a122587c76984"
+
+[[files]]
+file = "kubejs/assets/mwgr/lang/zh_cn.json"
+hash = "ef8de4a121b71fde8c1df76c6602f9d3091827d85ec1e2cf719c700702748a33"
 
 [[files]]
 file = "kubejs/assets/nep/lang/zh_cn.json"
@@ -2877,6 +3113,22 @@ file = "kubejs/config/web_server.json"
 hash = "17d764ed323c838452fa903b221d81b789a0890e85e2c8feea2837d2521748d9"
 
 [[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/shipwreck_treasure.json"
+hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/simple_dungeon.json"
+hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
+
+[[files]]
+file = "kubejs/data/entropy_tech/recipe/entropy_calc_tablet.json"
+hash = "72a060fad5b05b5544ba66fe95d712e57890a138890ad811a44a59290875f8c2"
+
+[[files]]
+file = "kubejs/data/mekanism_incomparable/recipe/control_circuit/component.json"
+hash = "579604c7cae7b2333bb0a505120a4f84d920881a4537b7eb56c7f43d62c40627"
+
+[[files]]
 file = "kubejs/data/pasterdream/dimension/dyedream_world.json"
 hash = "35b3edcd1c438abd246dc0ad2ac1bffc872e15bfa8406d80109f33ab3dfbe6aa"
 
@@ -2921,12 +3173,28 @@ file = "kubejs/server_scripts/demo_tiers.js"
 hash = "55ba4c270571230004c6048cdff85e013dc77b49c3dbbc81b9444afb8bf5e03a"
 
 [[files]]
+file = "kubejs/server_scripts/diagmine.js"
+hash = "2979af9a16297abafcda652bc29636a7ad7d05b70082c02011942223105519fd"
+
+[[files]]
 file = "kubejs/server_scripts/enderIO.js"
 hash = "82c46e7b9c36a068b30f5860b12cf39b63ae87ca8098b8b501d81550cccf1844"
 
 [[files]]
+file = "kubejs/server_scripts/endeys.js"
+hash = "914b366752ec1a0b696b8cf59f5d2783d51fab2972a5eb76260cbdf356e0d532"
+
+[[files]]
+file = "kubejs/server_scripts/endrem.js"
+hash = "dc0fa83f3cae280c3d4f5d75bc5111e089ed9c59bd2d358629b334a7c82ceba1"
+
+[[files]]
 file = "kubejs/server_scripts/fix_ban.js"
 hash = "02cd1b240ba038a16a501cc6cead5e96f2309ded48e0bc273a49d370a247ad72"
+
+[[files]]
+file = "kubejs/server_scripts/fix_pickaxe_tag.js"
+hash = "67fc9d7675e53d64ea8a6eab8e17ccfb73b0410bca6e06cecb625cef37872843"
 
 [[files]]
 file = "kubejs/server_scripts/main.js"
@@ -2937,12 +3205,28 @@ file = "kubejs/server_scripts/mek.js"
 hash = "a3737aa30b2c8a3056722a04dca0d87cc76c492155bf9e0edc2f9f5279043960"
 
 [[files]]
+file = "kubejs/server_scripts/mek_control_circuit.js"
+hash = "a783f65ee09009f26adbc128c7b737901a9fe2112ab1977cd0b16b8ef998e45f"
+
+[[files]]
+file = "kubejs/server_scripts/unify_ores.js"
+hash = "8bd53e7e41473571d8051f4017b569827edd645416dede4ab864baab6294c3e1"
+
+[[files]]
+file = "kubejs/server_scripts/yunkuang.js"
+hash = "f5c9d9f682ca41f98ec5f0e71f3919f51040eb8d99acf165b8a24e729eb2a48d"
+
+[[files]]
 file = "kubejs/startup_scripts/main.js"
 hash = "a8c1d6025e2125a4c9f4b96ae89fd425025f398656aedeb178cd84fcab2fd553"
 
 [[files]]
 file = "kubejs/visualworkbench-锻造台劫持说明.md"
 hash = "c2ce16ce0dffedd34af459d5a02ed13922716283ee8eb5de05ee7ab2616cbba2"
+
+[[files]]
+file = "mods/JEIGuess-1.21.1-0.6.6.jar"
+hash = "358576405ffd5b81ed3b6765768b1273eca1e41f09afd3dfaa0c55b6d74c56d9"
 
 [[files]]
 file = "mods/MaixrCore-1.21.1-2.0.0.jar"
@@ -3451,6 +3735,10 @@ hash = "d39c39406a9973d537c8f4296518f2d00c7278d1fd8eb9244ed21e580b8117d8"
 file = "mods/entitytexturefeatures.pw.toml"
 metafile = true
 hash = "1591ca321939cef00950aa53ae45b4265c1b1bdef5f88e20aabc5ccd51cee774"
+
+[[files]]
+file = "mods/entropy_tech-0.3.42-neoforge+mc1.21.1.jar"
+hash = "51786de5690d103fe9d9dc91efa642381af413a645aea4306d3245b93b9b0df5"
 
 [[files]]
 file = "mods/experiencelib.pw.toml"

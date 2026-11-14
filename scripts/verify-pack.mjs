@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = process.cwd();
 const errs = [];
@@ -49,6 +50,37 @@ if (fs.existsSync(indexPath)) {
     fileCount++; totalBytes += buf.length;
     if (sha256(buf) !== hash) errs.push('哈希不符：' + file);
     if (buf.length > 100 * 1048576) errs.push('文件超过 100MB（GitHub 上限）：' + file);
+  }
+}
+
+// ── 2b. 反向检查：git 跟踪的文件必须都在索引里 ──
+// 光查「索引引用的文件存在」是不够的 —— 新增文件忘了 regen 时，索引依然自洽，
+// CI 全绿，但玩家拿到的包里就是缺文件（历史上漏过 2 个自研 jar）。
+// 口径必须和 regen-index.mjs 完全一致，否则会互相打架。
+if (fs.existsSync(indexPath)) {
+  const EXCLUDE = [
+    /^\.github\//, /^\.gitignore$/, /^\.gitattributes$/, /^\.packwizignore$/,
+    /^README\.md$/, /^DEVELOPMENT\.md$/, /^CHANGELOG\.md$/, /^LICENSE$/, /^modlist\.md$/,
+    /^modpack-docs\//, /^docs\//, /^scripts\//, /^pack\.toml$/, /^index\.toml$/,
+    /^sync\.bat$/, /^patches\//,
+  ];
+  let tracked = [];
+  try {
+    tracked = execFileSync('git', ['ls-files', '-z'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
+      .split('\0').filter(Boolean);
+  } catch {
+    warns.push('无法执行 git ls-files，跳过「跟踪文件是否都在索引」检查');
+  }
+  const indexed = new Set(
+    fs.readFileSync(indexPath, 'utf8').split('[[files]]').slice(1)
+      .map((b) => tomlGet(b, 'file')).filter(Boolean),
+  );
+  const missing = tracked
+    .filter((f) => !EXCLUDE.some((r) => r.test(f)))
+    .filter((f) => fs.existsSync(path.join(ROOT, f)))
+    .filter((f) => !indexed.has(f));
+  for (const f of missing) {
+    errs.push('已跟踪但不在 index.toml（重跑 node scripts/regen-index.mjs，且必须先 git add）: ' + f);
   }
 }
 

@@ -79,11 +79,21 @@ if (Test-Path 'patches/apply-patches.py') {
     Warn '找不到 patches/apply-patches.py，跳过'
 }
 
-# --- 1. 重建索引 ---
+# --- 1. 先暂存，再重建索引 ---
+# ★ 顺序不能反：regen-index.mjs 的文件清单来自 `git ls-files`（读暂存区）。
+#   若先 regen 再 add，本次新增的文件在 regen 那一刻还没进暂存区，
+#   就永远进不了 index.toml —— 要等下一次同步才补上，而那时它已经不算「新增」了。
+#   历史上就是这样漏掉了 entropy_tech / JEIGuess 两个自研 jar 和 7 个 server_script。
+Step '暂存改动（必须早于索引重建）'
+$null = RunNative "git" @("add", "-A")
+
 Step '重建 index.toml'
 $r1 = RunNative 'node' @('scripts/regen-index.mjs')
 $r1.Output | ForEach-Object { Write-Host ('  ' + $_) }
 if ($r1.Code -ne 0) { Die '索引重建失败' }
+
+# regen 会改写 index.toml / pack.toml，需要再暂存一次
+$null = RunNative "git" @("add", "-A")
 
 # --- 2. 校验 ---
 Step '校验整合包'
@@ -93,7 +103,6 @@ if ($r2.Code -ne 0) { Die '校验未通过，已中止（没有提交任何东�
 
 # --- 3. 汇总 ---
 Step '汇总改动'
-$null = RunNative "git" @("add", "-A")
 $diff = RunNative "git" @("diff", "--cached", "--numstat")
 if (-not $diff.Output -or $diff.Output.Count -eq 0) {
     Ok '没有需要提交的改动 —— 远程仓库已是最新'

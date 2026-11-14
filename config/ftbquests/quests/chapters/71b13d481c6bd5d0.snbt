@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "71b13d481c6bd5d0"
+	group: "5D5B5172F1886469"
+	id: "71B13D481C6BD5D0"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		id: "5B25EBD096013FCB"
+		tasks: [{
+			id: "533C89A74E6A1AA3"
+			item: { count: 1, id: "data_energistics:data_carrier" }
+			type: "item"
+		}]
+		x: -1.0d
+		y: 0.0d
+	}]
+}

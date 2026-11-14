@@ -4,17 +4,49 @@
 	filename: "449a2f1a45012ca7"
 	group: "4B28AF7297340C54"
 	id: "449A2F1A45012CA7"
-	images: [{
-		click_action: "none:"
-		height: 51.0d
-		id: "7CD46C58CAFD7A26"
-		image: "maixr:textures/gui/antientropy_bg.png"
-		order: -1
-		rotation: 0.0d
-		width: 90.0d
-		x: -2.5d
-		y: 6.5d
-	}]
+	images: [
+		{
+			click_action: "none:"
+			height: 51.0d
+			id: "7CD46C58CAFD7A26"
+			image: "maixr:textures/gui/antientropy_bg.png"
+			order: -1
+			rotation: 0.0d
+			width: 90.0d
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			click_action: "none:"
+			height: 2.0d
+			id: "4E44CE3B09190152"
+			image: "pasterdream:block/dyedreamcrack"
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.0d
+			y: 7.5d
+		}
+		{
+			click_action: "none:"
+			height: 3.0d
+			id: "2A8255A53560150C"
+			image: "anvilcraft:block/celestial_body/white_hole"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			click_action: "none:"
+			height: 1.3d
+			id: "4EF4EA857929A70D"
+			image: "ftbquests:block/barrier"
+			rotation: 0.0d
+			width: 1.3d
+			x: 5.0d
+			y: 7.5d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -94,8 +126,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "532ACC4BD1560C10"
-				item: { count: 1, id: "laowu:hissing_collector" }
+				id: "35B5BBBFC5F0841A"
+				item: { count: 1, id: "laowu:cat_carrier" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -368,6 +400,8 @@
 		{
 			dependencies: ["156C37C4F2760AE1"]
 			id: "2E3419FA4D6AF0D5"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "41CA996D5E7D1A66"
 				item: { count: 1, id: "enderio:grains_of_infinity" }
@@ -391,7 +425,7 @@
 				type: "item"
 			}]
 			x: -20.0d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3B278423BAB8C0B4"]
@@ -409,7 +443,7 @@
 				item: { count: 1, id: "enderio:double_layer_capacitor" }
 				type: "item"
 			}]
-			x: -20.0d
+			x: -17.5d
 			y: 1.5d
 		}
 		{
@@ -573,7 +607,7 @@
 				item: { count: 1, id: "enderio:octadic_capacitor" }
 				type: "item"
 			}]
-			x: -20.0d
+			x: -15.0d
 			y: -1.5d
 		}
 		{
@@ -590,8 +624,8 @@
 				item: { count: 1, id: "enderio_evolution:capacitor_crystalline" }
 				type: "item"
 			}]
-			x: -20.0d
-			y: -4.5d
+			x: -12.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -647,17 +681,6 @@
 			y: 7.5d
 		}
 		{
-			id: "1465C20D0282876F"
-			tasks: [{
-				id: "3283E4E69C816A85"
-				item: { count: 1, id: "enderio:powdered_quartz" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["1465C20D0282876F"]
 			id: "6A4EC7441B6D87DF"
 			rewards: [{
 				count: 6
@@ -673,8 +696,8 @@
 				item: { count: 1, id: "ae2cs:purified_nether_quartz_crystal" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 9.0d
+			x: -2.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -706,17 +729,6 @@
 			]
 			x: 1.0d
 			y: 7.5d
-		}
-		{
-			id: "78EDFD38D80C124F"
-			tasks: [{
-				count: 8L
-				id: "620FEA48BAA40DC4"
-				item: { count: 1, id: "anvilcraft:magnet_ingot" }
-				type: "item"
-			}]
-			x: 11.5d
-			y: 12.5d
 		}
 		{
 			dependencies: ["49FDFE39808C656E"]
@@ -787,8 +799,8 @@
 				item: { count: 1, id: "createmoremachines:netherite_deployer" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2E5775B678F9F0E7"]
@@ -798,8 +810,8 @@
 				item: { count: 1, id: "createmoremachines:netherite_mechanical_press" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.5d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2E5775B678F9F0E7"]
@@ -809,16 +821,11 @@
 				item: { count: 1, id: "createmoremachines:netherite_mechanical_mixer" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.5d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"25F7AC34E95194D9"
-				"47C882EBCE91EBEE"
-				"33EFFEF673C7A490"
-				"73971D41E1601F91"
-			]
+			dependencies: ["2E5775B678F9F0E7"]
 			id: "636A780159D1CC55"
 			rewards: [
 				{
@@ -828,36 +835,39 @@
 					type: "random"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "0A9015C0CF6B3C4A"
-					table_id: 289709801311354444L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4D0FF393E30A7C8E"
-					table_id: 289709801311354444L
-					type: "loot"
+					id: "640CDA82B78A46A0"
+					item: {
+						count: 1
+						id: "avaritia:endless_cake"
+					}
+					type: "item"
 				}
 			]
+			size: 1.3d
 			tasks: [{
 				id: "260A567546F4004A"
 				item: { count: 1, id: "entropy_tech:simple_controller" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["014E15D09ABD16E7"]
 			id: "73971D41E1601F91"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "38FF9759E2C9DFFD"
+				table_id: 289709801311354444L
+				type: "random"
+			}]
 			tasks: [{
 				id: "609B5E3977EAEA73"
 				item: { count: 1, id: "dreammod:dream_bucket" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.0d
+			x: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["72C96C3EF8E8D07D"]
@@ -873,8 +883,8 @@
 				item: { count: 1, id: "dreammod:bottled_dream" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.5d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			id: "72C96C3EF8E8D07D"
@@ -883,8 +893,8 @@
 				item: { count: 1, id: "pasterdream:dyedream_dust_piece" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.0d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["636A780159D1CC55"]
@@ -1440,6 +1450,15 @@
 					table_id: 289709801311354444L
 					type: "all_table"
 				}
+				{
+					count: 30
+					id: "234BD2634B084BDF"
+					item: {
+						count: 1
+						id: "neoecoprototype:simplify_drive"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "3FA769B3728F0279"
@@ -1472,6 +1491,14 @@
 		{
 			dependencies: ["5CD1657406A5022A"]
 			id: "713BBFA65B8D6A62"
+			rewards: [{
+				id: "3A797934EBA88BF3"
+				item: {
+					count: 1
+					id: "neoecoprototype:simplify_storage_component_4m"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "47C2CDADAA150E4A"
 				item: { count: 1, id: "neoecoprototype:simplify_item_storage_matrix_housing" }
@@ -1483,6 +1510,14 @@
 		{
 			dependencies: ["1D2F7C37224EC4E8"]
 			id: "6C98F4D0BED88F7A"
+			rewards: [{
+				id: "42441978BB926093"
+				item: {
+					count: 1
+					id: "neoecoprototype:energized_computation_core"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "74C2CCF7662D2C68"
 				item: { count: 1, id: "neoecoprototype:simplify_computation_cell_1m" }
@@ -1515,7 +1550,6 @@
 				"73D29D7DA654D29F"
 				"6C98F4D0BED88F7A"
 				"586A205544BED046"
-				"66CB80E403FB2B0B"
 			]
 			id: "7DD89BF73FAC67F5"
 			rewards: [
@@ -1547,7 +1581,7 @@
 					type: "loot"
 				}
 			]
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.6d
 			tasks: [{
 				id: "6AF0E07F924E5A6A"
@@ -1629,7 +1663,7 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
+			x: 18.5d
 			y: 4.0d
 		}
 		{
@@ -1649,8 +1683,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 14.5d
+			x: 6.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1666,8 +1700,8 @@
 				item: { count: 1, id: "appflux:induction_card" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 13.0d
+			x: 5.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1683,8 +1717,8 @@
 				item: { count: 1, id: "ae2:energy_card" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 15.0d
+			x: 8.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1700,8 +1734,8 @@
 				item: { count: 1, id: "ae2:equal_distribution_card" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 14.0d
+			x: 5.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1717,8 +1751,8 @@
 				item: { count: 1, id: "ae2:speed_card" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 13.0d
+			x: 7.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1734,8 +1768,8 @@
 				item: { count: 1, id: "ae2cs:crystal_growth_card" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 14.0d
+			x: 8.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1751,8 +1785,8 @@
 				item: { count: 1, id: "insaneae:overclock_card" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 16.0d
+			x: 6.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1768,8 +1802,8 @@
 				item: { count: 1, id: "ae2_overclocked:capacity_card" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 16.0d
+			x: 7.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1785,8 +1819,8 @@
 				item: { count: 1, id: "ae2_overclocked:parallel_card" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 15.0d
+			x: 5.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2108D484A3E17866"]
@@ -1802,8 +1836,8 @@
 				item: { count: 1, id: "insaneae:turbo_card" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 16.0d
+			x: 5.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["2B60D45BAA522A12"]
@@ -1952,7 +1986,7 @@
 				item: { count: 1, id: "entropy_tech:flawed_drive" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 5.5d
 		}
 		{
@@ -2110,183 +2144,10 @@
 		}
 		{
 			dependencies: [
-				"1623E3059556F6A2"
-				"6179F2F3FD2E47F9"
-				"54C6E9CB4FF2E397"
-				"6C3C4547DCE7848A"
-			]
-			dependency_requirement: "one_completed"
-			hide_dependency_lines: false
-			id: "375C468D5E3CF210"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2752BF5B07727A8F"
-					table_id: 289709801311354444L
-					type: "loot"
-				}
-				{
-					id: "072696FB58FF05EF"
-					item: {
-						count: 1
-						id: "anvilcraft:guide_book"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3ABC185C55B65B36"
-				item: { count: 1, id: "anvilcraft:geode" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["375C468D5E3CF210"]
-			id: "622E9A6477560D5D"
-			rewards: [{
-				count: 8
-				id: "150AA94949605134"
-				item: {
-					count: 1
-					id: "anvilcraft:ruby"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6BF4D71C8B32A791"
-				item: { count: 1, id: "anvilcraft:ruby" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["375C468D5E3CF210"]
-			id: "611F3E8D13D0E8C6"
-			rewards: [{
-				count: 8
-				id: "6B8F9718AB2FA833"
-				item: {
-					count: 1
-					id: "anvilcraft:sapphire"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3F8A05497EF06049"
-				item: { count: 1, id: "anvilcraft:sapphire" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 14.5d
-		}
-		{
-			dependencies: ["375C468D5E3CF210"]
-			id: "136D40D6BA851340"
-			rewards: [{
-				count: 8
-				id: "711841ED7B2008B6"
-				item: {
-					count: 1
-					id: "anvilcraft:topaz"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "27EABDE6B88B7FC1"
-				item: { count: 1, id: "anvilcraft:topaz" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 15.5d
-		}
-		{
-			dependencies: [
-				"622E9A6477560D5D"
-				"611F3E8D13D0E8C6"
-				"136D40D6BA851340"
-				"78EDFD38D80C124F"
-			]
-			id: "4859B35EDCB3DC2E"
-			min_required_dependencies: 3
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0D3533DF8C612056"
-				table_id: 289709801311354444L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "654DE8CC164FB335"
-				item: { count: 1, id: "anvilcraft:anvil_hammer" }
-				type: "item"
-			}]
-			x: 11.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["4859B35EDCB3DC2E"]
-			id: "7C6600CD8E99EB26"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2651E9AD9718B84B"
-				table_id: 289709801311354444L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "6916B4C9732F60E3"
-					item: { count: 1, id: "anvilcraft:resin" }
-					type: "item"
-				}
-				{
-					id: "34F5D3E9A99A9A91"
-					item: { count: 1, id: "anvilcraft:hardend_resin" }
-					type: "item"
-				}
-			]
-			x: 13.0d
-			y: 14.5d
-		}
-		{
-			dependencies: ["7C6600CD8E99EB26"]
-			id: "5C50EC05484BC335"
-			tasks: [{
-				id: "3638D04AC3CA1AA5"
-				item: { count: 1, id: "anvilcraft:circuit_board" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 13.5d
-		}
-		{
-			dependencies: ["7C6600CD8E99EB26"]
-			id: "0A7F3AF63B02CB8D"
-			tasks: [{
-				id: "4AE49F30BAD78FBB"
-				item: { count: 1, id: "anvilcraft:processor" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["7C6600CD8E99EB26"]
-			id: "0884A85657AD687E"
-			tasks: [{
-				id: "7663B4A8D9A6E81F"
-				item: { count: 1, id: "anvilcraft:disk" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 15.5d
-		}
-		{
-			dependencies: [
 				"0884A85657AD687E"
 				"0A7F3AF63B02CB8D"
 				"5C50EC05484BC335"
+				"456CDF9280180C56"
 			]
 			id: "54892CEA3E47FFDE"
 			rewards: [{
@@ -2301,8 +2162,8 @@
 				item: { count: 1, id: "anvilcraft:induction_light" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 14.5d
+			x: -15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["54892CEA3E47FFDE"]
@@ -2320,8 +2181,8 @@
 				item: { count: 1, id: "anvilcraft:charge_collector" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 12.0d
+			x: -12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["66CB80E403FB2B0B"]
@@ -2337,39 +2198,22 @@
 				item: { count: 1, id: "anvilcraft:fe_collector" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 10.0d
+			x: -10.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["0884A85657AD687E"]
+			dependencies: [
+				"0884A85657AD687E"
+				"7E31ACA35CD4CA8C"
+			]
 			id: "58BEFAF5E9DC5454"
 			tasks: [{
 				id: "34061AA5892C276C"
 				item: { count: 1, id: "entropy_tech:simple_drive" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 17.0d
-		}
-		{
-			dependencies: ["622E9A6477560D5D"]
-			id: "27275EE9C2BAE9DF"
-			rewards: [{
-				count: 8
-				id: "68B74FF7336F17EC"
-				item: {
-					count: 1
-					id: "create:steam_engine"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "339A03403D5A2236"
-				item: { count: 1, id: "create:steam_engine" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 12.0d
+			x: 11.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["47C882EBCE91EBEE"]
@@ -2389,8 +2233,8 @@
 				item: { count: 1, id: "minecraft:glowstone_dust" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.5d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2E5775B678F9F0E7"]
@@ -2438,8 +2282,8 @@
 				item: { count: 1, id: "betternether:cincinnasite_ingot" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: -0.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2E5775B678F9F0E7"]
@@ -2452,6 +2296,162 @@
 			}]
 			x: 2.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["2B60D45BAA522A12"]
+			id: "0C96D927D923F931"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45A1F455F3C2C4EE"
+				table_id: 289709801311354444L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6C8ED01997ACC5E4"
+				item: { count: 1, id: "appliedhistory:dormant_me_logger" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0583A744B17AB089"]
+			id: "2F263ACA389444BB"
+			rewards: [{
+				count: 4
+				id: "0B25CC55807657EE"
+				item: {
+					count: 1
+					id: "mekanism_utilities:raw_certus_quartz"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A4FB8D851F74485"
+				item: { count: 1, id: "mwgr:lava_generator" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7ED1336060DFE800"]
+			id: "551A6A1167083315"
+			tasks: [{
+				id: "366FE0230A95668D"
+				item: { count: 1, id: "appgen:flux_generator_16k" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["551A6A1167083315"]
+			id: "53BEB074AE6F9DDC"
+			tasks: [{
+				id: "5D2217C4B8AC40CC"
+				item: { count: 1, id: "appgen:flux_generator_64k" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["53BEB074AE6F9DDC"]
+			id: "385743C6DF2B4AAC"
+			tasks: [{
+				id: "3E79575857A65693"
+				item: { count: 1, id: "appgen:flux_generator_256k" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00C0B2B17AF0DECA"]
+			id: "7ED1336060DFE800"
+			tasks: [{
+				id: "72705C67FC1D26F4"
+				item: { count: 1, id: "appgen:flux_generator_1k" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["39A7F13A845981DC"]
+			id: "5EEFA88F0386146F"
+			rewards: [{
+				id: "70F9E4225A4E84EA"
+				item: {
+					count: 1
+					id: "cobblegengalore:block_gen_iron"
+				}
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "4534EB3DD2F63A55"
+				item: { count: 1, id: "cobblegengalore:block_gen_iron" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["65996FB48594061F"]
+			id: "2060CE7884A273A3"
+			tasks: [{
+				id: "047F24242CAE593D"
+				item: { count: 1, id: "cobblegengalore:block_gen_gold" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3494912CE8413BDA"]
+			id: "27275EE9C2BAE9DF"
+			rewards: [{
+				count: 8
+				id: "68B74FF7336F17EC"
+				item: {
+					count: 1
+					id: "create:steam_engine"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "339A03403D5A2236"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 9.5d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/allium"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "405E7C7A15A59888"
+			rewards: [{
+				id: "275B91B7CC9164CA"
+				item: {
+					count: 1
+					id: "mekanismelements:antimatter_fluid_bucket"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "099FD649E1BE7EA8"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -5.0d
 		}
 	]
 }

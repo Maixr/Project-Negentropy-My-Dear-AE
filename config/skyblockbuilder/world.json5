@@ -37,7 +37,7 @@
   
   // Distance between islands in overworld [default: 8192]
   // Range: 64 - 29999900
-  "islandDistance": 8192,
+  "islandDistance": 256,
   
   // If a player is leaving a team, it will teleported to overworld spawn instead of spawn island.
   "leaveToOverworld": false,

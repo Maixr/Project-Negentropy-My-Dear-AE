@@ -3,3 +3,27 @@
 		#Infinity Card into a Wireless Access Point will keep the chunk loaded.
 		#Requires AEInfinityBooster to be present, otherwise has no effect.
 		chunkLoadingEnabled = true
+
+	[pattern.uploader]
+		#Remembers which recipe category a pattern was encoded from (requires JEI) and lets you
+		#push every matching processing pattern from your inventory into the right Pattern Provider.
+		#Hold ALT and press the Encode button in the Pattern Encoding Terminal to upload.
+		enabled = true
+		#Recipe category IDs that are never uploaded, e.g. "minecraft:campfire_cooking".
+		blacklistedCategories = []
+
+	[pattern.restocker]
+		#Pull Blank Patterns from ME storage when encoding with an empty blank pattern slot.
+		autoRestock = true
+		#Show a button on the Pattern Encoding Terminal that turns the encoded pattern back to blank.
+		returnButton = true
+
+[networkStock]
+	#Lets players with an open AE2 terminal, or a powered linked wireless terminal in their
+	#inventory or Curios slots, see what their ME network stores on top of the items in the JEI
+	#ingredient list. Turn it off to stop sending network inventory to clients.
+	enabled = true
+	#Minimum ticks between two inventory updates sent to the same player.
+	# Default: 10
+	# Range: 1 ~ 200
+	syncTicks = 10

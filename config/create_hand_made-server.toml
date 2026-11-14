@@ -1,0 +1,129 @@
+#Timing and switches of every hand tool.
+#Server-authoritative: synced to clients on connect.
+#Reconnect required for the change to reach already-connected clients.
+[tools]
+
+	#Hand Saw.
+	[tools.hand_saw]
+		#Allow the Hand Saw to fell the entire tree when breaking a log.
+		#When false, breaking a log breaks only that single block (vanilla behaviour).
+		#This only affects the chain-felling; cutting recipes and stripping are unaffected.
+		enable_tree_felling = true
+		#Hand Saw wind-up duration in ticks (moving into the cutting pose).
+		# Default: 10
+		# Range: 0 ~ 100
+		windup_ticks = 10
+		#Hand Saw cutting (vibration) duration in ticks.
+		#One item is processed every windup_ticks + vibrate_ticks.
+		# Default: 20
+		# Range: 1 ~ 200
+		vibrate_ticks = 20
+
+	#Mortar.
+	[tools.mortar]
+		#Mortar wind-up duration in ticks.
+		#Also gates when the server starts grinding sounds/particles.
+		#0 = no wind-up (the tool snaps into position immediately).
+		# Default: 10
+		# Range: 0 ~ 100
+		windup_ticks = 10
+		#Mortar pounding animation cycle in ticks.
+		#The server plays the grinding sound once per cycle, exactly when the pestle
+		#reaches the bottom of the bowl.
+		# Default: 6
+		# Range: 2 ~ 100
+		pound_cycle_ticks = 6
+		#Mortar: processing time = recipe 'processing_time' x this multiplier.
+		#The wind-up duration is NOT included (it is added on top).
+		#Recipes that do not specify 'processing_time' use 'default_duration'.
+		# Default: 0.2
+		# Range: 0.05 ~ 20.0
+		duration_multiplier = 0.2
+		#Mortar: processing time used when the recipe has no 'processing_time'.
+		#Does not include the wind-up duration.
+		# Default: 100
+		# Range: 1 ~ 1200
+		default_duration = 100
+
+	#Crusher Mortar.
+	[tools.crusher_mortar]
+		#Crusher Mortar wind-up duration in ticks.
+		#Also gates when the server starts grinding sounds/particles.
+		#0 = no wind-up (the tool snaps into position immediately).
+		# Default: 10
+		# Range: 0 ~ 100
+		windup_ticks = 10
+		#Crusher Mortar pounding animation cycle in ticks.
+		#The server plays the grinding sound once per cycle, exactly when the pestle
+		#reaches the bottom of the bowl.
+		# Default: 6
+		# Range: 2 ~ 100
+		pound_cycle_ticks = 6
+		#Crusher Mortar: processing time = recipe 'processing_time' x this multiplier.
+		#The wind-up duration is NOT included (it is added on top).
+		#Recipes that do not specify 'processing_time' use 'default_duration'.
+		# Default: 0.1
+		# Range: 0.05 ~ 20.0
+		duration_multiplier = 0.1
+		#Crusher Mortar: processing time used when the recipe has no 'processing_time'.
+		#Does not include the wind-up duration.
+		# Default: 100
+		# Range: 1 ~ 1200
+		default_duration = 100
+
+	#Stirring Staff.
+	[tools.stirring_staff]
+		#Stirring Staff wind-up duration in ticks.
+		#Also gates when the server starts stirring sounds/particles.
+		#0 = no wind-up (the staff snaps into the stirring pose immediately).
+		# Default: 8
+		# Range: 0 ~ 100
+		windup_ticks = 8
+		#Stirring Staff processing duration in ticks.
+		#Does not include the wind-up duration (it is added on top).
+		# Default: 52
+		# Range: 1 ~ 1200
+		processing_ticks = 52
+
+	#Press Hammer.
+	[tools.press_hammer]
+		#Press Hammer charge time: hold at least this many ticks for a charged press.
+		# Default: 16
+		# Range: 1 ~ 200
+		charge_ticks = 16
+		#Press Hammer: for how many ticks after release a swing or a hit still
+		#counts as a charged hit.
+		# Default: 20
+		# Range: 1 ~ 200
+		charge_window_ticks = 20
+
+	#Bellows.
+	[tools.bellows]
+		#Bellows charge time: hold at least this many ticks to blow.
+		# Default: 16
+		# Range: 1 ~ 200
+		charge_ticks = 16
+		#Force a specific fan type for an item, or disable a type.
+		#Format: 'item_id=type_id' or 'item_id=none'
+		#Example: 'minecraft:powder_snow_bucket=create_dragons_plus:freezing'
+		#Example: 'minecraft:sand=none' (disable entirely)
+		#'item_id=type_id' is a PREFERENCE: the chosen type wins over getPriority(),
+		#and other types still serve as a fallback when it cannot process the item.
+		#Rules whose mod is not installed are skipped silently (debug log only).
+		#Defaults below only take effect when the matching mod is installed.
+		#Note: a blaze burner prefers DnD's seething, but DnD also has a dedicated
+		#medium (dndesires:seething_sail) that needs no configuration at all.
+		#Only affects the bellows media selection; recipes are untouched.
+		bellows_type_overrides = ["minecraft:dragon_head=create_dragons_plus:ending", "minecraft:powder_snow_bucket=create_dragons_plus:freezing", "minecraft:sand=dndesires:sanding", "minecraft:red_sand=dndesires:sanding", "minecraft:suspicious_sand=dndesires:sanding"]
+
+	#Infusion Gun.
+	[tools.infusion_gun]
+		#Infusion Gun long-press threshold: hold at least this many ticks to enter
+		#the continuous extraction mode.
+		# Default: 8
+		# Range: 0 ~ 100
+		long_press_threshold = 8
+		#Infusion Gun extraction cadence: extract once every this many ticks.
+		# Default: 8
+		# Range: 1 ~ 100
+		extract_interval_ticks = 8

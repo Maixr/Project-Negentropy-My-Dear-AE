@@ -4,16 +4,28 @@
 	filename: "7766d05f9301c10a"
 	group: "4B28AF7297340C54"
 	id: "7766D05F9301C10A"
-	images: [{
-		click_action: "none:"
-		height: 90.0d
-		id: "6CDFDB34EED03ED5"
-		image: "maixr:textures/gui/antientropy_bg.png"
-		rotation: 0.0d
-		width: 160.0d
-		x: -5.5d
-		y: -0.5d
-	}]
+	images: [
+		{
+			click_action: "none:"
+			height: 90.0d
+			id: "5E7FB802032DB3D5"
+			image: "maixr:textures/gui/antientropy_bg.png"
+			rotation: 0.0d
+			width: 160.0d
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			click_action: "none:"
+			height: 2.0d
+			id: "2CB3C16B9C5BB075"
+			image: "betterend:block/dragon_bone_block_top"
+			rotation: 0.0d
+			width: 2.0d
+			x: 10.5d
+			y: 1.5d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -895,13 +907,30 @@
 		{
 			dependencies: ["39BC3E25E3B01F94"]
 			id: "25601F1127DD25CA"
-			size: 1.5d
-			tasks: [{
-				advancement: "minecraft:end/enter_end_gateway"
-				criterion: ""
-				id: "4A9B142FBD5657AF"
-				type: "advancement"
+			rewards: [{
+				count: 2
+				id: "1BDA6958DCCDAB4D"
+				item: {
+					count: 1
+					id: "draconicevolution:dragon_heart"
+				}
+				type: "item"
 			}]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minecraft:end/enter_end_gateway"
+					criterion: ""
+					id: "4A9B142FBD5657AF"
+					type: "advancement"
+				}
+				{
+					advancement: "minecraft:story/enter_the_end"
+					criterion: ""
+					id: "5AB30A59BC0F0997"
+					type: "advancement"
+				}
+			]
 			x: 14.5d
 			y: -2.5d
 		}

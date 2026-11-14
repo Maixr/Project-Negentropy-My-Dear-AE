@@ -41,6 +41,17 @@
 			x: 6.5d
 			y: -2.0d
 		}
+		{
+			click_action: "none:"
+			height: 51.0d
+			id: "6970080563A4C2D1"
+			image: "maixr:textures/gui/antientropy_bg.png"
+			order: -1
+			rotation: 0.0d
+			width: 90.0d
+			x: -3.0d
+			y: -1.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -48,23 +59,34 @@
 		{
 			dependencies: ["12C455F5424C83B0"]
 			id: "1517D9937C04A27D"
-			rewards: [{
-				id: "7B12D039ACA9FC52"
-				item: {
-					components: {
-						"minecraft:enchantments": {
-							levels: {
-								"minecraft:efficiency": 5
-								"minecraft:fortune": 3
-								"minecraft:unbreaking": 3
+			rewards: [
+				{
+					id: "7B12D039ACA9FC52"
+					item: {
+						components: {
+							"minecraft:enchantments": {
+								levels: {
+									"minecraft:efficiency": 5
+									"minecraft:fortune": 3
+									"minecraft:unbreaking": 3
+								}
 							}
 						}
+						count: 1
+						id: "minecraft:diamond_pickaxe"
 					}
-					count: 1
-					id: "minecraft:diamond_pickaxe"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 4
+					id: "1874963862702C5E"
+					item: {
+						count: 1
+						id: "minecraft:jungle_sapling"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "56A3107D296B3FFE"
 				item: { count: 1, id: "minecraft:iron_ingot" }
@@ -77,15 +99,6 @@
 			dependencies: ["1517D9937C04A27D"]
 			id: "5E5ABFF56EAE3B54"
 			rewards: [
-				{
-					count: 2
-					id: "5AB941118D8BC279"
-					item: {
-						count: 1
-						id: "mekanismtools:diamond_paxel"
-					}
-					type: "item"
-				}
 				{
 					count: 64
 					id: "34922B8B4B64F9BC"
@@ -104,6 +117,12 @@
 					}
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "15DDF424DCE13109"
+					table_id: 8548669977852396835L
+					type: "loot"
+				}
 			]
 			tasks: [{
 				id: "0CCDC32D6F31B516"
@@ -117,14 +136,11 @@
 			dependencies: ["5E5ABFF56EAE3B54"]
 			id: "6478282A2949311B"
 			rewards: [{
-				id: "10C12A558E8517B0"
+				count: 4
+				id: "6FDC22569DB6B896"
 				item: {
-					components: {
-						"sophisticatedcore:number_of_inventory_slots": 108
-						"sophisticatedcore:number_of_upgrade_slots": 5
-					}
 					count: 1
-					id: "sophisticatedbackpacks:diamond_backpack"
+					id: "ironfurnaces:obsidian_furnace"
 				}
 				type: "item"
 			}]
@@ -155,21 +171,6 @@
 					type: "item"
 				}
 				{
-					id: "698D47A963B7E528"
-					item: {
-						components: {
-							"minecraft:enchantments": {
-								levels: {
-									"minecraft:fortune": 3
-								}
-							}
-						}
-						count: 1
-						id: "anvilcraft:amethyst_pickaxe"
-					}
-					type: "item"
-				}
-				{
 					id: "5FEAE3C801BACE2B"
 					item: {
 						components: {
@@ -181,6 +182,34 @@
 						}
 						count: 1
 						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+				{
+					id: "3A68487FDD6272BB"
+					item: {
+						components: {
+							"sophisticatedcore:number_of_inventory_slots": 108
+							"sophisticatedcore:number_of_upgrade_slots": 5
+						}
+						count: 1
+						id: "sophisticatedbackpacks:diamond_backpack"
+					}
+					type: "item"
+				}
+				{
+					id: "0A1AD3FB60064223"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:advanced_deposit_upgrade"
+					}
+					type: "item"
+				}
+				{
+					id: "051FAE4E23BFDF4D"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:advanced_restock_upgrade"
 					}
 					type: "item"
 				}

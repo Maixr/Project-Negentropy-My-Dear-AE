@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "me"
+	group: "5D5B5172F1886469"
+	id: "47FD74EE7F978F98"
+	images: [ ]
+	order_index: 16
+	quest_links: [ ]
+	quests: [{
+		id: "4F7497FAB433C805"
+		tasks: [{
+			id: "584F95E6AEDF6493"
+			item: { count: 1, id: "mespawner:me_spawner" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: 1.0d
+	}]
+}

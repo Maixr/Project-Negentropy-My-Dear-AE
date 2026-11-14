@@ -3,51 +3,74 @@ console.info(' 加载 ae2.js')
 // ============================================================
 //  AE2 压印器 (inscriber) 配方
 // ------------------------------------------------------------
-//  可用 API（来自 applied_kjs 模组的 AE2Recipes 对象）：
+//  注意：applied_kjs 已移除（applied_kjs-1.0.0.jar.disabled），AE2Recipes 不存在，
+//        这里全部改用 AE2 原生配方 JSON + event.custom。
 //
-//    AE2Recipes.inscriberPress(event, 中间, 上槽, 输出)
-//        └ press 模式，无下槽
-//
-//    AE2Recipes.inscriberWithBottom(event, 模式, 中间, 上槽, 下槽, 输出)
-//        └ 三个槽全用
-//
-//    AE2Recipes.inscriber(event, 模式, 中间, 上槽, 下槽, 输出, 配方ID)
-//        └ 同上，但配方 ID 直接当参数传（最稳）
-//
-//    模式 = 'inscribe'（用模板压印）或 'press'（压制成成品）
-//
-//  ⚠ 三个槽的顺序是：中间(middle) / 上(top) / 下(bottom)
-//    ⚠ 输出是【倒数第二个】参数，不是第一个！
-// ------------------------------------------------------------
+//  AE2 压印器原生格式（取自 AE2 自带配方）：
+//    { type: 'ae2:inscriber', mode: 'inscribe'|'press',
+//      ingredients: { middle: {item}, top: {item}, bottom: {item} },
+//      result: { count, id } }
+//  ------------------------------------------------------------
 
 ServerEvents.recipes(event => {
+    event.remove({output:'ae2:pattern_provider'});
+
 
     // 256 字节存储组件：用压印器压制
     //   middle 中间槽 = 赛特斯石英
     //   top    上槽   = 下界石英
     //   bottom 下槽   = 红石
     //   result 输出   = 256 字节存储组件
-    AE2Recipes.inscriber(event, 'press',
-        'minecraft:redstone',
-        'minecraft:quartz',
-        'ae2:certus_quartz_crystal',
-        'tinyae2cells:256_byte_storage_component',
-        'maixr:256_byte_storage_component_inscriber'
-    )
-    AE2Recipes.inscriber(event, 'press',
-        'alexscaves:block_of_scarlet_neodymium',
-        'alexscaves:block_of_azure_neodymium',
-        'ae2:matter_ball',
-        'alexscaves:telecore',
-        'maixr:alexscaves:telecore'
-    )
-    AE2Recipes.inscriber(event,'press',
-        'enderio:pulsating_crystal',
-        'pasterdream:windrunner_crystal_block',
-        'ae2cs:purified_quantum_crystal',
-        'pasterdream:pulse_windrunner_crystal',
-        'maixr:pulse_windrunner_crystal'
-    )
+    event.custom({
+        type: 'ae2:inscriber',
+        mode: 'press',
+        ingredients: {
+            middle: { item: 'minecraft:redstone' },
+            top:    { item: 'minecraft:quartz' },
+            bottom: { item: 'ae2:certus_quartz_crystal' }
+        },
+        result: { count: 1, id: 'tinyae2cells:256_byte_storage_component' }
+    }).id('maixr:256_byte_storage_component_inscriber')
+    event.custom({
+        type: 'ae2:inscriber',
+        mode: 'press',
+        ingredients: {
+            middle: { item: 'alexscaves:block_of_scarlet_neodymium' },
+            top:    { item: 'alexscaves:block_of_azure_neodymium' },
+            bottom: { item: 'ae2:matter_ball' }
+        },
+        result: { count: 1, id: 'alexscaves:telecore' }
+    }).id('maixr:telecore_inscriber')
+    event.custom({
+        type: 'ae2:inscriber',
+        mode: 'press',
+        ingredients: {
+            middle: { item: 'enderio:pulsating_crystal' },
+            top:    { item: 'pasterdream:windrunner_crystal_block' },
+            bottom: { item: 'ae2cs:purified_quantum_crystal' }
+        },
+        result: { count: 1, id: 'pasterdream:pulse_windrunner_crystal' }
+    }).id('maixr:pulse_windrunner_crystal')
+    event.custom({
+        type: 'ae2:inscriber',
+        mode: 'press',
+        ingredients: {
+            middle: { item: 'ae2omnicells:singularity_block' },
+            top:    { item: 'minecraft:anvil' },
+            bottom: { item: 'minecraft:anvil' }
+        },
+        result: { count: 1, id: 'anvilcraft:neutronium_ingot' }
+    }).id('maixr:neutronium_ingot_ae2_inscriber')
+    event.custom({
+        type: 'ae2:inscriber',
+        mode: 'press',
+        ingredients: {
+            middle: { item: 'entropy_tech:pure_yunkuang' },
+            top:    { item: 'minecraft:copper_ingot' },
+            bottom: { item: 'minecraft:iron_ingot' }
+        },
+        result: { count: 1, id: 'entropy_tech:entropy_processor' }
+    }).id('maixr:entropy_processor_inscriber')
 
     // 猪咪核心
     event.shaped(Item.of('ae2lt:pigmee_core'),
@@ -118,7 +141,6 @@ event.shaped(Item.of('entropy_tech:rough_crafting_terminal'),
                 H: 'appliedcreate:advanced_stress_processor'
             }
     ).id('maixr:rough_crafting_terminal');
-    event.remove({output:'ae2:pattern_provider'});
 event.shaped(Item.of('ae2:pattern_provider'),
             [
                 'ABC',
@@ -136,7 +158,7 @@ event.shaped(Item.of('ae2:pattern_provider'),
                 H: 'create:brass_ingot',
                 I: 'ae2:formation_core'
             }
-    ).id('maixr:pattern_provider');
+    ).id('maixr:pattern_provider_1');
     event.remove({id:'ae2:network/blocks/interfaces_interface'});
 event.shaped(Item.of('ae2:interface'),
             [
@@ -337,7 +359,7 @@ event.shaped(Item.of('ae2:drive'),
                 H: 'megacells:accumulation_processor',
                 I: 'ae2omnicells:complex_link_processor'
             }
-    ).id('maixr:drive');
+    ).id('maixr:drive_antr');
     event.remove({output:'neoecoprototype:simplify_computation_drive'});
 event.shaped(Item.of('neoecoprototype:simplify_computation_drive',6),
             [
@@ -646,14 +668,14 @@ event.shaped(Item.of('mespawner:spawner_cell_256k'),
                 I: 'anvilcraft:totem_of_recovery'
             }
     ).id('maixr:spawner_cell_256k');
-event.shaped(Item.of('ae2:blank_pattern',8),
+event.shaped(Item.of('ae2:blank_pattern',64),
             [
                 ' B ',
                 'DEF',
                 'GHI'
             ],
             {
-                B: 'entropy_tech:primordial_yunkuang',
+                B: 'entropy_tech:negentropy_yunkuang',
                 D: 'mekanism_extras:supreme_control_circuit',
                 E: 'nep:matrix_circuitry',
                 F: 'mekanism_extras:supreme_control_circuit',
@@ -775,24 +797,269 @@ event.shaped(Item.of('ae2lt:pigmee_synthesis_station'),
             }
     ).id('maixr:pigmee_synthesis_station');
     event.remove({output:'insaneae:quantum_cpu'});
+event.shaped(Item.of('ae2:pattern_provider',8),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism:hdpe_sheet',
+                B: 'ae2:annihilation_core',
+                C: 'mekanism:hdpe_sheet',
+                D: 'ae2:blank_pattern',
+                E: 'mekanism_extras:absolute_control_circuit',
+                F: 'ae2:blank_pattern',
+                G: 'mekanism:hdpe_sheet',
+                H: 'ae2:formation_core',
+                I: 'mekanism:hdpe_sheet'
+            }
+    ).id('maixr:pattern_provider');
+event.shaped(Item.of('ae2:drive', 4),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2:logic_processor',
+                B: 'mekanism_incomparable:digital_control_matrix',
+                C: 'ae2:engineering_processor',
+                D: 'neoecoae:energized_fluix_crystal_block',
+                E: 'neoecoae:aluminum_alloy_casing',
+                F: 'neoecoae:energized_fluix_crystal_block',
+                G: 'ae2:fluix_covered_dense_cable',
+                H: 'ae2:fluix_covered_dense_cable',
+                I: 'ae2:fluix_covered_dense_cable'
+            }
+    ).id('maixr:drive');
+    event.remove({output:'neoecoae:integrated_working_station'});
+event.shaped(Item.of('neoecoae:integrated_working_station'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2:cell_workbench',
+                B: 'avaritia:nether_crafting_table',
+                C: 'ae2:256k_crafting_storage',
+                D: 'extendedae_plus:assembler_matrix_hybrid_plus',
+                E: 'neoecoae:aluminum_alloy_casing',
+                F: 'extendedae_plus:assembler_matrix_hybrid_plus',
+                G: 'neoecoae:superconducting_processor',
+                H: 'ae2:condenser',
+                I: 'neoecoae:superconducting_processor'
+            }
+    ).id('maixr:integrated_working_station');
+
+event.shaped(Item.of('ae2:blank_pattern'),
+            [
+                ' B ',
+                'DEF',
+                'GHI'
+            ],
+            {
+                B: 'entropy_tech:negentropy_yunkuang',
+                D: 'ae2:formation_core',
+                E: 'mekanism:basic_control_circuit',
+                F: 'ae2:formation_core',
+                G: 'alloyed:steel_sheet',
+                H: 'alloyed:steel_sheet',
+                I: 'alloyed:steel_sheet'
+            }
+    ).id('maixr:blank_pattern_1');
+    event.remove({output:'ae2_pattern_disk:pattern_disk_64k'});
+event.shaped(Item.of('ae2_pattern_disk:pattern_disk_64k'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'advanced_ae:quantum_infused_dust',
+                B: 'advanced_ae:quantum_processor',
+                C: 'advanced_ae:quantum_infused_dust',
+                D: 'ae2_pattern_disk:pattern_disk_16k',
+                E: 'ae2:quartz_glass',
+                F: 'ae2_pattern_disk:pattern_disk_16k',
+                G: 'advanced_ae:quantum_infused_dust',
+                H: 'ae2_pattern_disk:pattern_disk_16k',
+                I: 'advanced_ae:quantum_infused_dust'
+            }
+    ).id('maixr:pattern_disk_64k');
+    event.remove({output:'ae2_pattern_disk:pattern_disk_256k'});
+event.shaped(Item.of('ae2_pattern_disk:pattern_disk_256k'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2cs:quantum_crystal_dust',
+                B: 'advanced_ae:quantum_processor',
+                C: 'ae2cs:quantum_crystal_dust',
+                D: 'ae2_pattern_disk:pattern_disk_64k',
+                E: 'ae2:quartz_glass',
+                F: 'ae2_pattern_disk:pattern_disk_64k',
+                G: 'ae2cs:quantum_crystal_dust',
+                H: 'ae2_pattern_disk:pattern_disk_64k',
+                I: 'ae2cs:quantum_crystal_dust'
+            }
+    ).id('maixr:pattern_disk_256k');
+    event.remove({output:'data_energistics:data_carrier'});
+event.shaped(Item.of('data_energistics:data_carrier'),
+            [
+                ' BC',
+                'DEF',
+                'GH '
+            ],
+            {
+                B: 'minecraft:quartz',
+                C: 'ae2:singularity',
+                D: 'data_energistics:data_processor',
+                E: 'megacells:cell_component_1m',
+                F: 'minecraft:quartz',
+                G: 'minecraft:iron_nugget',
+                H: 'extendedae:concurrent_processor'
+            }
+    ).id('maixr:data_carrier');
+event.shaped(Item.of('ae2:controller',8),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'emextras:absolute_overclocked_control_circuit',
+                B: 'megacells:cell_component_4m',
+                C: 'emextras:absolute_overclocked_control_circuit',
+                D: 'ae2cs:meteorite_pattern_provider',
+                E: 'data_energistics:radix_containment_sphere',
+                F: 'extendedae:oversize_interface',
+                G: 'ae2cs:meteor_crystal_block',
+                H: 'megacells:mega_energy_cell',
+                I: 'ae2cs:meteor_crystal_block'
+            }
+    ).id('maixr:controller_8');
+event.remove({output:'ae2lt:overload_machine_frame'});
+event.shaped(Item.of('ae2lt:overload_machine_frame'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2lt:overload_alloy_plate',
+                B: 'draconicevolution:awakened_draconium_ingot',
+                C: 'ae2lt:overload_alloy_plate',
+                D: 'draconicevolution:awakened_draconium_ingot',
+                E: 'ae2lt:overload_singularity',
+                F: 'draconicevolution:awakened_draconium_ingot',
+                G: 'ae2lt:overload_alloy_plate',
+                H: 'draconicevolution:awakened_draconium_ingot',
+                I: 'ae2lt:overload_alloy_plate'
+            }
+    ).id('maixr:overload_machine_frame');
+event.remove({id:'entropy_tech:entropy_assembler'})
+event.remove({output:'appliedagriculture:biomaterial_synthesis_chamber'});
+event.shaped(Item.of('appliedagriculture:biomaterial_synthesis_chamber'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism:block_bio_fuel',
+                B: 'ae2lt:pigmee_molecular_assembler',
+                C: 'mekanism:block_bio_fuel',
+                D: 'mekanism:block_bio_fuel',
+                E: 'ae2lt:pigmee_crystal_catalyzer',
+                F: 'mekanism:block_bio_fuel',
+                G: 'ae2:fluix_crystal',
+                H: 'ae2:fluix_crystal',
+                I: 'ae2:fluix_crystal'
+            }
+    ).id('maixr:biomaterial_synthesis_chamber');
+event.shaped(Item.of('pasterdream:machine_wing'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2:spatial_pylon',
+                B: 'ae2:crystal_resonance_generator',
+                C: 'ae2:spatial_pylon',
+                D: 'ae2:spatial_pylon',
+                E: 'anvilcraft:ionocraft_backpack',
+                F: 'ae2:spatial_pylon',
+                G: 'minecraft:firework_rocket',
+                H: 'mekanism:basic_control_circuit',
+                I: 'minecraft:firework_rocket'
+            }
+    ).id('maixr:machine_wing');
+    event.remove({output:'ufo:dimensional_matter_assembler'});
+event.shaped(Item.of('ufo:dimensional_matter_assembler'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2_gvt:gravity_processor',
+                B: 'mekanism_extras:supreme_control_circuit',
+                C: 'ae2_gvt:antigravity_processor',
+                D: 'ufo:graviton_plated_casing',
+                E: 'ae2:controller',
+                F: 'ufo:graviton_plated_casing',
+                G: 'ufo:obsidian_matrix',
+                H: 'entropy_tech:negi_singularity',
+                I: 'ufo:obsidian_matrix'
+            }
+    ).id('maixr:dimensional_matter_assembler');
+    event.remove({output:'extendedae_plus:infinity_core'});
+event.shaped(Item.of('extendedae_plus:infinity_core'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ultracell:wuji_fe_component',
+                B: 'extendedae_plus:quantum_storage_core',
+                C: 'ultracell:wuji_fluid_component',
+                D: 'extendedae_plus:storage_core',
+                E: 'ultracell:wuji_chemical_component',
+                F: 'extendedae_plus:energy_storage_core',
+                G: 'avaritia:enhancement_core',
+                H: 'extendedae_plus:spatial_core',
+                I: 'avaritia:enhancement_core'
+            }
+    ).id('maixr:infinity_core');
+    event.remove({output:'entropy_tech:centrifugal_degradation_room'});
+event.shaped(Item.of('entropy_tech:centrifugal_degradation_room'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'extendedae:concurrent_processor',
+                B: 'ae2:crystal_resonance_generator',
+                C: 'extendedae:concurrent_processor',
+                D: 'ae2:quantum_link',
+                E: 'ae2:tiny_tnt',
+                F: 'ae2:quantum_link',
+                G: 'ae2:matter_ball',
+                H: 'advanced_ae:reaction_chamber',
+                I: 'ae2:matter_ball'
+            }
+    ).id('maixr:centrifugal_degradation_room');
+
+
 
 
 })
 
-// ------------------------------------------------------------
-//  范例：按阶段解锁 AE2（配合 FTB Quests）
-// ------------------------------------------------------------
-// PlayerEvents.loggedIn(event => {
-//   const p = event.player
-//   if (!p.stages.has("ae2_unlocked")) {
-//     p.stages.add("ae2_unlocked")
-//   }
-// })
 
-// ------------------------------------------------------------
-//  范例：禁用过强的物品
-// ------------------------------------------------------------
-// ItemEvents.rightClicked("ae2:item_storage_cell_256k", event => {
-//   event.player.tell("§c该元件在本包中已被禁用。")
-//   event.cancel()
-// })

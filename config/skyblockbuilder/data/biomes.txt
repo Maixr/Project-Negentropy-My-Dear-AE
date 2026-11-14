@@ -1,4 +1,5 @@
 ae2:spatial_storage
+ae2_gvt:shattered_starfield
 alexscaves:abyssal_chasm
 alexscaves:candy_cavity
 alexscaves:forlorn_hollows

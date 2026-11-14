@@ -1,0 +1,8 @@
+#Animate the fantasy annihilation block's tesseract, luminous cells and flowing edges.
+#When disabled, the custom frame and a static tesseract remain visible.
+#Client-only; changes take effect immediately.
+annihilation_effects = true
+#Draw the device access block's celestial display: a globe of nested shells with two
+#counter-rotating star rings around it, turning inside the block's open cage.
+#Client-only; changes take effect immediately.
+device_access_effects = true

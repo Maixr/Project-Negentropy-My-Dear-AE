@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "eco"
+	group: "5D5B5172F1886469"
+	id: "46942D6958878446"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [{
+		id: "3209927B6CC931C5"
+		tasks: [{
+			id: "052F570E533D8241"
+			item: { count: 1, id: "neoecoprototype:simplify_green_crystal_matrix" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: 0.0d
+	}]
+}

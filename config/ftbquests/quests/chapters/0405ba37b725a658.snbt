@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0405ba37b725a658"
+	group: "5D5B5172F1886469"
+	id: "0405BA37B725A658"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "3C12D8F84A406174"
+		tasks: [{
+			id: "1F1FEF580799E512"
+			item: { count: 1, id: "ae2_gvt:paradox_crystal" }
+			type: "item"
+		}]
+		x: -2.0d
+		y: 0.5d
+	}]
+}

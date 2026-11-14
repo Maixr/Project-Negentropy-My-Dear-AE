@@ -1,4 +1,5 @@
 ae2:meteorite
+ae2_gvt:black_hole
 ae2lt:alien_starship
 ae2lt:firmament_starship
 alexscaves:abyssal_ruins

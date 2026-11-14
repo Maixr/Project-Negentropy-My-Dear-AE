@@ -11,62 +11,62 @@
 			"ftbteams:my_team": {
 				enabled: true
 				x: 0
-				y: 1
+				y: 3
 			}
 			"ftbquests:quests": {
-				enabled: true
-				x: 2
-				y: 1
-			}
-			"ftbchunks:chunks": {
-				enabled: true
-				x: 3
-				y: 1
-			}
-			"ftblibrary:toggle/night": {
-				enabled: true
-				x: 2
-				y: 0
-			}
-			"ftbessentials:trash_can": {
-				enabled: true
-				x: 1
-				y: 2
-			}
-			"ftbteams:team_lives": {
-				enabled: true
-				x: 1
-				y: 1
-			}
-			"ftbultimine:config": {
-				enabled: true
-				x: 4
-				y: 1
-			}
-			"ftblibrary:toggle/gamemode": {
 				enabled: true
 				x: 0
 				y: 0
 			}
-			"ftblibrary:config": {
+			"ftbchunks:chunks": {
 				enabled: true
-				x: 2
-				y: 2
+				x: 0
+				y: 1
+			}
+			"ftblibrary:toggle/night": {
+				enabled: true
+				x: 0
+				y: 8
+			}
+			"ftbessentials:trash_can": {
+				enabled: true
+				x: 0
+				y: 10
+			}
+			"ftbteams:team_lives": {
+				enabled: true
+				x: 0
+				y: 4
+			}
+			"ftbultimine:config": {
+				enabled: true
+				x: 0
+				y: 5
 			}
 			"ftbchunks:claim_chunks": {
 				enabled: true
 				x: 0
 				y: 2
 			}
+			"ftblibrary:config": {
+				enabled: true
+				x: 0
+				y: 5
+			}
+			"ftblibrary:toggle/gamemode": {
+				enabled: true
+				x: 0
+				y: 6
+			}
 			"ftblibrary:toggle/day": {
 				enabled: true
-				x: 1
-				y: 0
+				x: 0
+				y: 7
 			}
 			"ftblibrary:toggle/rain": {
 				enabled: true
-				x: 3
-				y: 0
+				x: 0
+				y: 9
 			}
 		}
 		
@@ -95,6 +95,6 @@
 		# Add the name of the mod that items belong to in the item selection GUI.
 		# Note that several common mods also do this (modnametooltip,WTHIT,EMI...) so this is false by default
 		# Default: false
-		item_modname: false
+		item_modname: true
 	}
 }

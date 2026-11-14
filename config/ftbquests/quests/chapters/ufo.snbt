@@ -1,0 +1,33 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ufo"
+	group: "5D5B5172F1886469"
+	id: "419FB7EF808C03BB"
+	images: [ ]
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6CA6601EAB760D93"
+			tasks: [{
+				id: "2152B9C45DED0F58"
+				item: { count: 1, id: "ufo:obsidian_matrix" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CA6601EAB760D93"]
+			id: "61FAB24792D5312E"
+			tasks: [{
+				id: "120CA8AE09D36B0F"
+				item: { count: 1, id: "ufo:dimensional_matter_assembler" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+	]
+}

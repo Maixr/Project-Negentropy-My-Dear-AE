@@ -4,7 +4,5 @@ dollSoundEnabled = false
 # Default: 2.0
 # Range: 0.0 ~ 3.0
 uniformBand = 2.0
-#碎片连桥（旧版落脚点逻辑）：默认关闭，会明显拖慢世界加载
-bridgesEnabled = false
 #区块加载时清理悬空晶洞与悬空岩浆：关闭可加快世界加载
 geodeCleanupEnabled = false

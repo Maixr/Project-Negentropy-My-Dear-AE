@@ -8,6 +8,7 @@
   },
   "neoecoprototype": {
     "simplify_storage_controller": true,
+    "simplify_crafting_system": true,
     "simplify_drive": true,
     "simplify_computation_drive": true
   },
@@ -37,10 +38,14 @@
     "wt_master_location": true,
     "wt_owner": true
   },
+  "ae2_pattern_disk": {
+    "batch_assembler": true
+  },
   "ae2lt": {
     "frequency_card_wireless_node": true,
     "lightning_collector": true,
-    "firmament_conversion_core": true
+    "firmament_conversion_core": true,
+    "wireless_energy": true
   },
   "betternether": {
     "plant_growth": true
@@ -114,6 +119,14 @@
   },
   "mwgr": {
     "auto_eject": true
+  },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "redstone": true,
+    "camo": true,
+    "entity": true,
+    "semiblock": true
   },
   "pattern_archive": {
     "node_status": true
@@ -229,7 +242,11 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "entangled": {
+    "entangled_block_component": true
+  },
   "mespawner": {
+    "controller_conflict": true,
     "info": true
   },
   "ftbquests": {
@@ -293,6 +310,9 @@
     "framed_item_frame": true,
     "framed_block_generic": true
   },
+  "appliedagristics": {
+    "bio_crop_identity": true
+  },
   "neoecoae": {
     "large_workstation_current_inputs": true,
     "eco_computation_system": true,
@@ -302,6 +322,11 @@
     "eco_storage_system": true,
     "eco_crafting_system": true,
     "eco_computation_drive": true
+  },
+  "kenergyengineering": {
+    "channel_status": true,
+    "pipe_status": true,
+    "pipe_pull": true
   },
   "functionalstorage": {
     "armory": true,

@@ -129,5 +129,22 @@ event.shaped(Item.of('anvilcraft:space_overcompressor'),
                 I: 'ae2:matter_ball'
             }
     ).id('maixr:space_overcompressor');
+    event.remove({output:'anvilcraft:stamping_platform'});
+event.shaped(Item.of('anvilcraft:stamping_platform'),
+            [
+                'ABC',
+                'D F',
+                'G I'
+            ],
+            {
+                A: 'minecraft:iron_ingot',
+                B: 'create_hand_made:crusher_mortar',
+                C: 'minecraft:iron_ingot',
+                D: 'minecraft:iron_ingot',
+                F: 'minecraft:iron_ingot',
+                G: 'minecraft:iron_ingot',
+                I: 'minecraft:iron_ingot'
+            }
+    ).id('maixr:stamping_platform');
 
 })

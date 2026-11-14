@@ -1,0 +1,4 @@
+[jei]
+	#Show the amount stored in your ME network on the items of the JEI ingredient list.
+	#Toggled with the terminal button next to JEI's history button.
+	showNetworkStock = false

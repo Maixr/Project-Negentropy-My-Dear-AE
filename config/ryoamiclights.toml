@@ -104,6 +104,7 @@
 				danmaku = true
 				power_point = true
 				throw_power_point = true
+				broom = true
 
 			[light_sources.settings.entities.dreammod]
 				miner_nightmare = true
@@ -220,3 +221,6 @@
 				crushed_block = true
 				atlatitan = true
 				gumball = true
+
+			[light_sources.settings.entities.create]
+				stationary_contraption = true

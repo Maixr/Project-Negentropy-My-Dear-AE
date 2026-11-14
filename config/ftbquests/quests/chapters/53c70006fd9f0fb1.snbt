@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "53c70006fd9f0fb1"
+	group: "5D5B5172F1886469"
+	id: "53C70006FD9F0FB1"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "59058BD3D165CFA1"
+		tasks: [{
+			id: "7D06FEB5A41E935F"
+			item: { count: 1, id: "ae2craftcore:logic_assembler" }
+			type: "item"
+		}]
+		x: -2.0d
+		y: 1.0d
+	}]
+}

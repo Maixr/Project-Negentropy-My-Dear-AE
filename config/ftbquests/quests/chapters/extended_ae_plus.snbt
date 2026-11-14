@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extended_ae_plus"
+	group: "5D5B5172F1886469"
+	id: "7F14F5F0FC64CD0B"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "227AB8F1DA4950CD"
+			tasks: [{
+				id: "0A255AF86F96786B"
+				item: { count: 1, id: "extendedae_plus:infinity_biginteger_cell" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "6F5C16A098E2D35F"
+			tasks: [{
+				id: "2A4A7E3FC9B5446E"
+				item: { count: 1, id: "extendedae:entro_crystal" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+	]
+}

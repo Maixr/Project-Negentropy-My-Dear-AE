@@ -1,0 +1,23 @@
+#Mekanism Lightning Generator Configuration
+#单次最大产电量 (FE，游戏内单位)。默认 20,000,000 (20MFE)。
+# Default: 20000000
+# Range: 1 ~ 9223372036854775807
+singleStrikeMaxEnergy = 20000000
+#单次充能缓存模式。开启后，闪电发电机和大型闪电发电机被闪电激发时充能全部缓存。默认 false。
+singleStrikeCacheMode = false
+#大型闪电发电机发电倍率 (x0.001，1000 = 1.0x)。默认 1000。
+# Default: 1000
+# Range: > 1
+largeGeneratorPowerMultiplier = 1000
+#大型闪电发电机液态二氧化碳消耗倍率 (x0.1，10 = 1.0x)。默认 10。
+# Default: 10
+# Range: > 1
+largeGeneratorCo2Multiplier = 10
+#大型闪电发电机电容倍率 (x1)。默认 1。
+# Default: 1
+# Range: > 1
+largeGeneratorEnergyMultiplier = 1
+#大型闪电发电机液容倍率 (x1)。默认 1。
+# Default: 1
+# Range: > 1
+largeGeneratorFluidMultiplier = 1

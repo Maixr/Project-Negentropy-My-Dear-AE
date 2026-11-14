@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "56fc5b5f6e146d99"
+	group: "5D5B5172F1886469"
+	id: "56FC5B5F6E146D99"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5FDE03BD4BA01C2C"
+			tasks: [{
+				id: "697827B30C8BD25C"
+				item: { count: 1, id: "appflux:flux_accessor" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "3FA1EDF067BBA271"
+			tasks: [{
+				id: "40FF4FEA0FE6DA47"
+				item: { count: 1, id: "appgen:ember_crystal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+}

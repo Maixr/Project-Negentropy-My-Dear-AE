@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mek"
+	group: "4CBB0E2A7FDE4848"
+	id: "465F6A4A102DE8F9"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "2E7715F02B6C849C"
+		tasks: [{
+			id: "5C03E06FFBBE3FA0"
+			item: { count: 1, id: "mekanism:metallurgic_infuser" }
+			type: "item"
+		}]
+		x: -3.5d
+		y: 1.0d
+	}]
+}

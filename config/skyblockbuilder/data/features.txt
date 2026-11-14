@@ -265,6 +265,10 @@ evolvedmekanism:ore_uranium_small_aether
 evolvedmekanism:ore_uranium_small_end
 evolvedmekanism:ore_uranium_small_nether
 evolvedmekanism:ore_uranium_small_undergarden
+kenergyengineering:ore_nickel
+kenergyengineering:ore_nickel_scatter
+kenergyengineering:ore_tin
+kenergyengineering:ore_tin_scatter
 maixr:sky_stone_cluster
 mekanism:ore_fluorite_buried
 mekanism:ore_fluorite_buried_retrogen
@@ -291,8 +295,8 @@ mekanism_extras:ore_naquadah_middle
 mekanism_extras:ore_naquadah_middle_retrogen
 mekanism_extras:ore_naquadah_small
 mekanism_extras:ore_naquadah_small_retrogen
-mekanismsun:ore_silver_normal
-mekanismsun:ore_silver_normal_retrogen
+mekanismsun:ore_silver_large
+mekanismsun:ore_silver_small
 mekmm:ore_silver_large
 mekmm:ore_silver_small
 minecraft:acacia
@@ -674,6 +678,7 @@ pasterdream:windmoor_tree_small_low_sparse
 pasterdream:windmoor_tree_small_mid_bushy
 pasterdream:windmoor_tree_small_mid_sparse
 pasterdream:windrunner_crystal_ore
+pneumaticcraft:oil_lake
 repurposed_structures:azalea_bees_05
 repurposed_structures:cherry_bees_05
 repurposed_structures:decor/basalt_mineshaft_lava

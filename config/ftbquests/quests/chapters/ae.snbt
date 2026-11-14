@@ -220,6 +220,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "0940D52F5E1A6D70"
+					item: {
+						count: 1
+						id: "anvilcraft:large_crate"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "042ED7E813B0CA8E"
@@ -412,14 +420,23 @@
 				"6AF659B5BA10B651"
 			]
 			id: "60B73F0D2AC762A0"
-			rewards: [{
-				id: "6E3504056D1A27F5"
-				item: {
-					count: 1
-					id: "entropy_tech:primitive_terminal"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "58C9633DA97CF8D6"
+					table_id: 723264310146728024L
+					type: "choice"
 				}
-				type: "item"
-			}]
+				{
+					count: 8
+					id: "3F27745AE68FD51A"
+					item: {
+						count: 1
+						id: "ae2:pink_glass_cable"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "34538FC4FB4C6225"
 				item: { count: 1, id: "entropy_tech:primitive_terminal" }

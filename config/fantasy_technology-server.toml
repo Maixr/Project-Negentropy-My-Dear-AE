@@ -1,18 +1,41 @@
-#Aggregated crafting-plan optimizer. SAFE deduplicates deterministic recipe trees;
-#every branch it cannot prove equivalent is handed back to AE2. OFF disables it entirely.
-#Allowed Values: OFF, SAFE
-max_fast_mode = "SAFE"
-#Maximum unique recipe-tree nodes compiled by the optimizer before falling back to AE2.
-# Default: 8192
-# Range: 64 ~ 65536
-max_fast_max_nodes = 8192
-#Maximum graph compilation time in milliseconds before the optimizer falls back to AE2.
-# Default: 100
-# Range: 1 ~ 5000
-max_fast_compile_budget_ms = 100
-#Dispatch several repetitions of one recipe to the fantasy annihilation block in a single
-#push. Throughput is unchanged - the crafting CPU still spends one operation per craft -
-#but the per-craft inventory walk is done once instead of N times.
+#Allow a compatible crafting CPU to dispatch several repetitions of one fantasy pattern in a batch.
+#OmniSequence and Data Energistics' Trinity Data Core both use this switch; a CPU without counted
+#dispatch support stays on the single-craft path.
+#When consume_fuel is disabled, unbounded work is split into finite safe batches.
+#Changes require re-entering the world or restarting the game.
 batch_dispatch_enabled = true
-#Log why the optimizer aggregated or fell back on each crafting calculation.
-diagnostics = false
+#Use only recipes parsed by trusted providers on the logical server.
+#When enabled, JEI recipe transfer is disabled and the encoding terminal exposes its own
+#server-backed recipe browser. By default that browser contains crafting-table recipes plus
+#entries from data/<namespace>/recipe_provider/*.json.
+#WARNING: the two pattern kinds are mutually exclusive, so changing this invalidates every
+#fantasy pattern already encoded in the world. Existing patterns keep their items but stop
+#crafting and can no longer be edited or inserted into a provider until it is changed back.
+trust_server_recipe_parsing = false
+#Whether selecting or filling a recipe in the fantasy encoding terminal requires owning the machine.
+#REQUIRE_DEVICES: a recipe may only be selected or transferred when device access blocks
+#hold what it needs - a rule from data/<namespace>/device_access/ if one covers
+#the recipe, otherwise four of the recipe category's own catalysts.
+#UNRESTRICTED: no such check; the blocks stay usable as storage.
+#Allowed Values: UNRESTRICTED, REQUIRE_DEVICES
+device_access_mode = "REQUIRE_DEVICES"
+#JEI recipe category ids that the fantasy encoding terminal must not transfer.
+#The defaults are browse-only pages rather than real recipes.
+#Changes take effect only after leaving and re-entering the world or restarting the game.
+blocked_jei_category_ids = ["minecraft:tag_recipes/item", "minecraft:tag_recipes/fluid", "minecraft:tag_recipes/block", "ae2:attunement"]
+#Catalyst items accepted by the FMR Pattern Provider, formatted as <item id>:<crafts>.
+#The final colon separates the item id from its positive craft count.
+#Changes apply immediately to newly inserted catalysts; charges already stored are unchanged.
+#Default: ["ae2:matter_ball:100000"]
+annihilation_fuel_items = ["ae2:matter_ball:100000"]
+#How many catalyst items each of the three catalyst slots can hold.
+#This limit can be higher than the item's normal stack size.
+#Changes apply immediately to new insertions; items already in a slot are left in place.
+#Default: 512
+# Default: 512
+# Range: 1 ~ 9999
+catalyst_slot_limit = 512
+#Whether the FMR Pattern Provider consumes one catalyst charge on each craft.
+#When false the machine crafts for free: catalyst slots and prepaid charges are never touched.
+#Changes take effect immediately.
+consume_fuel = true

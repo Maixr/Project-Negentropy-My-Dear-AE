@@ -61,4 +61,41 @@ event.shaped(Item.of('entropy_tech:rough_controller'),
                 I: 'minecraft:gold_ingot'
             }
     ).id('maixr:rough_controller');
+    event.remove({output:'maixr:maixr_skin_doll'});
+event.shaped(Item.of('maixr:maixr_skin_doll'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2lt:pigmee_fumo',
+                B: 'ae2lt:pigmee_fumo',
+                C: 'ae2lt:pigmee_fumo',
+                D: 'ae2lt:pigmee_fumo',
+                E: 'minecraft:apple',
+                F: 'ae2lt:pigmee_fumo',
+                G: 'ae2lt:pigmee_fumo',
+                H: 'ae2lt:pigmee_fumo',
+                I: 'ae2lt:pigmee_fumo'
+            }
+    ).id('maixr:maixr_skin_doll');
+event.shaped(Item.of('easy_villagers:villager'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'ae2lt:pigmee_fumo',
+                B: 'ae2lt:pigmee_core',
+                C: 'ae2lt:pigmee_fumo',
+                D: 'ae2lt:pigmee_fumo',
+                E: 'maixr:maixr_skin_doll_maga',
+                F: 'ae2lt:pigmee_fumo',
+                G: 'ae2lt:pigmee_fumo',
+                H: 'ae2lt:pigmee_fumo',
+                I: 'ae2lt:pigmee_fumo'
+            }
+    ).id('maixr:villager');
 })

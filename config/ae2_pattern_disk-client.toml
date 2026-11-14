@@ -1,0 +1,93 @@
+[additional_sort]
+	#Tier groups for the additional sort; only used when the additional sort is on and the
+	#sort order is 'by mod'.
+	#
+	#One element per group, written as '<mod filter>:word1,word2,...':
+	#  - The mod filter may be omitted; '*' or an empty filter means 'any mod'.
+	#  - Within a group the words go from the lowest tier to the highest.
+	#  - Groups are tried in the order listed; the first group that matches an item wins,
+	#    so order the groups from the most specific to the most general.
+	#
+	#Words are matched against the item's registry name and its display name, anywhere in
+	#them - so every item whose name carries one of these words is affected, not just the
+	#factories and alloys the defaults were written for. Use registry name fragments
+	#(basic, advanced, ...) to keep the line short and language-independent; 'chinese|english' works
+	#too, where either spelling matching is enough.
+	#
+	#The defaults cover (in this order):
+	#  1. Mekanism factories - basic, advanced, elite, ultimate, absolute, supreme, cosmic,
+	#     infinite (基础、高级、精英、终极、绝对、至尊、寰宇支配、悖论无限)
+	#  2. Mekanism alloys - infused, reinforced, atomic, radiance, thermonuclear, shining,
+	#     spectrum (灌注、强化、原子、辐光、热核、闪耀、光谱)
+	#  3. Powah - starter, basic, hardened, blazing, niotic, spirited, nitro, creative
+	#     (初级、基础、硬化、烈焰、钻石、富生、下界、创造)
+	#
+	#Sodium's Config API cannot present a list like this one, so it is not used here.
+	tiers = ["mekanism*:basic,advanced,elite,ultimate,absolute,supreme,cosmic,infinite", "mekanism*:infused,reinforced,atomic,radiance,thermonuclear,shining,spectrum", "powah:starter,basic,hardened,blazing,niotic,spirited,nitro,creative"]
+	#Which names take part in the numeric level of the additional sort - the last level,
+	#where 1k < 4k < 16k < 64k < 256k < 1M.
+	#
+	#How to write one: every element is a Java regular expression (java.util.regex, the same
+	#flavour mods already use), and it is searched for anywhere inside the item's display
+	#name - so '[0-9]' means 'the name contains a digit' and does not have to describe the
+	#whole name. Matching is case-sensitive unless the expression says '(?i)'. A backslash
+	#must be doubled inside a TOML string ('\d' becomes '\\d'), so prefer escape-free
+	#classes such as '[0-9]+' where you can.
+	#
+	#What the order means: nothing. The elements are not tried in turn and there is no
+	#'first one wins' - a name takes part as soon as at least one of them matches anywhere,
+	#and that is all this list decides. Where such a name ends up is then decided by the
+	#numbers it contains, with a trailing k/M/G/T/P/E counted as a power of 1024 - which is
+	#why capacity chains like 1k, 4k, 16k, 64k, 256k, 1M come out in the right order.
+	#
+	#What NOT taking part means: those names are placed after the ones that take part, and
+	#among themselves they keep the plain literal order. The two groups stay apart on
+	#purpose - a comparison whose rule depended on which two names it was handed would not
+	#be consistent, and the sort would then throw 'Comparison method violates its general
+	#contract'. (The 'additional_sort.tiers' list above is the opposite case: there the
+	#listed order is the rule.)
+	#
+	#The default '[0-9]' lets every name containing a digit take part - the same set of
+	#names this level used to cover before it became configurable. Narrow it to keep
+	#numbers that are not capacities out, e.g. '[0-9]+[kKmM]' for the '1k'/'4k'/'1M' style,
+	#or '^[0-9]+k' to only take names that start with one; an empty list turns the numeric
+	#level off altogether.
+	#
+	#A malformed expression is skipped on its own - the other elements still apply and the
+	#sort keeps working. If nothing in the list can be compiled at all, the level is left
+	#wide open (no filtering) rather than silently turned off.
+	numeric_regex = ["[0-9]"]
+
+		[chat_messages.cell_management_terminal.notice]
+			#Chat messages this mod shows on the client.
+			#
+			#Each entry is one message and they are all independent: turning one off only silences
+			#that one line. Messages are grouped by the screen that shows them, and every key in here
+			#is the message's translation key with the leading 'gui.ae2_pattern_disk.' dropped - so it
+			#can be looked up in the language file directly.
+			#
+			#This file covers the messages the CLIENT displays: the pre-checks the screens run before
+			#asking the server, and the notices the server sends as 'key + argument' for the client to
+			#show. Suppressing one never changes what the action does - they are receipts and refusal
+			#reasons, not part of the flow.
+			#
+			#Messages the SERVER sends into the chat itself are in ae2_pattern_disk-common.toml
+			#(that side cannot be silenced from here).
+			#
+			#Changes take effect on the next message; no restart needed, just reload the config.
+			#Cell management terminal - feedback for the table gestures, shown in the chat.
+			#Shown when taking a cell out fails because the storage host locks it (an ECO infinite drive, for example).
+			cell_locked = true
+			#Shown when the slot holds something but the storage host refuses to hand it over.
+			cell_refused = true
+			#Shown when putting the cell back after a failed move did not work either.
+			move_failed = true
+			#Shown when opening AE2's priority GUI is not supported for the current selection.
+			priority_unsupported = true
+			#Shown after 'consolidate compression markers' merged the duplicate markers of the network's bulk matrices.
+			bulk_consolidated = true
+
+	[chat_messages.notice]
+		#Shared by all three terminals.
+		#Shown when Shift+clicking an item from your inventory that this terminal cannot send to the ME network and has no other slot for.
+		no_network_quick_move = true

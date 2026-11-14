@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "44b52c365ff6aa21"
+	group: "5D5B5172F1886469"
+	id: "44B52C365FF6AA21"
+	images: [ ]
+	order_index: 17
+	quest_links: [ ]
+	quests: [{
+		id: "13CDA180B43CCF74"
+		tasks: [{
+			id: "40928987831E7BC5"
+			item: { count: 1, id: "appliedagristics:network_planter" }
+			type: "item"
+		}]
+		x: -1.5d
+		y: 0.0d
+	}]
+}

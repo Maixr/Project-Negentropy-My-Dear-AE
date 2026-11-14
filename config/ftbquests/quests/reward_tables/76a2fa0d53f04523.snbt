@@ -1,0 +1,54 @@
+{
+	id: "76A2FA0D53F04523"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ id: "7E16475B4A61C960", item: { count: 1, id: "mysticalagriculture:imperium_pickaxe" } }
+		{ id: "26660B1E0821E113", item: { count: 1, id: "justdirethings:blazegold_pickaxe" } }
+		{ id: "65DA601262132AD6", item: { count: 1, id: "evolvedmekanism:better_gold_paxel" } }
+		{ id: "3B47563826236746", item: { count: 1, id: "avaritia:blaze_pickaxe" } }
+		{ id: "137FED63AFCA5D45", item: { count: 1, id: "mekanismtools:netherite_paxel" } }
+		{ id: "7984D11CE7E53E60", item: { count: 1, id: "evolvedmekanism:plaslitherite_paxel" } }
+		{ id: "5013DD425B8B1C53", item: { count: 1, id: "mekanismtools:refined_obsidian_pickaxe" } }
+		{ id: "5251595B98551E6C", item: { count: 1, id: "anvilcraft:ember_metal_pickaxe" } }
+		{ id: "65669FFF12B39FFF", item: { count: 1, id: "pasterdream:moltengold_pickaxe" } }
+		{
+			id: "6BE806E9DE14C8B1"
+			item: {
+				count: 1
+				id: "ae2cs:ender_crystal_pickaxe"
+			}
+			weight: 4.0f
+		}
+		{
+			id: "4034912D996BA4BA"
+			item: {
+				count: 1
+				id: "ae2cs:resonating_crystal_pickaxe"
+			}
+			weight: 4.0f
+		}
+		{ id: "0D3C0D1253C6A27E", item: { components: { "minecraft:enchantments": { levels: { "betternether:obsidian_breaker": 3, "betternether:ruby_fire": 1, "minecraft:mending": 1 } } }, count: 1, id: "betternether:flaming_ruby_pickaxe" } }
+		{ id: "134E0631F203DB6C", item: { count: 1, id: "create_sa:experience_pickaxe" } }
+		{ id: "28737F834062F29C", item: { count: 1, id: "create_sa:rose_quartz_pickaxe" } }
+		{ id: "0F7926B21A7ECD51", item: { count: 1, id: "anvilcraft:frost_metal_pickaxe" } }
+		{ id: "1279F56ECC08AEC5", item: { count: 1, id: "laowu:cat_pickaxe" } }
+		{
+			id: "3A1812110B31B478"
+			item: {
+				count: 1
+				id: "dreammod:dream_pickaxe"
+			}
+			weight: 4.0f
+		}
+		{ id: "2A81BA38A817DBDF", item: { count: 1, id: "ae2:certus_quartz_pickaxe" } }
+		{
+			id: "3F0EDE6E545043E0"
+			item: {
+				count: 1
+				id: "avaritia:crystal_pickaxe"
+			}
+			weight: 0.2f
+		}
+	]
+}

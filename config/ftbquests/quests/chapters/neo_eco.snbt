@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "neo_eco"
+	group: "5D5B5172F1886469"
+	id: "4CD305A12CBB4857"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [{
+		id: "40A8FDA772FEDBBF"
+		tasks: [{
+			id: "7E22457CA65BF1F9"
+			item: { count: 1, id: "neoecoae:integrated_working_station" }
+			type: "item"
+		}]
+		x: -3.0d
+		y: 1.0d
+	}]
+}

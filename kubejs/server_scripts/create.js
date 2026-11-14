@@ -212,6 +212,18 @@ event.shaped(Item.of('mekanicalcreate:advanced_mekanical_factory'),
         ).heated()
         .tier(1)
         .id('maixr:netherite_alloy')
+//末地合金配方
+    event.remove({id: 'createmoremachines:mixing/end_alloy'})
+    event.recipes.create.mixing(
+        'createmoremachines:end_alloy',
+        [   'draconicevolution:awakened_draconium_ingot',
+            'mekanism_extras:ingot_naquadah',
+            'dreammod:wail_ingot',
+            'evolvedmekanism:alloy_hypercharged',
+            Fluid.of('create_dragons_plus:dragon_breath',2000)]
+        ).heated()
+        .tier(2)
+        .id('maixr:end_alloy')
 
     MoreFormula.setTier('createmoremachines:pressing/netherite_sheet', 1)
 
@@ -239,7 +251,7 @@ event.shapeless(Item.of('entropy_tech:flawed_pattern_terminal'),
         .loops(4)
         .tier(2)
         .id('maixr:flawed_ctrl');
-    event.recipes.remove({output:'neoecoprototype:simplify_green_crystal_matrix'});
+    event.remove({output:'neoecoprototype:simplify_green_crystal_matrix'});
     event.recipes.create.mixing(
         Item.of('neoecoprototype:simplify_green_crystal_matrix',4),
         ['neoecoae:aluminum_dust','ae2:certus_quartz_dust','mekanism:dust_emerald','minecraft:glowstone_dust']

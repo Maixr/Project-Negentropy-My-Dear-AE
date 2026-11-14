@@ -95,13 +95,199 @@ event.shaped(Item.of('mwgr:lava_generator'),
                 B: 'minecraft:glass_pane',
                 C: 'appgen:ember_crystal_charged',
                 D: 'minecraft:lava_bucket',
-                E: 'minecraft:netherite_ingot',
+                E: 'createmoremachines:netherite_alloy',
                 F: 'minecraft:lava_bucket',
                 G: 'minecraft:magma_block',
                 H: 'minecraft:magma_block',
                 I: 'minecraft:magma_block'
             }
     ).id('maixr:lava_generator');
+    event.remove({output:'mekanismgenerators:wind_generator'});
+event.shaped(Item.of('mekanismgenerators:wind_generator'),
+            [
+                'ABC',
+                ' E ',
+                'GHI'
+            ],
+            {
+                A: 'anvilcraft:magnet_ingot',
+                B: 'create:encased_fan',
+                C: 'anvilcraft:magnet_ingot',
+                E: 'mekanism:basic_control_circuit',
+                G: 'mekanism:block_osmium',
+                H: 'kenergyengineering:engine_metal',
+                I: 'mekanism:block_osmium'
+            }
+    ).id('maixr:wind_generator');
+event.shaped(Item.of('mekanism:energized_smelter'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'minecraft:redstone',
+                B: 'mekanism:basic_control_circuit',
+                C: 'minecraft:redstone',
+                D: 'minecraft:glass',
+                E: 'anvilcraft:heater',
+                F: 'minecraft:glass',
+                G: 'minecraft:redstone',
+                H: 'mekanism:basic_control_circuit',
+                I: 'minecraft:redstone'
+            }
+    ).id('maixr:energized_smelter');
+event.shaped(Item.of('mekanism:crusher'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'minecraft:redstone',
+                B: 'minecraft:lava_bucket',
+                C: 'minecraft:redstone',
+                D: 'mekanism:basic_control_circuit',
+                E: 'anvilcraft:heater',
+                F: 'mekanism:basic_control_circuit',
+                G: 'minecraft:redstone',
+                H: 'minecraft:lava_bucket',
+                I: 'minecraft:redstone'
+            }
+    ).id('maixr:crusher');
+    event.remove({output:'appliedagriculture:crop_assembly_chamber'});
+event.shaped(Item.of('appliedagriculture:crop_assembly_chamber'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mysticalagriculture:prosperity_block',
+                B: 'mysticalagriculture:prosperity_block',
+                C: 'mysticalagriculture:prosperity_block',
+                D: 'mysticalagriculture:prosperity_block',
+                E: 'appliedagriculture:biomaterial_synthesis_chamber',
+                F: 'mysticalagriculture:prosperity_block',
+                G: 'ae2:growth_accelerator',
+                H: 'mysticalagriculture:prosperity_seed_base',
+                I: 'ae2:growth_accelerator'
+            }
+    ).id('maixr:crop_assembly_chamber');
+    event.remove({output:'mwgr:heavywater_generator'});
+event.shaped(Item.of('mwgr:heavywater_generator'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism_incomparable:augment_control_matrix',
+                B: 'mekanism_utilities:comet_control_circuit',
+                C: 'mekanism_incomparable:augment_control_matrix',
+                D: 'mekanismgenerators:fusion_reactor_port',
+                E: 'cookingforblockheads:sink',
+                F: 'mekanismgenerators:fusion_reactor_port',
+                G: 'mekanism:heavy_water_bucket',
+                H: 'mekanism_utilities:compact_fusion_reactor',
+                I: 'mekanism:heavy_water_bucket'
+            }
+    ).id('maixr:heavywater_generator');
+    event.remove({output:'mekanismgenerators:fusion_reactor_controller'});
+event.shaped(Item.of('mekanismgenerators:fusion_reactor_controller'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism_incomparable:advanced_control_matrix',
+                B: 'mekanism_extras:supreme_control_circuit',
+                C: 'mekanism_incomparable:advanced_control_matrix',
+                D: 'mekanismgenerators:fusion_reactor_frame',
+                E: 'mekanism_incomparable:standard_control_matrix',
+                F: 'mekanismgenerators:fusion_reactor_frame',
+                G: 'mekanismgenerators:fusion_reactor_frame',
+                H: 'mekanismgenerators:fusion_reactor_frame',
+                I: 'mekanismgenerators:fusion_reactor_frame'
+            }
+    ).id('maixr:fusion_reactor_controller');
+    event.remove({output:'mekanism:sps_casing'});
+event.shaped(Item.of('mekanism:sps_casing',4),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'evolvedmekanism:ingot_plaslitherite',
+                B: 'mekanism:pellet_plutonium',
+                C: 'evolvedmekanism:ingot_plaslitherite',
+                D: 'mekanism:pellet_plutonium',
+                E: 'mekanismgenerators:fusion_reactor_frame',
+                F: 'mekanism:pellet_plutonium',
+                G: 'evolvedmekanism:ingot_plaslitherite',
+                H: 'mekanism:pellet_plutonium',
+                I: 'evolvedmekanism:ingot_plaslitherite'
+            }
+    ).id('maixr:sps_casing');
+    event.remove({output:'mekanism:sps_port'});
+event.shaped(Item.of('mekanism:sps_port'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'mekanism:sps_casing',
+                B: 'mekanism_incomparable:elite_control_matrix',
+                C: 'mekanism:sps_casing',
+                D: 'entropy_tech:negi_singularity',
+                E: 'ae2omnicells:spent_nuclear_waste_singularity',
+                F: 'entropy_tech:negi_singularity',
+                G: 'mekanism:sps_casing',
+                H: 'entropy_tech:negi_singularity',
+                I: 'mekanism:sps_casing'
+            }
+    ).id('maixr:sps_port');
+    event.remove({output:'mekmm:large_antiprotonic_nucleosynthesizer'});
+event.shaped(Item.of('mekmm:large_antiprotonic_nucleosynthesizer',4),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'evolvedmekanism:alloy_subatomic',
+                B: 'mekanism:sps_casing',
+                C: 'evolvedmekanism:alloy_subatomic',
+                D: 'mekanism:pellet_antimatter',
+                E: 'mekanism:antiprotonic_nucleosynthesizer',
+                F: 'mekanism:pellet_antimatter',
+                G: 'evolvedmekanism:alloy_subatomic',
+                H: 'evolvedmekanism:apt_casing',
+                I: 'evolvedmekanism:alloy_subatomic'
+            }
+    ).id('maixr:large_antiprotonic_nucleosynthesizer');
+    event.remove({output:'mekanism:enrichment_chamber'});
+event.shaped(Item.of('mekanism:enrichment_chamber'),
+            [
+                'ABC',
+                'DEF',
+                'GHI'
+            ],
+            {
+                A: 'kenergyengineering:redstone_gear',
+                B: 'mekanism:basic_control_circuit',
+                C: 'kenergyengineering:lapis_gear',
+                D: 'create:andesite_alloy',
+                E: 'create:andesite_alloy',
+                F: 'create:andesite_alloy',
+                G: 'create:andesite_alloy',
+                H: 'anvilcraft:stamping_platform',
+                I: 'create:andesite_alloy'
+            }
+    ).id('maixr:enrichment_chamber');
 })
 
 // ------------------------------------------------------------

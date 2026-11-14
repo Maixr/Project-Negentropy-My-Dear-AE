@@ -44,6 +44,12 @@
 	#Log detailed provider tracking state for diagnosing flicker or missing status updates.
 	debugTracking = false
 	#Minimum ticks between repeated tracking debug logs for the same provider.
-	# Default: 20
-	# Range: 1 ~ 200
+	# Default: 100
+	# Range: 20 ~ 1200
 	debugLogIntervalTicks = 20
+
+[ae_cpu_priority]
+	#Experimental: enable AE crafting CPU runtime priority controls. Requires Crafting Tracker on the server to affect dispatch.
+	enableAeCpuPriority = true
+	#AE crafting CPU names in automatic selection priority order. Empty entries are ignored. Use a trailing * for prefix matching.
+	aeCpuPriorityNames = []

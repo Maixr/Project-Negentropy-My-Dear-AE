@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae_19c6d8cf8e60c39b"
+	group: "5D5B5172F1886469"
+	id: "19C6D8CF8E60C39B"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		id: "3956B627B7691A5F"
+		tasks: [{
+			id: "657979FFB977FD3F"
+			item: { count: 1, id: "insaneae:cell_component_8e" }
+			type: "item"
+		}]
+		x: -2.5d
+		y: 1.5d
+	}]
+}

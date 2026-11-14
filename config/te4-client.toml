@@ -1,0 +1,19 @@
+[client]
+	#Client-side HUD configuration
+	#Show machine HUD overlay
+	showMachineHUD = true
+	#Show cable HUD overlay
+	showCableHUD = true
+
+[panelAnimation]
+	#Expandable panel animation
+	#Enable expand/collapse animation for config & upgrade panels. False = instant toggle
+	enabled = true
+	#Common panel expand speed (px per tick). Higher = faster. Applies when per-panel override is 0
+	# Default: 6
+	# Range: 1 ~ 100
+	speed = 6
+	#Upgrade panel expand speed override (px per tick). 0 = use common speed
+	# Default: 0
+	# Range: 0 ~ 100
+	upgradeSpeed = 0

@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aae__eae"
+	group: "5D5B5172F1886469"
+	id: "7A436DA43BBC4EB0"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "246DB277D1B547C1"
+		tasks: [{
+			id: "3A50FD3E4C213D11"
+			item: { count: 1, id: "advanced_ae:quantum_core" }
+			type: "item"
+		}]
+		x: -4.0d
+		y: -0.5d
+	}]
+}

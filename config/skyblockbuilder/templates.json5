@@ -30,13 +30,26 @@
   // A list of possible spawn points.
   // You may also directly use these in the template config, or use a reference created here.
   "spawnPointReferences": {
+    // 两个平台岛共用（两岛内部布局完全一致）
+    "platform": {
+      "north": [ [ 22, 2, 24 ] ],
+      "east":  [ [ 22, 2, 24 ] ],
+      "south": [ [ 22, 2, 24 ] ],
+      "west":  [ [ 22, 2, 24 ] ]
+    },
     "default": {
       "south": [
-        [ 5, 7, 6 ]
+        [ 6, 7, 7 ]
       ],
-      "west": [],
-      "north": [],
-      "east": []
+      "west": [
+        [ 6, 7, 7 ]
+      ],
+      "north": [
+        [ 6, 7, 7 ]
+      ],
+      "east": [
+        [ 6, 7, 7 ]
+      ]
     }
   },
   
@@ -67,6 +80,27 @@
   
   // The list of templates being available. The first entry is the default template.
   "templateList": [
+    // ── 自定义平台岛（48×24×48，严格占 3×3 = 9 区块）──
+    //  offset 必须是 [0,0,0]：实机存档里 center_pos = islandX*256 + offset（没有 +size/2）
+    //  填 8 会让原点落到 256k+8，区块分界 16k 处就是局部坐标 8（蛙鸣灯），从截图得到证实
+    {
+      "name": "猪咪平台",
+      "desc": "9 区块（48×48）的猪咪风格平台，开局自带床、箱子与工作台",
+      "file": "paltform_pigmee.nbt",
+      "spawns": "platform",
+      "offset": [ 0, 0, 0 ],
+      "surroundingBlocks": "default",
+      "spreads": "default"
+    },
+    {
+      "name": "混凝土平台",
+      "desc": "9 区块（48×48）的混凝土风格平台，布局与猪咪平台一致，材料不同",
+      "file": "paltform_concrete.nbt",
+      "spawns": "platform",
+      "offset": [ 0, 0, 0 ],
+      "surroundingBlocks": "default",
+      "spreads": "default"
+    },
     {
       "name": "default",
       "file": "default.nbt",

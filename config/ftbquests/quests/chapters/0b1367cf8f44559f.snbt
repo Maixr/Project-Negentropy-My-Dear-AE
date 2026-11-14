@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0b1367cf8f44559f"
+	group: "5D5B5172F1886469"
+	id: "0B1367CF8F44559F"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [{
+		id: "60E321947AF64581"
+		tasks: [{
+			id: "4FDA3041D6CD00CC"
+			item: { count: 1, id: "entropy_tech:negi_singularity" }
+			type: "item"
+		}]
+		x: -2.0d
+		y: 0.5d
+	}]
+}

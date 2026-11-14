@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "36bda08d710fa6e8"
+	group: "5D5B5172F1886469"
+	id: "36BDA08D710FA6E8"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "17A449F1AE8A1050"
+		tasks: [{
+			id: "1966A3F5AB052652"
+			item: { count: 1, id: "ae2cs:purified_certus_quartz_crystal" }
+			type: "item"
+		}]
+		x: -3.5d
+		y: 1.0d
+	}]
+}

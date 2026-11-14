@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0dd572a244e06e7d"
+	group: "5D5B5172F1886469"
+	id: "0DD572A244E06E7D"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		id: "14D0BFFDE53C4A98"
+		tasks: [{
+			id: "5D0D387D4E67CB40"
+			item: { count: 1, id: "appliedcreate:me_gearbox" }
+			type: "item"
+		}]
+		x: -2.0d
+		y: 0.0d
+	}]
+}

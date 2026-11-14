@@ -1,0 +1,73 @@
+[machine]
+	#Machine-related configuration options
+	#Global energy multiplier for all machines
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	energyMultiplier = 1.0
+	#Base energy capacity for machines
+	# Default: 10000
+	# Range: 1000 ~ 1000000000
+	baseEnergyCapacity = 10000
+	#Enable the Smelter machine
+	enableSmelter = true
+	#Enable the Pulverizer machine
+	enablePulverizer = true
+	#Enable the Compressor machine
+	enableCompressor = true
+	#Enable the Refiner machine
+	enableRefiner = true
+	#Enable the Induction Furnace machine
+	enableInductionFurnace = true
+	#Enable the Psionicant machine
+	enablePsionicant = true
+	#Enable the Beacon machine
+	enableBeacon = true
+	#Enable the Mob Ripper machine
+	enableMobRipper = true
+	#Enable the Quarry machine
+	enableQuarry = true
+	#Enable the Enchantment Flusher machine
+	enableEnchantmentFlusher = true
+	#Enable the Matter Condenser machine
+	enableCondenser = true
+	#Enable the Farm Manager machine
+	enableFarmManager = true
+
+[energyUnit]
+	#Energy Unit item configuration
+	#Maximum energy storage of the Energy Unit
+	# Default: 400000
+	# Range: 1000 ~ 100000000
+	maxEnergy = 400000
+	#Energy Unit charge rate (FE/t)
+	# Default: 2000
+	# Range: 1 ~ 100000
+	chargeRate = 2000
+	#Energy Unit input rate (FE/t)
+	# Default: 2000
+	# Range: 1 ~ 100000
+	inputRate = 2000
+	#Energy Unit output rate (FE/t)
+	# Default: 2000
+	# Range: 1 ~ 100000
+	outputRate = 2000
+	#Default charging mode for new Energy Units
+	chargingDefault = false
+
+[farm]
+	#Farm Manager crop configuration
+	#List of bush crop block IDs
+	bushCrops = ["minecraft:sweet_berry_bush"]
+
+[compat]
+	#Neighbour-mod compat recipe toggles
+	#Compat sources to switch off. Empty = all on.
+	#Valid values: enderio, enderio_evolution, mekanism, immersiveengineering, alltheores, allthemodium, neoecoae, ae2, ae2cs, extendedae, extendedae_plus, data_energistics, industrialforegoing.
+	#A switched-off source loses its compat recipes and stops owning shared
+	#materials, so the ore chain falls through to the next provider.
+	disabledSources = []
+	#Which mod owns an item when several mods ship the same material,
+	#best first. Only consulted where the data ships one variant per provider,
+	#i.e. the pulverizer ore chain. Candidates missing from this list keep
+	#their order from the data and lose to anything listed.
+	providerPriority = ["kenergyengineering", "neoecoae", "enderio_evolution", "enderio", "mekanism", "immersiveengineering", "alltheores", "allthemodium", "minecraft"]

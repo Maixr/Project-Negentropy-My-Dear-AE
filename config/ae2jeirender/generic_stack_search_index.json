@@ -3,5 +3,10 @@
     "type": "FE",
     "#t": "appflux:flux",
     "#": 1
+  },
+  {
+    "v": "entropy_tech:entropy",
+    "#t": "entropy_tech:entropy",
+    "#": 1
   }
 ]

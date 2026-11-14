@@ -17,7 +17,7 @@
 		#高频搜索：历史上搜得最多的词
 		# Default: 1
 		# Range: 0 ~ 30
-		frequent = 1
+		frequent = 4
 		#聊天提及：聊天里出现过的物品名（0 = 只在「聊天」整页里出现）
 		# Default: 0
 		# Range: 0 ~ 30
@@ -30,7 +30,7 @@
 		#★ 填 0 = 不限量（推荐）；填 N = 最多保留 N 个收藏
 		# Default: 0
 		# Range: 0 ~ 30
-		favorite = 2
+		favorite = 0
 		#上次：上次搜同一个词之后你点开的物品
 		# Default: 1
 		# Range: 0 ~ 30
@@ -42,7 +42,7 @@
 		#候选面板每页显示多少行（超过就分页）
 		# Default: 8
 		# Range: 3 ~ 20
-		rowsPerPage = 8
+		rowsPerPage = 12
 
 	#候选来源的排列顺序（从上到下）。可用值：recent / quest / frequent / chat / random / pick / hot
 	#收藏不参与排序，永远排最前；配额在上面的 [suggest.quota] 里设置

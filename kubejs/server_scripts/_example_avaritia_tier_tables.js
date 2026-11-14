@@ -157,4 +157,23 @@ ServerEvents.recipes(event => {
   //    event.recipes.avaritia.extreme_smithing(result, template, base, addition)
   //    （schema constructor 顺序就是 RESULT -> TEMPLATE -> BASE -> ADDITION）
   // -------------------------------------------------------------------------
+    event.remove({output:'draconicevolution:crafting_core'});
+    event.recipes.avaritia.shaped_table(
+    2,
+    'draconicevolution:crafting_core',
+    [
+      'D A D',
+      ' ABA ',
+      'ABCBA',
+      ' ABA ',
+      'D A D'
+    ],
+    {
+      A: 'ae2lt:overload_alloy',
+      B: 'draconicevolution:wyvern_core',
+      C: 'anvilcraft:multiphase_transcendium',
+      D: 'mekltgt:super_probe'
+
+    }
+  )
 })

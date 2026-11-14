@@ -1,0 +1,38 @@
+		[chat_messages.encoding_terminal.disk_refused]
+			#Chat messages this mod sends to the player from the server side.
+			#
+			#Each entry is one message and they are all independent: turning one off only silences
+			#that one line. Messages are grouped by the screen or part that sends them, and every
+			#key in here is the message's translation key with the leading 'gui.ae2_pattern_disk.'
+			#dropped - so it can be looked up in the language file directly.
+			#
+			#Suppressing a message never changes what the action does; these are all receipts and
+			#refusal reasons, not part of the flow.
+			#
+			#NOTE: messages this mod shows on the client instead (the client-side pre-checks) live
+			#in ae2_pattern_disk-client.toml, not here.
+			#
+			#Changes take effect on the next message; no restart needed.
+			#Pattern encoding terminal - why an encode / write / extract did not happen, and receipts.
+			#Shown when the target disk has no room for another pattern.
+			full = true
+			#Shown when the target disk is locked to another pattern type.
+			type_locked = true
+			#Shown when the target disk already holds a pattern with the same primary output.
+			duplicate_output = true
+			#Shown when the pattern's type could not be resolved, so no disk can take it.
+			unresolvable = true
+			#Shown when a disk refused the pattern for a reason without its own message.
+			unknown = true
+
+		[chat_messages.cell_management_terminal.notice]
+			#Cell management terminal.
+			#Shown after 'mark bookmarks' only when something could not be written (no room) or was skipped (not an item); the numbers say how many were marked / duplicated / had no room / were not items.
+			mark_bookmarks = true
+			#Shown after every 'quick mark' press (also when there is no grid or no target cell); the six numbers are written / duplicated / no room / non-items / target cells / candidates.
+			quick_mark = true
+
+	[chat_messages.pattern_disk_provider]
+		#Provider part - wrench changes the push direction.
+		#Shown on the action bar when a wrench flips the provider between pushing to all sides and to one side.
+		push_direction = true

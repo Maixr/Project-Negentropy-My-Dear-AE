@@ -83,7 +83,7 @@
 		# Range: 1 ~ 9223372036854775807
 		enchantingStationEnergyUsage = 400
 		#Enchanting station energy capacity.
-		# Default: 40000
+		# Default: 500000
 		# Range: 1 ~ 9223372036854775807
 		enchantingStationEnergyStorage = 40000
 		#Lunar neutron activator peak production rate.

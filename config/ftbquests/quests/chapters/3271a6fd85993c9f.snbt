@@ -6,15 +6,1175 @@
 	id: "3271A6FD85993C9F"
 	images: [{
 		click_action: "none:"
-		height: 90.0d
-		id: "4E95A413F40C57CA"
+		height: 45.0d
+		id: "11908BF6D7FE21E7"
 		image: "maixr:textures/gui/antientropy_bg.png"
 		rotation: 0.0d
-		width: 160.0d
-		x: -50.0d
-		y: -24.0d
+		width: 80.0d
+		x: -47.5d
+		y: -25.0d
 	}]
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "2E396BFBD3405283"
+			tasks: [{
+				id: "3385F57300D7F6F9"
+				item: { count: 1, id: "neoecoae:integrated_working_station" }
+				type: "item"
+			}]
+			x: -57.0d
+			y: -24.5d
+		}
+		{
+			id: "23D5F51570FC6043"
+			tasks: [{
+				id: "632360A70AFAF3B7"
+				item: { count: 1, id: "advanced_ae:quantum_core" }
+				type: "item"
+			}]
+			x: -57.0d
+			y: -26.5d
+		}
+		{
+			id: "68C1C7D4DDB0A521"
+			tasks: [{
+				id: "2D58A584B4306BC6"
+				item: { count: 1, id: "draconicevolution:dragon_heart" }
+				type: "item"
+			}]
+			x: -57.0d
+			y: -28.5d
+		}
+		{
+			dependencies: [
+				"2E396BFBD3405283"
+				"68C1C7D4DDB0A521"
+				"23D5F51570FC6043"
+			]
+			id: "50243041E769A873"
+			size: 1.4d
+			tasks: [{
+				id: "0168EA792426476B"
+				item: { count: 1, id: "avaritia:end_crafting_table" }
+				type: "item"
+			}]
+			x: -54.5d
+			y: -26.5d
+		}
+		{
+			dependencies: ["6F4F6151B05C75BC"]
+			id: "360C97CB5F564ECB"
+			rewards: [{
+				id: "4CEE181A079957C9"
+				item: {
+					count: 1
+					id: "constructionstick:netherite_stick"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "27756F466102D6EA"
+					item: { count: 1, id: "draconicevolution:crafting_core" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "45909B685FC4A09C"
+					item: { count: 1, id: "draconicevolution:wyvern_crafting_injector" }
+					type: "item"
+				}
+			]
+			x: -51.5d
+			y: -28.5d
+		}
+		{
+			dependencies: ["360C97CB5F564ECB"]
+			id: "413D47BBCE18A7F2"
+			rewards: [{
+				id: "3C466731CF0A88BF"
+				item: {
+					count: 1
+					id: "draconicevolution:awakened_draconium_block"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "35B6ED811CBB6A15"
+					item: { count: 1, id: "draconicevolution:awakened_draconium_block" }
+					type: "item"
+				}
+				{
+					id: "24137F924D6CFA9F"
+					item: { count: 1, id: "draconicevolution:awakened_crafting_injector" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: -28.5d
+		}
+		{
+			dependencies: ["413D47BBCE18A7F2"]
+			id: "7E5807951DFA6E38"
+			rewards: [{
+				count: 4
+				id: "01BF51D9281599C3"
+				item: {
+					count: 1
+					id: "draconicevolution:large_chaos_frag"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "6A4CC638108DE5C1"
+					item: { count: 1, id: "draconicevolution:large_chaos_frag" }
+					type: "item"
+				}
+				{
+					id: "4458B836058F9377"
+					item: { count: 1, id: "draconicevolution:chaotic_crafting_injector" }
+					type: "item"
+				}
+			]
+			x: -46.5d
+			y: -28.5d
+		}
+		{
+			dependencies: ["7E5807951DFA6E38"]
+			id: "35233D71098905DD"
+			tasks: [
+				{
+					count: 4L
+					id: "17DF3A9B020E6A58"
+					item: { count: 1, id: "draconicevolution:reactor_stabilizer" }
+					type: "item"
+				}
+				{
+					id: "4DB8E32BFCF6D65B"
+					item: { count: 1, id: "draconicevolution:reactor_core" }
+					type: "item"
+				}
+				{
+					id: "4DE3D0F405443AAB"
+					item: { count: 1, id: "draconicevolution:reactor_injector" }
+					type: "item"
+				}
+			]
+			x: -44.0d
+			y: -28.5d
+		}
+		{
+			dependencies: ["6F4F6151B05C75BC"]
+			id: "585B1B8886FE4B86"
+			tasks: [{
+				id: "5169733F90AC101A"
+				item: { count: 1, id: "ae2lt:lightning_simulation_room" }
+				type: "item"
+			}]
+			x: -49.0d
+			y: -24.5d
+		}
+		{
+			id: "65DA7B372C52908B"
+			rewards: [{
+				count: 64
+				id: "25AC118DBC3384BE"
+				item: {
+					count: 1
+					id: "mekanism_utilities:raw_overload"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "465531027A014F85"
+				item: { count: 1, id: "ae2lt:overload_crystal" }
+				type: "item"
+			}]
+			x: -51.5d
+			y: -24.5d
+		}
+		{
+			dependencies: [
+				"65DA7B372C52908B"
+				"50243041E769A873"
+				"778989745EF8EE3B"
+			]
+			id: "6F4F6151B05C75BC"
+			rewards: [{
+				id: "2732E2C44562E270"
+				item: {
+					count: 1
+					id: "ae2lt:overload_alloy"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2BE33154AF233DFA"
+				item: { count: 1, id: "ae2lt:overload_alloy_blank" }
+				type: "item"
+			}]
+			x: -51.5d
+			y: -26.5d
+		}
+		{
+			dependencies: ["360C97CB5F564ECB"]
+			id: "0A7E73DBE409A776"
+			tasks: [{
+				id: "6CD4752EA2F2F20B"
+				item: { count: 1, id: "ae2_draconic_fusion_autocrafter:me_draconic_pattern_provider" }
+				type: "item"
+			}]
+			x: -49.5d
+			y: -30.5d
+		}
+		{
+			dependencies: [
+				"16D7EE24185BDEF6"
+				"7BCD93525D4F3078"
+			]
+			id: "20092A8E08938AA9"
+			tasks: [{
+				count: 4L
+				id: "4002050FCAF1AB31"
+				item: { count: 1, id: "ae2lt:overload_machine_frame" }
+				type: "item"
+			}]
+			x: -46.5d
+			y: -26.5d
+		}
+		{
+			dependencies: ["20092A8E08938AA9"]
+			id: "46177503C5B62023"
+			tasks: [{
+				id: "3ED8579EA3E4D32D"
+				item: { count: 1, id: "ae2lt:lightning_collector" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["20092A8E08938AA9"]
+			id: "66540C546C83B896"
+			tasks: [{
+				id: "56698243A7366304"
+				item: { count: 1, id: "ae2lt:overload_processing_factory" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["20092A8E08938AA9"]
+			id: "79B89BC8592A00C6"
+			tasks: [{
+				id: "7D064D322A05A5A9"
+				item: { count: 1, id: "ae2lt:mining_factory" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["46177503C5B62023"]
+			id: "69B0C3CBF7C02F86"
+			tasks: [
+				{
+					id: "28F0F45A56C57BEA"
+					item: { count: 1, id: "ae2lt:electro_chime_crystal" }
+					type: "item"
+				}
+				{
+					id: "3736998D8E1B2F12"
+					item: { count: 1, id: "ae2lt:perfect_electro_chime_crystal" }
+					type: "item"
+				}
+			]
+			x: -41.5d
+			y: -26.5d
+		}
+		{
+			dependencies: ["585B1B8886FE4B86"]
+			id: "16D7EE24185BDEF6"
+			tasks: [{
+				id: "6DBEDDEFB24E86D2"
+				item: { count: 1, id: "ae2lt:overload_singularity" }
+				type: "item"
+			}]
+			x: -46.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["66540C546C83B896"]
+			id: "52A8381F24C18DF7"
+			tasks: [{
+				id: "6ABA8ABD45780F01"
+				item: { count: 1, id: "ae2lt:ultimate_overload_core" }
+				type: "item"
+			}]
+			x: -41.5d
+			y: -25.5d
+		}
+		{
+			dependencies: [
+				"52A8381F24C18DF7"
+				"69B0C3CBF7C02F86"
+			]
+			id: "382CCC5928561AD9"
+			tasks: [{
+				id: "5B29601BE2D5BDFE"
+				item: { count: 1, id: "ae2lt:lightning_collapse_matrix" }
+				type: "item"
+			}]
+			x: -39.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["52A8381F24C18DF7"]
+			id: "4BB68223A8580A55"
+			size: 2.0d
+			tasks: [{
+				id: "166AD6F8C2609F0A"
+				item: { count: 1, id: "ae2lt:overloaded_controller" }
+				type: "item"
+			}]
+			x: -37.0d
+			y: -24.0d
+		}
+		{
+			dependencies: [
+				"25601F1127DD25CA"
+				"50243041E769A873"
+			]
+			hide_dependency_lines: true
+			id: "40D7BDF28A47F33B"
+			rewards: [{
+				count: 64
+				id: "12E7D55E92BF5315"
+				item: {
+					count: 1
+					id: "ae2:singularity"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "molecularmanipulator:black_hole"
+				}
+				id: "5E6EE0AE4921389A"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ae2_gvt:black_hole"
+				type: "observation"
+			}]
+			x: -54.5d
+			y: -34.0d
+		}
+		{
+			dependencies: ["25601F1127DD25CA"]
+			id: "35E7A09E858BC585"
+			rewards: [{
+				count: 64
+				id: "27C8B78AC3CBB596"
+				item: {
+					count: 1
+					id: "ae2:singularity"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "molecularmanipulator:black_hole"
+				}
+				id: "44C4F50D3EFCA05D"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ae2_gvt:black_hole"
+				type: "observation"
+			}]
+			x: 17.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40D7BDF28A47F33B"]
+			id: "54F47BCAB9AD50B2"
+			tasks: [{
+				count: 64L
+				id: "0707A4615F7DBC44"
+				item: { count: 1, id: "ae2_gvt:anti_singularity" }
+				type: "item"
+			}]
+			x: -52.0d
+			y: -34.0d
+		}
+		{
+			dependencies: ["40D7BDF28A47F33B"]
+			id: "61937F02D1076C38"
+			tasks: [{
+				id: "7F0581CA9FEF34FA"
+				item: { count: 1, id: "ae2_gvt:chaos_matter" }
+				type: "item"
+			}]
+			x: -52.0d
+			y: -35.5d
+		}
+		{
+			dependencies: ["40D7BDF28A47F33B"]
+			id: "2EF1799F1F7F3783"
+			rewards: [
+				{
+					id: "3DF991B89268D154"
+					item: {
+						count: 1
+						id: "ae2_gvt:gravity_crystal"
+					}
+					type: "item"
+				}
+				{
+					count: 18
+					id: "78ECF8860AA08C49"
+					item: {
+						count: 1
+						id: "ae2_gvt:gravity_dust"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "088EC5474CA94E5B"
+					item: { count: 1, id: "ae2_gvt:gravity_crystal" }
+					type: "item"
+				}
+				{
+					id: "75131D7BCD1D059D"
+					item: { count: 1, id: "ae2_gvt:gravity_dust" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"54F47BCAB9AD50B2"
+				"2EF1799F1F7F3783"
+				"61937F02D1076C38"
+			]
+			id: "684B7FE7A383353E"
+			rewards: [{
+				count: 64
+				id: "67735120A324E66B"
+				item: {
+					count: 1
+					id: "ae2_gvt:gravity_crystal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "molecularmanipulator:white_hole"
+				}
+				id: "22FA8AF08B2E987F"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ae2_gvt:white_hole"
+				type: "observation"
+			}]
+			x: -49.5d
+			y: -34.0d
+		}
+		{
+			dependencies: ["684B7FE7A383353E"]
+			id: "5C69DB01F70AA788"
+			rewards: [{
+				count: 4
+				id: "3FDC5925DFD81254"
+				item: {
+					count: 1
+					id: "ae2_gvt:antigravity_dust"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "003501921D298416"
+					item: { count: 1, id: "ae2_gvt:antigravity_crystal" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1396E5CDF3EDE56A"
+					item: { count: 1, id: "ae2_gvt:antigravity_dust" }
+					type: "item"
+				}
+			]
+			x: -47.5d
+			y: -34.0d
+		}
+		{
+			dependencies: ["50243041E769A873"]
+			hide_dependency_lines: true
+			id: "3B0EB9489B76547E"
+			tasks: [{
+				id: "04458D59A7CB0E95"
+				item: { count: 1, id: "entropy_tech:negi_singularity" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -30.5d
+		}
+		{
+			dependencies: ["3B0EB9489B76547E"]
+			id: "6ED06B1E15352732"
+			tasks: [{
+				id: "023D965B4D200DA6"
+				item: { count: 1, id: "entropy_tech:entropy_storage_component_1k" }
+				type: "item"
+			}]
+			x: -41.5d
+			y: -30.5d
+		}
+		{
+			dependencies: ["6ED06B1E15352732"]
+			id: "0E328572A7FBA654"
+			rewards: [{
+				id: "68FD808A8CAA02E2"
+				item: {
+					components: {
+						"ae2:wrapped_stack": {
+							"#": 0L
+							"#t": "entropy_tech:entropy"
+							v: "entropy_tech:entropy"
+						}
+					}
+					count: 1
+					id: "ae2:wrapped_generic_stack"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "041AA6825E8A4674"
+				item: { count: 1, id: "entropy_tech:entropy_assembler" }
+				type: "item"
+			}]
+			x: -39.0d
+			y: -30.5d
+		}
+		{
+			dependencies: ["6F4F6151B05C75BC"]
+			id: "7BCD93525D4F3078"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76EC1B9C083CDDD4"
+				table_id: 8548669977852396835L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "478AD6F542D4E467"
+				item: { count: 1, id: "ae2lt:overload_alloy_plate" }
+				type: "item"
+			}]
+			x: -49.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["50243041E769A873"]
+			id: "778989745EF8EE3B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F898D0E8223FD7F"
+				table_id: 289709801311354444L
+				type: "all_table"
+			}]
+			tasks: [{
+				id: "07D5D0F7A8416ED4"
+				item: { count: 1, id: "extendedterminal:end_terminal" }
+				type: "item"
+			}]
+			x: -53.0d
+			y: -28.5d
+		}
+		{
+			dependencies: ["50243041E769A873"]
+			hide_dependency_lines: true
+			id: "074134AD671705E1"
+			rewards: [{
+				count: 32
+				id: "7FC5F57C1025C8F9"
+				item: {
+					count: 1
+					id: "mekanismgenerators:fusion_reactor_frame"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E2156B14067A88F"
+				item: { count: 1, id: "mekanismgenerators:fusion_reactor_controller" }
+				type: "item"
+			}]
+			x: -54.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["074134AD671705E1"]
+			id: "5F9E94690A3F6597"
+			rewards: [{
+				count: 32
+				id: "36A8C9773D96CE3F"
+				item: {
+					count: 1
+					id: "mekanism:sps_casing"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "46AA5B31911F0F4B"
+					item: { count: 1, id: "mekanism:sps_port" }
+					type: "item"
+				}
+				{
+					id: "069C53CC5F2E6E68"
+					item: { count: 1, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+			]
+			x: -51.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["5F9E94690A3F6597"]
+			id: "2723090C3631C8AA"
+			rewards: [
+				{
+					count: 4
+					id: "09C3362288CB2848"
+					item: {
+						count: 1
+						id: "evolvedmekanism:supercharging_element"
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "4ACB0620E1335497"
+					item: {
+						count: 1
+						id: "evolvedmekanism:apt_casing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3F4802F3F81D9FFB"
+					item: { count: 1, id: "evolvedmekanism:apt_casing" }
+					type: "item"
+				}
+				{
+					id: "30AB6CD81BA356C2"
+					item: { count: 1, id: "evolvedmekanism:apt_port" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: -19.5d
+		}
+		{
+			dependencies: [
+				"2723090C3631C8AA"
+				"6CDBCAC92B760D68"
+			]
+			id: "3DACEFF327493A27"
+			tasks: [
+				{
+					id: "6DB70815959A9040"
+					item: { count: 1, id: "mekanism_utilities:compact_antimatter_protomolecular_transmutator" }
+					type: "item"
+				}
+				{
+					id: "6ADBC07FC2254792"
+					item: { count: 1, id: "evolvedmekanism:ingot_better_gold" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["5F9E94690A3F6597"]
+			id: "37BC8E6E93614C4A"
+			tasks: [{
+				id: "01633938E1DA3927"
+				item: { count: 1, id: "mekanism_utilities:compact_supercritical_phase_shifter" }
+				type: "item"
+			}]
+			x: -51.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["074134AD671705E1"]
+			id: "6D76BA751AD19668"
+			tasks: [{
+				id: "63CA21F7C0BA27D8"
+				item: { count: 1, id: "mekanism_utilities:compact_fusion_reactor" }
+				type: "item"
+			}]
+			x: -54.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["37BC8E6E93614C4A"]
+			id: "7F56E568561EEBAF"
+			tasks: [{
+				id: "3B4B28C1472F7332"
+				item: { count: 1, id: "mekanism_incomparable:apex_supercritical_phase_shifter" }
+				type: "item"
+			}]
+			x: -51.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["5F9E94690A3F6597"]
+			id: "2D33D047A5C82642"
+			tasks: [{
+				id: "3D0CCA020748BCC7"
+				item: { count: 1, id: "mekanism:pellet_antimatter" }
+				type: "item"
+			}]
+			x: -49.0d
+			y: -21.5d
+		}
+		{
+			dependencies: ["2D33D047A5C82642"]
+			id: "170B232FDB92627A"
+			tasks: [
+				{
+					id: "081B641A9BDF7324"
+					item: { count: 1, id: "mekanism:antiprotonic_nucleosynthesizer" }
+					type: "item"
+				}
+				{
+					id: "697426A9DAD1E2F7"
+					item: { count: 1, id: "mekmm:large_antiprotonic_nucleosynthesizer" }
+					type: "item"
+				}
+			]
+			x: -46.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["170B232FDB92627A"]
+			id: "081DFEDEFB536C0D"
+			tasks: [{
+				id: "5377472570076CDE"
+				item: { count: 1, id: "mekanism_incomparable:antineutronic_existence_transmutator" }
+				type: "item"
+			}]
+			x: -46.5d
+			y: -23.0d
+		}
+		{
+			dependencies: ["170B232FDB92627A"]
+			id: "4D2A8465A211A861"
+			rewards: [{
+				id: "2A3F0F4CA38D21B0"
+				item: {
+					count: 1
+					id: "mekmm:uu_matter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AA143CEE168C173"
+				item: { count: 1, id: "mekmm:uu_matter" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -21.5d
+		}
+		{
+			dependencies: ["4D2A8465A211A861"]
+			id: "500AB98EE6F7BC78"
+			tasks: [{
+				id: "7CD831DCEA10BA8D"
+				item: { count: 1, id: "mekmm:replicator" }
+				type: "item"
+			}]
+			x: -41.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["4D2A8465A211A861"]
+			id: "4DAD2C4510ADBA65"
+			tasks: [{
+				id: "45BC2D52CD886DF6"
+				item: { count: 1, id: "mekmm:fluid_replicator" }
+				type: "item"
+			}]
+			x: -42.0d
+			y: -21.5d
+		}
+		{
+			dependencies: ["4D2A8465A211A861"]
+			id: "34848627AB555BFC"
+			tasks: [{
+				id: "603C377911547AE9"
+				item: { count: 1, id: "mekmm:chemical_replicator" }
+				type: "item"
+			}]
+			x: -42.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["2D33D047A5C82642"]
+			id: "6CDBCAC92B760D68"
+			tasks: [{
+				id: "14C3B214A9F31D5D"
+				item: { count: 1, id: "evolvedmekanism:quantum_control_circuit" }
+				type: "item"
+			}]
+			x: -46.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["6CDBCAC92B760D68"]
+			id: "1A365DC7AF32A401"
+			tasks: [{
+				id: "72A361E036D13448"
+				item: { count: 1, id: "emextras:supreme_quantum_control_circuit" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -19.5d
+		}
+		{
+			dependencies: [
+				"1A365DC7AF32A401"
+				"512188489F9D2EF4"
+			]
+			id: "73EAD2CCACD8B990"
+			tasks: [{
+				id: "55D1D1C924CEE664"
+				item: { count: 1, id: "emextras:cosmic_dense_control_circuit" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["3DACEFF327493A27"]
+			id: "512188489F9D2EF4"
+			tasks: [{
+				id: "58DBED55D37DF9BE"
+				item: { count: 1, id: "evolvedmekanism:dense_control_circuit" }
+				type: "item"
+			}]
+			x: -46.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["4D2A8465A211A861"]
+			id: "1C0317F17DA0D85B"
+			tasks: [{
+				id: "71A9802033C9CD0A"
+				item: { count: 1, id: "mekanism_extras:infinite_control_circuit" }
+				type: "item"
+			}]
+			x: -42.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["512188489F9D2EF4"]
+			id: "244ECA494635BAE9"
+			tasks: [{
+				id: "4C1DC2534DC67288"
+				item: { count: 1, id: "evolvedmekanism:chemixer" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["244ECA494635BAE9"]
+			id: "45D41E5D3EECF667"
+			rewards: [{
+				count: 4
+				id: "52A5D1DA6101194D"
+				item: {
+					count: 1
+					id: "evolvedmekanism:alloy_exoversal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2301FF5A6245688D"
+				item: { count: 1, id: "evolvedmekanism:alloy_exoversal" }
+				type: "item"
+			}]
+			x: -42.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["45D41E5D3EECF667"]
+			id: "39EBF9D83555773D"
+			tasks: [{
+				id: "6E24AF9060461CEE"
+				item: { count: 1, id: "evolvedmekanism:multiversal_control_circuit" }
+				type: "item"
+			}]
+			x: -40.0d
+			y: -15.5d
+		}
+		{
+			dependencies: [
+				"1C0317F17DA0D85B"
+				"39EBF9D83555773D"
+			]
+			id: "4B1151F8BD12D68E"
+			tasks: [{
+				id: "56659113C769F5CF"
+				item: { count: 1, id: "emextras:infinite_multiversal_control_circuit" }
+				type: "item"
+			}]
+			x: -40.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["5C69DB01F70AA788"]
+			id: "2CAB02FD0495B1E5"
+			tasks: [{
+				id: "105EBC1257D127E1"
+				item: { count: 1, id: "ae2_gvt:antigravity_processor" }
+				type: "item"
+			}]
+			x: -46.0d
+			y: -35.5d
+		}
+		{
+			dependencies: ["5C69DB01F70AA788"]
+			id: "49376EE8B8A0F116"
+			tasks: [{
+				id: "7AC00999F9B17611"
+				item: { count: 1, id: "ae2_gvt:gravity_processor" }
+				type: "item"
+			}]
+			x: -46.0d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"2CAB02FD0495B1E5"
+				"49376EE8B8A0F116"
+				"3B0EB9489B76547E"
+			]
+			id: "4D90D5393FBF97CF"
+			tasks: [{
+				id: "49347476735C53CF"
+				item: { count: 1, id: "ufo:dimensional_matter_assembler" }
+				type: "item"
+			}]
+			x: -44.0d
+			y: -34.0d
+		}
+		{
+			dependencies: ["413D47BBCE18A7F2"]
+			id: "54FD060C4B15FFC4"
+			rewards: [{
+				count: 3
+				id: "76A096489E976705"
+				item: {
+					count: 1
+					id: "createmoremachines:end_alloy"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "05EC05B5376167E5"
+				item: { count: 1, id: "createmoremachines:end_alloy" }
+				type: "item"
+			}]
+			x: -46.5d
+			y: -30.5d
+		}
+		{
+			dependencies: ["512188489F9D2EF4"]
+			id: "63B1C2EAC44DD519"
+			rewards: [{
+				id: "0804DE04B63F3D14"
+				item: {
+					count: 1
+					id: "jdte:large_greenhouse"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F5D768E26AEBE92"
+					item: { count: 1, id: "jdte:greenhouse" }
+					type: "item"
+				}
+				{
+					id: "726827AA3FEFF841"
+					item: { count: 1, id: "jdte:large_greenhouse" }
+					type: "item"
+				}
+			]
+			x: -46.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["382CCC5928561AD9"]
+			id: "436504F9DBA24EAB"
+			tasks: [{
+				id: "2DCA974CA0212ACB"
+				item: { count: 1, id: "neoecoae:storage_system_l9" }
+				type: "item"
+			}]
+			x: -37.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["382CCC5928561AD9"]
+			id: "1865D12406F1C61C"
+			tasks: [{
+				id: "668A27366B0E9009"
+				item: { count: 1, id: "neoecoae:computation_system_l9" }
+				type: "item"
+			}]
+			x: -37.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["382CCC5928561AD9"]
+			id: "716B3E6C90FA136A"
+			tasks: [{
+				id: "5224714A71B9BC8D"
+				item: { count: 1, id: "neoecoae:crafting_system_l9" }
+				type: "item"
+			}]
+			x: -37.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["4D90D5393FBF97CF"]
+			id: "58A001C3D3589E9D"
+			rewards: [{
+				count: 4
+				id: "7DED96B6A205E6A9"
+				item: {
+					count: 1
+					id: "ufo:dimensional_processor"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "469A6BC05B143BB9"
+					item: { count: 1, id: "ufo:white_dwarf_fragment_ingot" }
+					type: "item"
+				}
+				{
+					id: "19B5C88E09889B98"
+					item: { count: 1, id: "ufo:printed_dimensional_processor" }
+					type: "item"
+				}
+				{
+					id: "641FA4F1D1B6DA08"
+					item: { count: 1, id: "ufo:dimensional_processor" }
+					type: "item"
+				}
+			]
+			x: -41.5d
+			y: -34.0d
+		}
+		{
+			dependencies: ["4BB68223A8580A55"]
+			id: "1E321C47C731F99F"
+			rewards: [
+				{
+					id: "584AFBB92C45C4AC"
+					item: {
+						count: 1
+						id: "extendedterminal:extreme_terminal"
+					}
+					type: "item"
+				}
+				{
+					id: "01C435B75ED5BC72"
+					item: {
+						count: 1
+						id: "ae2ltpp:avaritia_extreme_table_packaged_core"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4F2ECD815ECEE6FB"
+				item: { count: 1, id: "avaritia:extreme_crafting_table" }
+				type: "item"
+			}]
+			x: -33.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["16D7EE24185BDEF6"]
+			id: "77F04D3F779498B3"
+			rewards: [{
+				count: 4
+				id: "0212CDB463F40B12"
+				item: {
+					count: 1
+					id: "ae2lt:overloaded_pattern_provider"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3B497DD07E9BDC90"
+					item: { count: 1, id: "ae2lt:overloaded_interface" }
+					type: "item"
+				}
+				{
+					id: "2DB1CE6011C7B8FA"
+					item: { count: 1, id: "ae2lt:overloaded_pattern_provider" }
+					type: "item"
+				}
+			]
+			x: -44.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["77F04D3F779498B3"]
+			id: "65A8D4580EAD19FE"
+			rewards: [{
+				id: "01A9E452A7DCBAE7"
+				item: {
+					count: 1
+					id: "ae2_pattern_disk:packaged_pattern_disk_provider"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "60E117D240780ADD"
+				item: { count: 1, id: "ae2ltpp:packaged_pattern_provider" }
+				type: "item"
+			}]
+			x: -41.5d
+			y: -24.5d
+		}
+	]
 }

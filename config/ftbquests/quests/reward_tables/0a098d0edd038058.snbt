@@ -1,0 +1,14 @@
+{
+	id: "0A098D0EDD038058"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ id: "5FBA7C5F0BD685EA", item: { count: 1, id: "ae2craftcore:recipe_terminal" } }
+		{ id: "2B4F604EB0D4FB02", item: { count: 1, id: "ae2driveterminal:drive_terminal" } }
+		{ id: "66AF2C7E6643F3C8", item: { count: 1, id: "statpatterns:probability_pattern_terminal" } }
+		{ id: "7E9D5280E0DDF24A", item: { count: 1, id: "ae2:pattern_access_terminal" } }
+		{ id: "0B7DA2D506F28F8E", item: { count: 1, id: "ae2:crafting_terminal" } }
+		{ id: "76FD9F9BC4F10153", item: { count: 1, id: "ae2:pattern_encoding_terminal" } }
+		{ id: "20F9232F5079E2DF", item: { count: 1, id: "ae2_pattern_disk:cell_management_terminal" } }
+	]
+}
